@@ -75,7 +75,7 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
       </td>
       <td>
         <.link
-          navigate={~p"/owner_group/#{@property.owner_group.name}"}
+          navigate={~p"/owner_groups/#{@property.owner_group.name}"}
           id={"property-#{@property.id}"}
         >
           <%= @property.owner_group.name %>

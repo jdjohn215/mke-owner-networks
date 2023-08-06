@@ -9,10 +9,12 @@ defmodule WhoOwnsWhat.Data.Import do
   @owner File.read!("./../data/mprop/Parcels_with_Ownership_Groups.csv") |> :zlib.gzip()
 
   def properties(_path) do
-    mprop = @mprop
-            |> :zlib.gunzip()
-            |> String.trim()
-            |> String.split("\n")
+    mprop =
+      @mprop
+      |> :zlib.gunzip()
+      |> String.trim()
+      |> String.split("\n")
+
     keys =
       mprop
       |> Enum.take(1)
@@ -63,10 +65,12 @@ defmodule WhoOwnsWhat.Data.Import do
   end
 
   def ownership_groups(_path) do
-    owner = @owner
-            |> :zlib.gunzip()
-            |> String.trim()
-            |> String.split("\n")
+    owner =
+      @owner
+      |> :zlib.gunzip()
+      |> String.trim()
+      |> String.split("\n")
+
     keys =
       owner
       |> Enum.take(1)

@@ -16,7 +16,10 @@ defmodule WhoOwnsWhatWeb.OwnerGroupPropertyLiveTest do
   describe "Index" do
     setup [:create_owner_group_property]
 
-    test "lists all owner_groups_properties", %{conn: conn, owner_group_property: owner_group_property} do
+    test "lists all owner_groups_properties", %{
+      conn: conn,
+      owner_group_property: owner_group_property
+    } do
       {:ok, _index_live, html} = live(conn, ~p"/owner_groups_properties")
 
       assert html =~ "Listing Owner groups properties"
@@ -46,10 +49,15 @@ defmodule WhoOwnsWhatWeb.OwnerGroupPropertyLiveTest do
       assert html =~ "some name"
     end
 
-    test "updates owner_group_property in listing", %{conn: conn, owner_group_property: owner_group_property} do
+    test "updates owner_group_property in listing", %{
+      conn: conn,
+      owner_group_property: owner_group_property
+    } do
       {:ok, index_live, _html} = live(conn, ~p"/owner_groups_properties")
 
-      assert index_live |> element("#owner_groups_properties-#{owner_group_property.id} a", "Edit") |> render_click() =~
+      assert index_live
+             |> element("#owner_groups_properties-#{owner_group_property.id} a", "Edit")
+             |> render_click() =~
                "Edit Owner group property"
 
       assert_patch(index_live, ~p"/owner_groups_properties/#{owner_group_property}/edit")
@@ -69,10 +77,16 @@ defmodule WhoOwnsWhatWeb.OwnerGroupPropertyLiveTest do
       assert html =~ "some updated name"
     end
 
-    test "deletes owner_group_property in listing", %{conn: conn, owner_group_property: owner_group_property} do
+    test "deletes owner_group_property in listing", %{
+      conn: conn,
+      owner_group_property: owner_group_property
+    } do
       {:ok, index_live, _html} = live(conn, ~p"/owner_groups_properties")
 
-      assert index_live |> element("#owner_groups_properties-#{owner_group_property.id} a", "Delete") |> render_click()
+      assert index_live
+             |> element("#owner_groups_properties-#{owner_group_property.id} a", "Delete")
+             |> render_click()
+
       refute has_element?(index_live, "#owner_groups_properties-#{owner_group_property.id}")
     end
   end
@@ -80,14 +94,20 @@ defmodule WhoOwnsWhatWeb.OwnerGroupPropertyLiveTest do
   describe "Show" do
     setup [:create_owner_group_property]
 
-    test "displays owner_group_property", %{conn: conn, owner_group_property: owner_group_property} do
+    test "displays owner_group_property", %{
+      conn: conn,
+      owner_group_property: owner_group_property
+    } do
       {:ok, _show_live, html} = live(conn, ~p"/owner_groups_properties/#{owner_group_property}")
 
       assert html =~ "Show Owner group property"
       assert html =~ owner_group_property.name
     end
 
-    test "updates owner_group_property within modal", %{conn: conn, owner_group_property: owner_group_property} do
+    test "updates owner_group_property within modal", %{
+      conn: conn,
+      owner_group_property: owner_group_property
+    } do
       {:ok, show_live, _html} = live(conn, ~p"/owner_groups_properties/#{owner_group_property}")
 
       assert show_live |> element("a", "Edit") |> render_click() =~

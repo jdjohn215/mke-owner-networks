@@ -2,7 +2,6 @@ defmodule WhoOwnsWhatWeb.OwnerGroupPropertyLive.Index do
   use WhoOwnsWhatWeb, :live_view
 
   alias WhoOwnsWhat.Data
-  alias WhoOwnsWhat.Data.OwnerGroupProperty
 
   @impl true
   def mount(_params, _session, socket) do

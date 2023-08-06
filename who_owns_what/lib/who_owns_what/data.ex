@@ -72,7 +72,7 @@ defmodule WhoOwnsWhat.Data do
       select: p,
       where: ogp.name == ^name
     )
-    |> Repo.all
+    |> Repo.all()
   end
 
   @doc """
@@ -193,7 +193,7 @@ defmodule WhoOwnsWhat.Data do
       where: ogp.name == ^name,
       limit: 1
     )
-    |> Repo.one!
+    |> Repo.one!()
   end
 
   @doc """

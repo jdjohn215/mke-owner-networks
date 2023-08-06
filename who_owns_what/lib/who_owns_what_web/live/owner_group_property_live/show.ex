@@ -19,10 +19,11 @@ defmodule WhoOwnsWhatWeb.OwnerGroupPropertyLive.Show do
   end
 
   def assign_summary(socket) do
-    total_unit_count = Enum.map(socket.assigns.properties, fn(property) ->
-      property.number_units
-    end)
-    |> Enum.sum()
+    total_unit_count =
+      Enum.map(socket.assigns.properties, fn property ->
+        property.number_units
+      end)
+      |> Enum.sum()
 
     total_property_count = Enum.count(socket.assigns.properties)
 

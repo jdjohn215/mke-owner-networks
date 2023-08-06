@@ -4,7 +4,6 @@
 <p>Total Properties: <%= @total_property_count %></p>
 <p>Total Units: <%= @total_unit_count %></p>
 
-
 <table class="" id="properties">
   <thead>
     <tr>
@@ -15,19 +14,19 @@
   </thead>
   <tbody>
     <%= for property <- @properties do %>
-    <tr class="" id={"option-#{property.id}"}>
-      <td>
-        <.link navigate={~p"/properties/#{property.id}"} id={"property-#{property.id}"}>
-          <%= WhoOwnsWhat.Data.Property.address(property) %>
-        </.link>
-      </td>
-      <td>
-        <%= property.owner_name_1 %>
-      </td>
-      <td>
-        <%= property.number_units %>
-      </td>
-    </tr>
+      <tr class="" id={"option-#{property.id}"}>
+        <td>
+          <.link navigate={~p"/properties/#{property.id}"} id={"property-#{property.id}"}>
+            <%= WhoOwnsWhat.Data.Property.address(property) %>
+          </.link>
+        </td>
+        <td>
+          <%= property.owner_name_1 %>
+        </td>
+        <td>
+          <%= property.number_units %>
+        </td>
+      </tr>
     <% end %>
   </tbody>
 </table>
