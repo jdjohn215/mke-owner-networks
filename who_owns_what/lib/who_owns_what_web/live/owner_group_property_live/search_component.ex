@@ -2,33 +2,46 @@ defmodule WhoOwnsWhatWeb.OwnerGroupPropertyLive.SearchComponent do
   use WhoOwnsWhatWeb, :live_component
 
   @impl true
+  def mount(socket) do
+    socket =
+      assign_new(socket, :owner_groups, fn -> [] end)
+      |> assign_new(:owner_query, fn -> "" end)
+
+    {:ok, socket}
+  end
+
+  @impl true
   def render(assigns) do
     ~H"""
     <div>
       <.search_input
-        phx-target={@myself}
-        placeholder_name="Owner Group"
-        phx-keyup="do-search-owner"
-        phx-debounce="200"
+        target={@myself}
+        text_value={@owner_query}
+        event="do-search-owner"
+        name="Owner Group"
       />
       <.results owner_groups={@owner_groups} />
     </div>
     """
   end
 
-  attr :rest, :global
-  attr :placeholder_name, :string, required: true
+  attr :text_value, :string
+  attr :name, :string, required: true
+  attr :target, :any, required: true
+  attr :event, :string, required: true
 
   def search_input(assigns) do
     ~H"""
     <div>
-      <input
-        {@rest}
+      <.input
+        value={@text_value}
+        name={@name}
+        phx-target={@target}
+        phx-keyup={@event}
+        phx-debounce="100"
         type="text"
         class=""
-        placeholder={"Search by #{@placeholder_name}"}
-        aria-expanded="false"
-        aria-controls="options"
+        placeholder={"Search by #{@name}"}
       />
     </div>
     """
@@ -59,19 +72,17 @@ defmodule WhoOwnsWhatWeb.OwnerGroupPropertyLive.SearchComponent do
     {:ok,
      socket
      |> assign(assigns)
-     |> assign_new(:owner_groups, fn -> [] end)
-     |> assign_new(:owner_query, fn -> "" end)}
+     |> assign(:owner_groups, search_owner_groups(assigns.owner_query, []))}
   end
 
   @impl true
   def handle_event("do-search-owner", %{"value" => value}, socket) do
+    params = %{owner_query: value}
+
     {:noreply,
      socket
-     |> assign(:owner_query, value)
-     |> assign(
-       :owner_groups,
-       search_owner_groups(value, socket.assigns.owner_groups)
-     )}
+     |> push_patch(to: ~p"/owner_groups?#{params}")
+     |> assign(:owner_query, value)}
   end
 
   defp search_owner_groups(owner_query, default) when is_binary(owner_query) do

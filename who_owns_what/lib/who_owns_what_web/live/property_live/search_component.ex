@@ -2,37 +2,53 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
   use WhoOwnsWhatWeb, :live_component
 
   @impl true
+  def mount(socket) do
+    socket =
+      assign_new(socket, :properties, fn -> [] end)
+      |> assign_new(:owner_query, fn -> "" end)
+      |> assign_new(:address_query, fn -> "" end)
+
+    {:ok, socket}
+  end
+
+  @impl true
   def render(assigns) do
     ~H"""
     <div>
       <.search_input
-        phx-target={@myself}
-        placeholder_name="Owner Group"
-        phx-keyup="do-search-owner"
-        phx-debounce="200"
+        target={@myself}
+        event="do-search-owner"
+        text_value={@owner_query}
+        name="Owner Group"
       />
       <.search_input
-        phx-target={@myself}
-        placeholder_name="Address"
-        phx-keyup="do-search-address"
-        phx-debounce="200"
+        target={@myself}
+        event="do-search-address"
+        text_value={@address_query}
+        name="Address"
       />
       <.results properties={@properties} />
     </div>
     """
   end
 
-  attr :rest, :global
-  attr :placeholder_name, :string, required: true
+  attr :text_value, :string
+  attr :name, :string, required: true
+  attr :target, :any, required: true
+  attr :event, :string, required: true
 
   def search_input(assigns) do
     ~H"""
     <div>
-      <input
-        {@rest}
+      <.input
+        value={@text_value}
+        name={@name}
+        phx-target={@target}
+        phx-keyup={@event}
+        phx-debounce="100"
         type="text"
         class=""
-        placeholder={"Search by #{@placeholder_name}"}
+        placeholder={"Search by #{@name}"}
         aria-expanded="false"
         aria-controls="options"
       />
@@ -65,34 +81,31 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
 
   @impl true
   def update(assigns, socket) do
-    {:ok,
-     socket
-     |> assign(assigns)
-     |> assign_new(:properties, fn -> [] end)
-     |> assign_new(:owner_query, fn -> "" end)
-     |> assign_new(:address_query, fn -> "" end)}
+    socket =
+      assign(socket, assigns)
+      |> assign(:properties, search_properties(assigns.owner_query, assigns.address_query, []))
+
+    {:ok, socket}
   end
 
   @impl true
   def handle_event("do-search-owner", %{"value" => value}, socket) do
+    params = %{address_query: socket.assigns.address_query, owner_query: value}
+
     {:noreply,
      socket
-     |> assign(:owner_query, value)
-     |> assign(
-       :properties,
-       search_properties(value, socket.assigns.address_query, socket.assigns.properties)
-     )}
+     |> push_patch(to: ~p"/?#{params}")
+     |> assign(:owner_query, value)}
   end
 
   @impl true
   def handle_event("do-search-address", %{"value" => value}, socket) do
+    params = %{address_query: value, owner_query: socket.assigns.owner_query}
+
     {:noreply,
      socket
-     |> assign(:address_query, value)
-     |> assign(
-       :properties,
-       search_properties(socket.assigns.owner_query, value, socket.assigns.properties)
-     )}
+     |> push_patch(to: ~p"/?#{params}")
+     |> assign(:address_query, value)}
   end
 
   defp search_properties(owner_query, address_query, default)

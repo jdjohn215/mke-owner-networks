@@ -2,4 +2,9 @@
   Listing Properties
 </.header>
 
-<.live_component module={WhoOwnsWhatWeb.PropertyLive.SearchComponent} id="search-results" />
+<.live_component
+  module={WhoOwnsWhatWeb.PropertyLive.SearchComponent}
+  owner_query={@owner_query}
+  address_query={@address_query}
+  id="search-results"
+/>
