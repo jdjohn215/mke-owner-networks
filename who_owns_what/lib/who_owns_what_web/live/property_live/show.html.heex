@@ -1,0 +1,16 @@
+<.header>
+  Property <%= @property.taxkey %>
+  <:subtitle>This is a property record from your database.</:subtitle>
+</.header>
+
+<.list>
+  <:item title="Full address"><%= WhoOwnsWhat.Data.Property.address(@property) %></:item>
+  <:item title="Owner group">
+    <.link navigate={~p"/owner_group/#{@property.owner_group.name}"} id={"property-#{@property.id}"}>
+      <%= @property.owner_group.name %>
+    </.link>
+  </:item>
+  <:item title="Number of Units"><%= @property.number_units %></:item>
+</.list>
+
+<.back navigate={~p"/"}>Back to properties</.back>
