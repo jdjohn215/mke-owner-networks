@@ -22,6 +22,9 @@ erl_crash.dump
 # Temporary files, for example, from tests.
 /tmp/
 
+# Ignore data folder
+data/
+
 # Ignore package tarball (built via "mix hex.build").
 who_owns_what-*.tar
 
@@ -38,4 +41,3 @@ npm-debug.log
 # Database files
 *.db
 *.db-*
-

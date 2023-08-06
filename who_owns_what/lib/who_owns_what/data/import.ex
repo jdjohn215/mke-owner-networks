@@ -3,10 +3,28 @@ defmodule WhoOwnsWhat.Data.Import do
   alias WhoOwnsWhat.Data.Property
   alias WhoOwnsWhat.Data.OwnerGroupProperty
 
-  @external_resource "./../data/mprop/ResidentialProperties_NotOwnerOccupied.csv"
-  @external_resource "./../data/mprop/Parcels_with_Ownership_Groups.csv"
-  @mprop File.read!("./../data/mprop/ResidentialProperties_NotOwnerOccupied.csv") |> :zlib.gzip()
-  @owner File.read!("./../data/mprop/Parcels_with_Ownership_Groups.csv") |> :zlib.gzip()
+  @external_resource Path.join(
+                       Application.compile_env(:who_owns_what, :data_folder_path),
+                       "ResidentialProperties_NotOwnerOccupied.csv"
+                     )
+  @external_resource Path.join(
+                       Application.compile_env(:who_owns_what, :data_folder_path),
+                       "Parcels_with_Ownership_Groups.csv"
+                     )
+  @mprop File.read!(
+           Path.join(
+             Application.compile_env(:who_owns_what, :data_folder_path),
+             "ResidentialProperties_NotOwnerOccupied.csv"
+           )
+         )
+         |> :zlib.gzip()
+  @owner File.read!(
+           Path.join(
+             Application.compile_env(:who_owns_what, :data_folder_path),
+             "Parcels_with_Ownership_Groups.csv"
+           )
+         )
+         |> :zlib.gzip()
 
   def properties(_path) do
     mprop =

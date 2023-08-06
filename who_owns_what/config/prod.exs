@@ -18,6 +18,7 @@ config :swoosh, local: false
 config :logger, level: :info
 
 config :who_owns_what, preload_data: true
+config :who_owns_what, data_folder_path: "./data"
 
 # Runtime production configuration, including reading
 # of environment variables, is done on config/runtime.exs.
