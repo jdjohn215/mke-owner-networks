@@ -22,6 +22,7 @@ defmodule WhoOwnsWhat.Data do
         join: ogp in OwnerGroupProperty,
         on: ogp.taxkey == p.taxkey,
         group_by: ogp.name,
+        order_by: [desc: sum(p.number_units)],
         select: %{
           name: ogp.name,
           total_properties: count(p.number_units),
