@@ -61,9 +61,10 @@ defmodule WhoOwnsWhat.Data.Import do
     end)
     |> Stream.chunk_every(500)
     |> Enum.map(fn properties ->
-      Ecto.Multi.new()
-      |> Ecto.Multi.insert_all(:insert_all, Property, properties)
-      |> Repo.transaction()
+      {:ok, _} =
+        Ecto.Multi.new()
+        |> Ecto.Multi.insert_all(:insert_all, Property, properties)
+        |> Repo.transaction()
     end)
   end
 
@@ -98,9 +99,10 @@ defmodule WhoOwnsWhat.Data.Import do
     end)
     |> Stream.chunk_every(500)
     |> Enum.map(fn owner_groups_properties ->
-      Ecto.Multi.new()
-      |> Ecto.Multi.insert_all(:insert_all, OwnerGroupProperty, owner_groups_properties)
-      |> Repo.transaction()
+      {:ok, _} =
+        Ecto.Multi.new()
+        |> Ecto.Multi.insert_all(:insert_all, OwnerGroupProperty, owner_groups_properties)
+        |> Repo.transaction()
     end)
   end
 
