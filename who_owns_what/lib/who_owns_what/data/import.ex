@@ -3,10 +3,10 @@ defmodule WhoOwnsWhat.Data.Import do
   alias WhoOwnsWhat.Data.Property
   alias WhoOwnsWhat.Data.OwnerGroupProperty
 
-  @external_resource "data/mprop.csv.gz"
-  @external_resource "data/parcels_ownership_groups.csv.gz"
-  @mprop File.read!("data/mprop.csv.gz")
-  @owner File.read!("data/parcels_ownership_groups.csv.gz")
+  @external_resource "./../data/mprop/ResidentialProperties_NotOwnerOccupied.csv"
+  @external_resource "./../data/mprop/Parcels_with_Ownership_Groups.csv"
+  @mprop File.read!("./../data/mprop/ResidentialProperties_NotOwnerOccupied.csv") |> :zlib.gzip()
+  @owner File.read!("./../data/mprop/Parcels_with_Ownership_Groups.csv") |> :zlib.gzip()
 
   def properties(_path) do
     mprop = @mprop
