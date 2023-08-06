@@ -49,7 +49,7 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
     </div>
     <.table id="properties" rows={@properties}>
       <:col :let={property} label="Address">
-        <.good_link navigate={~p"/properties/#{property.id}"}>
+        <.good_link navigate={~p"/properties/#{property.taxkey}"}>
           <%= WhoOwnsWhat.Data.Property.address(property) %>
         </.good_link>
       </:col>

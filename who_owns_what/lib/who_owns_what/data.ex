@@ -123,6 +123,11 @@ defmodule WhoOwnsWhat.Data do
     |> Repo.preload(:owner_group)
   end
 
+  def get_property_by_taxkey!(taxkey) do
+    Repo.get_by!(Property, taxkey: taxkey)
+    |> Repo.preload(:owner_group)
+  end
+
   @doc """
   Creates a property.
 
