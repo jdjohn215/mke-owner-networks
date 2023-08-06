@@ -6,12 +6,9 @@
 <.list>
   <:item title="Full address"><%= WhoOwnsWhat.Data.Property.address(@property) %></:item>
   <:item title="Owner group">
-    <.link
-      navigate={~p"/owner_groups/#{@property.owner_group.name}"}
-      id={"property-#{@property.id}"}
-    >
+    <.good_link navigate={~p"/owner_groups/#{@property.owner_group.name}"}>
       <%= @property.owner_group.name %>
-    </.link>
+    </.good_link>
   </:item>
   <:item title="Number of Units"><%= @property.number_units %></:item>
 </.list>

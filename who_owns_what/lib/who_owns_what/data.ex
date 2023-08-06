@@ -14,6 +14,35 @@ defmodule WhoOwnsWhat.Data do
     "%#{q}%"
   end
 
+  def search_owner_groups(owner_query) do
+    query =
+      from(pf in PropertyFts,
+        join: p in Property,
+        on: p.taxkey == pf.taxkey,
+        join: ogp in OwnerGroupProperty,
+        on: ogp.taxkey == p.taxkey,
+        group_by: ogp.name,
+        select: %{
+          name: ogp.name,
+          total_properties: count(p.number_units),
+          total_units: sum(p.number_units)
+        }
+      )
+
+    query =
+      if owner_query != "" do
+        formatted_query = format_query(owner_query)
+
+        from(p in query,
+          where: fragment("owner_group LIKE ?", ^formatted_query)
+        )
+      else
+        query
+      end
+
+    Repo.all(query)
+  end
+
   def search_properties(owner_query, address_query) do
     query =
       from(pf in PropertyFts,

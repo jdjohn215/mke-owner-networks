@@ -5,17 +5,7 @@ defmodule WhoOwnsWhatWeb.OwnerGroupPropertyLive.Index do
 
   @impl true
   def mount(_params, _session, socket) do
-    {:ok, stream(socket, :owner_groups_properties, Data.list_owner_groups_properties())}
-  end
-
-  @impl true
-  def handle_params(params, _url, socket) do
-    {:noreply, apply_action(socket, socket.assigns.live_action, params)}
-  end
-
-  defp apply_action(socket, :index, _params) do
-    socket
-    |> assign(:page_title, "Listing Owner groups properties")
-    |> assign(:owner_group_property, nil)
+    socket = assign(socket, :page_title, "Listing Owner Groups")
+    {:ok, stream(socket, :owner_groups, Data.list_owner_groups_properties())}
   end
 end

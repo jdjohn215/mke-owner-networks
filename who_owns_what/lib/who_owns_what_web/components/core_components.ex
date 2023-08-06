@@ -538,6 +538,27 @@ defmodule WhoOwnsWhatWeb.CoreComponents do
   end
 
   @doc """
+  Renders a link that doesn't look like regular text.
+
+  ## Examples
+
+      <.back navigate={~p"/posts"}>Back to posts</.back>
+  """
+  attr :navigate, :any, required: true
+  slot :inner_block, required: true
+
+  def good_link(assigns) do
+    ~H"""
+    <.link
+      navigate={@navigate}
+      class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+    >
+      <%= render_slot(@inner_block) %>
+    </.link>
+    """
+  end
+
+  @doc """
   Renders a back navigation link.
 
   ## Examples

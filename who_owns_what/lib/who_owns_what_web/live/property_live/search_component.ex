@@ -47,44 +47,19 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
     <div :if={@properties == []} id="option-none">
       No Results
     </div>
-
-    <table class="" id="properties">
-      <thead>
-        <tr>
-          <th>Address</th>
-          <th>Owner Group</th>
-          <th>Owner Name</th>
-        </tr>
-      </thead>
-      <tbody>
-        <.result_item :for={property <- @properties} property={property} />
-      </tbody>
-    </table>
-    """
-  end
-
-  attr :property, :map, required: true
-
-  def result_item(assigns) do
-    ~H"""
-    <tr class="" id={"option-#{@property.id}"}>
-      <td>
-        <.link navigate={~p"/properties/#{@property.id}"} id={"property-#{@property.id}"}>
-          <%= WhoOwnsWhat.Data.Property.address(@property) %>
-        </.link>
-      </td>
-      <td>
-        <.link
-          navigate={~p"/owner_groups/#{@property.owner_group.name}"}
-          id={"property-#{@property.id}"}
-        >
-          <%= @property.owner_group.name %>
-        </.link>
-      </td>
-      <td>
-        <%= @property.owner_name_1 %>
-      </td>
-    </tr>
+    <.table id="properties" rows={@properties}>
+      <:col :let={property} label="Address">
+        <.good_link navigate={~p"/properties/#{property.id}"}>
+          <%= WhoOwnsWhat.Data.Property.address(property) %>
+        </.good_link>
+      </:col>
+      <:col :let={property} label="Owner Group">
+        <.good_link navigate={~p"/owner_groups/#{property.owner_group.name}"}>
+          <%= property.owner_group.name %>
+        </.good_link>
+      </:col>
+      <:col :let={property} label="Owner Name"><%= property.owner_name_1 %></:col>
+    </.table>
     """
   end
 
