@@ -19,8 +19,8 @@ defmodule WhoOwnsWhatWeb.Router do
 
     live "/", PropertyLive.Index, :index
     live "/properties/:id", PropertyLive.Show, :show
-    live "/owner_groups", OwnerGroupPropertyLive.Index, :index
-    live "/owner_groups/:id", OwnerGroupPropertyLive.Show, :show
+    live "/owner_groups", OwnerGroupLive.Index, :index
+    live "/owner_groups/:id", OwnerGroupLive.Show, :show
   end
 
   # Other scopes may use custom stacks.

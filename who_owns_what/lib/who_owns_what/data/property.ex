@@ -28,10 +28,13 @@ defmodule WhoOwnsWhat.Data.Property do
 
     timestamps()
 
-    belongs_to :owner_group, OwnerGroupProperty,
+    belongs_to :owner_groups_properties, OwnerGroupProperty,
       foreign_key: :taxkey,
       references: :taxkey,
       define_field: false
+
+    has_one :owner_group,
+      through: [:owner_groups_properties, :owner_group]
   end
 
   @doc false

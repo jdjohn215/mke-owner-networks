@@ -1,4 +1,4 @@
-defmodule WhoOwnsWhatWeb.OwnerGroupPropertyLive.Index do
+defmodule WhoOwnsWhatWeb.OwnerGroupLive.Index do
   use WhoOwnsWhatWeb, :live_view
 
   @impl true

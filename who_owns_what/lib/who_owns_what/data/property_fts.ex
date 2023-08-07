@@ -7,7 +7,7 @@ defmodule WhoOwnsWhat.Data.PropertyFts do
   schema "properties_fts" do
     field :taxkey, :string
     field :owner_name_1, :string
-    field :owner_group, :string
+    field :owner_group_name, :string
     field :full_address, :string
     field :rank, :float, virtual: true
 

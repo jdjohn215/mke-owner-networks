@@ -92,7 +92,7 @@ defmodule WhoOwnsWhat.Data.Import do
 
       %{
         taxkey: Map.fetch!(map, "TAXKEY"),
-        name: Map.fetch!(map, "owner_group_name"),
+        owner_group_name: Map.fetch!(map, "owner_group_name"),
         inserted_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second),
         updated_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second)
       }
@@ -110,12 +110,25 @@ defmodule WhoOwnsWhat.Data.Import do
     Ecto.Adapters.SQL.query!(
       Repo,
       """
-      INSERT INTO properties_fts (rowid, taxkey, owner_name_1, full_address, owner_group)
+      INSERT INTO properties_fts (rowid, taxkey, owner_name_1, full_address, owner_group_name)
       SELECT p.id, p.taxkey, owner_name_1,
         house_number_low || ' ' ||  house_number_high || ' ' || street_direction || ' ' || street || ' ' || street_type || ' ' || geo_zip_code,
-      ogp.name
+      ogp.owner_group_name
       FROM properties p
       JOIN owner_groups_properties ogp on ogp.taxkey = p.taxkey
+      """
+    )
+  end
+
+  def owner_groups do
+    Ecto.Adapters.SQL.query!(
+      Repo,
+      """
+      INSERT INTO owner_groups (name, number_properties, number_units, inserted_at, updated_at)
+      SELECT owner_group_name, count(number_units), sum(number_units), datetime('now'), datetime('now')
+      FROM properties p
+      JOIN owner_groups_properties ogp on ogp.taxkey = p.taxkey
+      GROUP BY ogp.owner_group_name
       """
     )
   end

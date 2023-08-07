@@ -33,7 +33,7 @@ defmodule WhoOwnsWhat.Repo.Migrations.CreateProperties do
       CREATE VIRTUAL TABLE properties_fts USING fts5(
         taxkey UNINDEXED,
         owner_name_1,
-        owner_group,
+        owner_group_name,
         full_address,
         tokenize="trigram"
       );

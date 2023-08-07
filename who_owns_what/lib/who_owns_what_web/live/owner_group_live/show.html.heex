@@ -1,8 +1,8 @@
 <.header>
-  <%= @owner_group_property.name %>
+  <%= @owner_group.name %>
 </.header>
-<p>Total Properties: <%= @total_property_count %></p>
-<p>Total Units: <%= @total_unit_count %></p>
+<p>Total Properties: <%= @owner_group.number_properties %></p>
+<p>Total Units: <%= @owner_group.number_units %></p>
 
 <.table id="properties" rows={@properties}>
   <:col :let={property} label="Address">

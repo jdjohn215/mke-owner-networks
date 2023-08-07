@@ -13,3 +13,4 @@
 WhoOwnsWhat.Data.Import.properties("./data/mprop.csv.gz")
 WhoOwnsWhat.Data.Import.ownership_groups("./data/parcels_ownership_groups.csv.gz")
 WhoOwnsWhat.Data.Import.properties_fts()
+WhoOwnsWhat.Data.Import.owner_groups()

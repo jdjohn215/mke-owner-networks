@@ -1,4 +1,4 @@
-defmodule WhoOwnsWhatWeb.OwnerGroupPropertyLive.SearchComponent do
+defmodule WhoOwnsWhatWeb.OwnerGroupLive.SearchComponent do
   use WhoOwnsWhatWeb, :live_component
 
   @impl true
@@ -61,8 +61,8 @@ defmodule WhoOwnsWhatWeb.OwnerGroupPropertyLive.SearchComponent do
           <%= owner_group.name %>
         </.good_link>
       </:col>
-      <:col :let={owner_group} label="Total Properties"><%= owner_group.total_properties %></:col>
-      <:col :let={owner_group} label="Total Units"><%= owner_group.total_units %></:col>
+      <:col :let={owner_group} label="Total Properties"><%= owner_group.number_properties %></:col>
+      <:col :let={owner_group} label="Total Units"><%= owner_group.number_units %></:col>
     </.table>
     """
   end
