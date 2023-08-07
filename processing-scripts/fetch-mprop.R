@@ -90,6 +90,7 @@ residential.landlord <- mprop %>%
          OWNER_NAME_1 = str_remove_all(OWNER_NAME_1, coll(".")),
          OWNER_NAME_1 = str_remove_all(OWNER_NAME_1, "#"),
          OWNER_NAME_1 = str_replace(OWNER_NAME_1, " - ", "-"),
-         OWNER_NAME_1 = str_squish(OWNER_NAME_1))
+         OWNER_NAME_1 = str_squish(OWNER_NAME_1),
+         OWNER_NAME_1 = str_replace(OWNER_NAME_1, "\\bLL$", "LLC"))
 
 write_csv(residential.landlord, "data/mprop/ResidentialProperties_NotOwnerOccupied.csv")
