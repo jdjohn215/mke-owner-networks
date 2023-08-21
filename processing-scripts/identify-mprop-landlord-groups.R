@@ -13,7 +13,7 @@ owner.names <- df %>%
 # returns a list of names connected by address/name network to the given name
 owner_group_names <- function(x, d=df) {
   # obtain all the names sharing an address with the first name
-  m <- unique(merge(d, d[d$OWNER_NAME_1 %in% x, c("OWNER_MAIL_ADDR", "OWNER_CITY_STATE")])[, 'OWNER_NAME_1'])
+  m <- unique(merge(d, d[d$OWNER_NAME_1 %in% x, c("owner_address")])[, 'OWNER_NAME_1'])
   
   # run the function recursively until the output is the same length as the output
   if (identical(length(m), length(x))) {
