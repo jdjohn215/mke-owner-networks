@@ -50,7 +50,8 @@ defmodule WhoOwnsWhat.MixProject do
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
       {:nimble_csv, "~> 1.2"},
-      {:plug_cowboy, "~> 2.5"}
+      {:plug_cowboy, "~> 2.5"},
+      {:libgraph, "~> 0.16.0"}
     ]
   end
 
