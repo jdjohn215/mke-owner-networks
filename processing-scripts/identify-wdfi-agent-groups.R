@@ -34,10 +34,11 @@ wdfi.mprop.matches <- wdfi.current %>%
   filter(! address_city %in% wdfi.addresses.not.useful$address_city,
          corp_name_clean %in% mprop.owners$OWNER_NAME_1)
 
-# these *current* WDFI records match a name and/or address of an mprop owner
+# these *current* WDFI records are matched to an MPROP owner name OR they have the registered agent AND address of an MPROP match
 #   AND they don't have the address of a useless registered agent
 wdfi.mprop.connected <- wdfi.current %>%
-  filter(address_city %in% wdfi.mprop.matches$address_city) %>%
+  filter(address_city %in% wdfi.mprop.matches$address_city,
+         registered_agent %in% wdfi.mprop.matches$registered_agent) %>%
   # corp_names must be unique per WI law. Sometimes a corp has multiple entries, 
   #   apparently due to reorganization. This code just keeps the entry with the
   #   most recent status update
@@ -123,5 +124,8 @@ agent.group.totals <- all.agent.groups %>%
 
 all.agent.groups.final <- wdfi.current %>%
   select(wdfi_id, corp_name_clean, address_city) %>%
-  inner_join(all.agent.groups)
+  inner_join(all.agent.groups) %>%
+  mutate(corp_mprop_match = corp_name_clean %in% mprop.owners$OWNER_NAME_1) %>%
+  rename(agent_name = registered_agent, agent_address = address_city,
+         agent_group = agent_group_name)
 write_csv(all.agent.groups.final, "data/wdfi/wdfi_agent_groups.csv")
