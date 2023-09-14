@@ -67,4 +67,13 @@ return_owner_group <- function(owner_name){
 # this line takes ~20 minutes to run
 all.owner.groups <- map_df(owner.names.without.owner.group$OWNER_NAME_1,
                            return_owner_group, .progress = T)
-write_csv(all.owner.groups, "data/mprop/Parcels_with_Ownership_Groups.csv")
+
+all.owner.groups.2 <- all.owner.groups %>%
+  # add MPROP fields of interest
+  inner_join(df %>%
+               select(TAXKEY, owner_address, HOUSE_NR_LO, HOUSE_NR_HI,
+                      SDIR, STREET, STTYPE, HOUSE_NR_SFX))
+
+write_csv(all.owner.groups.2, "data/mprop/Parcels_with_Ownership_Groups.csv")
+
+
