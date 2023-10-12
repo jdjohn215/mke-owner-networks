@@ -4,8 +4,9 @@
 </.header>
 
 <.list>
-  <:item title="Full address"><%= WhoOwnsWhat.Data.Property.address(@property) %></:item>
-  <:item title="Owner group">
+  <:item title="Address"><%= WhoOwnsWhat.Data.Property.address(@property) %></:item>
+  <:item title="District"><%= @property.geo_alder %></:item>
+  <:item title="Owner Group">
     <.good_link navigate={~p"/owner_groups/#{@property.owner_group.name}"}>
       <%= @property.owner_group.name %>
     </.good_link>
