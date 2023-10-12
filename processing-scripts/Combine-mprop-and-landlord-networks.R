@@ -2,6 +2,7 @@ rm(list = ls())
 
 library(tidyverse)
 
+mprop.orig <- read_csv("data/mprop/ResidentialProperties_NotOwnerOccupied.csv")
 mprop <- read_csv(here::here("data/mprop/Parcels_with_Ownership_Groups.csv")) %>%
   rename(mprop_name = OWNER_NAME_1, mprop_address = owner_address, 
          mprop_group = owner_group_name)
@@ -63,6 +64,10 @@ combined.wdfi.mprop.groups <- nodes.to.ids %>%
                                       "mprop", "combo")) %>%
   select(TAXKEY, HOUSE_NR_LO, HOUSE_NR_HI, SDIR, STREET, STTYPE, HOUSE_NR_SFX,
          mprop_name, mprop_address, wdfi_address = address_city,
-         wdfi_group_id, final_group, final_group_source)
+         wdfi_group_id, final_group, final_group_source) %>%
+  # add additional fields
+  left_join(mprop.orig %>%
+              select(TAXKEY, NR_UNITS, GEO_ZIP_CODE, GEO_ALDER, LAND_USE_GP, owner_occupied,
+                     C_A_CLASS, C_A_TOTAL, OWNER_NAME_2, OWNER_NAME_3))
 
 write_csv(combined.wdfi.mprop.groups, "data/LandlordProperties-with-OwnerNetworks.csv")
