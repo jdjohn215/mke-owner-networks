@@ -36,7 +36,7 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.Show do
     {:noreply, socket}
   end
 
-  defp page_title(:show), do: "Show Owner group"
+  defp page_title(:show), do: "Show Owner Group"
 
   defp assign_graphs(socket, properties) do
     graph =

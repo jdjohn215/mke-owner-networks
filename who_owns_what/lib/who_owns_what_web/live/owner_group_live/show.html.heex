@@ -10,6 +10,7 @@
       <%= WhoOwnsWhat.Data.Property.address(property) %>
     </.good_link>
   </:col>
+  <:col :let={property} label="District"><%= property.geo_alder %></:col>
   <:col :let={property} label="Owner Name"><%= property.owner_name_1 %></:col>
   <:col :let={property} label="Number of Units"><%= property.number_units %></:col>
 </.table>
