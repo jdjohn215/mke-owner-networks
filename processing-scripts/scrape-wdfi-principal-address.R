@@ -40,3 +40,14 @@ get_principal_address <- function(corp_name){
 
 # e.g.
 get_principal_address(wdfi$corp_name[5000])
+
+wdfi.match <- read_csv(here::here("data/wdfi/wdfi_agent_groups.csv"))
+
+wdfi.names.to.scrape <- wdfi %>%
+  filter(wdfi_id %in% wdfi.match$wdfi_id[wdfi.match$corp_mprop_match == TRUE]) %>%
+  select(wdfi_id, corp_name)
+
+possibly_get_principal_address <- possibly(get_principal_address, otherwise = "scrape failed")
+
+all.addresses <- map(wdfi.names.to.scrape$corp_name, possibly_get_principal_address,
+                     .progress = TRUE)

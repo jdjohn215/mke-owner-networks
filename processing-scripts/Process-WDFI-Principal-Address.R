@@ -35,4 +35,4 @@ wdfi.18.2 <- wdfi.1col %>%
 
 
 wdfi.processed <- bind_rows(wdfi.17, wdfi.18.2)
-write_csv(wdfi.processed, "data/wdfi/WDFI_PrincipalAddress_Processed.csv")
+write_csv(wdfi.processed, "data/wdfi/WDFI_PrincipalAddress_Processed.csv.gz")
