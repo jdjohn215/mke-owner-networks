@@ -9,8 +9,9 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
-
-WhoOwnsWhat.Data.Import.properties("./data/mprop.csv.gz")
-WhoOwnsWhat.Data.Import.ownership_groups("./data/parcels_ownership_groups.csv.gz")
+Logger.configure(level: :warning)
+maps = WhoOwnsWhat.Data.Import.properties()
+WhoOwnsWhat.Data.Import.ownership_groups(maps)
 WhoOwnsWhat.Data.Import.properties_fts()
 WhoOwnsWhat.Data.Import.owner_groups()
+Logger.configure(level: :debug)

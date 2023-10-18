@@ -5,6 +5,8 @@ defmodule WhoOwnsWhat.Repo.Migrations.CreateOwnerGroupsProperties do
     create table(:owner_groups_properties) do
       add :taxkey, :string
       add :owner_group_name, :string
+      add :wdfi_group_id, :string
+      add :group_source, :string
 
       timestamps()
     end

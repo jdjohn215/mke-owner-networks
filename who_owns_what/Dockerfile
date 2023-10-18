@@ -51,8 +51,7 @@ COPY lib lib
 
 COPY assets assets
 
-COPY ./data/ResidentialProperties_NotOwnerOccupied.csv data/ResidentialProperties_NotOwnerOccupied.csv
-COPY ./data/Parcels_with_Ownership_Groups.csv data/Parcels_with_Ownership_Groups.csv
+COPY ./data/LandlordProperties-with-OwnerNetworks.csv data/LandlordProperties-with-OwnerNetworks.csv
 
 # compile assets
 RUN mix assets.deploy
@@ -66,8 +65,7 @@ COPY config/runtime.exs config/
 COPY rel rel
 RUN mix release
 
-RUN rm data/ResidentialProperties_NotOwnerOccupied.csv
-RUN rm data/Parcels_with_Ownership_Groups.csv
+RUN rm data/LandlordProperties-with-OwnerNetworks.csv
 
 # start a new build stage so that the final image will only contain
 # the compiled release and other runtime necessities

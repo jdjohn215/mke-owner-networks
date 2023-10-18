@@ -7,6 +7,8 @@ defmodule WhoOwnsWhat.Data.OwnerGroupProperty do
   schema "owner_groups_properties" do
     field :owner_group_name, :string
     field :taxkey, :string
+    field :wdfi_group_id, :string
+    field :group_source, :string
 
     belongs_to :owner_group, OwnerGroup,
       foreign_key: :owner_group_name,
