@@ -25,6 +25,7 @@ defmodule WhoOwnsWhat.Data.Property do
     field :street_direction, :string
     field :street_type, :string
     field :taxkey, :string
+    field :wdfi_address, :string
 
     timestamps()
 

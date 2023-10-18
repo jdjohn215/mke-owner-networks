@@ -53,6 +53,7 @@ defmodule WhoOwnsWhat.Data.Import do
         calculated_owner_occupied: Map.fetch!(map, "owner_occupied") == "OWNER OCCUPIED",
         # owner_occupied: Map.fetch!(map, "OWN_OCPD") != "NA",
         geo_alder: Map.fetch!(map, "GEO_ALDER"),
+        wdfi_address: Map.fetch!(map, "wdfi_address"),
         inserted_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second),
         updated_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second)
       }

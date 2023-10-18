@@ -9,6 +9,7 @@ defmodule WhoOwnsWhat.Data.OwnerGroupProperty do
     field :taxkey, :string
     field :wdfi_group_id, :string
     field :group_source, :string
+    field :wdfi_address, :string
 
     belongs_to :owner_group, OwnerGroup,
       foreign_key: :owner_group_name,

@@ -24,6 +24,7 @@ defmodule WhoOwnsWhat.Repo.Migrations.CreateProperties do
       add :calculated_owner_occupied, :boolean, default: false, null: false
       add :owner_occupied, :boolean, default: false, null: false
       add :geo_alder, :string
+      add :wdfi_address, :string
 
       timestamps()
     end
