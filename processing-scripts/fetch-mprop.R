@@ -59,7 +59,8 @@ mprop <- mprop.orig %>%
 # residentially-zoned parcels, with more than 0 units, not owner-occupied
 residential.landlord <- mprop %>%
   filter(C_A_CLASS %in% c("RESIDENTIAL", "CONDOMINIUMS", "MERCANTILE APTS") |
-           LAND_USE_GP == "mixed commercial/residential",
+           LAND_USE_GP %in% c("MIXED COMMERCIAL/RESIDENTIAL", "SINGLE FAMILY",
+                            "DUPLEX", "MULTI-FAMILY"),
          NR_UNITS > 0,
          owner_occupied != "OWNER OCCUPIED") %>%
   # clean owner mail address field
