@@ -33,8 +33,15 @@ clean.names <- wdfi.current %>%
          corp_name_clean = str_replace(corp_name_clean, "\\bLL$", "LLC"),
          registered_agent = str_squish(str_to_upper(str_remove_all(agent_name, "[.]|[,]"))))
 
+# a small number of the cleaned names have duplicates
+#   corporation names are required to be unique
+#   this keeps just the most recently incorporated of the two identically-named companies
+clean.names2 <- clean.names %>%
+  group_by(corp_name_clean) %>%
+  slice_max(order_by = incorporated_date, n = 1, with_ties = FALSE) %>%
+  ungroup()
 
-fix.addresses <- clean.names %>%
+fix.addresses <- clean.names2 %>%
   select(wdfi_id = entity_id, principal_office_add1, principal_office_add2, principal_office_city,
          agent_add1, agent_add2, agent_city) %>%
   # sometimes address_line2 includes long content that should've been in line1
@@ -125,7 +132,7 @@ fix.addresses2 <- fix.addresses %>%
 
 
 # current WDFI with cleaned and combined address field
-wdfi.final.current <- clean.names %>%
+wdfi.final.current <- clean.names2 %>%
   rename(wdfi_id = entity_id) %>%
   inner_join(fix.addresses2 %>%
                select(wdfi_id, address_city, address_city_agent))
