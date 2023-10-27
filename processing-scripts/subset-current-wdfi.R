@@ -135,5 +135,5 @@ fix.addresses2 <- fix.addresses %>%
 wdfi.final.current <- clean.names2 %>%
   rename(wdfi_id = entity_id) %>%
   inner_join(fix.addresses2 %>%
-               select(wdfi_id, address_city, address_city_agent))
+               select(wdfi_id, wdfi_address = address_city, wdfi_agent_address = address_city_agent))
 write_csv(wdfi.final.current, "data/wdfi/WDFI_Current_2023-10-09.csv.gz")
