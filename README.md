@@ -5,10 +5,9 @@ This repository includes data and code for identifying networks of connected lan
 Currently the workflow is:
 
 * Download and clean the MPROP file
-* Identify MPROP owner groups
 * Clean the latest WDFI principal address file
-* Identify WDFI corporations sharing a principal address
-* Match MPROP and WDFI networks to create a final network
+* Identify currently-registered WDFI corporations which match an MPROP owner name
+* Use MPROP names and addresses and WDFI addresses to create a final owner network
 
 See the `/scripts/` subdirectory for more details.
 

@@ -5,11 +5,6 @@
 * basic string cleaning of owner names and addresses
 * outputs `data/mprop/ResidentialProperties_NotOwnerOccupied.csv`
 
-## identify-mprop-landlord-groups.R
-
-* uses recursive matching to identify mprop owner groups
-* outputs `data/mprop/Parcels_with_Ownership_Groups.csv`
-
 ## Process-WDFI-Principal-Address.R
 
 * cleans the original principal address txt file from WDFI
@@ -23,14 +18,14 @@
 * subsets only currently registered corporations
 * outputs `data/wdfi/WDFI_Current_2023-10-09.csv.gz`
 
-## identify-wdfi-groups.R
+## subset-mprop-connected-wdfi.R
 
-* matches WDFI records to MPROP owner names
-* creates networks of WDFI names connected by address
-* outputs `data/wdfi/wdfi_agent_groups.csv`
+* keeps current WDFI records that are connected to an MPROP owner by name
+* removes those WDFI records with an address deemed useless because it doesn't represent real connections
+* outputs `data/wdfi/wdfi-connected-to-mprop.csv`
 
-## Combine-mprop-and-landlord-networks.R
+## identify-owner-networks.R
 
-* combines the MPROP and WDFI networks
-* creates unified final owner network
+* creates an owner network based on MPROP owner names, MPROP owner addresses, and WDFI principal office addresses
+* uses the igraph library
 * outputs `data/LandlordProperties-with-OwnerNetworks.csv`, **this is the source file for the who-owns-what website runs**
