@@ -23,7 +23,7 @@
 * subsets only currently registered corporations
 * outputs `data/wdfi/WDFI_Current_2023-10-09.csv.gz`
 
-## identify-wdfi-agent-groups.R
+## identify-wdfi-groups.R
 
 * matches WDFI records to MPROP owner names
 * creates networks of WDFI names connected by address
