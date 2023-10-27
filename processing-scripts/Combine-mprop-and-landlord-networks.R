@@ -6,7 +6,7 @@ mprop.orig <- read_csv("data/mprop/ResidentialProperties_NotOwnerOccupied.csv")
 mprop <- read_csv(here::here("data/mprop/Parcels_with_Ownership_Groups.csv")) %>%
   rename(mprop_name = OWNER_NAME_1, mprop_address = owner_address, 
          mprop_group = owner_group_name)
-wdfi <- read_csv(here::here("data/wdfi/wdfi_agent_groups-v2.csv"))
+wdfi <- read_csv(here::here("data/wdfi/wdfi_agent_groups.csv"))
 
 # only keep networks connection multiple MPROP-matched corporations
 wdfi.connected <- wdfi |>
