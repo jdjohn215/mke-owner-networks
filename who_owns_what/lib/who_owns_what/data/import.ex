@@ -7,7 +7,7 @@ defmodule WhoOwnsWhat.Data.Import do
   @external_resource Path.join(@path, "LandlordProperties-with-OwnerNetworks.csv")
 
   @data File.read!(Path.join(@path, "LandlordProperties-with-OwnerNetworks.csv"))
-         |> :zlib.gzip()
+        |> :zlib.gzip()
 
   def properties do
     properties =
@@ -62,9 +62,11 @@ defmodule WhoOwnsWhat.Data.Import do
     end)
     |> Stream.chunk_every(500)
     |> Enum.map(fn maps_properties ->
-      {maps, properties} = Enum.reduce(maps_properties, {[], []}, fn({map, property}, {maps, properties}) ->
-        {[map | maps], [property | properties]}
-      end)
+      {maps, properties} =
+        Enum.reduce(maps_properties, {[], []}, fn {map, property}, {maps, properties} ->
+          {[map | maps], [property | properties]}
+        end)
+
       {:ok, _} =
         Ecto.Multi.new()
         |> Ecto.Multi.insert_all(:insert_all, Property, properties)
@@ -72,7 +74,7 @@ defmodule WhoOwnsWhat.Data.Import do
 
       maps
     end)
-    |> List.flatten
+    |> List.flatten()
   end
 
   def ownership_groups(maps) do
