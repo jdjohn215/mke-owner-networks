@@ -47,11 +47,11 @@ defmodule WhoOwnsWhat.Data.Import do
         owner_name_2: Map.fetch!(map, "OWNER_NAME_2"),
         owner_name_3: Map.fetch!(map, "OWNER_NAME_3"),
         owner_address: Map.fetch!(map, "mprop_address"),
-        # owner_city_state: Map.fetch!(map, "OWNER_CITY_STATE"),
-        # owner_zip_code: Map.fetch!(map, "OWNER_ZIP"),
+        owner_city_state: Map.fetch!(map, "OWNER_CITY_STATE"),
+        owner_zip_code: Map.fetch!(map, "OWNER_ZIP"),
         geo_zip_code: Map.fetch!(map, "GEO_ZIP_CODE"),
         calculated_owner_occupied: Map.fetch!(map, "owner_occupied") == "OWNER OCCUPIED",
-        # owner_occupied: Map.fetch!(map, "OWN_OCPD") != "NA",
+        owner_occupied: Map.fetch!(map, "OWN_OCPD") != "NA",
         geo_alder: Map.fetch!(map, "GEO_ALDER"),
         wdfi_address: Map.fetch!(map, "wdfi_address"),
         inserted_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second),
@@ -80,8 +80,8 @@ defmodule WhoOwnsWhat.Data.Import do
       %{
         taxkey: Map.fetch!(map, "TAXKEY"),
         owner_group_name: Map.fetch!(map, "final_group"),
-        wdfi_group_id: Map.fetch!(map, "wdfi_group_id"),
-        group_source: Map.fetch!(map, "final_group_source"),
+        wdfi_group_id: Map.fetch!(map, "component_number"),
+        # group_source: Map.fetch!(map, "final_group_source"),
         inserted_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second),
         updated_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second)
       }
