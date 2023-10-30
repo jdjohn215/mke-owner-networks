@@ -41,8 +41,13 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.Show do
   defp assign_graphs(socket, properties) do
     graph =
       Enum.reduce(properties, Graph.new(type: :undirected), fn property, graph ->
-        Graph.add_edge(graph, property.owner_name_1, property.owner_address)
-        |> Graph.add_edge(property.owner_name_1, property.wdfi_address)
+        graph = Graph.add_edge(graph, property.owner_name_1, property.owner_address)
+
+        if property.wdfi_address do
+          Graph.add_edge(graph, property.owner_name_1, property.wdfi_address)
+        else
+          graph
+        end
       end)
 
     {:ok, dot} = Graph.Serializers.DOT.serialize(graph)

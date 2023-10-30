@@ -31,32 +31,40 @@ defmodule WhoOwnsWhat.Data.Import do
         List.zip([keys, values])
         |> Enum.into(%{})
 
-      property = %{
-        taxkey: Map.fetch!(map, "TAXKEY"),
-        house_number_low: String.to_integer(Map.fetch!(map, "HOUSE_NR_LO")),
-        house_number_high: String.to_integer(Map.fetch!(map, "HOUSE_NR_HI")),
-        house_number_suffix: Map.fetch!(map, "HOUSE_NR_SFX"),
-        street_direction: Map.fetch!(map, "SDIR"),
-        street: Map.fetch!(map, "STREET"),
-        street_type: Map.fetch!(map, "STTYPE"),
-        c_a_class: Map.fetch!(map, "C_A_CLASS"),
-        land_use_gp: Map.fetch!(map, "LAND_USE_GP"),
-        c_a_total: String.to_integer(Map.fetch!(map, "C_A_TOTAL")),
-        number_units: String.to_integer(Map.fetch!(map, "NR_UNITS")),
-        owner_name_1: Map.fetch!(map, "mprop_name"),
-        owner_name_2: Map.fetch!(map, "OWNER_NAME_2"),
-        owner_name_3: Map.fetch!(map, "OWNER_NAME_3"),
-        owner_address: Map.fetch!(map, "mprop_address"),
-        owner_city_state: Map.fetch!(map, "OWNER_CITY_STATE"),
-        owner_zip_code: Map.fetch!(map, "OWNER_ZIP"),
-        geo_zip_code: Map.fetch!(map, "GEO_ZIP_CODE"),
-        calculated_owner_occupied: Map.fetch!(map, "owner_occupied") == "OWNER OCCUPIED",
-        owner_occupied: Map.fetch!(map, "OWN_OCPD") != "NA",
-        geo_alder: Map.fetch!(map, "GEO_ALDER"),
-        wdfi_address: Map.fetch!(map, "wdfi_address"),
-        inserted_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second),
-        updated_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second)
-      }
+      property =
+        %{
+          taxkey: Map.fetch!(map, "TAXKEY"),
+          house_number_low: String.to_integer(Map.fetch!(map, "HOUSE_NR_LO")),
+          house_number_high: String.to_integer(Map.fetch!(map, "HOUSE_NR_HI")),
+          house_number_suffix: Map.fetch!(map, "HOUSE_NR_SFX"),
+          street_direction: Map.fetch!(map, "SDIR"),
+          street: Map.fetch!(map, "STREET"),
+          street_type: Map.fetch!(map, "STTYPE"),
+          c_a_class: Map.fetch!(map, "C_A_CLASS"),
+          land_use_gp: Map.fetch!(map, "LAND_USE_GP"),
+          c_a_total: String.to_integer(Map.fetch!(map, "C_A_TOTAL")),
+          number_units: String.to_integer(Map.fetch!(map, "NR_UNITS")),
+          owner_name_1: Map.fetch!(map, "mprop_name"),
+          owner_name_2: Map.fetch!(map, "OWNER_NAME_2"),
+          owner_name_3: Map.fetch!(map, "OWNER_NAME_3"),
+          owner_address: Map.fetch!(map, "mprop_address"),
+          owner_city_state: Map.fetch!(map, "OWNER_CITY_STATE"),
+          owner_zip_code: Map.fetch!(map, "OWNER_ZIP"),
+          geo_zip_code: Map.fetch!(map, "GEO_ZIP_CODE"),
+          calculated_owner_occupied: Map.fetch!(map, "owner_occupied") == "OWNER OCCUPIED",
+          owner_occupied: Map.fetch!(map, "OWN_OCPD") != "NA",
+          geo_alder: Map.fetch!(map, "GEO_ALDER"),
+          wdfi_address: Map.fetch!(map, "wdfi_address"),
+          inserted_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second),
+          updated_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second)
+        }
+        |> Map.update!(:wdfi_address, fn address ->
+          if address == "NA" do
+            nil
+          else
+            address
+          end
+        end)
 
       {map, property}
     end)
