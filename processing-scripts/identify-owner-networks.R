@@ -4,16 +4,16 @@ library(tidyverse)
 library(tidygraph)
 
 # clean, landlord-owned parcel data
-mprop <- read_csv("data/mprop/ResidentialProperties_NotOwnerOccupied.csv")
+mprop <- read_csv("data/mprop/ResidentialProperties_NotOwnerOccupied_StandardizedAddresses.csv")
 
 # WDFI corporate registrations for owners who appear in the MPROP file
-wdfi <- vroom::vroom("data/wdfi/wdfi-connected-to-mprop.csv")
+wdfi <- vroom::vroom("data/wdfi/wdfi-current-in-mprop_StandardizedAddresses.csv")
 
 # connect MPROP to WDFI
 mprop.with.wdfi.matches <- mprop %>%
   # join by name
   left_join(wdfi %>%
-              select(corp_name_clean, wdfi_address),
+              select(corp_name_clean, wdfi_address = principal_office_address),
             by = c("mprop_name" = "corp_name_clean"))
 
 # built the undirected graph of all parcels and extract the components

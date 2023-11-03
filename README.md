@@ -4,4 +4,4 @@ This repository includes data and code for identifying networks of connected lan
 
 ## data processing workflow
 
-![data-processing-workflow.png]()
+![](data-processing-workflow.png)

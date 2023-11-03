@@ -82,8 +82,7 @@ residential.landlord <- mprop %>%
          OWNER_MAIL_ADDR = str_replace(OWNER_MAIL_ADDR, "\\bCIRCLE\\b|\\bCIR\\b", "CR"),
          OWNER_MAIL_ADDR = str_squish(OWNER_MAIL_ADDR)) %>%
   # clean owner city, state field
-  mutate(OWNER_CITY_STATE = str_remove_all(OWNER_CITY_STATE, ","),
-         OWNER_CITY_STATE = str_remove_all(OWNER_CITY_STATE, coll(".")),
+  mutate(OWNER_CITY_STATE = str_remove_all(OWNER_CITY_STATE, coll(".")),
          OWNER_CITY_STATE = str_remove_all(OWNER_CITY_STATE, "#"),
          OWNER_CITY_STATE = str_squish(OWNER_CITY_STATE)) %>%
   # clean owner name field, just use OWNER_NAME_1 for now
@@ -94,7 +93,8 @@ residential.landlord <- mprop %>%
          OWNER_NAME_1 = str_squish(OWNER_NAME_1),
          OWNER_NAME_1 = str_replace(OWNER_NAME_1, "\\bLL$", "LLC")) %>%
   # create combined owner address field
-  mutate(mprop_address = paste(OWNER_MAIL_ADDR, OWNER_CITY_STATE, sep = ", ")) %>%
+  mutate(mprop_address_raw = paste(OWNER_MAIL_ADDR, OWNER_CITY_STATE, sep = ", "),
+         mprop_address_raw = paste(mprop_address_raw, str_sub(OWNER_ZIP, 1, 5))) %>%
   rename(mprop_name = OWNER_NAME_1)
 
 write_csv(residential.landlord, "data/mprop/ResidentialProperties_NotOwnerOccupied.csv")

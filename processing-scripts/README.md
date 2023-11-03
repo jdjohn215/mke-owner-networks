@@ -5,6 +5,13 @@
 * basic string cleaning of owner names and addresses
 * outputs `data/mprop/ResidentialProperties_NotOwnerOccupied.csv`
 
+## mprop-standardize-addresses.R
+
+*	match raw owner addresses against list of raw addresses previously standardized by geocodio
+*	run new addresses thru geocodio
+*	update standardized address table
+*	outputs `data/mpropResidentialProperties_NotOwnerOccupied_StandardizedAddresses`.csv
+
 ## Process-WDFI-Principal-Address.R
 
 * cleans the original principal address txt file from WDFI
@@ -16,13 +23,16 @@
 * cleans the processed WDFI principal address file
 * standardizes strings
 * subsets only currently registered corporations
-* outputs `data/wdfi/WDFI_Current_2023-10-09.csv.gz`
+* subsets only corporations appearing in MPROP
+* outputs `data/wdfi/wdfi-current-in-mprop.csv`
 
-## subset-mprop-connected-wdfi.R
+## wdfi-standardize-addresses.R
 
-* keeps current WDFI records that are connected to an MPROP owner by name
-* removes those WDFI records with an address deemed useless because it doesn't represent real connections
-* outputs `data/wdfi/wdfi-connected-to-mprop.csv`
+*	Match raw principal & agent addresses against list of raw addresses previously standardized
+*	Run new addresses thru geocodio
+*	Update standardized address table
+*	Remove corporate records w/useless addresses
+*	Outputs `data/wdfi/wdfi-current-in-mprop_StandardizeAddresses.csv`
 
 ## identify-owner-networks.R
 
