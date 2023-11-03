@@ -13,7 +13,7 @@ df <- read_csv("data/LandlordProperties-with-OwnerNetworks.csv")
 visualize_network_graph <- function(data, final_group_name, layout = "lgl", seed = 42){
   
   # subset the parcels for this network
-  parcels <- df %>%
+  parcels <- data %>%
     filter(final_group == final_group_name) %>%
     select(TAXKEY, mprop_name, mprop_address, wdfi_address) %>%
     # append a suffix to make WDFI addresses distinct from MPROP addresses
@@ -34,7 +34,9 @@ visualize_network_graph <- function(data, final_group_name, layout = "lgl", seed
   
   # frequency of each node
   node.frequency <- parcels %>%
+    select(-TAXKEY) %>%
     pivot_longer(cols = everything(), names_to = "type", values_to = "name") %>%
+    filter(!is.na(name)) %>%
     group_by(name) %>%
     summarise(node_frequency = n())
   
@@ -64,6 +66,7 @@ visualize_network_graph <- function(data, final_group_name, layout = "lgl", seed
           legend.title = element_blank())
 }
 
+visualize_network_graph(df, "RESIDENTIAL PROPERTIES RESOU Group")
 visualize_network_graph(df, "3325 S 26TH LLC Group")
 visualize_network_graph(df, "VB ONE LLC Group", seed = 5)
 
