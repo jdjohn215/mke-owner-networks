@@ -22,21 +22,48 @@ wdfi.addresses.not.useful <- wdfi.current %>%
 
 
 # all the MPROP landlords
-mprop.owners <- read_csv("data/mprop/Parcels_with_Ownership_Groups.csv") %>%
-  group_by(OWNER_NAME_1) %>%
+mprop.owners <- read_csv("data/mprop/ResidentialProperties_NotOwnerOccupied_StandardizedAddresses.csv") %>%
+  group_by(mprop_name) %>%
   summarise() %>%
   # match to WDFI records by name
   left_join(wdfi.current %>%
               select(corp_name_clean, wdfi_id, registered_agent, wdfi_address),
-            by = c("OWNER_NAME_1" = "corp_name_clean"))
+            by = c("mprop_name" = "corp_name_clean"))
 
 # WDFI registrations of landlords from the MPROP file
 wdfi.mprop.matches <- wdfi.current %>%
-  filter(corp_name_clean %in% mprop.owners$OWNER_NAME_1)
+  filter(corp_name_clean %in% mprop.owners$mprop_name)
 
 # these *current* WDFI records are matched to an MPROP owner name
 wdfi.mprop.connected <- wdfi.current %>%
   filter(!is.na(wdfi_address),
          ! wdfi_address %in% wdfi.addresses.not.useful$wdfi_agent_address,
-         corp_name_clean %in% mprop.owners$OWNER_NAME_1)
+         corp_name_clean %in% mprop.owners$mprop_name)
 write_csv(wdfi.mprop.connected, "data/wdfi/wdfi-connected-to-mprop.csv")
+
+n_distinct(wdfi.mprop.connected$wdfi_address)
+n_distinct(wdfi.mprop.connected$principal_address_raw)
+wdfi.mprop.connected %>%
+  group_by(principal_address_raw) %>%
+  summarise() %>%
+  write_csv("~/downloads/unique-principal-addresses.csv")
+
+geocodio <- read_csv("~/downloads/unique-principal-addresses_geocodio.csv") %>%
+  # add commas where relevant
+  mutate(city2 = paste(",", City),
+         state2 = paste(",", State),
+         unittype2 = if_else(!is.na(`Unit Type`), paste(",", `Unit Type`), NA_character_)) %>%
+  # create combined address string, dropping NA variables
+  unite(col = "principal_address", Number, Street, unittype2, `Unit Number`, city2, state2, Zip,
+        na.rm = T, remove = FALSE, sep = " ") %>%
+  # replace standardized address w/original address as needed
+  mutate(principal_address = str_replace_all(principal_address, " ,", ","),
+         principal_address = case_when(
+           `Accuracy Score` < 0.9 ~ principal_address_raw,
+           is.na(Number) ~ principal_address_raw,
+           is.na(City) ~ principal_address_raw,
+           TRUE ~ str_to_upper(principal_address)
+         ))
+
+n_distinct(geocodio$principal_address_raw)
+n_distinct(geocodio$principal_address)
