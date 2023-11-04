@@ -63,7 +63,7 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
     <div :if={@properties == []} id="option-none">
       No Results
     </div>
-    <.table id="properties" rows={@properties}>
+    <.table id="properties" row_id={&"#{&1.id}"} rows={@properties}>
       <:col :let={property} label="Address">
         <.good_link navigate={~p"/properties/#{property.taxkey}"}>
           <%= WhoOwnsWhat.Data.Property.address(property) %>

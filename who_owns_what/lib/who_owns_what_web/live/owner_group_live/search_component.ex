@@ -55,7 +55,7 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.SearchComponent do
       No Results
     </div>
 
-    <.table id="owner_groups" rows={@owner_groups}>
+    <.table id="owner_groups" row_id={&"#{&1.id}"} rows={@owner_groups}>
       <:col :let={owner_group} label="Owner Group">
         <.good_link navigate={~p"/owner_groups/#{owner_group.name}"}>
           <%= owner_group.name %>

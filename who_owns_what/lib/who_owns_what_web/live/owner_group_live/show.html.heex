@@ -4,7 +4,7 @@
 <p>Total Properties: <%= @owner_group.number_properties %></p>
 <p>Total Units: <%= @owner_group.number_units %></p>
 
-<.table id="properties" rows={@properties}>
+<.table id="properties" row_id={&"#{&1.id}"} rows={@properties}>
   <:col :let={property} label="Address">
     <.good_link navigate={~p"/properties/#{property.taxkey}"}>
       <%= WhoOwnsWhat.Data.Property.address(property) %>
