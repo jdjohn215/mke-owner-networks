@@ -66,6 +66,13 @@ if(nrow(new.addresses) > 0){
 table(standardized.addresses.updated$standardized)
 
 ################################################################################
+# final formatting
+standardized.addresses.updated <- standardized.addresses.updated %>%
+  mutate(wdfi_address = str_to_upper(wdfi_address),
+         wdfi_address = str_replace_all(wdfi_address, "P[.]O[.]|P[.] O[.]|P[.]0[.]", "PO"),
+         wdfi_address = str_replace_all(wdfi_address, "P[.]O ", "PO "))
+
+################################################################################
 # add standardized addresses to wdfi
 wdfi.with.standardized <- wdfi.addresses %>%
   inner_join(standardized.addresses.updated) %>%
