@@ -14,7 +14,31 @@ mprop.with.wdfi.matches <- mprop %>%
   # join by name
   left_join(wdfi %>%
               select(corp_name_clean, wdfi_address = principal_office_address),
-            by = c("mprop_name" = "corp_name_clean"))
+            by = c("mprop_name" = "corp_name_clean")) %>%
+  # add suffixes to addresses that make them distinct
+  mutate(mprop_address = paste(mprop_address, "mprop", sep = "_"),
+         wdfi_address = if_else(is.na(wdfi_address), wdfi_address,
+                                paste(wdfi_address, "wdfi", sep = "_")))
+
+###############################################################################
+# kinds of nodes
+#   * mprop owner (also WDFI corp registration, when matched)
+#   * mprop address (owner mailing address)
+#   * wdfi address (principal office address from matched corporate registration)
+
+# kinds of connections (graph edges)
+#   * mprop owner TO mprop address  - via each row of the MPROP parcel file
+#   * mprop owner TO wdfi address   - via mprop owner to wdfi corp direct match,
+#                                     then use wdfi principal office address
+#   * mprop address TO wdfi address - the MPROP address exactly matches the WDFI
+#                                     principal office address
+
+# these addresses appear in both MPROP and WDFI
+addresses.in.both <- mprop.with.wdfi.matches %>%
+  filter(str_sub(mprop_address, 1, -7) %in% str_sub(wdfi_address, 1, -6)) %>%
+  mutate(matched_address = str_sub(mprop_address, 1, -7)) %>%
+  pull(matched_address) %>%
+  unique()
 
 # built the undirected graph of all parcels and extract the components
 #   each component is a distinct owner network
@@ -23,12 +47,21 @@ components <- mprop.with.wdfi.matches %>%
   pivot_longer(cols = -mprop_name, values_to = "address") %>%
   filter(!is.na(address)) %>%
   select(from = mprop_name, to = address) %>%
+  # add connections which are MPROP address to WDFI address
+  bind_rows(
+    tibble(
+      from = paste(addresses.in.both, "mprop", sep = "_"),
+      to =  paste(addresses.in.both, "wdfi", sep = "_")
+    )
+  ) %>%
   # convert to graph object
   as_tbl_graph() %>%
   # convert to igraph
   as.igraph() %>%
   # identify components of graph
   igraph::components()
+
+
 
 # extract component number for each node
 component.membership <- tibble(name = names(components$membership),
