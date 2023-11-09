@@ -33,7 +33,8 @@ if(nrow(new.addresses) > 0){
            state2 = paste(",", address_components.state),
            unittype2 = if_else(!is.na(address_components.secondaryunit), 
                                paste(",", address_components.secondaryunit), 
-                               NA_character_)) %>%
+                               NA_character_),
+           zip2 = str_sub(address_components.zip, 1, 5)) %>%
     # create combined address string, dropping NA variables
     unite(col = "wdfi_address", address_components.number, address_components.street,
           unittype2, address_components.secondarynumber, city2, state2, 
@@ -70,7 +71,13 @@ table(standardized.addresses.updated$standardized)
 standardized.addresses.updated <- standardized.addresses.updated %>%
   mutate(wdfi_address = str_to_upper(wdfi_address),
          wdfi_address = str_replace_all(wdfi_address, "P[.]O[.]|P[.] O[.]|P[.]0[.]", "PO"),
-         wdfi_address = str_replace_all(wdfi_address, "P[.]O ", "PO "))
+         wdfi_address = str_replace_all(wdfi_address, "P[.]O ", "PO ")) %>%
+  # ensure that zip code is only 5-digits
+  mutate(wdfi_address = if_else(
+    condition = str_sub(word(wdfi_address, -1), 1, 1) %in% paste(1:5),
+    true = paste(word(wdfi_address, 1, -2), str_sub(word(wdfi_address, -1), 1, 5)),
+    false = wdfi_address
+  ))
 
 ################################################################################
 # add standardized addresses to wdfi
