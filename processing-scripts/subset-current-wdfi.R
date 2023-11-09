@@ -71,6 +71,9 @@ wdfi.current.in.mprop <- wdfi.current %>%
   unite(col = "agent_raw", 
         agent_add1, add2, city2, state2, agent_zip,
         remove = FALSE, sep = " ", na.rm = T) %>%
-  mutate(across(.cols = contains("raw"), .fns = ~str_replace_all(.x, " ,", ","))) %>%
-  select(-c(city2, state2, add2))
+  mutate(across(.cols = contains("raw"), .fns = ~str_replace_all(.x, " ,", ",")),
+         across(.cols = where(is.character), .fns = ~na_if(.x, ""))) %>%
+  select(-c(city2, state2, add2)) %>%
+  # remove those missing a principal office address
+  filter(!is.na(principal_office_raw))
 write_csv(wdfi.current.in.mprop, "data/wdfi/wdfi-current-in-mprop.csv")
