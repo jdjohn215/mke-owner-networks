@@ -17,15 +17,15 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
     <div>
       <.search_input
         target={@myself}
-        event="do-search-owner"
-        text_value={@owner_query}
-        name="Owner Group"
-      />
-      <.search_input
-        target={@myself}
         event="do-search-address"
         text_value={@address_query}
         name="Address"
+      />
+      <.search_input
+        target={@myself}
+        event="do-search-owner"
+        text_value={@owner_query}
+        name="Owner Group"
       />
       <.results properties={@properties} />
     </div>
