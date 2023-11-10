@@ -35,7 +35,7 @@ defmodule WhoOwnsWhat.Data do
         )
       else
         from(og in OwnerGroup,
-          order_by: [desc: :number_units],
+          order_by: [desc: :total_assessed_value],
           limit: 100
         )
       end
@@ -100,6 +100,7 @@ defmodule WhoOwnsWhat.Data do
       join: p in Property,
       on: p.taxkey == ogp.taxkey,
       select: p,
+      order_by: [desc: p.c_a_total],
       where: ogp.owner_group_name == ^name
     )
     |> Repo.all()

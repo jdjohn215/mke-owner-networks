@@ -4,6 +4,7 @@ defmodule WhoOwnsWhat.Data.OwnerGroup do
 
   schema "owner_groups" do
     field :name, :string
+    field :total_assessed_value, :integer
     field :number_properties, :integer
     field :number_units, :integer
 

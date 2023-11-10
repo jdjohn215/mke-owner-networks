@@ -86,6 +86,7 @@ defmodule WhoOwnsWhatWeb do
       # Core UI components and translation
       import WhoOwnsWhatWeb.CoreComponents
       import WhoOwnsWhatWeb.Gettext
+      import WhoOwnsWhatWeb.Helpers
 
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS

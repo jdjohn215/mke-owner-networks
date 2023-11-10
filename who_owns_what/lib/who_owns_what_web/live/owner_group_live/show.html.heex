@@ -3,6 +3,7 @@
 </.header>
 <p>Total Properties: <%= @owner_group.number_properties %></p>
 <p>Total Units: <%= @owner_group.number_units %></p>
+<p>Total Assessed Value: $<%= formatted_dollars(@owner_group.total_assessed_value) %></p>
 
 <.table id="properties" row_id={&"#{&1.id}"} rows={@properties}>
   <:col :let={property} label="Address">
@@ -13,6 +14,9 @@
   <:col :let={property} label="District"><%= property.geo_alder %></:col>
   <:col :let={property} label="Owner Name"><%= property.owner_name_1 %></:col>
   <:col :let={property} label="Number of Units"><%= property.number_units %></:col>
+  <:col :let={property} label="Assessed Value">
+    $<%= formatted_dollars(property.c_a_total) %>
+  </:col>
 </.table>
 
 <%= raw(@svg) %>

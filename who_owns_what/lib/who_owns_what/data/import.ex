@@ -123,8 +123,8 @@ defmodule WhoOwnsWhat.Data.Import do
     Ecto.Adapters.SQL.query!(
       Repo,
       """
-      INSERT INTO owner_groups (name, number_properties, number_units, inserted_at, updated_at)
-      SELECT owner_group_name, count(number_units), sum(number_units), datetime('now'), datetime('now')
+      INSERT INTO owner_groups (name, number_properties, number_units, total_assessed_value, inserted_at, updated_at)
+      SELECT owner_group_name, count(number_units), sum(number_units), sum(c_a_total), datetime('now'), datetime('now')
       FROM properties p
       JOIN owner_groups_properties ogp on ogp.taxkey = p.taxkey
       GROUP BY ogp.owner_group_name

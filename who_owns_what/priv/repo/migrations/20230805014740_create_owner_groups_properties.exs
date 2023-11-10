@@ -16,6 +16,7 @@ defmodule WhoOwnsWhat.Repo.Migrations.CreateOwnerGroupsProperties do
 
     create table(:owner_groups) do
       add :name, :string
+      add :total_assessed_value, :integer
       add :number_properties, :integer
       add :number_units, :integer
 
