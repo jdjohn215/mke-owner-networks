@@ -1,10 +1,10 @@
 <.header>
-  Property <%= @property.taxkey %>
-  <:subtitle>This is a property record from your database.</:subtitle>
+  <%= WhoOwnsWhat.Data.Property.address(@property) %>
+  <:subtitle></:subtitle>
 </.header>
 
 <.list>
-  <:item title="Address"><%= WhoOwnsWhat.Data.Property.address(@property) %></:item>
+  <:item title="Taxkey"><%= @property.taxkey %></:item>
   <:item title="District"><%= @property.geo_alder %></:item>
   <:item title="Owner Group">
     <.good_link navigate={~p"/owner_groups/#{@property.owner_group.name}"}>
