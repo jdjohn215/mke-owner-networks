@@ -17,7 +17,8 @@ defmodule WhoOwnsWhatWeb.Router do
   scope "/", WhoOwnsWhatWeb do
     pipe_through :browser
 
-    live "/", PropertyLive.Index, :index
+    live "/", HomeLive.Index, :index
+    live "/properties", PropertyLive.Index, :index
     live "/properties/:id", PropertyLive.Show, :show
     live "/owner_groups", OwnerGroupLive.Index, :index
     live "/owner_groups/:id", OwnerGroupLive.Show, :show
