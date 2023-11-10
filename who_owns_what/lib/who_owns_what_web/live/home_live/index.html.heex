@@ -2,6 +2,19 @@
   The Milwaukee Landlord Network Project
 </.header>
 
-<p class="mt-2 leading-5">
-  This project aims to identify networks of landlord-owned homes in Milwaukee.
+<p class="mt-5 leading-5">
+  This project aims to identify networks of landlord-owned homes in Milwaukee using the names and addresses listed in public records of property ownership and business registration.
 </p>
+
+<p class="mt-5 leading-5">
+  Here is a simple example of how it works. Pretend there are three properties, each with a different owner name:
+</p>
+
+<ul class="list-disc mt-5">
+  <li>There are three owner names – John Doe, John A. Doe, and Doe Props LLC, each represented by a blue square.</li>
+  <li>Each own one property, and all use the mailing address 123 Main St, Chicago, IL. It is represented by the green triangle in the center of the graph.</li>
+  <li>Doe Props LLC uses that same address in their corporate registration, indicated by the red dot.</li>
+  <li>Despite using different names, these properties are connected to form a network because they use the same ownership addresses across all of their public records.</li>
+</ul>
+
+<img src={~p"/images/demo-network-graph.svg"} width="auto" />
