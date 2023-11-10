@@ -94,7 +94,7 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
 
     {:noreply,
      socket
-     |> push_patch(to: ~p"/?#{params}")
+     |> push_patch(to: ~p"/properties?#{params}")
      |> assign(:owner_query, value)}
   end
 
@@ -104,7 +104,7 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
 
     {:noreply,
      socket
-     |> push_patch(to: ~p"/?#{params}")
+     |> push_patch(to: ~p"/properties?#{params}")
      |> assign(:address_query, value)}
   end
 
