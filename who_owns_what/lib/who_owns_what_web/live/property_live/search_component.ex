@@ -75,6 +75,9 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
         </.good_link>
       </:col>
       <:col :let={property} label="Owner Name"><%= property.owner_name_1 %></:col>
+      <:col :let={property} label="Assessed Value">
+        $<%= formatted_dollars(property.c_a_total) %>
+      </:col>
     </.table>
     """
   end
