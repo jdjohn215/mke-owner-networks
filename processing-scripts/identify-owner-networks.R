@@ -74,7 +74,8 @@ mprop.with.networks <- mprop.with.wdfi.matches %>%
   group_by(component_number) %>%
   mutate(final_group = if_else(n_distinct(mprop_name) > 1,
                                true = paste(names(which.max(table(mprop_name))), "Group"),
-                               false = first(mprop_name)))
+                               false = first(mprop_name)),
+         final_group = str_replace_all(final_group, coll("/"), "-"))
 
 write_csv(mprop.with.networks, "data/LandlordProperties-with-OwnerNetworks.csv")
 
