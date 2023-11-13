@@ -1,19 +1,17 @@
-rm(list = ls())
-
 library(tidyverse)
 library(tidygraph)
 library(ggraph)
 
 # parcels with all connections required to reconstruct networks
-df <- read_csv("data/LandlordProperties-with-OwnerNetworks.csv")
-
-owner.networks <- df %>%
-  group_by(component_number, final_group) %>%
-  summarise(parcels = n(),
-            units = sum(NR_UNITS),
-            names = paste(unique(mprop_name), collapse = "; "),
-            name_count = n_distinct(mprop_name)) %>%
-  arrange(desc(parcels))
+# df <- read_csv("data/LandlordProperties-with-OwnerNetworks.csv")
+# 
+# owner.networks <- df %>%
+#   group_by(component_number, final_group) %>%
+#   summarise(parcels = n(),
+#             units = sum(NR_UNITS),
+#             names = paste(unique(mprop_name), collapse = "; "),
+#             name_count = n_distinct(mprop_name)) %>%
+#   arrange(desc(parcels))
 
 ###############################################################################
 
