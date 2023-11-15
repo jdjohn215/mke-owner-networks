@@ -1,6 +1,7 @@
 name: Update parcel data and networks
 
 on:
+  on: workflow_dispatch
   schedule:
     - cron:  '0 1 * * *'
 
