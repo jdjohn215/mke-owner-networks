@@ -53,7 +53,7 @@ jobs:
 
       - name: Commit results
         # Commit all changed files back to the repository
-      - uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Data updates
 
