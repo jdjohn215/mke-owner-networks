@@ -31,12 +31,17 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Update data
+      - name: fetch MPROP
         run: Rscript -e 'source("processing-scripts/fetch-mprop.R")'
+      - name: standardize MPROP addresses
         run: Rscript -e 'source("processing-scripts/mprop-standardize-addresses.R")'
+      - name: subset WDFI
         run: Rscript -e 'source("processing-scripts/subset-wdfi-in-mprop.R")'
+      - name: standardize WDFI address
         run: Rscript -e 'source("processing-scripts/wdfi-standardize-addresses.R")'
+      - name: igraph owner networks
         run: Rscript -e 'source("processing-scripts/identify-owner-networks.R")'
+      - name: update new graph SVGs
         run: Rscript -e 'source("processing-scripts/update-network-graph-svgs.R")'
 
       - name: Commit results
