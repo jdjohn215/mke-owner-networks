@@ -13,6 +13,12 @@ jobs:
   update-networks:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+
     steps:
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
@@ -46,8 +52,9 @@ jobs:
         run: Rscript -e 'source("processing-scripts/update-network-graph-svgs.R")'
 
       - name: Commit results
-        run: |
-          git config --local jdjohn215@gmail.com "actions@github.com"
-          git config --local jdjohn215 "GitHub Actions"
-          git git commit -a 'Data updated' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"
+        # Commit all changed files back to the repository
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Data updates
+
+
