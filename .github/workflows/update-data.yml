@@ -3,7 +3,7 @@ name: Update parcel data and networks
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '0 1 * * *'
+    - cron:  '0 1 * * *' # daily, 1AM UTC / 7PM CST
 
 env:
   GEOCODIO_API_KEY: ${{ secrets.GEOCODIO_API_KEY_SECRET }}
@@ -12,6 +12,7 @@ env:
 jobs:
   update-networks:
     runs-on: ubuntu-latest
+    # it should take <10 minutes, but reinstalling the cache can take longer
     timeout-minutes: 60
     
     permissions:
@@ -24,7 +25,7 @@ jobs:
         uses: r-lib/actions/setup-r@v2
 
       - name: Install packages
-        uses: r-lib/actions/setup-r-dependencies@v2
+        uses: r-lib/actions/setup-r-dependencies@v2 # automatically sets up cache
         with:
           packages: |
             any::tidyverse 
