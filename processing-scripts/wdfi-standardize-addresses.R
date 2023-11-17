@@ -104,6 +104,14 @@ wdfi.addresses.not.useful <- wdfi.with.standardized %>%
   group_by(agent_address) %>%
   summarise()
 
+# update MPROP useless addresses
+read_csv("data/mprop/useless-addresses.csv") %>%
+  rename(address = 1) %>%
+  bind_rows(wdfi.addresses.not.useful %>% rename(address = 1)) %>%
+  group_by(address) %>%
+  summarise() %>%
+  write_csv("data/mprop/useless-addresses.csv")
+
 useful.wdfi.with.standardized <- wdfi.with.standardized %>%
   filter(! principal_office_address %in% wdfi.addresses.not.useful$agent_address)
 

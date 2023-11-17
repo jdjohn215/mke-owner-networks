@@ -9,6 +9,9 @@ mprop <- read_csv("data/mprop/ResidentialProperties_NotOwnerOccupied_Standardize
 # WDFI corporate registrations for owners who appear in the MPROP file
 wdfi <- vroom::vroom("data/wdfi/wdfi-current-in-mprop_StandardizedAddresses.csv")
 
+# addresses that shouldn't be used to make connections
+useless.addresses <- read_csv("data/mprop/useless-addresses.csv")
+
 # connect MPROP to WDFI
 mprop.with.wdfi.matches <- mprop %>%
   # join by name
@@ -43,6 +46,9 @@ addresses.in.both <- mprop.with.wdfi.matches %>%
 # built the undirected graph of all parcels and extract the components
 #   each component is a distinct owner network
 components <- mprop.with.wdfi.matches %>%
+  mutate(mprop_address = if_else(str_remove(mprop_address, "_mprop") %in% useless.addresses$address,
+                                 true = paste(mprop_address, row_number(), sep = "-"),
+                                 false = mprop_address)) %>%
   select(mprop_name, mprop_address, wdfi_address) %>%
   pivot_longer(cols = -mprop_name, values_to = "address") %>%
   filter(!is.na(address)) %>%
