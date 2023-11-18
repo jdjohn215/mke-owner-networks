@@ -17,47 +17,10 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(:owner_group, Data.get_owner_group_by_name(name))
      |> assign(:properties, properties)
-     |> assign(:svg, nil)
-     |> assign_graphs(properties)
      |> assign_groups(properties)}
   end
 
-  @impl true
-  def handle_info({port, {:data, svg}}, socket) when is_port(port) do
-    Port.close(port)
-
-    svg =
-      String.replace(svg, ~r/(width|height)="\d+pt"/, "")
-      |> String.replace(~r/<!--.*-->/, "")
-
-    socket =
-      assign(socket, :svg_port, nil)
-      |> assign(:svg, svg)
-
-    {:noreply, socket}
-  end
-
   defp page_title(:show), do: "Show Owner Group"
-
-  defp assign_graphs(socket, properties) do
-    graph =
-      Enum.reduce(properties, Graph.new(type: :undirected), fn property, graph ->
-        graph = Graph.add_edge(graph, property.owner_name_1, property.owner_address)
-
-        if property.wdfi_address do
-          Graph.add_edge(graph, property.owner_name_1, property.wdfi_address)
-        else
-          graph
-        end
-      end)
-
-    {:ok, dot} = Graph.Serializers.DOT.serialize(graph)
-    port = Port.open({:spawn, "dot -Grankdir=LR -Tsvg"}, [:binary])
-    Port.command(port, dot)
-
-    assign(socket, :graph, graph)
-    |> assign(:svg_port, port)
-  end
 
   defp assign_groups(socket, properties) do
     groups =
