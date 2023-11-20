@@ -71,7 +71,8 @@ table(standardized.addresses.updated$standardized)
 standardized.addresses.updated <- standardized.addresses.updated %>%
   mutate(wdfi_address = str_to_upper(wdfi_address),
          wdfi_address = str_replace_all(wdfi_address, "P[.]O[.]|P[.] O[.]|P[.]0[.]", "PO"),
-         wdfi_address = str_replace_all(wdfi_address, "P[.]O ", "PO ")) %>%
+         wdfi_address = str_replace_all(wdfi_address, "P[.]O ", "PO "),
+         wdfi_address = str_replace_all(wdfi_address, "P O BOX", "PO BOX")) %>%
   # ensure that zip code is only 5-digits
   mutate(wdfi_address = if_else(
     condition = str_sub(word(wdfi_address, -1), 1, 1) %in% paste(1:5),

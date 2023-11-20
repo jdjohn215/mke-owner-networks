@@ -27,7 +27,7 @@ owner.networks <- updated.network %>%
 networks.to.update <- updated.network %>%
   filter(final_group %in% changed.groups) %>%
   group_by(final_group) %>%
-  filter(n() > 1) %>%
+  filter(n_distinct(mprop_name) > 1) %>%
   pull(final_group) %>%
   unique()
 
@@ -52,3 +52,15 @@ networks.updated <- updated.network %>%
 
 write_csv(networks.updated, "data/network-components.csv.gz")
 
+
+################################################################################
+# delete outdated files
+current.file.names <- updated.network %>%
+  group_by(final_group) %>%
+  filter(n_distinct(mprop_name) > 1) %>%
+  mutate(file_name = paste0(final_group, ".svg")) %>%
+  pull(file_name) %>%
+  unique()
+
+all.files <- list.files("images/networks-svg/")
+unlink(paste0("images/networks-svg/", all.files[! all.files %in% current.file.names]))
