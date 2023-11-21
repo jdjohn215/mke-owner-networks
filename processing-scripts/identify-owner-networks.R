@@ -52,7 +52,11 @@ components <- mprop.with.wdfi.matches %>%
   mutate(mprop_address = if_else(str_remove(mprop_address, "_mprop") %in% useless.addresses$address |
                                    mprop_name %in% useless.names$name,
                                  true = paste(mprop_address, row_number(), sep = "-"),
-                                 false = mprop_address)) %>%
+                                 false = mprop_address),
+         wdfi_address = if_else(str_remove(wdfi_address, "_wdfi") %in% useless.addresses$address |
+                                  mprop_name %in% useless.names$name,
+                                true = paste(wdfi_address, row_number(), sep = "-"),
+                                false = wdfi_address)) %>%
   select(mprop_name, mprop_address, wdfi_address) %>%
   pivot_longer(cols = -mprop_name, values_to = "address") %>%
   filter(!is.na(address)) %>%
