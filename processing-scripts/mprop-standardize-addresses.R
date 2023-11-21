@@ -55,9 +55,11 @@ if(nrow(new.addresses) > 0){
   # add new standardized addresses
   standardized.addresses.updated <- bind_rows(standardized.addresses, 
                                               new.addresses.standardized %>%
-                                                select(mprop_address, mprop_address_raw, standardized))
+                                                select(mprop_address, mprop_address_raw, standardized)) %>%
+    mutate(mprop_address = str_replace_all(mprop_address, "P O BOX", "PO BOX"))
 } else {
-  standardized.addresses.updated <- standardized.addresses
+  standardized.addresses.updated <- standardized.addresses %>%
+    mutate(mprop_address = str_replace_all(mprop_address, "P O BOX", "PO BOX"))
 }
 
 
