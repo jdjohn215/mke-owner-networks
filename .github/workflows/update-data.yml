@@ -60,6 +60,7 @@ jobs:
 
   deploy:
     name: Deploy app
+
     needs: update-networks
     runs-on: ubuntu-latest
     steps:

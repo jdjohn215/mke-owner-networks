@@ -1,0 +1,25 @@
+name: Deploy website
+
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - './data/LandlordProperties-with-OwnerNetworks.csv'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy app
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - run: cp ../data/LandlordProperties-with-OwnerNetworks.csv data/LandlordProperties-with-OwnerNetworks.csv
+        working-directory: who_owns_what
+      - run: cp -r ../images/networks-svg/. priv/static/images/networks
+        working-directory: who_owns_what
+      - run: flyctl deploy --remote-only
+        working-directory: who_owns_what
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
