@@ -51,6 +51,11 @@ jobs:
         run: Rscript -e 'source("processing-scripts/identify-owner-networks.R")'
       - name: update new graph SVGs
         run: Rscript -e 'source("processing-scripts/update-network-graph-svgs.R")'
+      - uses: actions/setup-node@v4
+      - name: Optimize SVGs
+        run: |
+          npm install -g svgo
+          git diff --diff-filter=d -z --name-only ./images/networks-svg | xargs -0 -n 1 svgo
 
       - name: Commit results
         # Commit all changed files back to the repository
