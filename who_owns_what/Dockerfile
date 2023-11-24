@@ -51,10 +51,10 @@ COPY lib lib
 
 COPY assets assets
 
+COPY ./data/LandlordProperties-with-OwnerNetworks.csv data/LandlordProperties-with-OwnerNetworks.csv
+
 # compile assets
 RUN mix assets.deploy
-
-COPY ./data/LandlordProperties-with-OwnerNetworks.csv data/LandlordProperties-with-OwnerNetworks.csv
 
 # Compile the release
 RUN mix compile
