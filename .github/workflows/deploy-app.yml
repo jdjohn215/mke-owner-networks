@@ -5,7 +5,8 @@ on:
     branches:
       - 'main'
     paths:
-      - './data/LandlordProperties-with-OwnerNetworks.csv'
+      - 'data/LandlordProperties-with-OwnerNetworks.csv'
+      - 'who_owns_what/**'
   workflow_dispatch:
 
 jobs:
