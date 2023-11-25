@@ -51,6 +51,7 @@ COPY lib lib
 
 COPY assets assets
 
+# Copy data
 COPY ./data/LandlordProperties-with-OwnerNetworks.csv data/LandlordProperties-with-OwnerNetworks.csv
 
 # compile assets
