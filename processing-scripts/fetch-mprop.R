@@ -98,3 +98,12 @@ residential.landlord <- mprop %>%
   rename(mprop_name = OWNER_NAME_1)
 
 write_csv(residential.landlord, "data/mprop/ResidentialProperties_NotOwnerOccupied.csv")
+
+###############################################################################
+# When were the data sources last updated?
+updated <- tibble(
+  mprop = max(as.Date(word(mprop.orig$LAST_VALUE_CHG, 1, 3), format = "%b %d %Y"), na.rm = T),
+  wdfi = "2023-10-13", # update this after updating the corporate registration file
+  workflow = as.Date(as.POSIXct(Sys.time(), tz = "CST"))
+)
+write_csv(updated, "data/process-dates-updated.csv")
