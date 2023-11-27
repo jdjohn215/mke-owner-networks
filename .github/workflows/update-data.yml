@@ -3,7 +3,7 @@ name: Update parcel data and networks
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '0 1 * * *' # daily, 1AM UTC / 7PM CST
+    - cron:  '0 1 * * 1-5' # Mon-Fri, 1AM UTC / 7PM CST
 
 env:
   GEOCODIO_API_KEY: ${{ secrets.GEOCODIO_API_KEY_SECRET }}
