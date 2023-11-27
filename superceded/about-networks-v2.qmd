@@ -1,0 +1,407 @@
+---
+title: "Identifying Landlord Networks in Milwaukee"
+date: last-modified
+date-format: "[Last modified on] YYYY/MM/DD"
+format: 
+  html:
+    toc: true
+    code-fold: true
+    code-summary: "Show the code"
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(reactable)
+knitr::opts_chunk$set(warning = FALSE,
+                      message = FALSE)
+mprop <- read_csv(here::here("data/mprop/Parcels_with_Ownership_Groups.csv")) %>%
+  rename(mprop_name = OWNER_NAME_1, mprop_address = owner_address, 
+         mprop_group = owner_group_name)
+wdfi <- read_csv(here::here("data/wdfi/wdfi_agent_groups-v2.csv"))
+```
+
+```{r, execute = FALSE}
+library(tidyverse)
+library(reactable)
+knitr::opts_chunk$set(warning = FALSE,
+                      message = FALSE)
+mprop <- read_csv(here::here("data/mprop/Parcels_with_Ownership_Groups.csv")) %>%
+  rename(mprop_name = OWNER_NAME_1, mprop_address = owner_address, 
+         mprop_group = owner_group_name)
+wdfi <- read_csv(here::here("data/wdfi/wdfi_agent_groups-v2.csv"))
+```
+
+# MPROP networks
+
+We identify `r prettyNum(nrow(mprop), ",")` non-owner-occupied residential parcels in the city of Milwaukee. This is our universe of "landlord-owned properties." After applying some string standardization, there are `r prettyNum(n_distinct(mprop$mprop_name), ",")` unique owner names and `r prettyNum(n_distinct(mprop$mprop_address), ",")` unique owner mailing addresses.
+
+We combine names and addresses into connected networks as follows:
+
+* Step 1: take an owner name and identify *all* the mailing addresses it uses. There is a maximum of 1 mailing address per parcel.
+* Step 2: find *all* the owner names used at *any* of the addresses identified in step 1.
+* Step 3: find *all* the *addresses* used by any of the owner names identified in step 2.
+* Step 4: repeat these steps until all matches are identified.
+
+The result of this process is the **MPROP Owner Group**. Currently, we name the MPROP Owner Group after the most commonly used owner name in each group.
+
+Because this approach exhausts all possible connections before moving on to the next owner name, it yields identical results no matter the order of owner names in which it proceeds. It is not possible for an owner name or address to be assigned to multiple groups.
+
+Any MPROP Owner Group can be represented as a graph of owner names and addresses.
+
+Here are the 10 properties associated with the "KENNETH R SIDELLO Group."
+
+```{r}
+mprop %>%
+    filter(mprop_group == "KENNETH R SIDELLO Group") %>%
+    select(mprop_name, mprop_address)
+```
+
+And here is a visual representation of the graph. The size of each dot indicates how commonly that node appeared in the network. In this case, the owner KENNETH R SIDELLO is connected to two addresses. The other 5 owner names are all also connected to one of those two addresses. We can see that 1 of the other names is just Ken Sidello's name without the middle initial, while another, STEVE SIDELLO, might be a relative.
+
+```{r}
+library(ggraph)
+library(tidygraph)
+# this function creates the graph and then visualizes it
+mprop_network_graph <- function(data, mprop_group_name, seed = 42){
+  parcels <- data %>%
+    filter(mprop_group == mprop_group_name) %>%
+    select(mprop_name, mprop_address)
+  
+  node.frequency <- parcels %>%
+    pivot_longer(cols = everything(), names_to = "type", values_to = "name") %>%
+    group_by(name) %>%
+    summarise(node_frequency = n())
+  
+  graph <- as_tbl_graph(parcels) %>%
+    mutate(node_type = case_when(
+      name %in% parcels$mprop_name ~ "name",
+      name %in% parcels$mprop_address ~ "address",
+      TRUE ~ "other"
+    )) %>%
+    inner_join(node.frequency)
+  
+  set.seed(seed)
+  ggraph(graph, layout = "lgl") + 
+    geom_edge_link() + 
+    geom_node_point(aes(shape = node_type, size = node_frequency)) +
+    geom_node_label(aes(label = str_wrap(name, 20)), 
+                    size = if_else(nrow(node.frequency) > 75, 1, 2),
+                    repel = T, segment.color = "gray75", min.segment.length = 0.25,
+                    segment.size = 0.25,
+                    fill = alpha(c("white"),0.5), max.overlaps = 50) +
+    guides(size = "none") +
+    labs(title = paste("Graph of the", mprop_group_name, "ownership network"),
+         subtitle = paste("This network includes", nrow(parcels), "parcels,",
+                          n_distinct(parcels$mprop_name), "owner names, &",
+                          n_distinct(parcels$mprop_address), "owner addresses.")) +
+    theme_graph() +
+    theme(legend.position = "top",
+          legend.title = element_blank())
+}
+
+mprop_network_graph(mprop, "KENNETH R SIDELLO Group")
+```
+
+Here is another kind of network, that of the VB ONE LLC Group. As the graph shows, most of the nodes in this large network are either just various ways of writing the same address or mispellings of "VB ONE LLC." The handful of other LLC names include VB EIGHT LLC and VB SIX LLC, both of which are connected to VB ONE LLC is multiple ways.
+
+```{r}
+#| column: page
+#| fig-width: 8
+#| fig-height: 8
+mprop_network_graph(mprop, "VB ONE LLC Group")
+```
+
+This method of matching parcels based on owner names and addresses yields `r prettyNum(n_distinct(mprop$mprop_group), ",")` distinct owner groups, versus `r prettyNum(n_distinct(mprop$mprop_name), ",")` unique individual owner names.
+
+The table below shows the count of MPROP owner groups and the parcels they own by overall size.
+
+```{r}
+parcels.by.owner.size <- mprop %>%
+  group_by(mprop_group) %>%
+  mutate(mprop_group_size = n()) %>%
+  ungroup() %>%
+  mutate(mprop_group_size_category = case_when(
+    mprop_group_size == 1 ~ "1",
+    mprop_group_size < 11 ~ "2-10",
+    mprop_group_size < 26 ~ "11-25",
+    mprop_group_size < 101 ~ "26-100",
+    mprop_group_size < 501 ~ "101-500",
+    TRUE ~ "more than 500"
+  ),
+  mprop_group_size_category = fct_reorder(mprop_group_size_category, mprop_group_size)) %>%
+  group_by(mprop_group_size_category) %>%
+  summarise(mprop_groups = n_distinct(mprop_group),
+            parcels = n()) %>%
+  mutate(pct_of_groups = (mprop_groups/sum(mprop_groups))*100,
+         pct_of_parcels = (parcels/sum(parcels))*100)
+parcels.by.owner.size
+```
+
+# WDFI matches
+
+Corporate registrations can also be used to match parcel ownership, but making meaningful connections is more difficult because only registered agent names and addresses are available. Many landlords use generic LLC registration services, making much of this data useless.
+
+To select only useful cases from the WDFI data, I subset the WDFI data as follows:
+
+* I remove any non-currently registered corporations (I leave in delinquent, but not terminated registrations, which are common).
+* I remove any registrations with the address of an agent manually determined to be non-useful.
+* I remove any registrations sharing an address with an agent whose name includes any of a set of keywords like LAWYER, TAX, or ACCOUNTING.
+* I identify those registrations whose corporate name matches an MPROP owner name value, after string standardization. I keep all of these matched corporations **and also** any other registrations which:
+  *   share the address of a matched registration AND
+  *   share the registered agent of a matched registration
+
+After creating this universe of WDFI corporate registrations, I apply a matching routine similar in most respects to the MPROP matching routine described above. Instead of matching parcels by owner names and addresses, I match corporate registrations by registered agent names and addresses.
+
+Another variation is that I provide a list of addresses which *cannot* be used to make a match even though the agent name may still be used for matching purposes. This happens commonly when an address is only made distinct by a missing suite number or when multiple meaningfully distinct registered agents use the same UPS mailing facility.
+
+```{r}
+# only keep networks connection multiple MPROP-matched corporations
+wdfi.connected <- wdfi |>
+  filter(corp_mprop_match == TRUE) |>
+  group_by(wdfi_group_id) |>
+  filter(n_distinct(corp_name_clean) > 1) |>
+  ungroup()
+
+# summary statistics for agent groups that match multiple MPROP owners
+wdfi.group.totals <- wdfi.connected |>
+  group_by(wdfi_group_id) |>
+  summarise(corporations = n())
+```
+
+`r prettyNum(sum(wdfi$corp_mprop_match == TRUE), ",")` currently-registered corporations matched an MPROP owner name value, and an additional `r prettyNum(sum(wdfi$corp_mprop_match == FALSE), ",")` corporate registrations did not appear in MPROP but did share a registered agent name and an agent address with a true MPROP match. This latter group can still be used to make connections between matched MPROP owners.
+
+In total, `r prettyNum(sum(wdfi.agent.group.totals$corporations), ",")` matched MPROP owners were connected into one of `r prettyNum(nrow(wdfi.agent.group.totals), ",")` **WDFI Agent Groups**.
+
+WDFI Agent Groups can be visualized using network graphs in the same style as MPROP Owner Groups.
+
+Here is the graph of the SAM STAIR Group agent network, which includes 19 separate corporate filings, 4 agent names, and 1 address. All the agent names are variations on the same name, "Sam Stair."
+
+```{r}
+wdfi_network_graph <- function(data, agent_network, seed = 42){
+  parcels <- data %>%
+    filter(agent_group == agent_network) %>%
+    select(agent_name, agent_address)
+  
+  node.frequency <- parcels %>%
+    pivot_longer(cols = everything(), names_to = "type", values_to = "name") %>%
+    group_by(name) %>%
+    summarise(node_frequency = n())
+  
+  graph <- as_tbl_graph(parcels) %>%
+    mutate(node_type = case_when(
+      name %in% parcels$agent_name ~ "name",
+      name %in% parcels$agent_address ~ "address",
+      TRUE ~ "other"
+    )) %>%
+    inner_join(node.frequency)
+  
+  set.seed(seed)
+  ggraph(graph, layout = "lgl") + 
+    geom_edge_link() + 
+    geom_node_point(aes(shape = node_type, size = node_frequency)) +
+    geom_node_label(aes(label = str_wrap(name, 20)), 
+                    size = if_else(nrow(node.frequency) > 75, 1, 2),
+                    repel = T,
+                    fill = alpha(c("white"),0.5), max.overlaps = 50) +
+    guides(size = "none") +
+    labs(title = paste("Graph of the", agent_network, "agent network"),
+         subtitle = paste("This network includes", nrow(parcels), "corporations,",
+                          n_distinct(parcels$agent_name), "agent names, &",
+                          n_distinct(parcels$agent_address), "agent addresses.")) +
+    theme_graph() +
+    theme(legend.position = "top",
+          legend.title = element_blank())
+}
+
+wdfi_network_graph(wdfi, "SAM STAIR Group")
+```
+
+# Combining MPROP and WDFI networks
+
+We match MPROP ownership groups with WDFI agent groups by merging the MPROP parcel data with the WDFI corporate registration data where the parcel owner is the same as the WDFI registrant.
+
+We then summarize the data to reveal each unique connection between an MPROP Owner group and a WDFI Agent Group, keeping just those connections where the WDFI agent network connects parcels that were not already connected by the MPROP Owner Network. Here is the result.
+
+```{r}
+#| column: page
+mprop.groups.joined.by.wdfi.group <- mprop %>%
+  group_by(mprop_name, mprop_group) %>%
+  summarise() %>%
+  ungroup() %>%
+  inner_join(wdfi.connected, by = c("mprop_name" = "corp_name_clean")) %>%
+  group_by(wdfi_group_id) %>%
+  # filter results for instances where multiple owner_groups are matched
+  filter(n_distinct(mprop_group) > 1) %>%
+  group_by(wdfi_group_id, mprop_group) %>%
+  summarise() %>%
+  ungroup()
+reactable(mprop.groups.joined.by.wdfi.group, searchable = T, showPageSizeOptions = T,
+          defaultPageSize = 5, pageSizeOptions = seq(5,20,5))
+```
+
+It is most common for an agent group to connect multiple owner groups, but the reverse can also occur. It is possible for an owner group to connect multiple agent groups. Some networks consist of multiple agent and owner groups. To identify all networks, I use a custom function to identify all network connections, as shown below.
+
+```{r}
+#| column: page
+# connect each node to its network group by assigning a numeric ID
+f <- function(x, d){
+  m <- merge(d, d[d$wdfi_group_id %in% x, "mprop_group"])
+  if(length(unique(m$wdfi_group_id)) == length(x)) {
+    return(m %>%
+             group_by_all() %>%
+             summarise(.groups = "drop") %>%
+             mutate(group_contents = paste(sort(c(unique(mprop_group), unique(wdfi_group_id))), collapse = "; ")))
+  } else {
+    f(unique(m$wdfi_group_id), d)
+  }
+}
+
+nodes.to.ids <- map_df(unique(mprop.groups.joined.by.wdfi.group$wdfi_group_id), f,
+                       d = mprop.groups.joined.by.wdfi.group, .progress = T) %>%
+  arrange(group_contents) %>%
+  group_by(group_contents) %>%
+  mutate(rownum = row_number()) %>%
+  ungroup() %>%
+  mutate(wdfi_mprop_group_id = cumsum(rownum == 1)) %>%
+  select(mprop_group, wdfi_group_id, wdfi_mprop_group_id)
+
+reactable(nodes.to.ids, searchable = T, showPageSizeOptions = T,
+          defaultPageSize = 5, pageSizeOptions = seq(5,20,5))
+```
+
+The combined MPROP & WDFI networks are then incorporated with the orignal MPROP Owner Groups to create a `final_group` name.
+
+```{r}
+#| column: page
+combined.wdfi.mprop.groups <- nodes.to.ids %>%
+  group_by(mprop_group, wdfi_mprop_group_id) %>%
+  summarise(.groups = "drop") %>%
+  right_join(mprop) %>%
+  group_by(wdfi_mprop_group_id) %>%
+  # rename group with most frequent mprop_name value
+  mutate(final_group = paste(names(which.max(table(mprop_name))), "Group")) %>%
+  ungroup() %>%
+  # preserve old mprop_group name if the group is still the original mprop-derived group
+  mutate(final_group = if_else(is.na(wdfi_mprop_group_id),
+                                    mprop_group, final_group)) %>%
+  left_join(wdfi.connected, by = c("mprop_name" = "corp_name_clean")) %>%
+  mutate(final_group_source = if_else(is.na(wdfi_mprop_group_id),
+                                      "mprop", "combo")) %>%
+  select(TAXKEY, mprop_name, mprop_address, wdfi_address = address_city,
+         final_group, final_group_source)
+reactable(combined.wdfi.mprop.groups, searchable = T, showPageSizeOptions = T,
+          defaultPageSize = 5, pageSizeOptions = seq(5,20,5))
+```
+
+
+The graphs of these final property groups can be visualized in the same way as the MPROP Owner Groups. Shapes still indicate whether the node is an address or name. Now, for groups where the WDFI agent data was incorporated, color indicates if the name or address corresponds to an agent or a parcel owner.
+
+This example shows the graph for the MKE Estates LLC Group, which is created out of a combination of MPROP and WDFI connections.
+
+The MPROP connections are shown in red. The network manages to connect two MPROP parcel owners, 1905308 WATER LLC and MKE ESTATES LLC. The addresses used by these two owners in MPROP are typed inconsistently, so the MPROP matching routine doesn't catch them. This may be a case where future improvements to text match will fix this. Still, this is a useful illustration of how the WDFI network matching can work.
+
+*   The registered agent for `1905308 WATER LLC` is `MICHAEL PIAS`.
+*   The address for `MICHAEL PIAS` is `19295 ALTA VISTA CR BROOKFIELD`.
+*   A registered agent named `MICHAEL PATRICK PIAS` also uses the address `19295 ALTA VISTA CR BROOKFIELD`.
+*   `MICHAEL PATRICK PIAS` is the registered agent for `MKE ESTATES LLC`.
+
+```{r}
+final_network_graph <- function(data, final_group_name, seed = 42, layout_algo = "lgl"){
+  parcels <- data %>%
+    filter(final_group == final_group_name)
+  
+  # if it is an original mprop group, make that network
+  #   otherwise, make a network graph showing agent connections
+  if(unique(parcels$final_group_source) == "mprop"){
+    data %>%
+      rename(mprop_group = final_group) %>%
+      mprop_network_graph(mprop_group_name = final_group_name)
+  } else {
+    
+    parcels <- data %>%
+      filter(final_group == final_group_name) %>%
+      select(TAXKEY, mprop_name, mprop_address, wdfi_address) %>%
+      # agent names & addresses can be identical to mprop names/addresses
+      #   but they are separate nodes, so add distinguishing suffix
+      mutate(wdfi_address = if_else(!is.na(wdfi_address),
+                                  paste(wdfi_address, "a", sep = "-"),
+                                  NA_character_))
+    # build the connections between mprop names/addresses and agent names/addresses
+    connections <- bind_rows(
+      parcels %>%
+        pivot_longer(cols = -TAXKEY) %>%
+        separate(name, into = c("type", "name_addr"), sep = "_") %>%
+        filter(!is.na(value)) %>%
+        pivot_wider(names_from = name_addr, values_from = value) %>%
+        select(from = name, to = address),
+      # these are the connections between agent names and mprop names
+      parcels %>%
+        filter(!is.na(wdfi_address)) %>%
+        select(from = mprop_name, to = wdfi_address)
+    )
+    
+    node.frequency <- parcels %>%
+      pivot_longer(cols = everything(), names_to = "type", values_to = "name") %>%
+      group_by(name) %>%
+      summarise(node_frequency = n())
+    
+    graph <- as_tbl_graph(connections) %>%
+      # add attributes
+      mutate(node_class = case_when(
+        name %in% parcels$mprop_name ~ "owner name",
+        name %in% parcels$mprop_address ~ "mprop address",
+        name %in% parcels$wdfi_address ~ "wdfi address"
+      )) %>%
+      inner_join(node.frequency)
+    
+    set.seed(seed)
+    ggraph(graph, layout = layout_algo) + 
+      geom_edge_link() + 
+      geom_node_point(aes(color = node_class, shape = node_class, size = node_frequency)) +
+      geom_node_label(aes(label = str_wrap(str_remove(name, "-a\\b"), 20)), 
+                      size = if_else(nrow(node.frequency) > 75, 2, 2),
+                      repel = T, segment.color = "gray75", min.segment.length = 0.25,
+                      segment.size = 0.25,
+                      fill = alpha(c("white"),0.5), max.overlaps = 50) +
+      # scale_colour_manual(name = "Node type",
+      #                     labels = c("wdfi address", "mprop address", "mprop name"),
+      #                     values = c("blue", "red", "red")) +   
+      # scale_shape_manual(name = "Node type",
+      #                    labels = c("wdfi address", "mprop address", "mprop name"),
+      #                    values = c(19, 19, 17)) +
+      guides(size = "none") +
+      labs(title = paste("Graph of the", final_group_name, "ownership network"),
+           subtitle = paste("This network includes", nrow(parcels), "parcels,",
+                            n_distinct(parcels$mprop_name), "owner names",
+                            n_distinct(parcels$mprop_address), "owner addresses,",
+                            n_distinct(parcels$wdfi_address), "wdfi addresses.")) +
+      theme_graph() +
+      theme(legend.position = "top",
+            legend.title = element_blank())
+  }
+}
+
+final_network_graph(combined.wdfi.mprop.groups, "MKE ESTATES LLC Group")
+```
+
+Here is an example of a more complex network, successfully connected by registered agent name. [According to LinkedIn](https://www.linkedin.com/in/amir-erez-6849b825/), Amir Erez is the CEO of Fair Deal Home Buyers (a cash homebuying company) and the managing partner of A&E Investment & Management.
+
+As the network graph below shows, Amir Erez in his capacity as a registered agent links two MPROP networks covering these companies.
+
+```{r}
+#| fig-width: 8
+#| fig-height: 8
+final_network_graph(combined.wdfi.mprop.groups, "CREAM CITY LOFTS LLC Group")
+```
+
+Finally, here is an example of a large network, featuring multiple more tenuous connections. I suspect some of these don't represent genuine connections, so further investigation is in order.
+
+I'm worried I might actually need to learn some graph theory...
+
+
+```{r}
+#| fig-width: 8
+#| fig-height: 8
+final_network_graph(combined.wdfi.mprop.groups, "STEWART G FRIEND Group", seed = 4)
+```
+
