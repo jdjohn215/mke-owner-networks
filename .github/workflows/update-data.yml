@@ -38,6 +38,7 @@ jobs:
             any::stringi
             any::tidygeocoder
             any::svglite
+            any::here
 
       - name: Check out repository
         uses: actions/checkout@v3
