@@ -538,6 +538,28 @@ defmodule WhoOwnsWhatWeb.CoreComponents do
   end
 
   @doc """
+  Renders an item list.
+
+  ## Examples
+
+      <.item_list>
+        <:item><%= @post.title %></:item>
+        <:item><%= @post.views %></:item>
+      </.item_list>
+  """
+  slot :item, required: true
+
+  def item_list(assigns) do
+    ~H"""
+    <ul class="list-disc pl-4">
+      <li :for={item <- @item} class="mb-2">
+        <%= render_slot(item) %>
+      </li>
+    </ul>
+    """
+  end
+
+  @doc """
   Renders a link that doesn't look like regular text.
 
   ## Examples
