@@ -3,7 +3,7 @@ defmodule WhoOwnsWhatWeb.HomeLive.About do
 
   @impl true
   def mount(_params, _session, socket) do
-    socket = assign(socket, :page_title, "About | The Milwaukee Landlord Network Project")
+    socket = assign(socket, :page_title, "About | Milwaukee Property Ownership Network Project")
     {:ok, socket}
   end
 end

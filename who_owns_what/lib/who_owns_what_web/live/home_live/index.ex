@@ -13,7 +13,7 @@ defmodule WhoOwnsWhatWeb.HomeLive.Index do
   @impl true
   def mount(_params, _session, socket) do
     socket =
-      assign(socket, :page_title, "The Milwaukee Landlord Network Project")
+      assign(socket, :page_title, "Milwaukee Property Ownership Network Project")
       |> assign(:total_parcels, Map.fetch!(@summary_data, "total_parcels"))
       |> assign(:total_mprop_names, Map.fetch!(@summary_data, "total_mprop_names"))
       |> assign(:total_mprop_addresses, Map.fetch!(@summary_data, "total_mprop_addresses"))
