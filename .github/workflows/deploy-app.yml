@@ -18,6 +18,8 @@ jobs:
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: cp ../data/LandlordProperties-with-OwnerNetworks.csv data/LandlordProperties-with-OwnerNetworks.csv
         working-directory: who_owns_what
+      - run: cp ../data/overall-summary-stats.csv data/overall-summary-stats.csv
+        working-directory: who_owns_what
       - run: cp -r ../images/networks-svg/. priv/static/images/networks
         working-directory: who_owns_what
       - run: flyctl deploy --remote-only

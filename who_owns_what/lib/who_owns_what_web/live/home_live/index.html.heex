@@ -3,6 +3,24 @@
 </.header>
 
 <p class="mt-5 leading-5">
+  We identify <%= @total_parcels %> total landlord-owned parcels. The original data includes <%= @total_mprop_names %> unique owner names using <%= @total_mprop_addresses %> addresses.
+</p>
+
+<p class="mt-5 leading-5">
+  After applying our network matching process, we find a total of <%= @total_networks %> owner networks. Of those networks, <%= @pct_networks_single_parcel %> own just a single parcel, while <%= @pct_networks_multiple_names %> own not only multiple parcels but also include multiple ownership names.
+</p>
+
+<p class="mt-5 leading-5">
+  Of all the residential parcels in the city, <%= @pct_parcels_multiple_name_owner %> are part of an ownership network which includes multiple owner names.
+</p>
+
+<p class="mt-5 leading-5">
+  The most recent parcel ownership records were updated by the City of Milwaukee on <%= @mprop_updated %>. We last checked for new updates on <%= @workflow_updated %>. Corporate registration data was last updated on <%= @wdfi_updated %>.
+</p>
+
+<hr class="border-t-2 my-4" />
+
+<p class="mt-5 leading-5">
   This project aims to identify networks of landlord-owned homes in Milwaukee using the names and addresses listed in public records of property ownership and business registration.
 </p>
 
