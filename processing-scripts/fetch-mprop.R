@@ -1,4 +1,5 @@
 library(tidyverse)
+library(tidygeocoder)
 
 # download the latest MPROP from the city's data portal
 mprop.orig <- read_csv("https://data.milwaukee.gov/dataset/562ab824-48a5-42cd-b714-87e205e489ba/resource/0a2c7f31-cd15-4151-8222-09dd57d5f16d/download/mprop.csv")
@@ -97,7 +98,38 @@ residential.landlord <- mprop %>%
          mprop_address_raw = paste(mprop_address_raw, str_sub(OWNER_ZIP, 1, 5))) %>%
   rename(mprop_name = OWNER_NAME_1)
 
+###############################################################################
+# add coordinates
+taxkey.coords <- read_csv("data/mprop/taxkey-coordinates.csv")
+
+# get new coordinates from Geocodio if necessary, add them to the lookup table
+needs.geocoding <- residential.landlord %>%
+  filter(! TAXKEY %in% taxkey.coords$TAXKEY) %>%
+  mutate(city = ", MILWAUKEE, WI") %>%
+  unite("complete_address", HOUSE_NR_LO, SDIR, STREET, STTYPE, city, GEO_ZIP_CODE,
+        na.rm = T, sep = " ") %>%
+  select(TAXKEY, complete_address) %>%
+  mutate(complete_address = str_replace(complete_address, " ,", ","))
+
+if(nrow(needs.geocoding) > 0){
+  geocoded <- geocode(.tbl = needs.geocoding,
+                      address = complete_address,
+                      full_results = FALSE,
+                      method = "geocodio")
+  taxkey.coords.updated <- geocoded %>%
+    select(TAXKEY, lon = long, lat) %>%
+    bind_rows(taxkey.coords)
+} else {
+  taxkey.coords.updated <- taxkey.coords
+}
+
+residential.landlord <- residential.landlord %>%
+  left_join(taxkey.coords)
+
+###############################################################################
+# save data
 write_csv(residential.landlord, "data/mprop/ResidentialProperties_NotOwnerOccupied.csv")
+write_csv(taxkey.coords.updated, "data/mprop/taxkey-coordinates.csv")
 
 ###############################################################################
 # When were the data sources last updated?
