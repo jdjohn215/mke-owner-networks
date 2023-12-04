@@ -8,6 +8,8 @@ on:
       - 'data/LandlordProperties-with-OwnerNetworks.csv'
       - 'who_owns_what/**'
   workflow_dispatch:
+  schedule:
+    - cron:  '15 1 * * 1-5' # Mon-Fri, 1:15AM UTC / 7PM CST
 
 jobs:
   deploy:
