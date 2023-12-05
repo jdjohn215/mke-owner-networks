@@ -25,6 +25,11 @@ if(nrow(new.addresses) > 0){
   # process geocoded addresses, creating standardized full address where
   #   validation was successful
   new.addresses.standardized <- new.addresses.geocodio %>%
+    # ensure all columns are present by adding NA columns if missing
+    bind_rows(tibble(address_components.street = character(), 
+                     address_components.secondaryunit = character(), 
+                     address_components.city = character(), 
+                     address_components.state = character())) %>%
     # add commas where relevant
     mutate(city2 = paste(",", address_components.city),
            state2 = paste(",", address_components.state),
