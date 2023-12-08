@@ -134,7 +134,7 @@ write_csv(taxkey.coords.updated, "data/mprop/taxkey-coordinates.csv")
 ###############################################################################
 # When were the data sources last updated?
 updated <- tibble(
-  mprop = max(as.Date(word(mprop.orig$LAST_VALUE_CHG, 1, 3), format = "%b %d %Y"), na.rm = T),
+  mprop = max(as.Date(word(str_squish(mprop.orig$LAST_VALUE_CHG), 1, 3), format = "%b %d %Y"), na.rm = T),
   wdfi = "2023-10-13", # update this after updating the corporate registration file
   workflow = as.Date(as.POSIXct(Sys.time(), tz = "CST"))
 )
