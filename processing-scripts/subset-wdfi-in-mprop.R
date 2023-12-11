@@ -7,7 +7,7 @@ wdfi.current <- vroom::vroom("data/wdfi/WDFI_PrincipalAddress_Current.csv.gz")
 
 ################################################################################
 # all the MPROP landlords
-mprop.owners.in.wdfi <- read_csv("data/mprop/ResidentialProperties_NotOwnerOccupied_StandardizedAddresses.csv") %>%
+mprop.owners.in.wdfi <- read_csv("data/mprop/ResidentialProperties_NotOwnerOccupied_StandardizedAddresses_RepairedNames.csv") %>%
   group_by(mprop_name) %>%
   summarise() %>%
   # match to WDFI records by name
