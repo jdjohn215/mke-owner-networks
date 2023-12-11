@@ -4,7 +4,7 @@ library(tidyverse)
 library(tidygraph)
 
 # clean, landlord-owned parcel data
-mprop <- read_csv("data/mprop/ResidentialProperties_NotOwnerOccupied_StandardizedAddresses.csv")
+mprop <- read_csv("data/mprop/ResidentialProperties_NotOwnerOccupied_StandardizedAddresses_RepairedNames.csv")
 
 # WDFI corporate registrations for owners who appear in the MPROP file
 wdfi <- vroom::vroom("data/wdfi/wdfi-current-in-mprop_StandardizedAddresses.csv")
