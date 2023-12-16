@@ -6,6 +6,7 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
     socket =
       assign_new(socket, :properties, fn -> [] end)
       |> assign_new(:owner_query, fn -> "" end)
+      |> assign_new(:owner_group_query, fn -> "" end)
       |> assign_new(:address_query, fn -> "" end)
 
     {:ok, socket}
@@ -21,10 +22,11 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
         text_value={@address_query}
         name="Address"
       />
+      <.search_input target={@myself} event="do-search-owner" text_value={@owner_query} name="Owner" />
       <.search_input
         target={@myself}
-        event="do-search-owner"
-        text_value={@owner_query}
+        event="do-search-owner-group"
+        text_value={@owner_group_query}
         name="Owner Group"
       />
       <.results properties={@properties} />
@@ -86,14 +88,26 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
   def update(assigns, socket) do
     socket =
       assign(socket, assigns)
-      |> assign(:properties, search_properties(assigns.owner_query, assigns.address_query, []))
+      |> assign(
+        :properties,
+        search_properties(
+          assigns.owner_query,
+          assigns.owner_group_query,
+          assigns.address_query,
+          []
+        )
+      )
 
     {:ok, socket}
   end
 
   @impl true
   def handle_event("do-search-owner", %{"value" => value}, socket) do
-    params = %{address_query: socket.assigns.address_query, owner_query: value}
+    params = %{
+      address_query: socket.assigns.address_query,
+      owner_group_query: socket.assigns.owner_group_query,
+      owner_query: value
+    }
 
     {:noreply,
      socket
@@ -102,8 +116,26 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
   end
 
   @impl true
+  def handle_event("do-search-owner-group", %{"value" => value}, socket) do
+    params = %{
+      address_query: socket.assigns.address_query,
+      owner_group_query: value,
+      owner_query: socket.assigns.owner_query
+    }
+
+    {:noreply,
+     socket
+     |> push_patch(to: ~p"/properties?#{params}")
+     |> assign(:owner_group_query, value)}
+  end
+
+  @impl true
   def handle_event("do-search-address", %{"value" => value}, socket) do
-    params = %{address_query: value, owner_query: socket.assigns.owner_query}
+    params = %{
+      address_query: value,
+      owner_group_query: socket.assigns.owner_group_query,
+      owner_query: socket.assigns.owner_query
+    }
 
     {:noreply,
      socket
@@ -111,15 +143,15 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
      |> assign(:address_query, value)}
   end
 
-  defp search_properties(owner_query, address_query, default)
-       when is_binary(owner_query) and is_binary(address_query) do
+  defp search_properties(owner_query, owner_group_query, address_query, default)
+       when is_binary(owner_query) and is_binary(owner_group_query) and is_binary(address_query) do
     try do
-      WhoOwnsWhat.Data.search_properties(owner_query, address_query)
+      WhoOwnsWhat.Data.search_properties(owner_query, owner_group_query, address_query)
     rescue
       Exqlite.Error ->
         default
     end
   end
 
-  defp search_properties(_, _, default), do: default
+  defp search_properties(_, _, _, default), do: default
 end

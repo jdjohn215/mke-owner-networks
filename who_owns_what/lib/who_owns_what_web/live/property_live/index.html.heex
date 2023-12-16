@@ -1,10 +1,11 @@
 <.header>
-  Search Properties By Address or Owner
+  Search Properties By Address, Owner, or Owner Group
 </.header>
 
 <.live_component
   module={WhoOwnsWhatWeb.PropertyLive.SearchComponent}
-  owner_query={@owner_query}
   address_query={@address_query}
+  owner_query={@owner_query}
+  owner_group_query={@owner_group_query}
   id="search-results"
 />

@@ -43,7 +43,7 @@ defmodule WhoOwnsWhat.Data do
     Repo.all(query)
   end
 
-  def search_properties(owner_query, address_query) do
+  def search_properties(owner_query, owner_group_query, address_query) do
     query =
       from(pf in PropertyFts,
         join: p in Property,
@@ -58,8 +58,18 @@ defmodule WhoOwnsWhat.Data do
         formatted_query = format_query(owner_query)
 
         from([pf, p] in query,
-          where: fragment("? LIKE ?", pf.owner_group_name, ^formatted_query),
           or_where: fragment("? LIKE ?", pf.owner_name_1, ^formatted_query)
+        )
+      else
+        query
+      end
+
+    query =
+      if owner_group_query != "" do
+        formatted_query = format_query(owner_group_query)
+
+        from([pf, p] in query,
+          where: fragment("? LIKE ?", pf.owner_group_name, ^formatted_query)
         )
       else
         query
