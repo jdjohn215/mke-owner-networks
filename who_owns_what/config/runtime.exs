@@ -45,6 +45,11 @@ if config_env() == :prod do
       """
 
   host = System.get_env("PHX_HOST") || "example.com"
+
+  origins =
+    System.get_env("PHX_ORIGINS")
+    |> String.split(",")
+
   port = String.to_integer(System.get_env("PORT") || "4000")
 
   config :who_owns_what, WhoOwnsWhatWeb.Endpoint,
@@ -57,6 +62,7 @@ if config_env() == :prod do
       ip: {0, 0, 0, 0, 0, 0, 0, 0},
       port: port
     ],
+    check_origin: origins,
     secret_key_base: secret_key_base
 
   # ## SSL Support
