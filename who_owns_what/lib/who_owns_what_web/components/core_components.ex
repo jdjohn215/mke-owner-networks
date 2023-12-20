@@ -551,7 +551,7 @@ defmodule WhoOwnsWhatWeb.CoreComponents do
 
   def item_list(assigns) do
     ~H"""
-    <ul class="list-disc pl-4">
+    <ul class="list-disc list-inside pl-4">
       <li :for={item <- @item} class="mb-2">
         <%= render_slot(item) %>
       </li>
