@@ -466,7 +466,7 @@ defmodule WhoOwnsWhatWeb.CoreComponents do
       end
 
     ~H"""
-    <div class="overflow-auto px-4 sm:overflow-visible sm:px-0">
+    <div class="overflow-x-auto px-4 sm:overflow-visible sm:px-0">
       <table class="w-[40rem] mt-11 sm:w-full">
         <thead class="text-sm text-left leading-6 text-zinc-500">
           <tr>
