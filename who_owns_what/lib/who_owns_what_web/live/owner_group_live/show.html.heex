@@ -11,10 +11,12 @@
       <%= WhoOwnsWhat.Data.Property.address(property) %>
     </.good_link>
   </:col>
-  <:col :let={property} label="District"><%= property.geo_alder %></:col>
+  <:col :let={property} label="District" class="hidden md:table-cell">
+    <%= property.geo_alder %>
+  </:col>
   <:col :let={property} label="Owner Name"><%= property.owner_name_1 %></:col>
   <:col :let={property} label="Number of Units"><%= property.number_units %></:col>
-  <:col :let={property} label="Assessed Value">
+  <:col :let={property} label="Assessed Value" class="hidden md:table-cell">
     $<%= formatted_dollars(property.c_a_total) %>
   </:col>
 </.table>
