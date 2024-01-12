@@ -31,8 +31,30 @@ networks.to.update <- updated.network %>%
   pull(final_group) %>%
   unique()
 
+################################################################################
+# count of nodes in each network
+network.node.total <- updated.network |>
+  filter(final_group %in% networks.to.update) |>
+  group_by(final_group) |> 
+  summarise(mprop_names = n_distinct(mprop_name), 
+            mprop_addresses = n_distinct(mprop_address), 
+            wdfi_addresses = n_distinct(wdfi_address[!is.na(wdfi_address)])) |> 
+  mutate(nodes = mprop_names + mprop_addresses + wdfi_addresses)
+
 source("analysis-scripts/VisualizeNetworkGraphs.R")
 plot_save_network_graph <- function(name){
+  
+  network.nodes <- network.node.total$nodes[network.node.total$final_group == name]
+  out.dim <- case_when(
+    network.nodes < 5 ~ 4,
+    network.nodes < 8 ~ 6,
+    network.nodes < 21 ~ 8,
+    network.nodes < 31 ~ 10,
+    network.nodes < 61 ~ 12,
+    network.nodes < 91 ~ 14,
+    TRUE ~ 16
+  )
+  
   gg1 <- visualize_network_graph(data = updated.network, 
                                  final_group_name = name,
                                  fontsize = 2, layout = "kk") +
@@ -41,7 +63,7 @@ plot_save_network_graph <- function(name){
                           owner.networks$units[owner.networks$final_group == name], "units, and",
                           owner.networks$name_count[owner.networks$final_group == name], "distinct owner names."))
   ggsave(paste0("images/networks-svg/", owner.networks$final_group[owner.networks$final_group == name], ".svg"),
-         width = 8, height = 8)
+         width = out.dim, height = out.dim)
 }
 
 map(networks.to.update, plot_save_network_graph, .progress = TRUE)
