@@ -10,5 +10,5 @@ Of all the residential parcels in the city, 56% are part of an ownership
 network which includes multiple owner names.
 
 The most recent parcel ownership records were updated by the City of
-Milwaukee on Jan 18, 2024. We last checked for new updates on Jan 24,
+Milwaukee on Jan 18, 2024. We last checked for new updates on Jan 26,
 2024. Corporate registration data was last updated on Oct 13, 2023.
