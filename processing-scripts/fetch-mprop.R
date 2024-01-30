@@ -8,6 +8,8 @@ mprop.orig <- read_csv("https://data.milwaukee.gov/dataset/562ab824-48a5-42cd-b7
 mprop <- mprop.orig %>%
   # construct custom owner-occupied variables
   mutate(owner_occupied = case_when(
+    # cannot be owner occupied if not a house or condo
+    ! C_A_CLASS %in% c(1, 5) ~ "not owner occupied",
     # owner-occupied if MPROP variable says so
     !is.na(OWN_OCPD) ~ "owner occupied",
     # cannot be owner occupied if zip codes don't match
@@ -15,8 +17,6 @@ mprop <- mprop.orig %>%
     # cannot be owner occupied if mailing address is PO BOX
     str_detect(string = str_remove_all(OWNER_MAIL_ADDR, "[.]"),
                pattern = "\\bPO BOX\\b|\\bPO BOX\\b|\\bPOB\\b|\\bP O BOX\\b") ~ "not owner occupied",
-    # cannot be owner occupied if not a house or condo
-    ! C_A_CLASS %in% c(1, 5) ~ "not owner occupied",
     # is owner occupied if house numbers match
     suppressWarnings(parse_number(word(OWNER_MAIL_ADDR, 1, 1))) == HOUSE_NR_LO |
       suppressWarnings(parse_number(word(OWNER_MAIL_ADDR, 1, 1))) == HOUSE_NR_HI ~ "owner occupied",
