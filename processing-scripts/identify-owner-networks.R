@@ -89,15 +89,61 @@ mprop.with.networks <- mprop.with.wdfi.matches %>%
   mutate(final_group = if_else(n_distinct(mprop_name) > 1,
                                true = paste(names(which.max(table(mprop_name))), "Group"),
                                false = first(mprop_name)),
-         final_group = str_replace_all(final_group, coll("/"), "-"))
+         final_group = str_replace_all(final_group, coll("/"), "-")) |>
+  ungroup()
 
-write_csv(mprop.with.networks, "data/LandlordProperties-with-OwnerNetworks.csv")
+################################################################################
+# add DNS violation records
+dns <- read_csv("data/dns-code-violations/all-orders-2017to2023.csv") |>
+  rename(TAXKEY = taxkey)
+dns.records.end <- as.Date("2023-12-31") # the last date for which DNS records are available
 
-# View network summary stats
-network.summary.stats <- mprop.with.networks %>%
+# calculate violations per TAXKEY
+#   total violations at each TAXKEY for the entire period covered
+dns.taxkey.total <- dns |>
+  group_by(TAXKEY) |>
+  summarise(total_orders = n(),
+            total_violations = sum(violations))
+
+#   count of violations ONLY during the period of current ownership
+#     determined using the CONVEY_DATE field
+dns.taxkey.during.current.ownership <- mprop.with.networks |>
+  select(TAXKEY, final_group, CONVEY_DATE) |>
+  inner_join(dns) |>
+  filter(date_inspection > CONVEY_DATE) |>
+  group_by(TAXKEY) |>
+  summarise(ownership_orders = n_distinct(record_id),
+            ownership_violations = sum(violations),
+            .groups = "drop")
+
+mprop.with.dns <- mprop.with.networks |>
+  mutate(
+    dns_covered_days = case_when(
+      CONVEY_DATE < as.Date("2017-01-01") ~ as.numeric(difftime(dns.records.end, # instances where ownership *precedes* DNS record period
+                                                                as.Date("2017-01-01"), 
+                                                                units = "days")),
+      CONVEY_DATE > dns.records.end ~ 0, # instances where ownership begins *after* DNS record period
+      TRUE ~ as.numeric(difftime(dns.records.end, CONVEY_DATE, units = "days"))),
+    dns_covered_unit_years = (dns_covered_days*NR_UNITS)/365.25) |>
+  left_join(dns.taxkey.total) |>
+  left_join(dns.taxkey.during.current.ownership) |>
+  mutate(across(.cols = where(is.numeric), .fns = ~replace(.x, is.na(.x), 0)))
+
+# calculate network summary stats
+network.summary.stats <- mprop.with.dns %>%
   group_by(component_number, final_group) %>%
   summarise(parcels = n(),
             units = sum(NR_UNITS),
             names = paste(unique(mprop_name), collapse = "; "),
-            name_count = n_distinct(mprop_name)) %>%
-  ungroup()
+            name_count = n_distinct(mprop_name),
+            dns_covered_unit_years = sum(dns_covered_unit_years),
+            across(.cols = contains("orders"), .fns = sum),
+            across(.cols = contains("violations"), .fns = sum)) |>
+  mutate(ownership_violation_unit_rate_annual = ownership_violations/dns_covered_unit_years*100) |>
+  select(final_group, component_number, parcels, units, names, name_count, dns_covered_unit_years, starts_with("ownership"), starts_with("total"))
+
+################################################################################
+# save output
+write_csv(mprop.with.dns, "data/LandlordProperties-with-OwnerNetworks.csv")
+write_csv(network.summary.stats, "data/Landlord-network-summary-statistics.csv")
+
