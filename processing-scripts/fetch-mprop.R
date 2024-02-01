@@ -63,7 +63,12 @@ residential.landlord <- mprop %>%
            LAND_USE_GP %in% c("MIXED COMMERCIAL/RESIDENTIAL", "SINGLE FAMILY",
                             "DUPLEX", "MULTI-FAMILY"),
          NR_UNITS > 0,
-         owner_occupied != "OWNER OCCUPIED") %>%
+         owner_occupied != "OWNER OCCUPIED",
+         # This is kludgey, but it strips out a few storage companies which are
+         #    technically mixed commercial/residential, but almost all of the units are
+         #    storage units, not residential units. It would be great if MPROP started including
+         #    their "residential units" variable separately for these properties.
+         str_detect(OWNER_NAME_1, "\\bSTORAGE\\b", negate = T)) %>%
   # clean owner mail address field
   mutate(OWNER_MAIL_ADDR = str_remove_all(OWNER_MAIL_ADDR, ","),
          OWNER_MAIL_ADDR = str_remove_all(OWNER_MAIL_ADDR, coll(".")),
