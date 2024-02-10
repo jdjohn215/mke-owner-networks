@@ -26,6 +26,12 @@ defmodule WhoOwnsWhat.Data.Property do
     field :street_type, :string
     field :taxkey, :string
     field :wdfi_address, :string
+    field :dns_covered_days, :integer
+    field :dns_covered_unit_years, :float
+    field :total_orders, :integer
+    field :total_violations, :integer
+    field :ownership_orders, :integer
+    field :ownership_violations, :integer
 
     timestamps()
 

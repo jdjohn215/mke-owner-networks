@@ -56,7 +56,14 @@ defmodule WhoOwnsWhat.Data.Import do
           geo_alder: Map.fetch!(map, "GEO_ALDER"),
           wdfi_address: Map.fetch!(map, "wdfi_address"),
           inserted_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second),
-          updated_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second)
+          updated_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second),
+          dns_covered_days: String.to_integer(Map.fetch!(map, "dns_covered_days")),
+          dns_covered_unit_years:
+            Float.parse(Map.fetch!(map, "dns_covered_unit_years")) |> elem(0),
+          total_orders: String.to_integer(Map.fetch!(map, "total_orders")),
+          total_violations: String.to_integer(Map.fetch!(map, "total_violations")),
+          ownership_orders: String.to_integer(Map.fetch!(map, "ownership_orders")),
+          ownership_violations: String.to_integer(Map.fetch!(map, "ownership_violations"))
         }
         |> Map.update!(:wdfi_address, fn address ->
           if address == "NA" do

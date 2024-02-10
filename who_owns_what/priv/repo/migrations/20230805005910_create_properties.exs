@@ -25,6 +25,12 @@ defmodule WhoOwnsWhat.Repo.Migrations.CreateProperties do
       add :owner_occupied, :boolean, default: false, null: false
       add :geo_alder, :string
       add :wdfi_address, :string
+      add :dns_covered_days, :integer
+      add :dns_covered_unit_years, :float
+      add :total_orders, :integer
+      add :total_violations, :integer
+      add :ownership_orders, :integer
+      add :ownership_violations, :integer
 
       timestamps()
     end
