@@ -36,7 +36,7 @@ defmodule WhoOwnsWhat.MixProject do
       {:phoenix_ecto, "~> 4.4"},
       {:ecto_sql, "~> 3.10"},
       {:ecto_sqlite3, ">= 0.0.0"},
-      {:phoenix_html, "~> 3.3"},
+      {:phoenix_html, "~> 4.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       # {:phoenix_live_view, "~> 0.20.0"},
       {:phoenix_live_view,
@@ -54,7 +54,7 @@ defmodule WhoOwnsWhat.MixProject do
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
       {:nimble_csv, "~> 1.2"},
-      {:plug_cowboy, "~> 2.5"},
+      {:bandit, "~> 1.0"},
       {:libgraph, "~> 0.16.0"}
     ]
   end

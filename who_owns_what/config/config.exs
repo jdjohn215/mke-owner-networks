@@ -12,6 +12,7 @@ config :who_owns_what,
 
 # Configures the endpoint
 config :who_owns_what, WhoOwnsWhatWeb.Endpoint,
+  adapter: Bandit.PhoenixAdapter,
   url: [host: "localhost"],
   render_errors: [
     formats: [html: WhoOwnsWhatWeb.ErrorHTML, json: WhoOwnsWhatWeb.ErrorJSON],
