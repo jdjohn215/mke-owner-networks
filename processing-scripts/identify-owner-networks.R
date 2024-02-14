@@ -129,8 +129,53 @@ mprop.with.dns <- mprop.with.networks |>
   left_join(dns.taxkey.during.current.ownership) |>
   mutate(across(.cols = where(is.numeric), .fns = ~replace(.x, is.na(.x), 0)))
 
+################################################################################
+# add eviction records
+source("processing-scripts/retrieve_private_file_function.R")
+eviction.filings <- read_csv(fetchGHdata(repo = "mke-evict-data",
+                                         path = "processed-data/mke-evictions-w-taxkeys.csv")) |>
+  #   just those cases successfully assigned to a TAXKEY
+  filter(!is.na(TAXKEY),
+         TAXKEY != 0) |>
+  mutate(TAXKEY = str_pad(TAXKEY, width = 10, side = "left", pad = "0"))
+
+mke.evictions <- eviction.filings |>
+  mutate(eviction_order = if_else(lienType_desc != "Judgment for eviction" | 
+                                    is.na(lienType_desc), "no", "yes")) |>
+  select(TAXKEY, caseNo, filing_date, eviction_order) |>
+  # remove the last 30 days, because I believe records to be incomplete
+  filter(filing_date < max(filing_date) - 30)
+
+# eviction records end date
+eviction.records.end.date <- max(mke.evictions$filing_date)
+eviction.records.start.date <- as.Date("2016-01-01")
+
+evictions.during.ownership <- mprop.with.dns |>
+  # calculate the exposure (unit-years during the period for which eviction records are available)
+  mutate(
+    evict_covered_days = case_when(
+      CONVEY_DATE > eviction.records.end.date ~ 0, # property acquired *after* eviction records end
+      CONVEY_DATE < eviction.records.start.date ~ as.numeric(difftime(eviction.records.end.date, # property acquired *before* eviction records begin
+                                                                      eviction.records.start.date),
+                                                             units = "days"),
+      TRUE ~ as.numeric(difftime(eviction.records.end.date, CONVEY_DATE, units = "days"))),
+    evict_covered_unit_years = (evict_covered_days*NR_UNITS)/365.25) |>
+  # 1-to-many join with eviction filing data
+  inner_join(mke.evictions) |>
+  # only keep filings during the current ownership period
+  filter(filing_date > CONVEY_DATE) |>
+  # count the total number of filings and orders at each taxkey
+  group_by(TAXKEY, NR_UNITS, evict_covered_unit_years) |>
+  summarise(evict_filings = n(),
+            evict_orders = sum(eviction_order == "yes"), .groups = "drop")
+
+mprop.with.evictions <- mprop.with.dns |>
+  left_join(evictions.during.ownership) |>
+  mutate(across(.cols = contains("evict"), .fns = ~replace(.x, is.na(.x), 0)))
+
+################################################################################
 # calculate network summary stats
-network.summary.stats <- mprop.with.dns %>%
+network.summary.stats <- mprop.with.evictions %>%
   group_by(component_number, final_group) %>%
   summarise(parcels = n(),
             units = sum(NR_UNITS),
@@ -138,12 +183,27 @@ network.summary.stats <- mprop.with.dns %>%
             name_count = n_distinct(mprop_name),
             dns_covered_unit_years = sum(dns_covered_unit_years),
             across(.cols = contains("orders"), .fns = sum),
-            across(.cols = contains("violations"), .fns = sum)) |>
-  mutate(ownership_violation_unit_rate_annual = ownership_violations/dns_covered_unit_years*100) |>
-  select(final_group, component_number, parcels, units, names, name_count, dns_covered_unit_years, starts_with("ownership"), starts_with("total"))
+            across(.cols = contains("violations"), .fns = sum),
+            across(.cols = contains("evict"), .fns = sum), .groups = "drop") |>
+  mutate(ownership_violation_unit_rate_annual = ownership_violations/dns_covered_unit_years*100,
+         annual_evict_filing_rate_per_unit = (evict_filings/evict_covered_unit_years)*100,
+         annual_evict_order_rate_per_unit = (evict_orders/evict_covered_unit_years)*100) |>
+  select(final_group, component_number, parcels, units, names, name_count,
+         starts_with("evict"), annual_evict_filing_rate_per_unit, annual_evict_order_rate_per_unit,
+         dns_covered_unit_years, starts_with("ownership"), starts_with("total")) |>
+  arrange(desc(units))
+
+################################################################################
+# redactions
+mprop.with.evictions.redacted <- mprop.with.evictions |>
+  mutate(across(.cols = contains("evict"),
+                .fns = ~if_else(NR_UNITS > 5, .x, NA)))
+network.summary.stats.redacted <- network.summary.stats |>
+  mutate(across(.cols = contains("evict"),
+                .fns = ~if_else(units > 5, .x, NA)))
 
 ################################################################################
 # save output
-write_csv(mprop.with.dns, "data/LandlordProperties-with-OwnerNetworks.csv")
-write_csv(network.summary.stats, "data/Landlord-network-summary-statistics.csv")
+write_csv(mprop.with.evictions.redacted, "data/LandlordProperties-with-OwnerNetworks.csv")
+write_csv(network.summary.stats.redacted, "data/Landlord-network-summary-statistics.csv")
 
