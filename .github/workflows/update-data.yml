@@ -8,6 +8,7 @@ on:
 env:
   GEOCODIO_API_KEY: ${{ secrets.GEOCODIO_API_KEY_SECRET }}
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   update-networks:
