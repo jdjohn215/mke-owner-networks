@@ -127,7 +127,10 @@ mprop.with.dns <- mprop.with.networks |>
     dns_covered_unit_years = (dns_covered_days*NR_UNITS)/365.25) |>
   left_join(dns.taxkey.total) |>
   left_join(dns.taxkey.during.current.ownership) |>
-  mutate(across(.cols = where(is.numeric), .fns = ~replace(.x, is.na(.x), 0)))
+  mutate(across(.cols = where(is.numeric), .fns = ~replace(.x, is.na(.x), 0)),
+         # make sure dns coverage is NA if CONVEY_DATE is NA
+         dns_covered_unit_years = if_else(is.na(CONVEY_DATE), NA, dns_covered_unit_years),
+         dns_covered_days = if_else(is.na(CONVEY_DATE), NA, dns_covered_days))
 
 ################################################################################
 # add eviction records
@@ -150,7 +153,17 @@ mke.evictions <- eviction.filings |>
 eviction.records.end.date <- max(mke.evictions$filing_date)
 eviction.records.start.date <- as.Date("2016-01-01")
 
-evictions.during.ownership <- mprop.with.dns |>
+#   count of violations ONLY during the period of current ownership
+#     determined using the CONVEY_DATE field
+evictions.taxkey.during.current.ownership <- mprop.with.networks |>
+  select(TAXKEY, final_group, CONVEY_DATE) |>
+  inner_join(mke.evictions) |>
+  filter(filing_date > CONVEY_DATE) |>
+  group_by(TAXKEY) |>
+  summarise(evict_filings = n(),
+            evict_orders = sum(eviction_order == "yes"), .groups = "drop")
+
+mprop.with.evictions <- mprop.with.dns |>
   # calculate the exposure (unit-years during the period for which eviction records are available)
   mutate(
     evict_covered_days = case_when(
@@ -160,18 +173,11 @@ evictions.during.ownership <- mprop.with.dns |>
                                                              units = "days"),
       TRUE ~ as.numeric(difftime(eviction.records.end.date, CONVEY_DATE, units = "days"))),
     evict_covered_unit_years = (evict_covered_days*NR_UNITS)/365.25) |>
-  # 1-to-many join with eviction filing data
-  inner_join(mke.evictions) |>
-  # only keep filings during the current ownership period
-  filter(filing_date > CONVEY_DATE) |>
-  # count the total number of filings and orders at each taxkey
-  group_by(TAXKEY, NR_UNITS, evict_covered_unit_years) |>
-  summarise(evict_filings = n(),
-            evict_orders = sum(eviction_order == "yes"), .groups = "drop")
-
-mprop.with.evictions <- mprop.with.dns |>
-  left_join(evictions.during.ownership) |>
-  mutate(across(.cols = contains("evict"), .fns = ~replace(.x, is.na(.x), 0)))
+  # join with eviction filing data by taxkey
+  left_join(evictions.taxkey.during.current.ownership) |>
+  mutate(across(.cols = contains("evict"), .fns = ~replace(.x, is.na(.x), 0)),
+         # make sure dns coverage is NA if CONVEY_DATE is NA
+         evict_covered_unit_years = if_else(is.na(CONVEY_DATE), NA, evict_covered_unit_years))
 
 ################################################################################
 # calculate network summary stats
@@ -182,10 +188,12 @@ network.summary.stats <- mprop.with.evictions %>%
             total_assessed_value = sum(C_A_TOTAL),
             names = paste(unique(mprop_name), collapse = "; "),
             name_count = n_distinct(mprop_name),
-            dns_covered_unit_years = sum(dns_covered_unit_years),
-            across(.cols = contains("orders"), .fns = sum),
-            across(.cols = contains("violations"), .fns = sum),
-            across(.cols = contains("evict"), .fns = sum), .groups = "drop") |>
+            dns_covered_unit_years = sum(dns_covered_unit_years[!is.na(CONVEY_DATE)]),
+            across(.cols = c(contains("total_orders"),contains("total_violations"),
+                             contains("ownership_")),
+                   .fns = ~sum(.x[!is.na(CONVEY_DATE)])),
+            across(.cols = contains("evict"), .fns = ~sum(.x[!is.na(CONVEY_DATE)])),
+            .groups = "drop") |>
   mutate(ownership_violation_unit_rate_annual = ownership_violations/dns_covered_unit_years*100,
          annual_evict_filing_rate_per_unit = (evict_filings/evict_covered_unit_years)*100,
          annual_evict_order_rate_per_unit = (evict_orders/evict_covered_unit_years)*100) |>
