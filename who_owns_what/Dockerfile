@@ -54,6 +54,7 @@ COPY assets assets
 # Copy data
 COPY ./data/LandlordProperties-with-OwnerNetworks.csv data/LandlordProperties-with-OwnerNetworks.csv
 COPY ./data/overall-summary-stats.csv data/overall-summary-stats.csv
+COPY ./data/Landlord-network-summary-statistics.csv data/Landlord-network-summary-statistics.csv
 
 # compile assets
 RUN mix assets.deploy
@@ -69,6 +70,7 @@ RUN mix release
 
 RUN rm data/LandlordProperties-with-OwnerNetworks.csv
 RUN rm data/overall-summary-stats.csv
+RUN rm data/Landlord-network-summary-statistics.csv
 
 # start a new build stage so that the final image will only contain
 # the compiled release and other runtime necessities

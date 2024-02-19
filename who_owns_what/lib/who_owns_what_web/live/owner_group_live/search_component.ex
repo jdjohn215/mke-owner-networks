@@ -68,7 +68,7 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.SearchComponent do
         <%= owner_group.number_units %>
       </:col>
       <:col :let={owner_group} label="Total Assessed Value">
-        $<%= formatted_dollars(owner_group.total_assessed_value) %>
+        $<%= format_dollars(owner_group.total_assessed_value) %>
       </:col>
     </.table>
     """

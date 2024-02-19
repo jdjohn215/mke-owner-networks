@@ -434,6 +434,25 @@ defmodule WhoOwnsWhatWeb.CoreComponents do
     """
   end
 
+  @doc """
+  Renders a header2 with title.
+  """
+  attr :class, :string, default: nil
+
+  slot :inner_block, required: true
+
+  def header2(assigns) do
+    ~H"""
+    <header class={[@class]}>
+      <div>
+        <h1 class="text-xl font-semibold leading-8 text-zinc-800">
+          <%= render_slot(@inner_block) %>
+        </h1>
+      </div>
+    </header>
+    """
+  end
+
   @doc ~S"""
   Renders a table with generic styling.
 
@@ -468,7 +487,7 @@ defmodule WhoOwnsWhatWeb.CoreComponents do
 
     ~H"""
     <div class="sm:overflow-visible sm:px-0">
-      <table class="w-[40rem] mt-11 w-full">
+      <table class="w-[40rem] mt-8 w-full">
         <thead class="text-sm text-left leading-6 text-zinc-500">
           <tr>
             <th :for={col <- @col} class={["p-0 pr-6 pb-4 font-normal", col[:class]]}>
@@ -531,7 +550,7 @@ defmodule WhoOwnsWhatWeb.CoreComponents do
 
   def list(assigns) do
     ~H"""
-    <div class="mt-14">
+    <div class="mt-8">
       <dl class="-my-4 divide-y divide-zinc-100">
         <div :for={item <- @item} class="flex gap-4 py-4 text-sm leading-6 sm:gap-8">
           <dt class="w-1/4 flex-none text-zinc-500"><%= item.title %></dt>

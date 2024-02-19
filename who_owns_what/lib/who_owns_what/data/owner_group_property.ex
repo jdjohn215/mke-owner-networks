@@ -15,7 +15,7 @@ defmodule WhoOwnsWhat.Data.OwnerGroupProperty do
       references: :name,
       define_field: false
 
-    belongs_to :propery, Property,
+    belongs_to :property, Property,
       foreign_key: :taxkey,
       references: :taxkey,
       define_field: false

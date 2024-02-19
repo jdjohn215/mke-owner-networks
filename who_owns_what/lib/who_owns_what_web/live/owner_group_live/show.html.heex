@@ -3,7 +3,29 @@
 </.header>
 <p>Total Properties: <%= @owner_group.number_properties %></p>
 <p>Total Units: <%= @owner_group.number_units %></p>
-<p>Total Assessed Value: $<%= formatted_dollars(@owner_group.total_assessed_value) %></p>
+<p>Total Assessed Value: $<%= format_dollars(@owner_group.total_assessed_value) %></p>
+
+<p class="mt-2">
+  Code Violations per 100 Units per Year: <%= format_float(
+    @owner_group.ownership_violation_unit_rate_annual
+  ) %>
+</p>
+
+<%= if is_nil(@owner_group.annual_eviction_filing_rate_per_unit) do %>
+  <p><%= "Eviction Filings per 100 Units per Year: Redacted" %></p>
+<% else %>
+  <p>
+    <%= "Eviction Filings per 100 Units per Year: #{format_float(@owner_group.annual_eviction_filing_rate_per_unit)}" %>
+  </p>
+<% end %>
+
+<%= if is_nil(@owner_group.annual_eviction_order_rate_per_unit) do %>
+  <p><%= "Eviction Orders per 100 Units per Year: Redacted" %></p>
+<% else %>
+  <p>
+    <%= "Eviction Orders per 100 Units per Year: #{format_float(@owner_group.annual_eviction_filing_rate_per_unit)}" %>
+  </p>
+<% end %>
 
 <details class="font-bold mt-4">
   <summary>
@@ -24,6 +46,6 @@
   <:col :let={property} label="Owner Name"><%= property.owner_name_1 %></:col>
   <:col :let={property} label="Number of Units"><%= property.number_units %></:col>
   <:col :let={property} label="Assessed Value" class="hidden md:table-cell">
-    $<%= formatted_dollars(property.c_a_total) %>
+    $<%= format_dollars(property.c_a_total) %>
   </:col>
 </.table>

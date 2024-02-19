@@ -1,13 +1,15 @@
 defmodule WhoOwnsWhat.Data.Import do
   alias WhoOwnsWhat.Repo
-  alias WhoOwnsWhat.Data.Property
-  alias WhoOwnsWhat.Data.OwnerGroupProperty
+  alias WhoOwnsWhat.Data.{Property, OwnerGroup, OwnerGroupProperty}
 
   @path Application.compile_env(:who_owns_what, :data_folder_path)
   @external_resource Path.join(@path, "LandlordProperties-with-OwnerNetworks.csv")
+  @external_resource Path.join(@path, "Landlord-network-summary-statistics.csv")
 
   @data File.read!(Path.join(@path, "LandlordProperties-with-OwnerNetworks.csv"))
         |> :zlib.gzip()
+  @summary_data File.read!(Path.join(@path, "Landlord-network-summary-statistics.csv"))
+                |> :zlib.gzip()
 
   def properties do
     properties =
@@ -34,6 +36,7 @@ defmodule WhoOwnsWhat.Data.Import do
       property =
         %{
           taxkey: Map.fetch!(map, "TAXKEY"),
+          convey_date: convert_string_maybe_na_to_date(Map.fetch!(map, "CONVEY_DATE")),
           house_number_low: String.to_integer(Map.fetch!(map, "HOUSE_NR_LO")),
           house_number_high: String.to_integer(Map.fetch!(map, "HOUSE_NR_HI")),
           house_number_suffix: Map.fetch!(map, "HOUSE_NR_SFX"),
@@ -57,13 +60,16 @@ defmodule WhoOwnsWhat.Data.Import do
           wdfi_address: Map.fetch!(map, "wdfi_address"),
           inserted_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second),
           updated_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second),
-          dns_covered_days: String.to_integer(Map.fetch!(map, "dns_covered_days")),
+          dns_covered_days:
+            convert_string_maybe_na_to_integer(Map.fetch!(map, "dns_covered_days")),
           dns_covered_unit_years:
-            Float.parse(Map.fetch!(map, "dns_covered_unit_years")) |> elem(0),
+            convert_string_maybe_na_to_float(Map.fetch!(map, "dns_covered_unit_years")),
           total_orders: String.to_integer(Map.fetch!(map, "total_orders")),
           total_violations: String.to_integer(Map.fetch!(map, "total_violations")),
           ownership_orders: String.to_integer(Map.fetch!(map, "ownership_orders")),
-          ownership_violations: String.to_integer(Map.fetch!(map, "ownership_violations"))
+          ownership_violations: String.to_integer(Map.fetch!(map, "ownership_violations")),
+          eviction_orders: convert_string_maybe_na_to_integer(Map.fetch!(map, "evict_orders")),
+          eviction_filings: convert_string_maybe_na_to_integer(Map.fetch!(map, "evict_filings"))
         }
         |> Map.update!(:wdfi_address, fn address ->
           if address == "NA" do
@@ -127,15 +133,94 @@ defmodule WhoOwnsWhat.Data.Import do
   end
 
   def owner_groups do
-    Ecto.Adapters.SQL.query!(
-      Repo,
-      """
-      INSERT INTO owner_groups (name, number_properties, number_units, total_assessed_value, inserted_at, updated_at)
-      SELECT owner_group_name, count(number_units), sum(number_units), sum(c_a_total), datetime('now'), datetime('now')
-      FROM properties p
-      JOIN owner_groups_properties ogp on ogp.taxkey = p.taxkey
-      GROUP BY ogp.owner_group_name
-      """
-    )
+    owner_groups =
+      @summary_data
+      |> :zlib.gunzip()
+      |> String.trim()
+      |> String.split("\n")
+
+    keys =
+      owner_groups
+      |> Enum.take(1)
+      |> hd()
+      |> String.trim()
+      |> String.split(",")
+
+    owner_groups
+    |> Stream.drop(1)
+    |> NimbleCSV.RFC4180.parse_stream(skip_headers: false)
+    |> Stream.map(fn values ->
+      map =
+        List.zip([keys, values])
+        |> Enum.into(%{})
+
+      annual_evict_filing_rate_per_unit =
+        convert_string_maybe_na_to_float(Map.fetch!(map, "annual_evict_filing_rate_per_unit"))
+
+      annual_evict_order_rate_per_unit =
+        convert_string_maybe_na_to_float(Map.fetch!(map, "annual_evict_order_rate_per_unit"))
+
+      ownership_violation_unit_rate_annual =
+        convert_string_maybe_na_to_float(Map.fetch!(map, "ownership_violation_unit_rate_annual"))
+
+      evict_covered_unit_years =
+        convert_string_maybe_na_to_float(Map.fetch!(map, "evict_covered_unit_years"))
+
+      owner_group =
+        %{
+          name: Map.fetch!(map, "final_group"),
+          number_properties: String.to_integer(Map.fetch!(map, "parcels")),
+          number_units: String.to_integer(Map.fetch!(map, "units")),
+          total_assessed_value: String.to_integer(Map.fetch!(map, "total_assessed_value")),
+          # wdfi_group_id: Map.fetch!(map, "component_number"),
+          # names: Map.fetch!(map, "names"),
+          # name_count: Map.fetch!(map, "name_count"),
+          eviction_orders: convert_string_maybe_na_to_integer(Map.fetch!(map, "evict_orders")),
+          eviction_filings: convert_string_maybe_na_to_integer(Map.fetch!(map, "evict_filings")),
+          eviction_covered_unit_years: evict_covered_unit_years,
+          annual_eviction_filing_rate_per_unit: annual_evict_filing_rate_per_unit,
+          annual_eviction_order_rate_per_unit: annual_evict_order_rate_per_unit,
+          dns_covered_unit_years:
+            Float.parse(Map.fetch!(map, "dns_covered_unit_years")) |> elem(0),
+          ownership_orders: String.to_integer(Map.fetch!(map, "ownership_orders")),
+          ownership_violations: String.to_integer(Map.fetch!(map, "ownership_violations")),
+          ownership_violation_unit_rate_annual: ownership_violation_unit_rate_annual,
+          total_orders: String.to_integer(Map.fetch!(map, "total_orders")),
+          total_violations: String.to_integer(Map.fetch!(map, "total_violations")),
+          inserted_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second),
+          updated_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second)
+        }
+
+      owner_group
+    end)
+    |> Stream.chunk_every(500)
+    |> Enum.map(fn owner_group_maps ->
+      {:ok, _} =
+        Ecto.Multi.new()
+        |> Ecto.Multi.insert_all(:insert_all, OwnerGroup, owner_group_maps)
+        |> Repo.transaction()
+    end)
+  end
+
+  defp convert_string_maybe_na_to_float("NA"), do: nil
+  defp convert_string_maybe_na_to_float("0"), do: 0.0
+
+  defp convert_string_maybe_na_to_float(string_number) do
+    {float, ""} = Float.parse(string_number)
+    float
+  end
+
+  defp convert_string_maybe_na_to_integer("NA"), do: nil
+  defp convert_string_maybe_na_to_integer("0"), do: 0
+
+  defp convert_string_maybe_na_to_integer(string_number) do
+    String.to_integer(string_number)
+  end
+
+  defp convert_string_maybe_na_to_date("NA"), do: nil
+
+  defp convert_string_maybe_na_to_date(string_date) do
+    NaiveDateTime.from_iso8601!(string_date)
+    |> NaiveDateTime.to_date()
   end
 end

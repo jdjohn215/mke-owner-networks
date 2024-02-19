@@ -31,6 +31,9 @@ defmodule WhoOwnsWhat.Repo.Migrations.CreateProperties do
       add :total_violations, :integer
       add :ownership_orders, :integer
       add :ownership_violations, :integer
+      add :eviction_filings, :integer
+      add :eviction_orders, :integer
+      add :convey_date, :date
 
       timestamps()
     end

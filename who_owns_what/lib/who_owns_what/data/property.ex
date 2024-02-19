@@ -32,6 +32,9 @@ defmodule WhoOwnsWhat.Data.Property do
     field :total_violations, :integer
     field :ownership_orders, :integer
     field :ownership_violations, :integer
+    field :eviction_filings, :integer
+    field :eviction_orders, :integer
+    field :convey_date, :date
 
     timestamps()
 
@@ -68,6 +71,8 @@ defmodule WhoOwnsWhat.Data.Property do
       :geo_zip_code,
       :calculated_owner_occupied,
       :owner_occupied,
+      :eviction_filings,
+      :eviction_orders,
       :geo_alder
     ])
     |> validate_required([

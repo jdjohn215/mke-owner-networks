@@ -5,6 +5,7 @@
 
 <.list>
   <:item title="Taxkey"><%= @property.taxkey %></:item>
+  <:item title="Date Purchased"><%= @property.convey_date %></:item>
   <:item title="District"><%= @property.geo_alder %></:item>
   <:item title="Owner Group">
     <.good_link navigate={~p"/owner_groups/#{@property.owner_group.name}"}>
@@ -14,5 +15,22 @@
   <:item title="Owner Name"><%= @property.owner_name_1 %></:item>
   <:item title="Owner Address"><%= @property.owner_address %></:item>
   <:item title="Number of Units"><%= @property.number_units %></:item>
-  <:item title="Assessed Value">$<%= formatted_dollars(@property.c_a_total) %></:item>
+  <:item title="Assessed Value">$<%= format_dollars(@property.c_a_total) %></:item>
+  <:item title="Code Violations">
+    <%= "#{@property.ownership_violations} since #{@dns_data_date}" %>
+  </:item>
+  <:item title="Eviction Filings">
+    <%= if is_nil(@property.eviction_filings) do %>
+      <%= "Redacted (fewer than 6 units)" %>
+    <% else %>
+      <%= "#{@property.eviction_filings} since #{@eviction_data_date}" %>
+    <% end %>
+  </:item>
+  <:item title="Eviction Orders">
+    <%= if is_nil(@property.eviction_orders) do %>
+      <%= "Redacted (fewer than 6 units)" %>
+    <% else %>
+      <%= "#{@property.eviction_orders} since #{@eviction_data_date}" %>
+    <% end %>
+  </:item>
 </.list>

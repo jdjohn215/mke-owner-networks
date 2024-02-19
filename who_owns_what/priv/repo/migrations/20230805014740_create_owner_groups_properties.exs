@@ -19,6 +19,17 @@ defmodule WhoOwnsWhat.Repo.Migrations.CreateOwnerGroupsProperties do
       add :total_assessed_value, :integer
       add :number_properties, :integer
       add :number_units, :integer
+      add :eviction_orders, :integer
+      add :eviction_filings, :integer
+      add :eviction_covered_unit_years, :float
+      add :annual_eviction_filing_rate_per_unit, :float
+      add :annual_eviction_order_rate_per_unit, :float
+      add :dns_covered_unit_years, :float
+      add :ownership_orders, :integer
+      add :ownership_violations, :integer
+      add :ownership_violation_unit_rate_annual, :float
+      add :total_orders, :integer
+      add :total_violations, :integer
 
       timestamps()
     end
