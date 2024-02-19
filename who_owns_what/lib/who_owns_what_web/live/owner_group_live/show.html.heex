@@ -23,7 +23,7 @@
   <p><%= "Eviction Orders per 100 Units per Year: Redacted" %></p>
 <% else %>
   <p>
-    <%= "Eviction Orders per 100 Units per Year: #{format_float(@owner_group.annual_eviction_filing_rate_per_unit)}" %>
+    <%= "Eviction Orders per 100 Units per Year: #{format_float(@owner_group.annual_eviction_order_rate_per_unit)}" %>
   </p>
 <% end %>
 
