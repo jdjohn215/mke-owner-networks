@@ -179,6 +179,7 @@ network.summary.stats <- mprop.with.evictions %>%
   group_by(component_number, final_group) %>%
   summarise(parcels = n(),
             units = sum(NR_UNITS),
+            total_assessed_value = sum(C_A_TOTAL),
             names = paste(unique(mprop_name), collapse = "; "),
             name_count = n_distinct(mprop_name),
             dns_covered_unit_years = sum(dns_covered_unit_years),
