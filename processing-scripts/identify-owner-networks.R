@@ -204,12 +204,31 @@ network.summary.stats <- mprop.with.evictions %>%
 
 ################################################################################
 # redactions
-mprop.with.evictions.redacted <- mprop.with.evictions |>
-  mutate(across(.cols = contains("evict"),
-                .fns = ~if_else(NR_UNITS > 5, .x, NA)))
 network.summary.stats.redacted <- network.summary.stats |>
   mutate(across(.cols = contains("evict"),
                 .fns = ~if_else(units > 5, .x, NA)))
+
+# find networks with redacted filings where the number of redacted units is less than 6
+redact.all.parcels <- mprop.with.evictions |>
+  mutate(across(.cols = contains("evict"),
+                .fns = ~if_else(NR_UNITS > 5, .x, NA))) |>
+  group_by(final_group) |>
+  summarise(redacted_parcels = sum(is.na(evict_filings)),
+            redacted_units = sum(NR_UNITS[is.na(evict_filings)]),
+            unredacted_filings = sum(evict_filings, na.rm = T)) |>
+  inner_join(network.summary.stats.redacted |>
+               select(final_group, total_parcels = parcels, total_filings = evict_filings)) |>
+  filter(!is.na(total_filings)) |>
+  select(final_group, total_parcels, total_filings, everything()) |>
+  mutate(redacted_filings = total_filings - unredacted_filings) |>
+  filter(redacted_units < 6,
+         redacted_filings > 0)
+
+mprop.with.evictions.redacted <- mprop.with.evictions |>
+  mutate(across(.cols = c("evict_filings","evict_orders"),
+                .fns = ~if_else(NR_UNITS > 5, .x, NA)),
+         evict_filings = if_else(final_group %in% redact.all.parcels$final_group, NA, evict_filings),
+         evict_orders = if_else(final_group %in% redact.all.parcels$final_group, NA, evict_orders))
 
 ################################################################################
 # save output
