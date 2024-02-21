@@ -121,6 +121,11 @@ defmodule WhoOwnsWhat.Data do
     |> Repo.preload(:owner_group)
   end
 
+  def get_owner_group_by_name_with_properties!(name) do
+    Repo.get_by!(OwnerGroup, name: name)
+    |> Repo.preload(:properties)
+  end
+
   def get_owner_group_by_name(name) do
     from(og in OwnerGroup,
       where: og.name == ^name,

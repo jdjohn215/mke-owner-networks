@@ -23,6 +23,7 @@ defmodule WhoOwnsWhatWeb.Router do
     live "/properties/:id", PropertyLive.Show, :show
     live "/owner_groups", OwnerGroupLive.Index, :index
     live "/owner_groups/:id", OwnerGroupLive.Show, :show
+    get "/owner_groups/:id/csv", PageController, :owner_groups_csv
   end
 
   # Other scopes may use custom stacks.
