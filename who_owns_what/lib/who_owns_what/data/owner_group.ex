@@ -1,7 +1,6 @@
 defmodule WhoOwnsWhat.Data.OwnerGroup do
   use Ecto.Schema
   import Ecto.Changeset
-  alias WhoOwnsWhat.Data.Property
   alias WhoOwnsWhat.Data.OwnerGroupProperty
 
   schema "owner_groups" do
