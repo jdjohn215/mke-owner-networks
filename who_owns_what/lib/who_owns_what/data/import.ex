@@ -50,24 +50,24 @@ defmodule WhoOwnsWhat.Data.Import do
           owner_name_1: Map.fetch!(map, "mprop_name"),
           owner_name_2: Map.fetch!(map, "OWNER_NAME_2"),
           owner_name_3: Map.fetch!(map, "OWNER_NAME_3"),
-          owner_address: Map.fetch!(map, "mprop_address"),
+          owner_address: String.replace_suffix(Map.fetch!(map, "mprop_address"), "_mprop", ""),
           owner_city_state: Map.fetch!(map, "OWNER_CITY_STATE"),
           owner_zip_code: Map.fetch!(map, "OWNER_ZIP"),
           geo_zip_code: Map.fetch!(map, "GEO_ZIP_CODE"),
           calculated_owner_occupied: Map.fetch!(map, "owner_occupied") == "OWNER OCCUPIED",
           owner_occupied: Map.fetch!(map, "OWN_OCPD") != "NA",
           geo_alder: Map.fetch!(map, "GEO_ALDER"),
-          wdfi_address: Map.fetch!(map, "wdfi_address"),
+          wdfi_address: String.replace_suffix(Map.fetch!(map, "wdfi_address"), "_wdfi", ""),
           inserted_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second),
           updated_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second),
           dns_covered_days:
             convert_string_maybe_na_to_integer(Map.fetch!(map, "dns_covered_days")),
           dns_covered_unit_years:
             convert_string_maybe_na_to_float(Map.fetch!(map, "dns_covered_unit_years")),
-          total_orders: String.to_integer(Map.fetch!(map, "total_orders")),
-          total_violations: String.to_integer(Map.fetch!(map, "total_violations")),
-          ownership_orders: String.to_integer(Map.fetch!(map, "ownership_orders")),
-          ownership_violations: String.to_integer(Map.fetch!(map, "ownership_violations")),
+          total_dns_orders: String.to_integer(Map.fetch!(map, "total_orders")),
+          total_dns_violations: String.to_integer(Map.fetch!(map, "total_violations")),
+          ownership_dns_orders: String.to_integer(Map.fetch!(map, "ownership_orders")),
+          ownership_dns_violations: String.to_integer(Map.fetch!(map, "ownership_violations")),
           eviction_orders: convert_string_maybe_na_to_integer(Map.fetch!(map, "evict_orders")),
           eviction_filings: convert_string_maybe_na_to_integer(Map.fetch!(map, "evict_filings"))
         }
@@ -160,7 +160,7 @@ defmodule WhoOwnsWhat.Data.Import do
       annual_evict_order_rate_per_unit =
         convert_string_maybe_na_to_float(Map.fetch!(map, "annual_evict_order_rate_per_unit"))
 
-      ownership_violation_unit_rate_annual =
+      ownership_dns_violation_unit_rate_annual =
         convert_string_maybe_na_to_float(Map.fetch!(map, "ownership_violation_unit_rate_annual"))
 
       evict_covered_unit_years =
@@ -182,11 +182,11 @@ defmodule WhoOwnsWhat.Data.Import do
           annual_eviction_order_rate_per_unit: annual_evict_order_rate_per_unit,
           dns_covered_unit_years:
             Float.parse(Map.fetch!(map, "dns_covered_unit_years")) |> elem(0),
-          ownership_orders: String.to_integer(Map.fetch!(map, "ownership_orders")),
-          ownership_violations: String.to_integer(Map.fetch!(map, "ownership_violations")),
-          ownership_violation_unit_rate_annual: ownership_violation_unit_rate_annual,
-          total_orders: String.to_integer(Map.fetch!(map, "total_orders")),
-          total_violations: String.to_integer(Map.fetch!(map, "total_violations")),
+          ownership_dns_orders: String.to_integer(Map.fetch!(map, "ownership_orders")),
+          ownership_dns_violations: String.to_integer(Map.fetch!(map, "ownership_violations")),
+          ownership_dns_violation_unit_rate_annual: ownership_dns_violation_unit_rate_annual,
+          total_dns_orders: String.to_integer(Map.fetch!(map, "total_orders")),
+          total_dns_violations: String.to_integer(Map.fetch!(map, "total_violations")),
           inserted_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second),
           updated_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second)
         }

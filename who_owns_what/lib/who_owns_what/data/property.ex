@@ -28,10 +28,10 @@ defmodule WhoOwnsWhat.Data.Property do
     field :wdfi_address, :string
     field :dns_covered_days, :integer
     field :dns_covered_unit_years, :float
-    field :total_orders, :integer
-    field :total_violations, :integer
-    field :ownership_orders, :integer
-    field :ownership_violations, :integer
+    field :total_dns_orders, :integer
+    field :total_dns_violations, :integer
+    field :ownership_dns_orders, :integer
+    field :ownership_dns_violations, :integer
     field :eviction_filings, :integer
     field :eviction_orders, :integer
     field :convey_date, :date

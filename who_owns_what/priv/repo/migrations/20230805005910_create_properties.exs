@@ -27,10 +27,10 @@ defmodule WhoOwnsWhat.Repo.Migrations.CreateProperties do
       add :wdfi_address, :string
       add :dns_covered_days, :integer
       add :dns_covered_unit_years, :float
-      add :total_orders, :integer
-      add :total_violations, :integer
-      add :ownership_orders, :integer
-      add :ownership_violations, :integer
+      add :total_dns_orders, :integer
+      add :total_dns_violations, :integer
+      add :ownership_dns_orders, :integer
+      add :ownership_dns_violations, :integer
       add :eviction_filings, :integer
       add :eviction_orders, :integer
       add :convey_date, :date

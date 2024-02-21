@@ -17,7 +17,7 @@
   <:item title="Number of Units"><%= @property.number_units %></:item>
   <:item title="Assessed Value">$<%= format_dollars(@property.c_a_total) %></:item>
   <:item title="Code Violations">
-    <%= "#{@property.ownership_violations} since #{@dns_data_date}" %>
+    <%= "#{@property.ownership_dns_violations} since #{@dns_data_date}" %>
   </:item>
   <:item title="Eviction Filings">
     <%= if is_nil(@property.eviction_filings) do %>

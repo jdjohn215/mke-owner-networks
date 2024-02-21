@@ -14,11 +14,11 @@ defmodule WhoOwnsWhat.Data.OwnerGroup do
     field :annual_eviction_filing_rate_per_unit, :float
     field :annual_eviction_order_rate_per_unit, :float
     field :dns_covered_unit_years, :float
-    field :ownership_orders, :integer
-    field :ownership_violations, :integer
-    field :ownership_violation_unit_rate_annual, :float
-    field :total_orders, :integer
-    field :total_violations, :integer
+    field :ownership_dns_orders, :integer
+    field :ownership_dns_violations, :integer
+    field :ownership_dns_violation_unit_rate_annual, :float
+    field :total_dns_orders, :integer
+    field :total_dns_violations, :integer
 
     timestamps()
 
@@ -43,11 +43,11 @@ defmodule WhoOwnsWhat.Data.OwnerGroup do
       :annual_eviction_filing_rate_per_unit,
       :annual_eviction_order_rate_per_unit,
       :dns_covered_unit_years,
-      :ownership_orders,
-      :ownership_violations,
-      :ownership_violation_unit_rate_annual,
-      :total_orders,
-      :total_violations
+      :ownership_dns_orders,
+      :ownership_dns_violations,
+      :ownership_dns_violation_unit_rate_annual,
+      :total_dns_orders,
+      :total_dns_violations
     ])
     |> validate_required([
       :name,
@@ -60,11 +60,11 @@ defmodule WhoOwnsWhat.Data.OwnerGroup do
       :annual_eviction_filing_rate_per_unit,
       :annual_eviction_order_rate_per_unit,
       :dns_covered_unit_years,
-      :ownership_orders,
-      :ownership_violations,
-      :ownership_violation_unit_rate_annual,
-      :total_orders,
-      :total_violations
+      :ownership_dns_orders,
+      :ownership_dns_violations,
+      :ownership_dns_violation_unit_rate_annual,
+      :total_dns_orders,
+      :total_dns_violations
     ])
   end
 end
