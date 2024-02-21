@@ -79,28 +79,7 @@ defmodule WhoOwnsWhat.Data.Import do
           end
         end)
 
-      {map, property}
-    end)
-    |> Stream.chunk_every(500)
-    |> Enum.map(fn maps_properties ->
-      {maps, properties} =
-        Enum.reduce(maps_properties, {[], []}, fn {map, property}, {maps, properties} ->
-          {[map | maps], [property | properties]}
-        end)
-
-      {:ok, _} =
-        Ecto.Multi.new()
-        |> Ecto.Multi.insert_all(:insert_all, Property, properties)
-        |> Repo.transaction()
-
-      maps
-    end)
-    |> List.flatten()
-  end
-
-  def ownership_groups(maps) do
-    Stream.map(maps, fn map ->
-      %{
+      owner_group_property = %{
         taxkey: Map.fetch!(map, "TAXKEY"),
         owner_group_name: Map.fetch!(map, "final_group"),
         wdfi_group_id: Map.fetch!(map, "component_number"),
@@ -108,14 +87,28 @@ defmodule WhoOwnsWhat.Data.Import do
         inserted_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second),
         updated_at: NaiveDateTime.truncate(DateTime.to_naive(DateTime.utc_now()), :second)
       }
+
+      {owner_group_property, property}
     end)
     |> Stream.chunk_every(500)
     |> Enum.map(fn owner_groups_properties ->
+      {owner_groups_properties, properties} =
+        Enum.reduce(owner_groups_properties, {[], []}, fn {owner_group_property, property},
+                                                          {owner_groups_properties, properties} ->
+          {[owner_group_property | owner_groups_properties], [property | properties]}
+        end)
+
+      {:ok, _} =
+        Ecto.Multi.new()
+        |> Ecto.Multi.insert_all(:insert_all, Property, properties)
+        |> Repo.transaction()
+
       {:ok, _} =
         Ecto.Multi.new()
         |> Ecto.Multi.insert_all(:insert_all, OwnerGroupProperty, owner_groups_properties)
         |> Repo.transaction()
     end)
+    |> List.flatten()
   end
 
   def properties_fts do

@@ -50,7 +50,6 @@ defmodule WhoOwnsWhat.Application do
     def run(_arg) do
       if Application.get_env(:who_owns_what, :preload_data) do
         maps = WhoOwnsWhat.Data.Import.properties()
-        WhoOwnsWhat.Data.Import.ownership_groups(maps)
         WhoOwnsWhat.Data.Import.properties_fts()
         WhoOwnsWhat.Data.Import.owner_groups()
       end
