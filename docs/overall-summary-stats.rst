@@ -1,12 +1,12 @@
 We identify 48,966 total landlord-owned parcels. The original data
 includes 29,116 unique owner names using 23,038 addresses.
 
-After applying our network matching process, we find a total of 20,822
-owner networks. Of those networks, 71% own just a single parcel, while
-18% own not only multiple parcels but also include multiple ownership
+After applying our network matching process, we find a total of 21,555
+owner networks. Of those networks, 72% own just a single parcel, while
+16% own not only multiple parcels but also include multiple ownership
 names.
 
-Of all the residential parcels in the city, 56% are part of an ownership
+Of all the residential parcels in the city, 51% are part of an ownership
 network which includes multiple owner names.
 
 The most recent parcel ownership records were updated by the City of
