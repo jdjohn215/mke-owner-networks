@@ -2,6 +2,8 @@
   About
 </.header>
 
+<h2 class="text-xl font-semibold leading-8 my-4">Networks</h2>
+
 <p class="mt-4 leading-5">
   This website uses public records to show connections between the owners of non-owner-occupied residential properties in the City of Milwaukee. It is a project of the Marquette Law School's Lubar Center for Public Policy Research and Civic Education.
 </p>
@@ -34,6 +36,22 @@
   Some addresses, such as virtual office facilities or accountant offices, probably don’t represent meaningful connections. We attempt to remove these addresses from the network matching process, but some may slip through. If you notice this or another error, please email &lt;john [dot] d [dot] johnson [at] Marquette [dot] edu&gt;.
 </p>
 
+<h2 class="text-xl font-semibold leading-8 my-4">Code Violations</h2>
+
+<p class="mt-4 leading-5">
+  We obtain code violation data from the City of Milwaukee’s Department of Neighborhood Services. Records begin on January 1, 2017. To calculate code violation rates we first identify the length of time the current owner had the property which also overlaps with the period of available code enforcement data. We multiply this period of DNS-covered ownership by the number of housing units at the property. For each ownership group, we divide the total number of violations occurring during the ownership period by this denominator, “DNS-covered-unit-years.” The result is “code violations per 100 units per year.”
+</p>
+
+<h2 class="text-xl font-semibold leading-8 my-4">Evictions</h2>
+
+<p class="mt-4 leading-5">
+  We obtain eviction records from the Wisconsin Consolidated Court Automation Programs (CCAP) database. We match each Milwaukee city eviction record to a parcel by using the earliest defendant address associated with case. In total, we achieve about a 95% successful match rate. Our eviction records begin on January 1, 2016. As with the DNS records, we determine the period of current ownership which also overlaps with the eviction court record coverage. Multiplying the overlapping period by the number of residential units yields “Eviction-record-covered-unit-years.” We divide the total number of eviction filings and orders by this denominator to calculate normalized rates across each owner portfolio.
+</p>
+
+<p class="mt-4 leading-5">
+  Although eviction records are public records, we wish to avoid providing information which could be connected to a specific tenant. Accordingly, we redact records for parcels and ownership groups with small numbers of units (generally fewer than 6).
+</p>
+
 <h2 class="text-xl font-semibold leading-8 my-4">Citations</h2>
 
 <strong>Data Sources</strong>
@@ -49,6 +67,12 @@
     <.good_link navigate="https://dfi.wi.gov/Pages/BusinessServices/BusinessEntities/CorpDataServices.aspx">
       https://dfi.wi.gov/Pages/BusinessServices/BusinessEntities/CorpDataServices.aspx
     </.good_link>
+  </:item>
+  <:item>
+    City of Milwaukee Department of Neighborhood Services. Code Enforcement Violations. Updated periodically by special request.
+  </:item>
+  <:item>
+    Wisconsin Court System Consolidated Court Automation Programs (CCAP). Custom Eviction Records Dataset. Updated periodically.
   </:item>
 </.item_list>
 <strong>Software</strong>
