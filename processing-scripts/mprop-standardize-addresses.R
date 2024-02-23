@@ -27,6 +27,7 @@ if(nrow(new.addresses) > 0){
   new.addresses.standardized <- new.addresses.geocodio %>%
     # ensure all columns are present by adding NA columns if missing
     bind_rows(tibble(address_components.street = character(), 
+                     address_components.suffix = character(),
                      address_components.secondaryunit = character(), 
                      address_components.secondarynumber = character(),
                      address_components.city = character(), 
@@ -39,8 +40,8 @@ if(nrow(new.addresses) > 0){
                                NA_character_)) %>%
     # create combined address string, dropping NA variables
     unite(col = "mprop_address", address_components.number, address_components.street,
-          unittype2, address_components.secondarynumber, city2, state2, 
-          address_components.zip,
+          address_components.suffix, unittype2, address_components.secondarynumber,
+          city2, state2, address_components.zip,
           na.rm = T, remove = FALSE, sep = " ") %>%
     # replace standardized address w/original address as needed
     mutate(mprop_address = str_replace_all(mprop_address, " ,", ","),
