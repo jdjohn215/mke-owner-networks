@@ -14,6 +14,13 @@ useless.addresses <- read_csv("data/mprop/useless-addresses.csv")
 
 # names that shouldn't be used to make additional connections
 useless.names <- read_csv("data/mprop/useless-names.csv")
+repeated.names <- read_csv("data/names/repeated-names.csv")
+repeated.names.not.used.to.match <- mprop |>
+  inner_join(repeated.names, by = c("mprop_name" = "name")) |>
+  group_by(mprop_name) |>
+  summarise(addresses = n_distinct(mprop_address)) |>
+  filter(addresses > 1)
+print(paste(nrow(repeated.names.not.used.to.match), "common names are not used for matching"))
 
 # connect MPROP to WDFI
 mprop.with.wdfi.matches <- mprop %>%
@@ -50,7 +57,8 @@ addresses.in.both <- mprop.with.wdfi.matches %>%
 #   each component is a distinct owner network
 components <- mprop.with.wdfi.matches %>%
   mutate(mprop_address = if_else(str_remove(mprop_address, "_mprop") %in% useless.addresses$address |
-                                   mprop_name %in% useless.names$name,
+                                   mprop_name %in% useless.names$name |
+                                   mprop_name %in% repeated.names$name,
                                  true = paste(mprop_address, row_number(), sep = "-"),
                                  false = mprop_address),
          wdfi_address = if_else(str_remove(wdfi_address, "_wdfi") %in% useless.addresses$address |
