@@ -18,7 +18,7 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.SearchComponent do
         target={@myself}
         text_value={@owner_query}
         event="do-search-owner"
-        name="Owner Group"
+        name="Owner Group Name"
       />
       <.results owner_groups={@owner_groups} />
     </div>
@@ -34,14 +34,15 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.SearchComponent do
     ~H"""
     <div>
       <.input
+        id={"search-#{@name}"}
         value={@text_value}
         name={@name}
+        label={@name}
         phx-target={@target}
         phx-keyup={@event}
         phx-debounce="100"
         type="text"
         class=""
-        placeholder={"Search by #{@name}"}
       />
     </div>
     """

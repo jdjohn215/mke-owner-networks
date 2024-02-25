@@ -22,12 +22,12 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
         text_value={@address_query}
         name="Address"
       />
-      <.search_input target={@myself} event="do-search-owner" text_value={@owner_query} name="Owner" />
+      <.search_input target={@myself} event="do-search-owner" text_value={@owner_query} name="Owner Name" />
       <.search_input
         target={@myself}
         event="do-search-owner-group"
         text_value={@owner_group_query}
-        name="Owner Group"
+        name="Owner Group Name"
       />
       <.results properties={@properties} />
     </div>
@@ -45,12 +45,12 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
       <.input
         value={@text_value}
         name={@name}
+        label={@name}
         phx-target={@target}
         phx-keyup={@event}
         phx-debounce="100"
         type="text"
         class=""
-        placeholder={"Search by #{@name}"}
         aria-expanded="false"
         aria-controls="options"
       />
