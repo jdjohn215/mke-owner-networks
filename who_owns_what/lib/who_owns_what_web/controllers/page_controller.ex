@@ -37,7 +37,9 @@ defmodule WhoOwnsWhatWeb.PageController do
       :ownership_dns_orders,
       :ownership_dns_violations,
       :eviction_filings,
-      :eviction_orders
+      :eviction_orders,
+      :latitude,
+      :longitude
     ]
 
     rows =
@@ -68,7 +70,9 @@ defmodule WhoOwnsWhatWeb.PageController do
           property.ownership_dns_orders,
           property.ownership_dns_violations,
           property.eviction_filings,
-          property.eviction_orders
+          property.eviction_orders,
+          property.latitude,
+          property.longitude
         ]
       end)
 

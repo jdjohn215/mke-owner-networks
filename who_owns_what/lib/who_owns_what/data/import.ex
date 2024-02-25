@@ -69,7 +69,9 @@ defmodule WhoOwnsWhat.Data.Import do
           ownership_dns_orders: String.to_integer(Map.fetch!(map, "ownership_orders")),
           ownership_dns_violations: String.to_integer(Map.fetch!(map, "ownership_violations")),
           eviction_orders: convert_string_maybe_na_to_integer(Map.fetch!(map, "evict_orders")),
-          eviction_filings: convert_string_maybe_na_to_integer(Map.fetch!(map, "evict_filings"))
+          eviction_filings: convert_string_maybe_na_to_integer(Map.fetch!(map, "evict_filings")),
+          latitude: convert_string_maybe_na_to_float(Map.fetch!(map, "lat")),
+          longitude: convert_string_maybe_na_to_float(Map.fetch!(map, "lon"))
         }
         |> Map.update!(:wdfi_address, fn address ->
           if address == "NA" do

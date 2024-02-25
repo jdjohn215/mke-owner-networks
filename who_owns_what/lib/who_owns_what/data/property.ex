@@ -35,6 +35,8 @@ defmodule WhoOwnsWhat.Data.Property do
     field :eviction_filings, :integer
     field :eviction_orders, :integer
     field :convey_date, :date
+    field :latitude, :float
+    field :longitude, :float
 
     timestamps()
 

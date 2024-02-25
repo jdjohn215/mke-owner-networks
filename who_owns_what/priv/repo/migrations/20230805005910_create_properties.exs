@@ -34,6 +34,8 @@ defmodule WhoOwnsWhat.Repo.Migrations.CreateProperties do
       add :eviction_filings, :integer
       add :eviction_orders, :integer
       add :convey_date, :date
+      add :latitude, :float
+      add :longitude, :float
 
       timestamps()
     end
