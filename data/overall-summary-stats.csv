@@ -1,20 +1,20 @@
 name,value
-total_parcels,"48,966"
-total_units,"157,313"
-total_networks,"21,555"
-networks_single_parcel,"15,609"
+total_parcels,"48,961"
+total_units,"157,308"
+total_networks,"21,554"
+networks_single_parcel,"15,612"
 pct_networks_single_parcel,72%
-networks_multiple_parcels,"5,946"
+networks_multiple_parcels,"5,942"
 pct_networks_multiple_parcels,28%
 networks_multiple_names,"3,367"
 pct_networks_multiple_names,16%
-parcels_single_parcel_owner,"15,609"
+parcels_single_parcel_owner,"15,612"
 pct_parcels_single_parcel_owner,32%
-parcels_multiple_parcel_owner,"33,357"
-parcels_multiple_name_owner,"25,015"
+parcels_multiple_parcel_owner,"33,349"
+parcels_multiple_name_owner,"25,017"
 pct_parcels_multiple_name_owner,51%
-total_mprop_names,"29,116"
-total_mprop_addresses,"23,038"
-mprop_updated,"Feb 09, 2024"
+total_mprop_names,"29,118"
+total_mprop_addresses,"23,034"
+mprop_updated,"Feb 21, 2024"
 wdfi_updated,"Oct 13, 2023"
-workflow_updated,"Feb 23, 2024"
+workflow_updated,"Feb 26, 2024"
