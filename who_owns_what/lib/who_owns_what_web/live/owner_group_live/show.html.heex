@@ -34,11 +34,13 @@
   <img loading="lazy" src={"/images/networks/#{@owner_group.name}.svg"} />
 </details>
 
-<a href={~p"/owner_groups/#{@owner_group.name}/csv"}>
-  <.button>
-    Download CSV
-  </.button>
-</a>
+<div class="mt-4">
+  <a href={~p"/owner_groups/#{@owner_group.name}/csv"}>
+    <.button>
+      Download CSV
+    </.button>
+  </a>
+</div>
 
 <.table id="properties" row_id={&"#{&1.id}"} rows={@properties}>
   <:col :let={property} label="Address">
