@@ -27,12 +27,14 @@
   </p>
 <% end %>
 
-<details class="font-bold mt-4 cursor-pointer">
-  <summary>
-    Click to View Network Graph
-  </summary>
-  <img loading="lazy" src={"/images/networks/#{@owner_group.name}.svg"} />
-</details>
+<%= if @show_network_graph do %>
+  <details class="font-bold mt-4 cursor-pointer">
+    <summary>
+      Click to View Network Graph
+    </summary>
+    <img loading="lazy" src={"/images/networks/#{@owner_group.name}.svg"} />
+  </details>
+<% end %>
 
 <div class="mt-4">
   <a href={~p"/owner_groups/#{@owner_group.name}/csv"}>
