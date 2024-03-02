@@ -38,11 +38,7 @@ defmodule WhoOwnsWhat.MixProject do
       {:ecto_sqlite3, ">= 0.0.0"},
       {:phoenix_html, "~> 4.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      # {:phoenix_live_view, "~> 0.20.0"},
-      {:phoenix_live_view,
-       git: "https://github.com/phoenixframework/phoenix_live_view.git",
-       branch: "main",
-       override: true},
+      {:phoenix_live_view, "~> 0.20.11"},
       {:floki, ">= 0.30.0", only: :test},
       {:phoenix_live_dashboard, "~> 0.8.0"},
       {:esbuild, "~> 0.7", runtime: Mix.env() == :dev},
@@ -54,8 +50,7 @@ defmodule WhoOwnsWhat.MixProject do
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
       {:nimble_csv, "~> 1.2"},
-      {:bandit, "~> 1.0"},
-      {:libgraph, "~> 0.16.0"}
+      {:bandit, "~> 1.0"}
     ]
   end
 
