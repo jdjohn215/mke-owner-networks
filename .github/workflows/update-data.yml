@@ -45,7 +45,7 @@ jobs:
             any::httr
 
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: fetch MPROP
         run: Rscript -e 'source("processing-scripts/fetch-mprop.R")'
