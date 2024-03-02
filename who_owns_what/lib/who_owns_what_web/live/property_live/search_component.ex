@@ -22,7 +22,12 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
         text_value={@address_query}
         name="Address"
       />
-      <.search_input target={@myself} event="do-search-owner" text_value={@owner_query} name="Owner Name" />
+      <.search_input
+        target={@myself}
+        event="do-search-owner"
+        text_value={@owner_query}
+        name="Owner Name"
+      />
       <.search_input
         target={@myself}
         event="do-search-owner-group"

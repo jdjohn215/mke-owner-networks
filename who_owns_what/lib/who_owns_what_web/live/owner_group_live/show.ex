@@ -12,9 +12,11 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.Show do
   def handle_params(%{"id" => name}, _, socket) do
     properties = Data.list_properties_by_owner_group_name(name)
     first_property = hd(properties)
-    has_multiple_unique_owner_names = Enum.any?(properties, fn(property) ->
-      property.owner_name_1 != first_property.owner_name_1
-    end)
+
+    has_multiple_unique_owner_names =
+      Enum.any?(properties, fn property ->
+        property.owner_name_1 != first_property.owner_name_1
+      end)
 
     {:noreply,
      socket
