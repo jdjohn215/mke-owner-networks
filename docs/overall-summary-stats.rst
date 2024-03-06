@@ -1,4 +1,4 @@
-We identify 48,958 total landlord-owned parcels. The original data
+We identify 48,956 total landlord-owned parcels. The original data
 includes 29,123 unique owner names using 23,025 addresses.
 
 After applying our network matching process, we find a total of 21,556

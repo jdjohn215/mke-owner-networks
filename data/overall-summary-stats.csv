@@ -1,6 +1,6 @@
 name,value
-total_parcels,"48,958"
-total_units,"157,298"
+total_parcels,"48,956"
+total_units,"157,295"
 total_networks,"21,556"
 networks_single_parcel,"15,605"
 pct_networks_single_parcel,72%
@@ -10,8 +10,8 @@ networks_multiple_names,"3,371"
 pct_networks_multiple_names,16%
 parcels_single_parcel_owner,"15,605"
 pct_parcels_single_parcel_owner,32%
-parcels_multiple_parcel_owner,"33,353"
-parcels_multiple_name_owner,"25,001"
+parcels_multiple_parcel_owner,"33,351"
+parcels_multiple_name_owner,"24,999"
 pct_parcels_multiple_name_owner,51%
 total_mprop_names,"29,123"
 total_mprop_addresses,"23,025"
