@@ -43,6 +43,7 @@ jobs:
             any::rlist
             any::jsonlite
             any::httr
+            any::lubridate
 
       - name: Check out repository
         uses: actions/checkout@v4

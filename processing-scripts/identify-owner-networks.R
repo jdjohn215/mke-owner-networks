@@ -248,7 +248,7 @@ write_csv(network.summary.stats.redacted, "data/Landlord-network-summary-statist
 updated <- tibble(
   mprop = max(as.Date(word(str_squish(mprop$LAST_VALUE_CHG), 1, 3), format = "%b %d %Y"), na.rm = T),
   wdfi = "2023-10-13", # update this after updating the corporate registration file
-  workflow = as.Date(Sys.time()),
+  workflow = as.Date(with_tz(Sys.time(), tzone = "America/Chicago")),
   evict_start = eviction.records.start.date,
   evict_end = eviction.records.end.date,
   dns_start = "2017-01-01",
