@@ -243,3 +243,15 @@ mprop.with.evictions.redacted <- mprop.with.evictions |>
 write_csv(mprop.with.evictions.redacted, "data/LandlordProperties-with-OwnerNetworks.csv")
 write_csv(network.summary.stats.redacted, "data/Landlord-network-summary-statistics.csv")
 
+###############################################################################
+# When were the data sources last updated?
+updated <- tibble(
+  mprop = max(as.Date(word(str_squish(mprop$LAST_VALUE_CHG), 1, 3), format = "%b %d %Y"), na.rm = T),
+  wdfi = "2023-10-13", # update this after updating the corporate registration file
+  workflow = as.Date(Sys.time()),
+  evict_start = eviction.records.start.date,
+  evict_end = eviction.records.end.date,
+  dns_start = "2017-01-01",
+  dns_end = dns.records.end
+)
+write_csv(updated, "data/process-dates-updated.csv")

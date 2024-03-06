@@ -26,7 +26,7 @@ mprop <- mprop.orig %>%
   select(TAXKEY, HOUSE_NR_LO, HOUSE_NR_HI, HOUSE_NR_SFX, SDIR, STREET, STTYPE,
          C_A_CLASS, LAND_USE_GP, C_A_TOTAL, NR_UNITS, OWNER_NAME_1,
          OWNER_NAME_2, OWNER_NAME_3, CONVEY_DATE, OWNER_MAIL_ADDR, OWNER_CITY_STATE, OWNER_ZIP, GEO_ZIP_CODE,
-         owner_occupied, OWN_OCPD, GEO_ALDER) %>%
+         owner_occupied, OWN_OCPD, GEO_ALDER, LAST_VALUE_CHG) %>%
   # add text labels
   mutate(
     C_A_CLASS = case_when(
@@ -136,11 +136,3 @@ residential.landlord <- residential.landlord %>%
 write_csv(residential.landlord, "data/mprop/ResidentialProperties_NotOwnerOccupied.csv")
 write_csv(taxkey.coords.updated, "data/mprop/taxkey-coordinates.csv")
 
-###############################################################################
-# When were the data sources last updated?
-updated <- tibble(
-  mprop = max(as.Date(word(str_squish(mprop.orig$LAST_VALUE_CHG), 1, 3), format = "%b %d %Y"), na.rm = T),
-  wdfi = "2023-10-13", # update this after updating the corporate registration file
-  workflow = as.Date(Sys.time())
-)
-write_csv(updated, "data/process-dates-updated.csv")
