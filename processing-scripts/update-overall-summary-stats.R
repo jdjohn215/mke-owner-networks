@@ -36,8 +36,11 @@ overall.totals.long <- overall.totals %>%
                          true = paste0(round(value), "%"),
                          false = prettyNum(value, big.mark = ","))) %>%
   bind_rows(
-    tibble(name = c("mprop_updated", "wdfi_updated", "workflow_updated"),
-           value = format.Date(c(updated$mprop, updated$wdfi, updated$workflow),
+    tibble(name = c("mprop_updated", "wdfi_updated", "workflow_updated",
+                    "evict_start","evict_end","dns_start","dns_end"),
+           value = format.Date(c(updated$mprop, updated$wdfi, updated$workflow,
+                                 updated$evict_start, updated$evict_end,
+                                 updated$dns_start, updated$dns_end),
                                format = "%b %d, %Y"))
   )
 
