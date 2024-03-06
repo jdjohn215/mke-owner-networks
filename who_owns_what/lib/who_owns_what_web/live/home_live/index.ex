@@ -33,6 +33,10 @@ defmodule WhoOwnsWhatWeb.HomeLive.Index do
       |> assign(:mprop_updated, Map.fetch!(@summary_data, "mprop_updated"))
       |> assign(:workflow_updated, Map.fetch!(@summary_data, "workflow_updated"))
       |> assign(:wdfi_updated, Map.fetch!(@summary_data, "wdfi_updated"))
+      |> assign(:evict_start, Map.fetch!(@summary_data, "evict_start"))
+      |> assign(:evict_end, Map.fetch!(@summary_data, "evict_end"))
+      |> assign(:dns_start, Map.fetch!(@summary_data, "dns_start"))
+      |> assign(:dns_end, Map.fetch!(@summary_data, "dns_end"))
 
     {:ok, socket}
   end
