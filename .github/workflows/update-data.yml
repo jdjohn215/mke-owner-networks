@@ -44,9 +44,6 @@ jobs:
             any::jsonlite
             any::httr
             any::lubridate
-            any::gt
-            any::leaflet
-            any::sf
 
       - name: Check out repository
         uses: actions/checkout@v4
