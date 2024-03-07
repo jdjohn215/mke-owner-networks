@@ -69,10 +69,6 @@ jobs:
         run: |
           npm install -g svgo
           git diff --diff-filter=d -z --name-only ./images/networks-svg | xargs -0 -n 1 svgo
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          path: docs/overall-summary-stats.qmd
 
       - name: Commit results
         # Commit all changed files back to the repository
