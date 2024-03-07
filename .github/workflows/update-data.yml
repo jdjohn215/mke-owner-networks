@@ -72,6 +72,12 @@ jobs:
         run: |
           npm install -g svgo
           git diff --diff-filter=d -z --name-only ./images/networks-svg | xargs -0 -n 1 svgo
+      
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+          path: summary-website
 
       - name: Commit results
         # Commit all changed files back to the repository
