@@ -75,5 +75,17 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Data updates
+          
+      - name: push networked mprop
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'data/final-output'
+          destination-github-username: 'jdjohn215'
+          destination-repository-name: 'mkepropertynetworks-summary'
+          target-directory: "data"
+          user-email: jdjohn215@gmail.com
+          target-branch: main
 
             
