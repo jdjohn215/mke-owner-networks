@@ -5,7 +5,7 @@ on:
     branches:
       - 'main'
     paths:
-      - 'data/LandlordProperties-with-OwnerNetworks.csv'
+      - 'data/final-output/LandlordProperties-with-OwnerNetworks.csv'
       - 'who_owns_what/**'
   workflow_dispatch:
   schedule:
@@ -18,11 +18,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: superfly/flyctl-actions/setup-flyctl@master
-      - run: cp ../data/LandlordProperties-with-OwnerNetworks.csv data/LandlordProperties-with-OwnerNetworks.csv
+      - run: cp ../data/final-output/LandlordProperties-with-OwnerNetworks.csv data/LandlordProperties-with-OwnerNetworks.csv
         working-directory: who_owns_what
-      - run: cp ../data/Landlord-network-summary-statistics.csv data/Landlord-network-summary-statistics.csv
+      - run: cp ../data/final-output/Landlord-network-summary-statistics.csv data/Landlord-network-summary-statistics.csv
         working-directory: who_owns_what
-      - run: cp ../data/overall-summary-stats.csv data/overall-summary-stats.csv
+      - run: cp ../data/final-output/overall-summary-stats.csv data/overall-summary-stats.csv
         working-directory: who_owns_what
       - run: cp -r ../images/networks-svg/. priv/static/images/networks
         working-directory: who_owns_what
