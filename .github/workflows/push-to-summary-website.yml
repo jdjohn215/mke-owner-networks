@@ -15,29 +15,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: 'data/LandlordProperties-with-OwnerNetworks.csv'
-          destination-github-username: 'jdjohn215'
-          destination-repository-name: 'mkepropertynetworks-summary'
-          target-directory: "data"
-          user-email: jdjohn215@gmail.com
-          target-branch: main
-      - name: push network summary
-        uses: cpina/github-action-push-to-another-repository@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          source-directory: 'data/Landlord-network-summary-statistics.csv'
-          destination-github-username: 'jdjohn215'
-          destination-repository-name: 'mkepropertynetworks-summary'
-          target-directory: "data"
-          user-email: jdjohn215@gmail.com
-          target-branch: main
-      - name: push overall summary
-        uses: cpina/github-action-push-to-another-repository@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          source-directory: 'data/overall-summary-stats.csv'
+          source-directory: 'data/final-output'
           destination-github-username: 'jdjohn215'
           destination-repository-name: 'mkepropertynetworks-summary'
           target-directory: "data"
