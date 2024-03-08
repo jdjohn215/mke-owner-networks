@@ -16,7 +16,6 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-directory: 'data/LandlordProperties-with-OwnerNetworks.csv'
-          target-directory: 'data'
           destination-github-username: 'jdjohn215'
           destination-repository-name: 'pandoc-test-output'
           user-email: jdjohn215@gmail.com
@@ -27,7 +26,6 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-directory: 'data/Landlord-network-summary-statistics.csv'
-          target-directory: 'data'
           destination-github-username: 'jdjohn215'
           destination-repository-name: 'pandoc-test-output'
           user-email: jdjohn215@gmail.com
@@ -38,7 +36,6 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-directory: 'data/overall-summary-stats.csv'
-          target-directory: 'data'
           destination-github-username: 'jdjohn215'
           destination-repository-name: 'pandoc-test-output'
           user-email: jdjohn215@gmail.com
