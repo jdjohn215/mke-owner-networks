@@ -1,0 +1,45 @@
+name: push data to summary website
+
+on:
+   workflow_dispatch:
+  schedule:
+    - cron:  '30 1 * * 1-5' # Mon-Fri, 1:30AM UTC / 7PM CST
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: push networked mprop
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'data/LandlordProperties-with-OwnerNetworks.csv'
+          target-directory: 'data'
+          destination-github-username: 'jdjohn215'
+          destination-repository-name: 'pandoc-test-output'
+          user-email: jdjohn215@gmail.com
+          target-branch: main
+      - name: push network summary
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'data/Landlord-network-summary-statistics.csv'
+          target-directory: 'data'
+          destination-github-username: 'jdjohn215'
+          destination-repository-name: 'pandoc-test-output'
+          user-email: jdjohn215@gmail.com
+          target-branch: main
+      - name: push overall summary
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'data/overall-summary-stats.csv'
+          target-directory: 'data'
+          destination-github-username: 'jdjohn215'
+          destination-repository-name: 'pandoc-test-output'
+          user-email: jdjohn215@gmail.com
+          target-branch: main
