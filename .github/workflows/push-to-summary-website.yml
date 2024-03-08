@@ -1,9 +1,9 @@
 name: push data to summary website
 
 on:
-   workflow_dispatch:
+  workflow_dispatch:
   schedule:
-    - cron:  '30 1 * * 1-5' # Mon-Fri, 1:30AM UTC / 7PM CST
+    - cron:  '30 1 * * 1-5' # Mon-Fri, 1:30AM UTC
 
 jobs:
   build:
