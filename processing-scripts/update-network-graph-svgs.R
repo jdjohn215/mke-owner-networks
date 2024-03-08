@@ -3,7 +3,7 @@ rm(list = ls())
 library(tidyverse)
 
 # network information after the NEWEST update
-updated.network <- read_csv("data/LandlordProperties-with-OwnerNetworks.csv")
+updated.network <- read_csv("data/final-output/LandlordProperties-with-OwnerNetworks.csv")
 
 # network information from the 2nd-to-last update
 old.networks <- read_csv("data/network-components.csv.gz")

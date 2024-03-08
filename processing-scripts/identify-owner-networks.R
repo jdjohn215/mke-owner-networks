@@ -240,8 +240,8 @@ mprop.with.evictions.redacted <- mprop.with.evictions |>
 
 ################################################################################
 # save output
-write_csv(mprop.with.evictions.redacted, "data/LandlordProperties-with-OwnerNetworks.csv")
-write_csv(network.summary.stats.redacted, "data/Landlord-network-summary-statistics.csv")
+write_csv(mprop.with.evictions.redacted, "data/final-output/LandlordProperties-with-OwnerNetworks.csv")
+write_csv(network.summary.stats.redacted, "data/final-output/Landlord-network-summary-statistics.csv")
 
 ###############################################################################
 # When were the data sources last updated?
@@ -254,4 +254,4 @@ updated <- tibble(
   dns_start = "2017-01-01",
   dns_end = dns.records.end
 )
-write_csv(updated, "data/process-dates-updated.csv")
+write_csv(updated, "data/final-output/process-dates-updated.csv")

@@ -2,8 +2,8 @@ rm(list = ls())
 
 library(tidyverse)
 
-df <- read_csv("data/LandlordProperties-with-OwnerNetworks.csv")
-updated <- read_csv("data/process-dates-updated.csv")
+df <- read_csv("data/final-output/LandlordProperties-with-OwnerNetworks.csv")
+updated <- read_csv("data/final-output/process-dates-updated.csv")
 
 network.totals <- df %>%
   group_by(component_number, final_group) %>%
@@ -44,4 +44,4 @@ overall.totals.long <- overall.totals %>%
                                format = "%b %d, %Y"))
   )
 
-write_csv(overall.totals.long, "data/overall-summary-stats.csv")
+write_csv(overall.totals.long, "data/final-output/overall-summary-stats.csv")
