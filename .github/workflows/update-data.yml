@@ -7,7 +7,7 @@ on:
 
 env:
   GEOCODIO_API_KEY: ${{ secrets.GEOCODIO_API_KEY_SECRET }}
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.PAT }}
   GITHUB_PAT: ${{ secrets.PAT }}
 
 jobs:
