@@ -29,7 +29,8 @@ if(nrow(new.addresses) > 0){
   #   validation was successful
   new.addresses.standardized <- new.addresses.geocodio %>%
     # ensure all columns are present by adding NA columns if missing
-    bind_rows(tibble(address_components.street = character(),  
+    bind_rows(tibble(address_components.number = character(),
+                     address_components.street = character(),  
                      address_components.suffix = character(),
                      address_components.secondaryunit = character(), 
                      address_components.secondarynumber = character(),
