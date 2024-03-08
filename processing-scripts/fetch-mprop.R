@@ -4,8 +4,17 @@ library(tidygeocoder)
 # download the latest MPROP from the city's data portal
 mprop.orig <- read_csv("https://data.milwaukee.gov/dataset/562ab824-48a5-42cd-b714-87e205e489ba/resource/0a2c7f31-cd15-4151-8222-09dd57d5f16d/download/mprop.csv")
 
+# temporarily use the residential unit count retrieved from parcel polygons on
+#   March 8, 2024. The assessor's office plans to add the residential unit field
+#   to the MPROP file in the near future.
+
+residential.units <- read_csv("data/mprop/residential-units-from-parcel-polygons.csv")
+
 # some transformations
 mprop <- mprop.orig %>%
+  # substitute residential units
+  left_join(residential.units) |>
+  mutate(NR_UNITS = if_else(!is.na(residential_units), residential_units, NR_UNITS)) |>
   # construct custom owner-occupied variables
   mutate(owner_occupied = case_when(
     # cannot be owner occupied if not a house or condo
@@ -63,12 +72,7 @@ residential.landlord <- mprop %>%
            LAND_USE_GP %in% c("MIXED COMMERCIAL/RESIDENTIAL", "SINGLE FAMILY",
                             "DUPLEX", "MULTI-FAMILY"),
          NR_UNITS > 0,
-         owner_occupied != "OWNER OCCUPIED",
-         # This is kludgey, but it strips out a few storage companies which are
-         #    technically mixed commercial/residential, but almost all of the units are
-         #    storage units, not residential units. It would be great if MPROP started including
-         #    their "residential units" variable separately for these properties.
-         str_detect(OWNER_NAME_1, "\\bSTORAGE\\b", negate = T)) %>%
+         owner_occupied != "OWNER OCCUPIED") %>%
   # clean owner mail address field
   mutate(OWNER_MAIL_ADDR = str_remove_all(OWNER_MAIL_ADDR, ","),
          OWNER_MAIL_ADDR = str_remove_all(OWNER_MAIL_ADDR, coll(".")),
