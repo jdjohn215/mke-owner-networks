@@ -1,23 +1,23 @@
 name,value
 total_parcels,"48,956"
-total_units,"157,295"
-total_networks,"21,556"
-networks_single_parcel,"15,605"
+total_units,"157,292"
+total_networks,"21,555"
+networks_single_parcel,"15,603"
 pct_networks_single_parcel,72%
-networks_multiple_parcels,"5,951"
+networks_multiple_parcels,"5,952"
 pct_networks_multiple_parcels,28%
-networks_multiple_names,"3,371"
+networks_multiple_names,"3,373"
 pct_networks_multiple_names,16%
-parcels_single_parcel_owner,"15,605"
+parcels_single_parcel_owner,"15,603"
 pct_parcels_single_parcel_owner,32%
-parcels_multiple_parcel_owner,"33,351"
-parcels_multiple_name_owner,"24,999"
+parcels_multiple_parcel_owner,"33,353"
+parcels_multiple_name_owner,"25,004"
 pct_parcels_multiple_name_owner,51%
-total_mprop_names,"29,123"
-total_mprop_addresses,"23,025"
+total_mprop_names,"29,122"
+total_mprop_addresses,"23,023"
 mprop_updated,"Feb 26, 2024"
 wdfi_updated,"Oct 13, 2023"
-workflow_updated,"Mar 07, 2024"
+workflow_updated,"Mar 08, 2024"
 evict_start,"Jan 01, 2016"
 evict_end,"Jan 29, 2024"
 dns_start,"Jan 01, 2017"
