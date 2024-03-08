@@ -75,38 +75,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Data updates
-      
-      - name: Push networked mprop to website directory
-        uses: dmnemec/copy_file_to_another_repo_action@v1.1.1
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          source_file: 'data/LandlordProperties-with-OwnerNetworks.csv'
-          destination_repo: 'jdjohn215/mkepropertynetworks-summary'
-          destination_folder: 'data'
-          user_email: 'jdjohn215@gmail.com'
-          user_name: 'jdjohn215'
-          commit_message: 'update networked mprop'
-      - name: Push network summary to website directory
-        uses: dmnemec/copy_file_to_another_repo_action@v1.1.1
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          source_file: 'data/Landlord-network-summary-statistics.csv'
-          destination_repo: 'jdjohn215/mkepropertynetworks-summary'
-          destination_folder: 'data'
-          user_email: 'jdjohn215@gmail.com'
-          user_name: 'jdjohn215'
-          commit_message: 'update network summary'
-      - name: Push overall summary to website directory
-        uses: dmnemec/copy_file_to_another_repo_action@v1.1.1
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          source_file: 'data/overall-summary-stats.csv'
-          destination_repo: 'jdjohn215/mkepropertynetworks-summary'
-          destination_folder: 'data'
-          user_email: 'jdjohn215@gmail.com'
-          user_name: 'jdjohn215'
-          commit_message: 'update overall summary'
+
             
