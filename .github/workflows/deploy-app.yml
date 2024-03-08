@@ -5,7 +5,7 @@ on:
     branches:
       - 'main'
     paths:
-      - 'data/final-output/LandlordProperties-with-OwnerNetworks.csv'
+      - 'data/final-output/overall-summary-stats.csv'
       - 'who_owns_what/**'
   workflow_dispatch:
   schedule:
