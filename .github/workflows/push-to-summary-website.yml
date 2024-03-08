@@ -17,7 +17,8 @@ jobs:
         with:
           source-directory: 'data/LandlordProperties-with-OwnerNetworks.csv'
           destination-github-username: 'jdjohn215'
-          destination-repository-name: 'mkepropertynetworks-summary/'
+          destination-repository-name: 'mkepropertynetworks-summary'
+          target-directory: "data"
           user-email: jdjohn215@gmail.com
           target-branch: main
       - name: push network summary
@@ -27,7 +28,8 @@ jobs:
         with:
           source-directory: 'data/Landlord-network-summary-statistics.csv'
           destination-github-username: 'jdjohn215'
-          destination-repository-name: 'mkepropertynetworks-summary/'
+          destination-repository-name: 'mkepropertynetworks-summary'
+          target-directory: "data"
           user-email: jdjohn215@gmail.com
           target-branch: main
       - name: push overall summary
@@ -37,6 +39,7 @@ jobs:
         with:
           source-directory: 'data/overall-summary-stats.csv'
           destination-github-username: 'jdjohn215'
-          destination-repository-name: 'mkepropertynetworks-summary/'
+          destination-repository-name: 'mkepropertynetworks-summary'
+          target-directory: "data"
           user-email: jdjohn215@gmail.com
           target-branch: main
