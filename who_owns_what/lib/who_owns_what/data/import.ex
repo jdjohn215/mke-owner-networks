@@ -5,11 +5,34 @@ defmodule WhoOwnsWhat.Data.Import do
   @path Application.compile_env(:who_owns_what, :data_folder_path)
   @external_resource Path.join(@path, "LandlordProperties-with-OwnerNetworks.csv")
   @external_resource Path.join(@path, "Landlord-network-summary-statistics.csv")
+  @external_resource Path.join(@path, "overall-summary-stats.csv")
 
   @data File.read!(Path.join(@path, "LandlordProperties-with-OwnerNetworks.csv"))
         |> :zlib.gzip()
   @summary_data File.read!(Path.join(@path, "Landlord-network-summary-statistics.csv"))
                 |> :zlib.gzip()
+
+  @overall_summary_date_keys [
+    "mprop_updated",
+    "wdfi_updated",
+    "workflow_updated",
+    "evict_start",
+    "evict_end",
+    "dns_start",
+    "dns_end"
+  ]
+  @overall_summary_data File.read!(Path.join(@path, "overall-summary-stats.csv"))
+                        |> NimbleCSV.RFC4180.parse_string(skip_headers: true)
+                        |> Enum.reduce(%{}, fn [key, value], map ->
+                          value =
+                            if key in @overall_summary_date_keys do
+                              Date.from_iso8601!(value)
+                            else
+                              value
+                            end
+
+                          Map.put(map, key, value)
+                        end)
 
   def properties do
     properties =
@@ -195,6 +218,10 @@ defmodule WhoOwnsWhat.Data.Import do
         |> Ecto.Multi.insert_all(:insert_all, OwnerGroup, owner_group_maps)
         |> Repo.transaction()
     end)
+  end
+
+  def overall_summary_data do
+    @overall_summary_data
   end
 
   defp convert_string_maybe_na_to_float("NA"), do: nil

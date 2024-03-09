@@ -30,7 +30,7 @@ config :who_owns_what, WhoOwnsWhatWeb.Endpoint,
 # at the `config/runtime.exs`.
 config :who_owns_what, WhoOwnsWhat.Mailer, adapter: Swoosh.Adapters.Local
 config :who_owns_what, preload_data: false
-config :who_owns_what, data_folder_path: "./../data"
+config :who_owns_what, data_folder_path: "./../data/final-output"
 
 # Configure esbuild (the version is required)
 config :esbuild,

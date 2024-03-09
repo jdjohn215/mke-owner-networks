@@ -1,10 +1,8 @@
 defmodule WhoOwnsWhatWeb.PropertyLive.Show do
-  @dns_data_start_date ~D[2017-01-01]
-  @eviction_data_start_date ~D[2016-01-01]
-
   use WhoOwnsWhatWeb, :live_view
 
   alias WhoOwnsWhat.Data
+  alias WhoOwnsWhat.Data.Import
 
   @impl true
   def mount(_params, _session, socket) do
@@ -15,18 +13,22 @@ defmodule WhoOwnsWhatWeb.PropertyLive.Show do
   def handle_params(%{"id" => taxkey}, _, socket) do
     property = Data.get_property_by_taxkey!(taxkey)
 
+    overall_summary_data = Import.overall_summary_data()
+    dns_data_start_date = Map.fetch!(overall_summary_data, "dns_start")
+    eviction_data_start_date = Map.fetch!(overall_summary_data, "evict_start")
+
     dns_data_date =
       if is_nil(property.convey_date) ||
-           Date.compare(property.convey_date, @dns_data_start_date) == :lt do
-        @dns_data_start_date
+           Date.compare(property.convey_date, dns_data_start_date) == :lt do
+        dns_data_start_date
       else
         property.convey_date
       end
 
     eviction_data_date =
       if is_nil(property.convey_date) ||
-           Date.compare(property.convey_date, @eviction_data_start_date) == :lt do
-        @eviction_data_start_date
+           Date.compare(property.convey_date, eviction_data_start_date) == :lt do
+        eviction_data_start_date
       else
         property.convey_date
       end
