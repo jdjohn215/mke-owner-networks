@@ -41,7 +41,7 @@ overall.totals.long <- overall.totals %>%
            value = format.Date(c(updated$mprop, updated$wdfi, updated$workflow,
                                  updated$evict_start, updated$evict_end,
                                  updated$dns_start, updated$dns_end),
-                               format = "%b %d, %Y"))
+                               format = "%Y-%m-%d"))
   )
 
 write_csv(overall.totals.long, "data/final-output/overall-summary-stats.csv")
