@@ -15,7 +15,15 @@
 </p>
 
 <p class="mt-5 leading-5">
-  The most recent parcel ownership records were updated by the City of Milwaukee on <%= @mprop_updated %>. We last checked for new updates on <%= @workflow_updated %>. Corporate registration data was last updated on <%= @wdfi_updated %>. Eviction records cover the period from <%= @evict_start %> to <%= @evict_end %>, and code violation records cover <%= @dns_start %> to <%= @dns_end %>.
+  The most recent parcel ownership records were updated by the City of Milwaukee on <%= format_date(
+    @mprop_updated
+  ) %>. We last checked for new updates on <%= format_date(@workflow_updated) %>. Corporate registration data was last updated on <%= format_date(
+    @wdfi_updated
+  ) %>. Eviction records cover the period from <%= format_date(@evict_start) %> to <%= format_date(
+    @evict_end
+  ) %>, and code violation records cover <%= format_date(@dns_start) %> to <%= format_date(
+    @dns_end
+  ) %>.
 </p>
 
 <hr class="border-t-2 my-4" />
