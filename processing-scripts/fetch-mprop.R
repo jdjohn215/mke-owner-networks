@@ -7,8 +7,13 @@ mprop.orig <- read_csv("https://data.milwaukee.gov/dataset/562ab824-48a5-42cd-b7
 # temporarily use the residential unit count retrieved from parcel polygons on
 #   March 8, 2024. The assessor's office plans to add the residential unit field
 #   to the MPROP file in the near future.
-
-residential.units <- read_csv("data/mprop/residential-units-from-parcel-polygons.csv")
+# ALSO, some HACM properties don't have any units in MPROP, add those
+hacm.units <- read_csv("data/mprop/hacm-units.csv", col_types = "ccncc") |>
+  filter(!is.na(TAXKEY)) |>
+  select(TAXKEY, hacm_units = units)
+residential.units <- read_csv("data/mprop/residential-units-from-parcel-polygons.csv") |>
+  left_join(hacm.units) |>
+  mutate(residential_units = if_else(!is.na(hacm_units), hacm_units, residential_units))
 
 # some transformations
 mprop <- mprop.orig %>%
