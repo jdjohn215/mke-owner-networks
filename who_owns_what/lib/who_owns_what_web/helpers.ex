@@ -5,8 +5,16 @@ defmodule WhoOwnsWhatWeb.Helpers do
     Regex.replace(@number_comma_regex, "#{number}", ",")
   end
 
+  def format_float(nil) do
+    "0.0"
+  end
+
   def format_float(number) do
     :erlang.float_to_binary(number, decimals: 2)
+  end
+
+  def format_date(nil) do
+    nil
   end
 
   def format_date(date) do
