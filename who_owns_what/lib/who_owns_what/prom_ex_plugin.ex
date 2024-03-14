@@ -20,7 +20,7 @@ defmodule WhoOwnsWhat.PromExPlugin do
           @owner_group_viewed_event ++ [:count],
           event_name: @owner_group_viewed_event,
           description: "The number of owner group view events that have occurred",
-          tags: [:zip_code, :owner_group_name],
+          tags: [:name],
           tag_values: &get_owner_group_tag_values/1
         )
       ]
