@@ -10,6 +10,7 @@ defmodule WhoOwnsWhat.Application do
     WhoOwnsWhat.Release.migrate()
 
     children = [
+      WhoOwnsWhat.PromEx,
       # Start the Telemetry supervisor
       WhoOwnsWhatWeb.Telemetry,
       # Start the Ecto repository

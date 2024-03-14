@@ -10,8 +10,13 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.Show do
 
   @impl true
   def handle_params(%{"id" => name}, _, socket) do
+    owner_group = Data.get_owner_group_by_name(name)
     properties = Data.list_properties_by_owner_group_name(name)
     first_property = hd(properties)
+
+    :telemetry.execute([:who_owns_what, :owner_group, :view], %{count: 1}, %{
+      owner_group: owner_group
+    })
 
     has_multiple_unique_owner_names =
       Enum.any?(properties, fn property ->
@@ -21,7 +26,7 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.Show do
     {:noreply,
      socket
      |> assign(:page_title, page_title(socket.assigns.live_action))
-     |> assign(:owner_group, Data.get_owner_group_by_name(name))
+     |> assign(:owner_group, owner_group)
      |> assign(:show_network_graph, has_multiple_unique_owner_names)
      |> assign(:properties, properties)
      |> assign_groups(properties)}

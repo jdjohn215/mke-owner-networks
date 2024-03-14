@@ -50,7 +50,8 @@ defmodule WhoOwnsWhat.MixProject do
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
       {:nimble_csv, "~> 1.2"},
-      {:bandit, "~> 1.0"}
+      {:bandit, "~> 1.0"},
+      {:prom_ex, "~> 1.9.0"}
     ]
   end
 

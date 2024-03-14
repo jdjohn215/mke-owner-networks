@@ -65,6 +65,8 @@ if config_env() == :prod do
     check_origin: origins,
     secret_key_base: secret_key_base
 
+  config :who_owns_what, WhoOwnsWhat.PromEx, manual_metrics_start_delay: :no_delay
+
   # ## SSL Support
   #
   # To get SSL working, you will need to add the `https` key

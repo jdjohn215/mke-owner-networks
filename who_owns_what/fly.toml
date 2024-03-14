@@ -28,3 +28,7 @@ swap_size_mb = 512
     type = "connections"
     hard_limit = 1000
     soft_limit = 1000
+
+[metrics]
+port = 8080
+path = "/metrics"

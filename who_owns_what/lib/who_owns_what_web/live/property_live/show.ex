@@ -13,6 +13,8 @@ defmodule WhoOwnsWhatWeb.PropertyLive.Show do
   def handle_params(%{"id" => taxkey}, _, socket) do
     property = Data.get_property_by_taxkey!(taxkey)
 
+    :telemetry.execute([:who_owns_what, :property, :view], %{count: 1}, %{property: property})
+
     overall_summary_data = Import.overall_summary_data()
     dns_data_start_date = Map.fetch!(overall_summary_data, "dns_start")
     eviction_data_start_date = Map.fetch!(overall_summary_data, "evict_start")
