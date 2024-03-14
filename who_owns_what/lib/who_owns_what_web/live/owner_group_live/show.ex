@@ -14,7 +14,7 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.Show do
     properties = Data.list_properties_by_owner_group_name(name)
     first_property = hd(properties)
 
-    :telemetry.execute([:who_owns_what, :owner_group, :view], %{count: 1}, %{
+    :telemetry.execute([:who_owns_what, :owner_group, :show], %{count: 1}, %{
       owner_group: owner_group
     })
 

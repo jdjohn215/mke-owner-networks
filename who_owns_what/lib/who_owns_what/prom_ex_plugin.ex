@@ -1,8 +1,8 @@
 defmodule WhoOwnsWhat.PromExPlugin do
   use PromEx.Plugin
 
-  @property_viewed_event [:who_owns_what, :property, :view]
-  @owner_group_viewed_event [:who_owns_what, :owner_group, :view]
+  @property_show_event [:who_owns_what, :property, :show]
+  @owner_group_show_event [:who_owns_what, :owner_group, :show]
 
   @impl true
   def event_metrics(_opts) do
@@ -17,9 +17,9 @@ defmodule WhoOwnsWhat.PromExPlugin do
       :who_owns_what_owner_group_general_event_metrics,
       [
         counter(
-          @owner_group_viewed_event ++ [:count],
-          event_name: @owner_group_viewed_event,
-          description: "The number of owner group view events that have occurred",
+          @owner_group_show_event ++ [:count],
+          event_name: @owner_group_show_event,
+          description: "The number of owner group show events that have occurred",
           tags: [:name],
           tag_values: &get_owner_group_tag_values/1
         )
@@ -32,9 +32,9 @@ defmodule WhoOwnsWhat.PromExPlugin do
       :who_owns_what_property_general_event_metrics,
       [
         counter(
-          @property_viewed_event ++ [:count],
-          event_name: @property_viewed_event,
-          description: "The number of property view events that have occurred",
+          @property_show_event ++ [:count],
+          event_name: @property_show_event,
+          description: "The number of property show events that have occurred",
           tags: [:zip_code, :owner_group_name],
           tag_values: &get_property_tag_values/1
         )
