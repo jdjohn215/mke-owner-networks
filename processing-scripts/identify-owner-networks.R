@@ -31,7 +31,11 @@ mprop.with.wdfi.matches <- mprop %>%
   # add suffixes to addresses that make them distinct
   mutate(mprop_address = paste(mprop_address, "mprop", sep = "_"),
          wdfi_address = if_else(is.na(wdfi_address), wdfi_address,
-                                paste(wdfi_address, "wdfi", sep = "_")))
+                                paste(wdfi_address, "wdfi", sep = "_"))) |>
+  # add suffix that makes common non-identifying names distinct
+  mutate(mprop_name = if_else(mprop_name %in% repeated.names$name,
+                              true = paste(mprop_name, row_number(), sep = "!!"),
+                              false = mprop_name))
 
 ###############################################################################
 # kinds of nodes
@@ -57,8 +61,7 @@ addresses.in.both <- mprop.with.wdfi.matches %>%
 #   each component is a distinct owner network
 components <- mprop.with.wdfi.matches %>%
   mutate(mprop_address = if_else(str_remove(mprop_address, "_mprop") %in% useless.addresses$address |
-                                   mprop_name %in% useless.names$name |
-                                   mprop_name %in% repeated.names$name,
+                                   mprop_name %in% useless.names$name,
                                  true = paste(mprop_address, row_number(), sep = "-"),
                                  false = mprop_address),
          wdfi_address = if_else(str_remove(wdfi_address, "_wdfi") %in% useless.addresses$address |
@@ -98,7 +101,9 @@ mprop.with.networks <- mprop.with.wdfi.matches %>%
                                true = paste(names(which.max(table(mprop_name))), "Group"),
                                false = first(mprop_name)),
          final_group = str_replace_all(final_group, coll("/"), "-")) |>
-  ungroup()
+  ungroup() |>
+  # remove common name flag
+  mutate(mprop_name = word(mprop_name, 1, sep = "!!"))
 
 ################################################################################
 # add DNS violation records
