@@ -68,7 +68,7 @@ jobs:
       - name: Optimize SVGs
         run: |
           npm install -g svgo
-          git diff --diff-filter=d -z --name-only ./images/networks-svg | xargs -0 -n 1 svgo
+          git diff --diff-filter=d -z --name-only ./images/networks-svg | xargs -0 -n 1 svgo --config svgo.config.js
 
       - name: Commit results
         # Commit all changed files back to the repository
