@@ -33,7 +33,7 @@ mprop.with.wdfi.matches <- mprop %>%
          wdfi_address = if_else(is.na(wdfi_address), wdfi_address,
                                 paste(wdfi_address, "wdfi", sep = "_"))) |>
   # add suffix that makes common non-identifying names distinct
-  mutate(mprop_name = if_else(mprop_name %in% repeated.names$name,
+  mutate(mprop_name = if_else(mprop_name %in% repeated.names.not.used.to.match$name,
                               true = paste(mprop_name, row_number(), sep = "!!"),
                               false = mprop_name))
 
@@ -94,16 +94,39 @@ component.membership <- tibble(name = names(components$membership),
 
 # add component ID number to parcel data
 mprop.with.networks <- mprop.with.wdfi.matches %>%
-  inner_join(component.membership, by = c("mprop_name" = "name")) %>%
-  # create a descriptive name for each parcel, which is the most frequently used mprop_name value
-  group_by(component_number) %>%
-  mutate(final_group = if_else(n_distinct(mprop_name) > 1,
-                               true = paste(names(which.max(table(mprop_name))), "Group"),
-                               false = first(mprop_name)),
-         final_group = str_replace_all(final_group, coll("/"), "-")) |>
-  ungroup() |>
+  inner_join(component.membership, by = c("mprop_name" = "name")) |>
   # remove common name flag
   mutate(mprop_name = word(mprop_name, 1, sep = "!!"))
+
+# add descriptive names to each network
+#   if one unique name in group, then MPROP_NAME
+#   if 2-3 unique names in group, the list of names delimited by -- and ending with "Group"
+#   if >3 unique names, then most common name followed by "etc Group"
+final.group.names <- mprop.with.networks |>
+  # add address to common names that couldn't be used for matches by themselves
+  mutate(mprop_name2 = if_else(mprop_name %in% repeated.names.not.used.to.match$mprop_name,
+                               true = paste(mprop_name, str_remove(mprop_address, "_mprop"), sep = " -- "),
+                               false = mprop_name)) |>
+  group_by(component_number, mprop_name2) |>
+  summarise(count = n()) |>
+  arrange(component_number, desc(count), mprop_name2) |>
+  group_by(component_number) |>
+  mutate(name_count = n()) |>
+  mutate(
+    final_group = case_when(
+      name_count == 1 ~ mprop_name2,
+      name_count > 3 ~ paste(first(mprop_name2), "etc Group"),
+      name_count < 4 ~ paste(paste(mprop_name2, collapse = " -- "), "Group")
+    )) |>
+  mutate(final_group = str_replace_all(final_group, coll("/"), "-")) |>
+  group_by(final_group, component_number) |>
+  summarise(.groups = "drop")
+
+# verify each component number is uniquely named
+n_distinct(final.group.names$final_group) == n_distinct(final.group.names$component_number)
+
+mprop.with.networks.named <- mprop.with.networks |>
+  inner_join(final.group.names)
 
 ################################################################################
 # add DNS violation records
@@ -120,7 +143,7 @@ dns.taxkey.total <- dns |>
 
 #   count of violations ONLY during the period of current ownership
 #     determined using the CONVEY_DATE field
-dns.taxkey.during.current.ownership <- mprop.with.networks |>
+dns.taxkey.during.current.ownership <- mprop.with.networks.named |>
   select(TAXKEY, final_group, CONVEY_DATE) |>
   inner_join(dns) |>
   filter(date_inspection > CONVEY_DATE) |>
@@ -129,7 +152,7 @@ dns.taxkey.during.current.ownership <- mprop.with.networks |>
             ownership_violations = sum(violations),
             .groups = "drop")
 
-mprop.with.dns <- mprop.with.networks |>
+mprop.with.dns <- mprop.with.networks.named |>
   mutate(
     dns_covered_days = case_when(
       CONVEY_DATE < as.Date("2017-01-01") ~ as.numeric(difftime(dns.records.end, # instances where ownership *precedes* DNS record period
@@ -168,7 +191,7 @@ eviction.records.start.date <- as.Date("2016-01-01")
 
 #   count of violations ONLY during the period of current ownership
 #     determined using the CONVEY_DATE field
-evictions.taxkey.during.current.ownership <- mprop.with.networks |>
+evictions.taxkey.during.current.ownership <- mprop.with.networks.named |>
   select(TAXKEY, final_group, CONVEY_DATE) |>
   inner_join(mke.evictions) |>
   filter(filing_date > CONVEY_DATE) |>
@@ -253,7 +276,7 @@ write_csv(network.summary.stats.redacted, "data/final-output/Landlord-network-su
 updated <- tibble(
   mprop = max(as.Date(word(str_squish(mprop$LAST_VALUE_CHG), 1, 3), format = "%b %d %Y"), na.rm = T),
   wdfi = "2023-10-13", # update this after updating the corporate registration file
-  workflow = as.Date(with_tz(Sys.time(), tzone = "America/Chicago")),
+  workflow = as.Date(lubridate::with_tz(Sys.time(), tzone = "America/Chicago")),
   evict_start = eviction.records.start.date,
   evict_end = eviction.records.end.date,
   dns_start = "2017-01-01",
