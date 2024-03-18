@@ -61,7 +61,7 @@ plot_save_network_graph <- function(name){
     network.nodes < 31 ~ 67,
     network.nodes < 61 ~ 81,
     network.nodes < 91 ~ 270,
-    TRUE ~ 16
+    TRUE ~ 300
   )
   
   gg1 <- visualize_network_graph(data = updated.network, 
