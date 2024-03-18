@@ -54,16 +54,25 @@ plot_save_network_graph <- function(name){
     network.nodes < 91 ~ 14,
     TRUE ~ 16
   )
+  title.wrap <- case_when(
+    network.nodes < 5 ~ 27,
+    network.nodes < 8 ~ 41,
+    network.nodes < 21 ~ 52,
+    network.nodes < 31 ~ 67,
+    network.nodes < 61 ~ 81,
+    network.nodes < 91 ~ 270,
+    TRUE ~ 16
+  )
   
   gg1 <- visualize_network_graph(data = updated.network, 
                                  final_group_name = name,
                                  fontsize = 2, layout = "kk") +
-    labs(title = name,
+    labs(title = str_wrap(name, title.wrap),
          subtitle = paste("includes", owner.networks$parcels[owner.networks$final_group == name], "parcels,",
                           owner.networks$units[owner.networks$final_group == name], "units, and",
                           owner.networks$name_count[owner.networks$final_group == name], "distinct owner names."))
   ggsave(paste0("images/networks-svg/", owner.networks$final_group[owner.networks$final_group == name], ".svg"),
-         width = out.dim, height = out.dim)
+         width = out.dim, height = if_else(out.dim < 8, out.dim + 1, out.dim))
 }
 
 map(networks.to.update, plot_save_network_graph, .progress = TRUE)
