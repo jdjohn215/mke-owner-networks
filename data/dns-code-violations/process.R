@@ -17,7 +17,12 @@ dns.violations.23 <- readxl::read_excel("data/dns-code-violations/VIOLATIONS_202
 
 ################################################################################
 # combine DNS records
-dns.all <- bind_rows(dns.violations.17to22, dns.violations.23) |>
+dns.all <- bind_rows(dns.violations.17to22, dns.violations.23)
+
+dns.all.2 <- dns.all |>
+  mutate(across(.cols = where(is.character), str_to_upper)) |>
+  # remove certain outcomes
+  filter(str_detect(record_status, "DISMISSED|WITHDRAWN|TEST|DUPLICATE|RAZED", negate = T)) |>
   # deduplicate
   group_by_all() |>
   summarise() |>
@@ -28,7 +33,7 @@ dns.all <- bind_rows(dns.violations.17to22, dns.violations.23) |>
          taxkey = str_pad(taxkey, width = 10, side = "left", pad = "0"))
 
 # create file with 1 row per order and the count of violations in a column
-dns.records <- dns.all |>
+dns.records <- dns.all.2 |>
   group_by(record_id, taxkey, date_inspection) |>
   summarise(violations = n_distinct(violation_text), .groups = "drop")
 
@@ -44,5 +49,5 @@ by.taxkey <- dns.records |>
 
 ################################################################################
 # save output
-write_csv(dns.all, "data/dns-code-violations/all-violations-2017to2023.csv.gz")
+write_csv(dns.all.2, "data/dns-code-violations/all-violations-2017to2023.csv.gz")
 write_csv(dns.records, "data/dns-code-violations/all-orders-2017to2023.csv")
