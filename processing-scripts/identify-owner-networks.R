@@ -130,9 +130,9 @@ mprop.with.networks.named <- mprop.with.networks |>
 
 ################################################################################
 # add DNS violation records
-dns <- read_csv("data/dns-code-violations/all-orders-2017to2023.csv") |>
+dns <- read_csv("data/dns-code-violations/all-orders-latest.csv") |>
   rename(TAXKEY = taxkey)
-dns.records.end <- as.Date("2023-12-31") # the last date for which DNS records are available
+dns.records.end <- as.Date("2024-03-31") # the last date for which DNS records are available
 
 # calculate violations per TAXKEY
 #   total violations at each TAXKEY for the entire period covered
@@ -275,7 +275,7 @@ write_csv(network.summary.stats.redacted, "data/final-output/Landlord-network-su
 # When were the data sources last updated?
 updated <- tibble(
   mprop = max(as.Date(word(str_squish(mprop$LAST_VALUE_CHG), 1, 3), format = "%b %d %Y"), na.rm = T),
-  wdfi = "2023-10-13", # update this after updating the corporate registration file
+  wdfi = "2024-04-10", # update this after updating the corporate registration file
   workflow = as.Date(lubridate::with_tz(Sys.time(), tzone = "America/Chicago")),
   evict_start = eviction.records.start.date,
   evict_end = eviction.records.end.date,
