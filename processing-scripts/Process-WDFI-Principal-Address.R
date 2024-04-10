@@ -2,7 +2,12 @@ rm(list = ls())
 
 library(tidyverse)
 
-wdfi.orig <- vroom::vroom("data/wdfi/corpdata results Marquette_fixed.txt")
+wdfi.orig <- vroom::vroom("data/wdfi/Corp Database as of 04102024.txt",
+                          col_names = c("EntityID", "EntityName", "EntityStatus", "EntityType", "Incorporated Date", 
+                                        "AgentName", "AgentAdd1", "AgentAdd2", "AgentCity", "AgentState", 
+                                        "AgentZIP", "AgentCountry", "PrincipalOfficeAdd1", "PrincipalOfficeAdd2", 
+                                        "PrincipalOfficeCity", "PrincipalOfficeState", "PrincipalOfficeZIP", 
+                                        "PrincipalOfficeCountry"))
 
 ################################################################################
 # subset CURRENT WDFI
