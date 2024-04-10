@@ -15,9 +15,12 @@ dns.violations.23 <- readxl::read_excel("data/dns-code-violations/VIOLATIONS_202
   janitor::clean_names() |>
   rename(violation_text = item_comment)
 
+# DNS extract covering Q1 2024
+dns.violations.24q1 <- readxl::read_excel("data/dns-code-violations/Violations_Jan1thruMarch312024.xlsx")
+
 ################################################################################
 # combine DNS records
-dns.all <- bind_rows(dns.violations.17to22, dns.violations.23)
+dns.all <- bind_rows(dns.violations.17to22, dns.violations.23, dns.violations.24q1)
 
 dns.all.2 <- dns.all |>
   mutate(across(.cols = where(is.character), str_to_upper)) |>
@@ -49,5 +52,5 @@ by.taxkey <- dns.records |>
 
 ################################################################################
 # save output
-write_csv(dns.all.2, "data/dns-code-violations/all-violations-2017to2023.csv.gz")
-write_csv(dns.records, "data/dns-code-violations/all-orders-2017to2023.csv")
+write_csv(dns.all.2, "data/dns-code-violations/all-violations-latest.csv.gz")
+write_csv(dns.records, "data/dns-code-violations/all-orders-latest.csv")
