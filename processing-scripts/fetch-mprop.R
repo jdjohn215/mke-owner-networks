@@ -40,7 +40,7 @@ mprop <- mprop.orig %>%
   select(TAXKEY, HOUSE_NR_LO, HOUSE_NR_HI, HOUSE_NR_SFX, SDIR, STREET, STTYPE,
          C_A_CLASS, LAND_USE_GP, C_A_TOTAL, NR_UNITS, OWNER_NAME_1,
          OWNER_NAME_2, OWNER_NAME_3, CONVEY_DATE, OWNER_MAIL_ADDR, OWNER_CITY_STATE, OWNER_ZIP, GEO_ZIP_CODE,
-         owner_occupied, OWN_OCPD, GEO_ALDER, LAST_VALUE_CHG) %>%
+         owner_occupied, ZONING, OWN_OCPD, GEO_ALDER, LAST_VALUE_CHG) %>%
   # add text labels
   mutate(
     C_A_CLASS = case_when(
