@@ -26,6 +26,7 @@ defmodule WhoOwnsWhat.Data.Property do
     field :street_type, :string
     field :taxkey, :string
     field :wdfi_address, :string
+    field :zoning, :string
     field :dns_covered_days, :integer
     field :dns_covered_unit_years, :float
     field :total_dns_orders, :integer
@@ -75,7 +76,8 @@ defmodule WhoOwnsWhat.Data.Property do
       :owner_occupied,
       :eviction_filings,
       :eviction_orders,
-      :geo_alder
+      :geo_alder,
+      :zoning
     ])
     |> validate_required([
       :taxkey,
@@ -98,7 +100,8 @@ defmodule WhoOwnsWhat.Data.Property do
       :geo_zip_code,
       :calculated_owner_occupied,
       :owner_occupied,
-      :geo_alder
+      :geo_alder,
+      :zoning
     ])
   end
 
