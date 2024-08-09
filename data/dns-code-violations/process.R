@@ -18,6 +18,9 @@ dns.violations.23 <- readxl::read_excel("data/dns-code-violations/VIOLATIONS_202
 # DNS extract covering Q1 2024
 dns.violations.24q1 <- readxl::read_excel("data/dns-code-violations/Violations_Jan1thruMarch312024.xlsx")
 
+# DNS extract covering Q2 2024
+dns.violations.24q2 <- readxl::read_excel("data/dns-code-violations/Violations_Apr_June_2024.xlsx")
+
 ################################################################################
 # combine DNS records
 dns.all <- bind_rows(dns.violations.17to22, dns.violations.23, dns.violations.24q1)
