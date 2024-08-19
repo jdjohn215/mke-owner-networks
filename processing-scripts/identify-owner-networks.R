@@ -132,7 +132,7 @@ mprop.with.networks.named <- mprop.with.networks |>
 # add DNS violation records
 dns <- read_csv("data/dns-code-violations/all-orders-latest.csv") |>
   rename(TAXKEY = taxkey)
-dns.records.end <- as.Date("2024-03-31") # the last date for which DNS records are available
+dns.records.end <- max(dns$date_inspection) # the last date for which DNS records are available
 
 # calculate violations per TAXKEY
 #   total violations at each TAXKEY for the entire period covered
