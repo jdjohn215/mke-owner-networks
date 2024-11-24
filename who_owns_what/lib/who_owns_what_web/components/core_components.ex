@@ -17,7 +17,7 @@ defmodule WhoOwnsWhatWeb.CoreComponents do
   use Phoenix.Component
 
   alias Phoenix.LiveView.JS
-  import WhoOwnsWhatWeb.Gettext
+  use Gettext, backend: WhoOwnsWhatWeb.Gettext
 
   @doc """
   Renders a modal.

@@ -20,5 +20,5 @@ defmodule WhoOwnsWhatWeb.Gettext do
 
   See the [Gettext Docs](https://hexdocs.pm/gettext) for detailed usage.
   """
-  use Gettext, otp_app: :who_owns_what
+  use Gettext.Backend, otp_app: :who_owns_what
 end

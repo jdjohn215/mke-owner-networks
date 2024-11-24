@@ -43,7 +43,7 @@ defmodule WhoOwnsWhatWeb do
         layouts: [html: WhoOwnsWhatWeb.Layouts]
 
       import Plug.Conn
-      import WhoOwnsWhatWeb.Gettext
+      use Gettext, backend: WhoOwnsWhatWeb.Gettext
 
       unquote(verified_routes())
     end
@@ -85,7 +85,7 @@ defmodule WhoOwnsWhatWeb do
       import Phoenix.HTML
       # Core UI components and translation
       import WhoOwnsWhatWeb.CoreComponents
-      import WhoOwnsWhatWeb.Gettext
+      use Gettext, backend: WhoOwnsWhatWeb.Gettext
       import WhoOwnsWhatWeb.Helpers
 
       # Shortcut for generating JS commands
