@@ -18,6 +18,11 @@
   <:item title="Assessed Value">$<%= format_dollars(@property.c_a_total) %></:item>
   <:item title="Code Violations">
     <%= "#{@property.ownership_dns_violations} since #{format_date(@dns_data_date)}" %>
+    <div>
+      <.good_link navigate={"https://aca-prod.accela.com/Milwaukee/Cap/GlobalSearchResults.aspx?QueryText=#{@property.taxkey}"}>
+        City Code Violations and Permits
+      </.good_link>
+    </div>
   </:item>
   <:item title="Eviction Filings">
     <%= if is_nil(@property.eviction_filings) do %>
