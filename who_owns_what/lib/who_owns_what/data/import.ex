@@ -53,7 +53,7 @@ defmodule WhoOwnsWhat.Data.Import do
     |> NimbleCSV.RFC4180.parse_stream(skip_headers: false)
     |> Stream.map(fn values ->
       map =
-        List.zip([keys, values])
+        Enum.zip([keys, values])
         |> Enum.into(%{})
 
       property =
@@ -170,7 +170,7 @@ defmodule WhoOwnsWhat.Data.Import do
     |> NimbleCSV.RFC4180.parse_stream(skip_headers: false)
     |> Stream.map(fn values ->
       map =
-        List.zip([keys, values])
+        Enum.zip([keys, values])
         |> Enum.into(%{})
 
       annual_evict_filing_rate_per_unit =
