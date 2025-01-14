@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMzIuNjN8MjU4LjExfDE2MS4wMnwzMjcuMzc='>
+    <rect x='32.63' y='161.02' width='225.48' height='166.36' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMzIuNjN8MjU4LjExfDE2MS4wMnwzMjcuMzc=)'>
+<polyline points='247.86,168.58 246.83,169.34 245.79,170.11 244.76,170.87 243.72,171.63 242.69,172.40 241.65,173.16 240.62,173.93 239.58,174.69 238.55,175.45 237.51,176.22 236.47,176.98 235.44,177.75 234.40,178.51 233.37,179.27 232.33,180.04 231.30,180.80 230.26,181.56 229.23,182.33 228.19,183.09 227.16,183.86 226.12,184.62 225.09,185.38 224.05,186.15 223.02,186.91 221.98,187.68 220.95,188.44 219.91,189.20 218.88,189.97 217.84,190.73 216.80,191.50 215.77,192.26 214.73,193.02 213.70,193.79 212.66,194.55 211.63,195.31 210.59,196.08 209.56,196.84 208.52,197.61 207.49,198.37 206.45,199.13 205.42,199.90 204.38,200.66 203.35,201.43 202.31,202.19 201.28,202.95 200.24,203.72 199.20,204.48 198.17,205.25 197.13,206.01 196.10,206.77 195.06,207.54 194.03,208.30 192.99,209.06 191.96,209.83 190.92,210.59 189.89,211.36 188.85,212.12 187.82,212.88 186.78,213.65 185.75,214.41 184.71,215.18 183.68,215.94 182.64,216.70 181.61,217.47 180.57,218.23 179.53,219.00 178.50,219.76 177.46,220.52 176.43,221.29 175.39,222.05 174.36,222.81 173.32,223.58 172.29,224.34 171.25,225.11 170.22,225.87 169.18,226.63 168.15,227.40 167.11,228.16 166.08,228.93 165.04,229.69 164.01,230.45 162.97,231.22 161.93,231.98 160.90,232.75 159.86,233.51 158.83,234.27 157.79,235.04 156.76,235.80 155.72,236.56 154.69,237.33 153.65,238.09 152.62,238.86 151.58,239.62 150.55,240.38 149.51,241.15 148.48,241.91 147.44,242.68 146.41,243.44 145.37,244.20 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='42.88,319.81 43.91,319.05 44.95,318.28 45.98,317.52 47.02,316.76 48.05,315.99 49.09,315.23 50.12,314.46 51.16,313.70 52.19,312.94 53.23,312.17 54.27,311.41 55.30,310.65 56.34,309.88 57.37,309.12 58.41,308.36 59.44,307.59 60.48,306.83 61.51,306.06 62.55,305.30 63.58,304.54 64.62,303.77 65.65,303.01 66.69,302.25 67.72,301.48 68.76,300.72 69.79,299.95 70.83,299.19 71.86,298.43 72.90,297.66 73.94,296.90 74.97,296.14 76.01,295.37 77.04,294.61 78.08,293.84 79.11,293.08 80.15,292.32 81.18,291.55 82.22,290.79 83.25,290.03 84.29,289.26 85.32,288.50 86.36,287.74 87.39,286.97 88.43,286.21 89.46,285.44 90.50,284.68 91.54,283.92 92.57,283.15 93.61,282.39 94.64,281.63 95.68,280.86 96.71,280.10 97.75,279.33 98.78,278.57 99.82,277.81 100.85,277.04 101.89,276.28 102.92,275.52 103.96,274.75 104.99,273.99 106.03,273.22 107.06,272.46 108.10,271.70 109.14,270.93 110.17,270.17 111.21,269.41 112.24,268.64 113.28,267.88 114.31,267.11 115.35,266.35 116.38,265.59 117.42,264.82 118.45,264.06 119.49,263.30 120.52,262.53 121.56,261.77 122.59,261.01 123.63,260.24 124.66,259.48 125.70,258.71 126.74,257.95 127.77,257.19 128.81,256.42 129.84,255.66 130.88,254.90 131.91,254.13 132.95,253.37 133.98,252.60 135.02,251.84 136.05,251.08 137.09,250.31 138.12,249.55 139.16,248.79 140.19,248.02 141.23,247.26 142.26,246.49 143.30,245.73 144.34,244.97 145.37,244.20 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.86,166.37 249.78,169.68 245.95,169.68 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='42.88,317.60 44.79,320.92 40.96,320.92 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='145.37' cy='244.20' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='245.66' y1='176.29' x2='247.58' y2='169.55' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='45.08' y1='312.10' x2='43.15' y2='318.84' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='139.59' y1='248.67' x2='144.44' y2='244.92' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='202.00,192.59 243.50,192.59 243.41,192.58 243.76,192.57 244.10,192.50 244.42,192.38 244.73,192.20 244.99,191.98 245.23,191.72 245.41,191.43 245.55,191.11 245.63,190.77 245.66,190.43 245.66,190.43 245.66,175.20 245.66,175.20 245.63,174.86 245.55,174.52 245.41,174.20 245.23,173.91 244.99,173.65 244.73,173.43 244.42,173.25 244.10,173.13 243.76,173.06 243.50,173.04 202.00,173.04 202.27,173.06 201.92,173.05 201.57,173.09 201.24,173.19 200.92,173.33 200.64,173.53 200.39,173.77 200.18,174.05 200.02,174.36 199.91,174.69 199.85,175.03 199.84,175.20 199.84,190.43 199.85,190.25 199.85,190.60 199.91,190.94 200.02,191.27 200.18,191.58 200.39,191.86 200.64,192.10 200.92,192.30 201.24,192.45 201.57,192.54 201.92,192.58 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='222.75' y='180.79' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='36.35px' lengthAdjust='spacingAndGlyphs'>CHEMING LO</text>
+<text x='222.75' y='188.99' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='38.61px' lengthAdjust='spacingAndGlyphs'>KIATOUKAYSY</text>
+<polygon points='47.24,315.34 88.74,315.34 88.65,315.34 89.00,315.33 89.34,315.26 89.66,315.14 89.96,314.96 90.23,314.74 90.46,314.48 90.65,314.19 90.78,313.87 90.87,313.53 90.90,313.18 90.90,313.18 90.90,297.96 90.90,297.96 90.87,297.62 90.78,297.28 90.65,296.96 90.46,296.67 90.23,296.41 89.96,296.19 89.66,296.01 89.34,295.89 89.00,295.82 88.74,295.80 47.24,295.80 47.50,295.82 47.15,295.80 46.81,295.85 46.48,295.94 46.16,296.09 45.88,296.29 45.62,296.53 45.42,296.81 45.25,297.12 45.14,297.45 45.09,297.79 45.08,297.96 45.08,313.18 45.09,313.01 45.09,313.36 45.14,313.70 45.25,314.03 45.42,314.34 45.62,314.62 45.88,314.86 46.16,315.06 46.48,315.20 46.81,315.30 47.15,315.34 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='67.99' y='303.55' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='32.07px' lengthAdjust='spacingAndGlyphs'>CHEMING L</text>
+<text x='67.99' y='311.74' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='38.61px' lengthAdjust='spacingAndGlyphs'>KIATOUKAYSY</text>
+<polygon points='93.85,268.22 158.28,268.22 158.19,268.21 158.54,268.20 158.88,268.13 159.21,268.01 159.51,267.83 159.78,267.61 160.01,267.35 160.19,267.06 160.33,266.74 160.41,266.40 160.44,266.06 160.44,266.06 160.44,250.83 160.44,250.83 160.41,250.49 160.33,250.15 160.19,249.83 160.01,249.54 159.78,249.28 159.51,249.06 159.21,248.88 158.88,248.76 158.54,248.69 158.28,248.67 93.85,248.67 94.11,248.69 93.76,248.68 93.42,248.72 93.08,248.82 92.77,248.96 92.48,249.16 92.23,249.40 92.02,249.68 91.86,249.99 91.75,250.32 91.69,250.66 91.69,250.83 91.69,266.06 91.69,265.88 91.69,266.23 91.75,266.57 91.86,266.90 92.02,267.21 92.23,267.49 92.48,267.73 92.77,267.93 93.08,268.08 93.42,268.17 93.76,268.21 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='126.06' y='256.42' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='58.96px' lengthAdjust='spacingAndGlyphs'>4795 HUBERTUS RD,</text>
+<text x='126.06' y='264.62' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='61.55px' lengthAdjust='spacingAndGlyphs'>HUBERTUS, WI 53033</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='84.61' cy='135.94' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='160.96,132.90 163.59,137.46 158.33,137.46 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='98.73' y='139.10' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.11px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='175.08' y='139.10' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.69px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='32.63' y='104.23' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.18px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 3 units, and 2 distinct owner names.</text>
+<text x='32.63' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='208.31px' lengthAdjust='spacingAndGlyphs'>CHEMING L KIATOUKAYSY --</text>
+<text x='32.63' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='205.86px' lengthAdjust='spacingAndGlyphs'>CHEMING LO KIATOUKAYSY</text>
+<text x='32.63' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='44.29px' lengthAdjust='spacingAndGlyphs'>Group</text>
+</g>
+</svg>
