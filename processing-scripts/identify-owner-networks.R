@@ -283,3 +283,4 @@ updated <- tibble(
   dns_end = dns.records.end
 )
 write_csv(updated, "data/final-output/process-dates-updated.csv")
+write_csv(updated, "data/process-dates-updated.csv")
