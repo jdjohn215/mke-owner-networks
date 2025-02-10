@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMzIuNjN8MjU4LjExfDE2MS4wMnwzMjcuMzc='>
+    <rect x='32.63' y='161.02' width='225.48' height='166.36' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMzIuNjN8MjU4LjExfDE2MS4wMnwzMjcuMzc=)'>
+<polyline points='247.86,168.58 246.83,169.34 245.79,170.11 244.76,170.87 243.72,171.63 242.69,172.40 241.65,173.16 240.62,173.93 239.58,174.69 238.55,175.45 237.51,176.22 236.47,176.98 235.44,177.75 234.40,178.51 233.37,179.27 232.33,180.04 231.30,180.80 230.26,181.56 229.23,182.33 228.19,183.09 227.16,183.86 226.12,184.62 225.09,185.38 224.05,186.15 223.02,186.91 221.98,187.68 220.95,188.44 219.91,189.20 218.88,189.97 217.84,190.73 216.80,191.50 215.77,192.26 214.73,193.02 213.70,193.79 212.66,194.55 211.63,195.31 210.59,196.08 209.56,196.84 208.52,197.61 207.49,198.37 206.45,199.13 205.42,199.90 204.38,200.66 203.35,201.43 202.31,202.19 201.28,202.95 200.24,203.72 199.20,204.48 198.17,205.25 197.13,206.01 196.10,206.77 195.06,207.54 194.03,208.30 192.99,209.06 191.96,209.83 190.92,210.59 189.89,211.36 188.85,212.12 187.82,212.88 186.78,213.65 185.75,214.41 184.71,215.18 183.68,215.94 182.64,216.70 181.61,217.47 180.57,218.23 179.53,219.00 178.50,219.76 177.46,220.52 176.43,221.29 175.39,222.05 174.36,222.81 173.32,223.58 172.29,224.34 171.25,225.11 170.22,225.87 169.18,226.63 168.15,227.40 167.11,228.16 166.08,228.93 165.04,229.69 164.01,230.45 162.97,231.22 161.93,231.98 160.90,232.75 159.86,233.51 158.83,234.27 157.79,235.04 156.76,235.80 155.72,236.56 154.69,237.33 153.65,238.09 152.62,238.86 151.58,239.62 150.55,240.38 149.51,241.15 148.48,241.91 147.44,242.68 146.41,243.44 145.37,244.20 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='42.88,319.81 43.91,319.05 44.95,318.28 45.98,317.52 47.02,316.76 48.05,315.99 49.09,315.23 50.12,314.46 51.16,313.70 52.19,312.94 53.23,312.17 54.27,311.41 55.30,310.65 56.34,309.88 57.37,309.12 58.41,308.36 59.44,307.59 60.48,306.83 61.51,306.06 62.55,305.30 63.58,304.54 64.62,303.77 65.65,303.01 66.69,302.25 67.72,301.48 68.76,300.72 69.79,299.95 70.83,299.19 71.86,298.43 72.90,297.66 73.94,296.90 74.97,296.14 76.01,295.37 77.04,294.61 78.08,293.84 79.11,293.08 80.15,292.32 81.18,291.55 82.22,290.79 83.25,290.03 84.29,289.26 85.32,288.50 86.36,287.74 87.39,286.97 88.43,286.21 89.46,285.44 90.50,284.68 91.54,283.92 92.57,283.15 93.61,282.39 94.64,281.63 95.68,280.86 96.71,280.10 97.75,279.33 98.78,278.57 99.82,277.81 100.85,277.04 101.89,276.28 102.92,275.52 103.96,274.75 104.99,273.99 106.03,273.22 107.06,272.46 108.10,271.70 109.14,270.93 110.17,270.17 111.21,269.41 112.24,268.64 113.28,267.88 114.31,267.11 115.35,266.35 116.38,265.59 117.42,264.82 118.45,264.06 119.49,263.30 120.52,262.53 121.56,261.77 122.59,261.01 123.63,260.24 124.66,259.48 125.70,258.71 126.74,257.95 127.77,257.19 128.81,256.42 129.84,255.66 130.88,254.90 131.91,254.13 132.95,253.37 133.98,252.60 135.02,251.84 136.05,251.08 137.09,250.31 138.12,249.55 139.16,248.79 140.19,248.02 141.23,247.26 142.26,246.49 143.30,245.73 144.34,244.97 145.37,244.20 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.86,166.37 249.78,169.68 245.95,169.68 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='42.88,317.60 44.79,320.92 40.96,320.92 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='145.37' cy='244.20' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='241.91' y1='173.07' x2='246.92' y2='169.29' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='48.82' y1='315.32' x2='43.82' y2='319.10' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='139.56' y1='248.70' x2='144.44' y2='244.92' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='193.55,192.61 246.08,192.61 245.99,192.61 246.34,192.60 246.68,192.53 247.00,192.40 247.30,192.23 247.57,192.01 247.80,191.75 247.99,191.46 248.13,191.14 248.21,190.80 248.24,190.45 248.24,190.45 248.24,175.23 248.24,175.23 248.21,174.89 248.13,174.55 247.99,174.23 247.80,173.93 247.57,173.67 247.30,173.45 247.00,173.28 246.68,173.16 246.34,173.09 246.08,173.07 193.55,173.07 193.81,173.09 193.47,173.07 193.12,173.12 192.79,173.21 192.47,173.36 192.19,173.56 191.94,173.80 191.73,174.08 191.57,174.39 191.46,174.72 191.40,175.06 191.39,175.23 191.39,190.45 191.40,190.28 191.40,190.63 191.46,190.97 191.57,191.30 191.73,191.61 191.94,191.89 192.19,192.13 192.47,192.32 192.79,192.47 193.12,192.57 193.47,192.61 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='219.82' y='180.82' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='37.35px' lengthAdjust='spacingAndGlyphs'>4130 N 16TH</text>
+<text x='219.82' y='189.01' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='49.64px' lengthAdjust='spacingAndGlyphs'>ST-OUROBOROS I</text>
+<polygon points='44.18,315.32 96.07,315.32 95.99,315.32 96.33,315.30 96.67,315.23 97.00,315.11 97.30,314.94 97.57,314.72 97.80,314.46 97.99,314.16 98.12,313.84 98.20,313.50 98.23,313.16 98.23,313.16 98.23,297.94 98.23,297.94 98.20,297.59 98.12,297.25 97.99,296.93 97.80,296.64 97.57,296.38 97.30,296.16 97.00,295.99 96.67,295.86 96.33,295.79 96.07,295.78 44.18,295.78 44.44,295.79 44.09,295.78 43.74,295.82 43.41,295.92 43.10,296.07 42.81,296.26 42.56,296.50 42.35,296.78 42.19,297.09 42.08,297.42 42.02,297.76 42.02,297.94 42.02,313.16 42.02,312.98 42.02,313.33 42.08,313.68 42.19,314.00 42.35,314.31 42.56,314.59 42.81,314.83 43.10,315.03 43.41,315.18 43.74,315.27 44.09,315.32 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='70.12' y='303.52' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='45.58px' lengthAdjust='spacingAndGlyphs'>2827 N 51ST ST</text>
+<text x='70.12' y='311.72' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='49.02px' lengthAdjust='spacingAndGlyphs'>OUROBOROS INV</text>
+<polygon points='92.43,268.24 159.65,268.24 159.56,268.24 159.91,268.23 160.25,268.16 160.57,268.03 160.87,267.86 161.14,267.64 161.37,267.38 161.56,267.09 161.70,266.77 161.78,266.43 161.81,266.08 161.81,266.08 161.81,250.86 161.81,250.86 161.78,250.51 161.70,250.18 161.56,249.86 161.37,249.56 161.14,249.30 160.87,249.08 160.57,248.91 160.25,248.79 159.91,248.72 159.65,248.70 92.43,248.70 92.69,248.72 92.34,248.70 92.00,248.74 91.66,248.84 91.35,248.99 91.06,249.19 90.81,249.43 90.60,249.71 90.44,250.01 90.33,250.34 90.27,250.69 90.27,250.86 90.27,266.08 90.27,265.91 90.27,266.26 90.33,266.60 90.44,266.93 90.60,267.24 90.81,267.51 91.06,267.75 91.35,267.95 91.66,268.10 92.00,268.20 92.34,268.24 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='126.04' y='256.45' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='43.24px' lengthAdjust='spacingAndGlyphs'>PO BOX 71221,</text>
+<text x='126.04' y='264.64' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='64.34px' lengthAdjust='spacingAndGlyphs'>MILWAUKEE, WI 53211</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='84.61' cy='135.94' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='160.96,132.90 163.59,137.46 158.33,137.46 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='98.73' y='139.10' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.11px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='175.08' y='139.10' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.69px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='32.63' y='104.23' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.18px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 3 units, and 2 distinct owner names.</text>
+<text x='32.63' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='212.47px' lengthAdjust='spacingAndGlyphs'>2827 N 51ST ST OUROBOROS</text>
+<text x='32.63' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='130.44px' lengthAdjust='spacingAndGlyphs'>INV -- 4130 N 16TH</text>
+<text x='32.63' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='178.80px' lengthAdjust='spacingAndGlyphs'>ST-OUROBOROS I Group</text>
+</g>
+</svg>
