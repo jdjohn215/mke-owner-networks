@@ -2,7 +2,7 @@
 
 This repository includes data and code for identifying networks of connected landlords in the City of Milwaukee.
 
-Visit to [https://www.mkepropertyownership.com/](https://www.mkepropertyownership.com/) to see it in action!
+Visit [https://www.mkepropertyownership.com/](https://www.mkepropertyownership.com/) to see it in action!
 
 ## data processing workflow
 
