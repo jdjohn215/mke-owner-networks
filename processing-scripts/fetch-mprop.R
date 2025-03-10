@@ -5,7 +5,7 @@ library(tidygeocoder)
 mprop.orig <- read_csv("https://data.milwaukee.gov/dataset/562ab824-48a5-42cd-b714-87e205e489ba/resource/0a2c7f31-cd15-4151-8222-09dd57d5f16d/download/mprop.csv")
 
 # temporarily use the residential unit count retrieved from parcel polygons on
-#   March 8, 2024. The assessor's office plans to add the residential unit field
+#   March 10, 2025. The assessor's office plans to add the residential unit field
 #   to the MPROP file in the near future.
 # ALSO, some HACM properties don't have any units in MPROP, add those
 hacm.units <- read_csv("data/mprop/hacm-units.csv", col_types = "ccncc") |>
@@ -38,7 +38,7 @@ mprop <- mprop.orig %>%
   )) %>%
   # subset columns
   select(TAXKEY, HOUSE_NR_LO, HOUSE_NR_HI, HOUSE_NR_SFX, SDIR, STREET, STTYPE,
-         C_A_CLASS, LAND_USE_GP, C_A_TOTAL, NR_UNITS, OWNER_NAME_1,
+         C_A_CLASS, LAND_USE_GP, C_A_TOTAL, NR_UNITS, residential_units, OWNER_NAME_1,
          OWNER_NAME_2, OWNER_NAME_3, CONVEY_DATE, OWNER_MAIL_ADDR, OWNER_CITY_STATE, OWNER_ZIP, GEO_ZIP_CODE,
          owner_occupied, ZONING, OWN_OCPD, GEO_ALDER, LAST_VALUE_CHG) %>%
   # add text labels
@@ -75,7 +75,7 @@ mprop <- mprop.orig %>%
 residential.landlord <- mprop %>%
   filter(C_A_CLASS %in% c("RESIDENTIAL", "CONDOMINIUMS", "MERCANTILE APTS") |
            LAND_USE_GP %in% c("MIXED COMMERCIAL/RESIDENTIAL", "SINGLE FAMILY",
-                            "DUPLEX", "MULTI-FAMILY"),
+                            "DUPLEX", "MULTI-FAMILY", "MIXED COMMERCIAL"),
          NR_UNITS > 0,
          owner_occupied != "OWNER OCCUPIED") %>%
   # clean owner mail address field
