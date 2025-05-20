@@ -1,6 +1,6 @@
 name,value
 total_parcels,"48,407"
-total_units,"149,643"
+total_units,"149,644"
 total_networks,"20,586"
 networks_single_parcel,"14,768"
 pct_networks_single_parcel,72%
@@ -17,7 +17,7 @@ total_mprop_names,"28,669"
 total_mprop_addresses,"22,859"
 mprop_updated,2025-05-13
 wdfi_updated,2025-02-13
-workflow_updated,2025-05-19
+workflow_updated,2025-05-20
 evict_start,2016-01-01
 evict_end,2024-12-27
 dns_start,2017-01-01
