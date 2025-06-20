@@ -20,12 +20,18 @@ dns.violations.24 <- readxl::read_excel("data/dns-code-violations/Violation Reco
   janitor::clean_names() |>
   rename(violation_text = item_comment)
 
-# DNS extract covering Q1 2025
+# DNS extract covering Jan-May 2025
+dns.violations.25.1 <- readxl::read_excel("data/dns-code-violations/Violations_062025.xlsx") |>
+  janitor::clean_names() |>
+  rename(violation_text = item_comment)
+
+# DNS extract covering latter 2025
 #   add this in due time
 
 ################################################################################
 # combine DNS records
-dns.all <- bind_rows(dns.violations.17to22, dns.violations.23, dns.violations.24)
+dns.all <- bind_rows(dns.violations.17to22, dns.violations.23, dns.violations.24,
+                     dns.violations.25.1)
 
 dns.all.2 <- dns.all |>
   mutate(across(.cols = where(is.character), str_to_upper)) |>
