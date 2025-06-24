@@ -41,7 +41,7 @@ dns.all.2 <- dns.all |>
   group_by_all() |>
   summarise() |>
   ungroup() |>
-  filter(between(date_inspection, as.Date("2017-01-01"), as.Date("2024-12-31"))) |>
+  filter(between(date_inspection, as.Date("2017-01-01"), as.Date("2025-06-18"))) |>
   mutate(date_inspection = as.Date(date_inspection),
          record_open_date = as.Date(record_open_date),
          taxkey = str_pad(taxkey, width = 10, side = "left", pad = "0"))
