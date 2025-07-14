@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMzIuNjN8MjU4LjExfDE2MS4wMnwzMjcuMzc='>
+    <rect x='32.63' y='161.02' width='225.48' height='166.36' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMzIuNjN8MjU4LjExfDE2MS4wMnwzMjcuMzc=)'>
+<polyline points='247.86,168.58 246.83,169.34 245.79,170.11 244.76,170.87 243.72,171.63 242.69,172.40 241.65,173.16 240.62,173.93 239.58,174.69 238.55,175.45 237.51,176.22 236.47,176.98 235.44,177.75 234.40,178.51 233.37,179.27 232.33,180.04 231.30,180.80 230.26,181.56 229.23,182.33 228.19,183.09 227.16,183.86 226.12,184.62 225.09,185.38 224.05,186.15 223.02,186.91 221.98,187.68 220.95,188.44 219.91,189.20 218.88,189.97 217.84,190.73 216.80,191.50 215.77,192.26 214.73,193.02 213.70,193.79 212.66,194.55 211.63,195.31 210.59,196.08 209.56,196.84 208.52,197.61 207.49,198.37 206.45,199.13 205.42,199.90 204.38,200.66 203.35,201.43 202.31,202.19 201.28,202.95 200.24,203.72 199.20,204.48 198.17,205.25 197.13,206.01 196.10,206.77 195.06,207.54 194.03,208.30 192.99,209.06 191.96,209.83 190.92,210.59 189.89,211.36 188.85,212.12 187.82,212.88 186.78,213.65 185.75,214.41 184.71,215.18 183.68,215.94 182.64,216.70 181.61,217.47 180.57,218.23 179.53,219.00 178.50,219.76 177.46,220.52 176.43,221.29 175.39,222.05 174.36,222.81 173.32,223.58 172.29,224.34 171.25,225.11 170.22,225.87 169.18,226.63 168.15,227.40 167.11,228.16 166.08,228.93 165.04,229.69 164.01,230.45 162.97,231.22 161.93,231.98 160.90,232.75 159.86,233.51 158.83,234.27 157.79,235.04 156.76,235.80 155.72,236.56 154.69,237.33 153.65,238.09 152.62,238.86 151.58,239.62 150.55,240.38 149.51,241.15 148.48,241.91 147.44,242.68 146.41,243.44 145.37,244.20 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='42.88,319.81 43.91,319.05 44.95,318.28 45.98,317.52 47.02,316.76 48.05,315.99 49.09,315.23 50.12,314.46 51.16,313.70 52.19,312.94 53.23,312.17 54.27,311.41 55.30,310.65 56.34,309.88 57.37,309.12 58.41,308.36 59.44,307.59 60.48,306.83 61.51,306.06 62.55,305.30 63.58,304.54 64.62,303.77 65.65,303.01 66.69,302.25 67.72,301.48 68.76,300.72 69.79,299.95 70.83,299.19 71.86,298.43 72.90,297.66 73.94,296.90 74.97,296.14 76.01,295.37 77.04,294.61 78.08,293.84 79.11,293.08 80.15,292.32 81.18,291.55 82.22,290.79 83.25,290.03 84.29,289.26 85.32,288.50 86.36,287.74 87.39,286.97 88.43,286.21 89.46,285.44 90.50,284.68 91.54,283.92 92.57,283.15 93.61,282.39 94.64,281.63 95.68,280.86 96.71,280.10 97.75,279.33 98.78,278.57 99.82,277.81 100.85,277.04 101.89,276.28 102.92,275.52 103.96,274.75 104.99,273.99 106.03,273.22 107.06,272.46 108.10,271.70 109.14,270.93 110.17,270.17 111.21,269.41 112.24,268.64 113.28,267.88 114.31,267.11 115.35,266.35 116.38,265.59 117.42,264.82 118.45,264.06 119.49,263.30 120.52,262.53 121.56,261.77 122.59,261.01 123.63,260.24 124.66,259.48 125.70,258.71 126.74,257.95 127.77,257.19 128.81,256.42 129.84,255.66 130.88,254.90 131.91,254.13 132.95,253.37 133.98,252.60 135.02,251.84 136.05,251.08 137.09,250.31 138.12,249.55 139.16,248.79 140.19,248.02 141.23,247.26 142.26,246.49 143.30,245.73 144.34,244.97 145.37,244.20 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.86,166.37 249.78,169.68 245.95,169.68 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='42.88,317.60 44.79,320.92 40.96,320.92 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='145.37' cy='244.20' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='243.12' y1='171.44' x2='246.82' y2='169.21' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='48.77' y1='315.28' x2='43.81' y2='319.09' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='139.52' y1='248.73' x2='144.44' y2='244.92' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='169.93,179.13 240.96,179.13 240.88,179.13 241.22,179.11 241.56,179.04 241.89,178.92 242.19,178.75 242.46,178.53 242.69,178.27 242.88,177.97 243.01,177.65 243.10,177.32 243.12,176.97 243.12,176.97 243.12,170.17 243.12,170.17 243.10,169.83 243.01,169.49 242.88,169.17 242.69,168.87 242.46,168.61 242.19,168.39 241.89,168.22 241.56,168.10 241.22,168.03 240.96,168.01 169.93,168.01 170.19,168.03 169.84,168.01 169.50,168.06 169.16,168.15 168.85,168.30 168.56,168.50 168.31,168.74 168.10,169.02 167.94,169.33 167.83,169.65 167.77,170.00 167.77,170.17 167.77,176.97 167.77,176.79 167.77,177.14 167.83,177.49 167.94,177.82 168.10,178.12 168.31,178.40 168.56,178.64 168.85,178.84 169.16,178.99 169.50,179.09 169.84,179.13 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='205.45' y='175.53' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='68.16px' lengthAdjust='spacingAndGlyphs'>MARINE BLUE PROP LLC</text>
+<polygon points='38.39,315.28 89.83,315.28 89.74,315.28 90.09,315.27 90.43,315.20 90.76,315.07 91.06,314.90 91.33,314.68 91.56,314.42 91.74,314.13 91.88,313.81 91.96,313.47 91.99,313.12 91.99,313.12 91.99,298.13 91.99,298.13 91.96,297.79 91.88,297.45 91.74,297.13 91.56,296.83 91.33,296.57 91.06,296.35 90.76,296.18 90.43,296.06 90.09,295.99 89.83,295.97 38.39,295.97 38.65,295.99 38.30,295.97 37.96,296.02 37.62,296.11 37.31,296.26 37.02,296.46 36.77,296.70 36.56,296.98 36.40,297.29 36.29,297.62 36.23,297.96 36.23,298.13 36.23,313.12 36.23,312.95 36.23,313.30 36.29,313.64 36.40,313.97 36.56,314.28 36.77,314.56 37.02,314.80 37.31,314.99 37.62,315.14 37.96,315.24 38.30,315.28 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='64.11' y='303.49' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='38.56px' lengthAdjust='spacingAndGlyphs'>MARINE BLUE</text>
+<text x='64.11' y='311.68' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='48.56px' lengthAdjust='spacingAndGlyphs'>PROPERTIES LLC</text>
+<polygon points='94.84,268.04 157.44,268.04 157.35,268.04 157.70,268.03 158.04,267.96 158.37,267.83 158.67,267.66 158.94,267.44 159.17,267.18 159.35,266.89 159.49,266.57 159.57,266.23 159.60,265.88 159.60,265.88 159.60,250.89 159.60,250.89 159.57,250.55 159.49,250.21 159.35,249.89 159.17,249.59 158.94,249.33 158.67,249.11 158.37,248.94 158.04,248.82 157.70,248.75 157.44,248.73 94.84,248.73 95.10,248.75 94.75,248.73 94.41,248.78 94.08,248.87 93.76,249.02 93.48,249.22 93.23,249.46 93.02,249.74 92.85,250.05 92.74,250.37 92.69,250.72 92.68,250.89 92.68,265.88 92.69,265.71 92.69,266.06 92.74,266.40 92.85,266.73 93.02,267.04 93.23,267.32 93.48,267.56 93.76,267.75 94.08,267.90 94.41,268.00 94.75,268.04 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='126.14' y='256.25' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='59.72px' lengthAdjust='spacingAndGlyphs'>933 MARINE BLUE CT,</text>
+<text x='126.14' y='264.44' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='59.72px' lengthAdjust='spacingAndGlyphs'>ROSEVILLE, CA 95747</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='84.57' cy='135.94' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='160.97,132.90 163.60,137.46 158.34,137.46 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='98.69' y='139.10' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='175.09' y='139.10' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='32.63' y='104.23' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 5 units, and 2 distinct owner names.</text>
+<text x='32.63' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='195.16px' lengthAdjust='spacingAndGlyphs'>MARINE BLUE PROP LLC --</text>
+<text x='32.63' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='234.55px' lengthAdjust='spacingAndGlyphs'>MARINE BLUE PROPERTIES LLC</text>
+<text x='32.63' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='44.27px' lengthAdjust='spacingAndGlyphs'>Group</text>
+</g>
+</g>
+</svg>
