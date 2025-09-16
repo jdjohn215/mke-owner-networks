@@ -21,21 +21,30 @@ mprop <- mprop.orig %>%
   left_join(residential.units) |>
   mutate(NR_UNITS = if_else(!is.na(residential_units), residential_units, NR_UNITS)) |>
   # construct custom owner-occupied variables
-  mutate(owner_occupied = case_when(
-    # cannot be owner occupied if not a house or condo
-    ! C_A_CLASS %in% c(1, 5) ~ "not owner occupied",
-    # owner-occupied if MPROP variable says so
-    !is.na(OWN_OCPD) ~ "owner occupied",
-    # cannot be owner occupied if zip codes don't match
-    str_sub(OWNER_ZIP, 1, 5) != str_sub(GEO_ZIP_CODE, 1, 5) ~ "not owner occupied",
-    # cannot be owner occupied if mailing address is PO BOX
-    str_detect(string = str_remove_all(OWNER_MAIL_ADDR, "[.]"),
-               pattern = "\\bPO BOX\\b|\\bPO BOX\\b|\\bPOB\\b|\\bP O BOX\\b") ~ "not owner occupied",
-    # is owner occupied if house numbers match
-    suppressWarnings(parse_number(word(OWNER_MAIL_ADDR, 1, 1))) == HOUSE_NR_LO |
-      suppressWarnings(parse_number(word(OWNER_MAIL_ADDR, 1, 1))) == HOUSE_NR_HI ~ "owner occupied",
-    TRUE ~ "not owner occupied"
-  )) %>%
+  mutate(
+    # construct custom owner-occupied variables
+    #   dummy variable indicating if property could potentially be owner-occupied
+    potentially_owner_occupied = case_when(
+      C_A_CLASS %in% c(1,5) ~ 1, # house or condo
+      LAND_USE_GP == 4 & NR_UNITS < 5 ~ 1, # mixed commercial/residential & less than 5 units
+      NR_UNITS > 0 ~ 1, # at least 1 residential unit
+      TRUE ~ 0
+    ),
+    owner_occupied = case_when(
+      # cannot be owner occupied if not a house or condo (or 1-4 unit mixed commercial/residential)
+      potentially_owner_occupied == 0 ~ "not owner occupied",
+      # owner-occupied if MPROP variable says so
+      !is.na(OWN_OCPD) ~ "owner occupied",
+      # cannot be owner occupied if zip codes don't match
+      str_sub(OWNER_ZIP, 1, 5) != str_sub(GEO_ZIP_CODE, 1, 5) ~ "not owner occupied",
+      # cannot be owner occupied if mailing address is PO BOX
+      str_detect(string = str_remove_all(OWNER_MAIL_ADDR, "[.]"),
+                 pattern = "\\bPO BOX\\b|\\bPO BOX\\b|\\bPOB\\b|\\bP O BOX\\b") ~ "not owner occupied",
+      # is owner occupied if house numbers match
+      suppressWarnings(parse_number(word(OWNER_MAIL_ADDR, 1, 1))) == HOUSE_NR_LO |
+        suppressWarnings(parse_number(word(OWNER_MAIL_ADDR, 1, 1))) == HOUSE_NR_HI ~ "owner occupied",
+      TRUE ~ "not owner occupied"
+    )) %>%
   # subset columns
   select(TAXKEY, HOUSE_NR_LO, HOUSE_NR_HI, HOUSE_NR_SFX, SDIR, STREET, STTYPE,
          C_A_CLASS, LAND_USE_GP, C_A_TOTAL, NR_UNITS, residential_units, OWNER_NAME_1,
