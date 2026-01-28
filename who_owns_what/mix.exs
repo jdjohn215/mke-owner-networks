@@ -47,8 +47,7 @@ defmodule WhoOwnsWhat.MixProject do
       {:finch, "~> 0.13"},
       {:telemetry_metrics, "~> 1.0"},
       {:telemetry_poller, "~> 1.0"},
-      {:gettext, "~> 0.20"},
-      {:jason, "~> 1.2"},
+      {:gettext, "~> 1.0"},
       {:nimble_csv, "~> 1.2"},
       {:bandit, "~> 1.0"},
       {:prom_ex, "~> 1.0"}
