@@ -267,6 +267,17 @@ mprop.with.evictions.redacted <- mprop.with.evictions |>
          evict_orders = if_else(final_group %in% redact.all.parcels$final_group, NA, evict_orders))
 
 ################################################################################
+# add complete address string for each parcel
+taxkey.addresses <- read_csv("data/mai/taxkey-addresses-2026-01-31.csv")
+mprop.with.evictions.redacted <- mprop.with.evictions.redacted |>
+  left_join(taxkey.addresses) |>
+  mutate(complete_addresses = if_else(is.na(complete_addresses),
+                                      paste(paste(HOUSE_NR_LO, SDIR, STREET, STTYPE),
+                                            paste(HOUSE_NR_HI, SDIR, STREET, STTYPE),
+                                            sep = "|"),
+                                      complete_addresses))
+
+################################################################################
 # save output
 write_csv(mprop.with.evictions.redacted, "data/final-output/LandlordProperties-with-OwnerNetworks.csv")
 write_csv(network.summary.stats.redacted, "data/final-output/Landlord-network-summary-statistics.csv")
