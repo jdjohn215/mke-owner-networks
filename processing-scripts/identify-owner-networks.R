@@ -268,7 +268,7 @@ mprop.with.evictions.redacted <- mprop.with.evictions |>
 
 ################################################################################
 # add complete address string for each parcel
-taxkey.addresses <- read_csv("data/mai/taxkey-addresses-2026-01-31.csv")
+taxkey.addresses <- read_csv("data/mai/taxkey-addresses_2026-01-31.csv")
 mprop.with.evictions.redacted <- mprop.with.evictions.redacted |>
   left_join(taxkey.addresses) |>
   mutate(complete_addresses = if_else(is.na(complete_addresses),
