@@ -2,7 +2,7 @@ rm(list = ls())
 
 library(tidyverse)
 
-wdfi.orig <- vroom::vroom("data/wdfi/Marquette Corp Database 02132025.txt",
+wdfi.orig <- vroom::vroom("data/wdfi/SD4351_FullEntityList_WithRegPOAddress_Marquette.txt",
                           col_names = c("EntityID", "EntityName", "EntityStatus", "EntityType", "Incorporated Date", 
                                         "AgentName", "AgentAdd1", "AgentAdd2", "AgentCity", "AgentState", 
                                         "AgentZIP", "AgentCountry", "PrincipalOfficeAdd1", "PrincipalOfficeAdd2", 
