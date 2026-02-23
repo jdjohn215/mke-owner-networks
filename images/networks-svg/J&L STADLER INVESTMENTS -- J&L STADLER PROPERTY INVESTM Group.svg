@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDE2MS4wMnwzMzAuMTE='>
+    <rect x='29.89' y='161.02' width='228.22' height='169.09' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDE2MS4wMnwzMzAuMTE=)'>
+<polyline points='247.74,168.70 246.69,169.48 245.64,170.26 244.59,171.03 243.55,171.81 242.50,172.59 241.45,173.36 240.40,174.14 239.36,174.92 238.31,175.69 237.26,176.47 236.21,177.24 235.16,178.02 234.12,178.80 233.07,179.57 232.02,180.35 230.97,181.13 229.92,181.90 228.88,182.68 227.83,183.46 226.78,184.23 225.73,185.01 224.69,185.79 223.64,186.56 222.59,187.34 221.54,188.12 220.49,188.89 219.45,189.67 218.40,190.44 217.35,191.22 216.30,192.00 215.25,192.77 214.21,193.55 213.16,194.33 212.11,195.10 211.06,195.88 210.02,196.66 208.97,197.43 207.92,198.21 206.87,198.99 205.82,199.76 204.78,200.54 203.73,201.31 202.68,202.09 201.63,202.87 200.58,203.64 199.54,204.42 198.49,205.20 197.44,205.97 196.39,206.75 195.35,207.53 194.30,208.30 193.25,209.08 192.20,209.86 191.15,210.63 190.11,211.41 189.06,212.19 188.01,212.96 186.96,213.74 185.91,214.51 184.87,215.29 183.82,216.07 182.77,216.84 181.72,217.62 180.68,218.40 179.63,219.17 178.58,219.95 177.53,220.73 176.48,221.50 175.44,222.28 174.39,223.06 173.34,223.83 172.29,224.61 171.24,225.39 170.20,226.16 169.15,226.94 168.10,227.71 167.05,228.49 166.01,229.27 164.96,230.04 163.91,230.82 162.86,231.60 161.81,232.37 160.77,233.15 159.72,233.93 158.67,234.70 157.62,235.48 156.57,236.26 155.53,237.03 154.48,237.81 153.43,238.59 152.38,239.36 151.34,240.14 150.29,240.91 149.24,241.69 148.19,242.47 147.14,243.24 146.10,244.02 145.05,244.80 144.00,245.57 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,322.43 41.31,321.65 42.36,320.87 43.41,320.10 44.45,319.32 45.50,318.54 46.55,317.77 47.60,316.99 48.64,316.22 49.69,315.44 50.74,314.66 51.79,313.89 52.84,313.11 53.88,312.33 54.93,311.56 55.98,310.78 57.03,310.01 58.08,309.23 59.12,308.45 60.17,307.68 61.22,306.90 62.27,306.12 63.31,305.35 64.36,304.57 65.41,303.80 66.46,303.02 67.51,302.24 68.55,301.47 69.60,300.69 70.65,299.91 71.70,299.14 72.75,298.36 73.79,297.58 74.84,296.81 75.89,296.03 76.94,295.26 77.98,294.48 79.03,293.70 80.08,292.93 81.13,292.15 82.18,291.37 83.22,290.60 84.27,289.82 85.32,289.05 86.37,288.27 87.42,287.49 88.46,286.72 89.51,285.94 90.56,285.16 91.61,284.39 92.66,283.61 93.70,282.84 94.75,282.06 95.80,281.28 96.85,280.51 97.89,279.73 98.94,278.95 99.99,278.18 101.04,277.40 102.09,276.63 103.13,275.85 104.18,275.07 105.23,274.30 106.28,273.52 107.33,272.74 108.37,271.97 109.42,271.19 110.47,270.41 111.52,269.64 112.56,268.86 113.61,268.09 114.66,267.31 115.71,266.53 116.76,265.76 117.80,264.98 118.85,264.20 119.90,263.43 120.95,262.65 122.00,261.88 123.04,261.10 124.09,260.32 125.14,259.55 126.19,258.77 127.23,257.99 128.28,257.22 129.33,256.44 130.38,255.67 131.43,254.89 132.47,254.11 133.52,253.34 134.57,252.56 135.62,251.78 136.67,251.01 137.71,250.23 138.76,249.46 139.81,248.68 140.86,247.90 141.90,247.13 142.95,246.35 144.00,245.57 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,166.49 249.65,169.81 245.82,169.81 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,320.22 42.18,323.53 38.35,323.53 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='144.00' cy='245.57' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='241.85' y1='173.28' x2='246.81' y2='169.42' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='46.29' y1='317.88' x2='41.20' y2='321.72' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='138.10' y1='250.17' x2='143.07' y2='246.29' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='206.86,192.59 250.20,192.59 250.11,192.59 250.46,192.58 250.80,192.51 251.12,192.39 251.42,192.21 251.69,191.99 251.92,191.73 252.11,191.44 252.25,191.12 252.33,190.78 252.36,190.43 252.36,190.43 252.36,175.44 252.36,175.44 252.33,175.10 252.25,174.76 252.11,174.44 251.92,174.15 251.69,173.89 251.42,173.67 251.12,173.49 250.80,173.37 250.46,173.30 250.20,173.28 206.86,173.28 207.12,173.30 206.78,173.29 206.43,173.33 206.10,173.42 205.78,173.57 205.50,173.77 205.25,174.01 205.04,174.29 204.88,174.60 204.77,174.93 204.71,175.27 204.70,175.44 204.70,190.43 204.71,190.26 204.71,190.61 204.77,190.95 204.88,191.28 205.04,191.59 205.25,191.87 205.50,192.11 205.78,192.31 206.10,192.45 206.43,192.55 206.78,192.59 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='228.53' y='180.80' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='36.97px' lengthAdjust='spacingAndGlyphs'>J&amp;L STADLER</text>
+<text x='228.53' y='188.99' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='40.45px' lengthAdjust='spacingAndGlyphs'>INVESTMENTS</text>
+<polygon points='35.66,317.88 108.27,317.88 108.18,317.88 108.53,317.86 108.87,317.79 109.20,317.67 109.50,317.49 109.77,317.27 110.00,317.01 110.18,316.72 110.32,316.40 110.40,316.06 110.43,315.72 110.43,315.72 110.43,300.73 110.43,300.73 110.40,300.38 110.32,300.04 110.18,299.72 110.00,299.43 109.77,299.17 109.50,298.95 109.20,298.77 108.87,298.65 108.53,298.58 108.27,298.57 35.66,298.57 35.92,298.58 35.57,298.57 35.22,298.61 34.89,298.71 34.58,298.86 34.29,299.05 34.04,299.29 33.83,299.57 33.67,299.88 33.56,300.21 33.50,300.55 33.50,300.73 33.50,315.72 33.50,315.54 33.50,315.89 33.56,316.23 33.67,316.56 33.83,316.87 34.04,317.15 34.29,317.39 34.58,317.59 34.89,317.74 35.22,317.83 35.57,317.88 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='71.96' y='306.08' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='69.73px' lengthAdjust='spacingAndGlyphs'>J&amp;L STADLER PROPERTY</text>
+<text x='71.96' y='314.28' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='25.28px' lengthAdjust='spacingAndGlyphs'>INVESTM</text>
+<polygon points='91.27,269.48 158.27,269.48 158.19,269.48 158.53,269.46 158.88,269.39 159.20,269.27 159.50,269.10 159.77,268.88 160.00,268.62 160.19,268.32 160.32,268.00 160.41,267.67 160.43,267.32 160.43,267.32 160.43,252.33 160.43,252.33 160.41,251.98 160.32,251.64 160.19,251.32 160.00,251.03 159.77,250.77 159.50,250.55 159.20,250.38 158.88,250.25 158.53,250.18 158.27,250.17 91.27,250.17 91.53,250.18 91.18,250.17 90.84,250.21 90.50,250.31 90.19,250.46 89.90,250.65 89.65,250.90 89.44,251.17 89.28,251.48 89.17,251.81 89.12,252.15 89.11,252.33 89.11,267.32 89.12,267.15 89.12,267.49 89.17,267.84 89.28,268.17 89.44,268.47 89.65,268.75 89.90,268.99 90.19,269.19 90.50,269.34 90.84,269.44 91.18,269.48 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='124.77' y='257.68' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='50.11px' lengthAdjust='spacingAndGlyphs'>17865 BOLTER LN,</text>
+<text x='124.77' y='265.88' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='64.12px' lengthAdjust='spacingAndGlyphs'>BROOKFIELD, WI 53045</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='135.94' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,132.90 162.23,137.46 156.97,137.46 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='139.10' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='139.10' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='104.23' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 3 units, and 2 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='210.75px' lengthAdjust='spacingAndGlyphs'>J&amp;L STADLER INVESTMENTS</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='200.89px' lengthAdjust='spacingAndGlyphs'>-- J&amp;L STADLER PROPERTY</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='113.98px' lengthAdjust='spacingAndGlyphs'>INVESTM Group</text>
+</g>
+</g>
+</svg>
