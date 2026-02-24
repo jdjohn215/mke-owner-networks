@@ -95,7 +95,8 @@ defmodule WhoOwnsWhat.Data.Import do
           eviction_orders: convert_string_maybe_na_to_integer(Map.fetch!(map, "evict_orders")),
           eviction_filings: convert_string_maybe_na_to_integer(Map.fetch!(map, "evict_filings")),
           latitude: convert_string_maybe_na_to_float(Map.fetch!(map, "lat")),
-          longitude: convert_string_maybe_na_to_float(Map.fetch!(map, "lon"))
+          longitude: convert_string_maybe_na_to_float(Map.fetch!(map, "lon")),
+          complete_addresses: Map.fetch!(map, "complete_addresses")
         }
         |> Map.update!(:wdfi_address, fn address ->
           if address == "NA" do
@@ -143,7 +144,7 @@ defmodule WhoOwnsWhat.Data.Import do
       """
       INSERT INTO properties_fts (rowid, taxkey, owner_name_1, full_address, owner_group_name)
       SELECT p.id, p.taxkey, owner_name_1,
-        house_number_low || ' ' ||  house_number_high || ' ' || street_direction || ' ' || street || ' ' || street_type || ' ' || geo_zip_code,
+        replace(complete_addresses, '|', ' ') || ' ' || geo_zip_code,
       ogp.owner_group_name
       FROM properties p
       JOIN owner_groups_properties ogp on ogp.taxkey = p.taxkey

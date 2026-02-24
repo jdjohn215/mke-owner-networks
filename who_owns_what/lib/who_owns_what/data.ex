@@ -8,11 +8,13 @@ defmodule WhoOwnsWhat.Data do
   import Ecto.Query, only: [from: 2]
 
   def format_query(query) do
-    q =
-      String.split(query, " ")
-      |> Enum.join("%")
-
-    "%#{q}%"
+    String.split(query, " ")
+    |> Enum.reject(&(&1 == ""))
+    |> Enum.map(fn term ->
+      "#{term}* "
+    end)
+    |> Enum.join()
+    |> String.trim()
   end
 
   def search_owner_groups(owner_query) do
@@ -22,8 +24,8 @@ defmodule WhoOwnsWhat.Data do
 
         fts_query =
           from(pf in PropertyFts,
-            where: fragment("? LIKE ?", pf.owner_group_name, ^formatted_query),
-            # or_where: fragment("? LIKE ?", pf.owner_name_1, ^formatted_query),
+            where: fragment("? MATCH ?", pf.owner_group_name, ^formatted_query),
+            # or_where: fragment("? MATCH ?", pf.owner_name_1, ^formatted_query),
             group_by: pf.owner_group_name
           )
 
@@ -49,7 +51,7 @@ defmodule WhoOwnsWhat.Data do
         join: p in Property,
         on: p.taxkey == pf.taxkey,
         select: %{p | owner_group: %OwnerGroup{name: pf.owner_group_name}},
-        order_by: [asc: :rank],
+        order_by: [asc: :rank, desc: p.c_a_total],
         limit: 1000
       )
 
@@ -58,7 +60,7 @@ defmodule WhoOwnsWhat.Data do
         formatted_query = format_query(owner_query)
 
         from([pf, p] in query,
-          or_where: fragment("? LIKE ?", pf.owner_name_1, ^formatted_query)
+          where: fragment("? MATCH ?", pf.owner_name_1, ^formatted_query)
         )
       else
         query
@@ -69,7 +71,7 @@ defmodule WhoOwnsWhat.Data do
         formatted_query = format_query(owner_group_query)
 
         from([pf, p] in query,
-          where: fragment("? LIKE ?", pf.owner_group_name, ^formatted_query)
+          where: fragment("? MATCH ?", pf.owner_group_name, ^formatted_query)
         )
       else
         query
@@ -79,8 +81,8 @@ defmodule WhoOwnsWhat.Data do
       if address_query != "" do
         formatted_query = format_query(address_query)
 
-        from(p in query,
-          where: fragment("full_address LIKE ?", ^formatted_query)
+        from([pf, p] in query,
+          where: fragment("full_address MATCH ?", ^formatted_query)
         )
       else
         query

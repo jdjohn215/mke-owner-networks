@@ -38,6 +38,7 @@ defmodule WhoOwnsWhat.Data.Property do
     field :convey_date, :date
     field :latitude, :float
     field :longitude, :float
+    field :complete_addresses, :string
 
     timestamps()
 
@@ -77,7 +78,8 @@ defmodule WhoOwnsWhat.Data.Property do
       :eviction_filings,
       :eviction_orders,
       :geo_alder,
-      :zoning
+      :zoning,
+      :complete_addresses
     ])
     |> validate_required([
       :taxkey,
@@ -106,11 +108,7 @@ defmodule WhoOwnsWhat.Data.Property do
   end
 
   def address_without_zip_code(property = %__MODULE__{}) do
-    if property.house_number_low != property.house_number_high do
-      "#{property.house_number_low}-#{property.house_number_high} #{property.street_direction} #{property.street} #{property.street_type}"
-    else
-      "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type}"
-    end
+    "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type}"
   end
 
   def address(property = %__MODULE__{}) do
@@ -121,10 +119,13 @@ defmodule WhoOwnsWhat.Data.Property do
         nil
       end
 
-    if property.house_number_low != property.house_number_high do
-      "#{property.house_number_low}-#{property.house_number_high} #{property.street_direction} #{property.street} #{property.street_type}, #{zip_code}"
-    else
-      "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type}, #{zip_code}"
-    end
+    "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type}, #{zip_code}"
+  end
+
+  def alternative_addresses(property = %__MODULE__{}) do
+    primary_address = address_without_zip_code(property)
+
+    String.split(property.complete_addresses, "|")
+    |> Enum.reject(&(&1 == primary_address))
   end
 end
