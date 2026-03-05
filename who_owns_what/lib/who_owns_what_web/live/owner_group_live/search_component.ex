@@ -59,17 +59,17 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.SearchComponent do
     <.table id="owner_groups" row_id={&"#{&1.id}"} rows={@owner_groups}>
       <:col :let={owner_group} label="Owner Group">
         <.good_link navigate={~p"/owner_groups/#{owner_group.name}"}>
-          <%= owner_group.name %>
+          {owner_group.name}
         </.good_link>
       </:col>
       <:col :let={owner_group} label="Total Properties" class="hidden md:table-cell">
-        <%= owner_group.number_properties %>
+        {owner_group.number_properties}
       </:col>
       <:col :let={owner_group} label="Total Units" class="hidden sm:table-cell">
-        <%= owner_group.number_units %>
+        {owner_group.number_units}
       </:col>
       <:col :let={owner_group} label="Total Assessed Value">
-        $<%= format_dollars(owner_group.total_assessed_value) %>
+        ${format_dollars(owner_group.total_assessed_value)}
       </:col>
     </.table>
     """

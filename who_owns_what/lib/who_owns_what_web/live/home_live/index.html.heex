@@ -3,15 +3,15 @@
 </.header>
 
 <p class="mt-5 leading-5">
-  We identify <%= @total_parcels %> total landlord-owned parcels. The original data includes <%= @total_mprop_names %> unique owner names using <%= @total_mprop_addresses %> addresses.
+  We identify {@total_parcels} total landlord-owned parcels. The original data includes {@total_mprop_names} unique owner names using {@total_mprop_addresses} addresses.
 </p>
 
 <p class="mt-5 leading-5">
-  After applying our network matching process, we find a total of <%= @total_networks %> owner networks. Of those networks, <%= @pct_networks_single_parcel %> own just a single parcel, while <%= @pct_networks_multiple_names %> own not only multiple parcels but also include multiple ownership names.
+  After applying our network matching process, we find a total of {@total_networks} owner networks. Of those networks, {@pct_networks_single_parcel} own just a single parcel, while {@pct_networks_multiple_names} own not only multiple parcels but also include multiple ownership names.
 </p>
 
 <p class="mt-5 leading-5">
-  Of all the residential parcels in the city, <%= @pct_parcels_multiple_name_owner %> are part of an ownership network which includes multiple owner names.
+  Of all the residential parcels in the city, {@pct_parcels_multiple_name_owner} are part of an ownership network which includes multiple owner names.
 </p>
 
 <p class="mt-5 leading-5">
@@ -21,15 +21,13 @@
 </p>
 
 <p class="mt-5 leading-5">
-  The most recent parcel ownership records were updated by the City of Milwaukee on <%= format_date(
+  The most recent parcel ownership records were updated by the City of Milwaukee on {format_date(
     @mprop_updated
-  ) %>. We last checked for new updates on <%= format_date(@workflow_updated) %>. Corporate registration data was last updated on <%= format_date(
+  )}. We last checked for new updates on {format_date(@workflow_updated)}. Corporate registration data was last updated on {format_date(
     @wdfi_updated
-  ) %>. Eviction records cover the period from <%= format_date(@evict_start) %> to <%= format_date(
+  )}. Eviction records cover the period from {format_date(@evict_start)} to {format_date(
     @evict_end
-  ) %>, and code violation records cover <%= format_date(@dns_start) %> to <%= format_date(
-    @dns_end
-  ) %>.
+  )}, and code violation records cover {format_date(@dns_start)} to {format_date(@dns_end)}.
 </p>
 
 <hr class="border-t-2 my-4" />

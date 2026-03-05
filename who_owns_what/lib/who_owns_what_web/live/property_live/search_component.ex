@@ -73,19 +73,19 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
     <.table id="properties" row_id={&"#{&1.id}"} rows={@properties}>
       <:col :let={property} label="Address">
         <.good_link navigate={~p"/properties/#{property.taxkey}"}>
-          <%= WhoOwnsWhat.Data.Property.address(property) %>
+          {WhoOwnsWhat.Data.Property.address(property)}
         </.good_link>
       </:col>
       <:col :let={property} label="Owner Group">
         <.good_link navigate={~p"/owner_groups/#{property.owner_group.name}"}>
-          <%= property.owner_group.name %>
+          {property.owner_group.name}
         </.good_link>
       </:col>
       <:col :let={property} label="Owner Name" class="hidden sm:table-cell">
-        <%= property.owner_name_1 %>
+        {property.owner_name_1}
       </:col>
       <:col :let={property} label="Assessed Value" class="hidden md:table-cell">
-        $<%= format_dollars(property.c_a_total) %>
+        ${format_dollars(property.c_a_total)}
       </:col>
     </.table>
     """

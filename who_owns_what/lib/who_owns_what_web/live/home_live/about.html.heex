@@ -43,17 +43,17 @@
 <h2 class="text-xl font-semibold leading-8 my-4">Code Violations</h2>
 
 <p class="mt-4 leading-5">
-  We obtain code violation data from the City of Milwaukee’s Department of Neighborhood Services. Records begin on <%= format_date(
+  We obtain code violation data from the City of Milwaukee’s Department of Neighborhood Services. Records begin on {format_date(
     @dns_start
-  ) %>. To calculate code violation rates we first identify the length of time the current owner had the property which also overlaps with the period of available code enforcement data. We multiply this period of DNS-covered ownership by the number of housing units at the property. For each ownership group, we divide the total number of violations occurring during the ownership period by this denominator, “DNS-covered-unit-years.” The result is “code violations per 100 units per year.”
+  )}. To calculate code violation rates we first identify the length of time the current owner had the property which also overlaps with the period of available code enforcement data. We multiply this period of DNS-covered ownership by the number of housing units at the property. For each ownership group, we divide the total number of violations occurring during the ownership period by this denominator, “DNS-covered-unit-years.” The result is “code violations per 100 units per year.”
 </p>
 
 <h2 class="text-xl font-semibold leading-8 my-4">Evictions</h2>
 
 <p class="mt-4 leading-5">
-  We obtain eviction records from the Wisconsin Consolidated Court Automation Programs (CCAP) database. We match each Milwaukee city eviction record to a parcel by using the earliest defendant address associated with case. In total, we achieve about a 98.8% successful match rate. Our eviction records begin on <%= format_date(
+  We obtain eviction records from the Wisconsin Consolidated Court Automation Programs (CCAP) database. We match each Milwaukee city eviction record to a parcel by using the earliest defendant address associated with case. In total, we achieve about a 98.8% successful match rate. Our eviction records begin on {format_date(
     @evict_start
-  ) %>. As with the DNS records, we determine the period of current ownership which also overlaps with the eviction court record coverage. Multiplying the overlapping period by the number of residential units yields “Eviction-record-covered-unit-years.” We divide the total number of eviction filings and orders by this denominator to calculate normalized rates across each owner portfolio.
+  )}. As with the DNS records, we determine the period of current ownership which also overlaps with the eviction court record coverage. Multiplying the overlapping period by the number of residential units yields “Eviction-record-covered-unit-years.” We divide the total number of eviction filings and orders by this denominator to calculate normalized rates across each owner portfolio.
 </p>
 
 <p class="mt-4 leading-5">
@@ -63,7 +63,7 @@
 <h2 class="text-xl font-semibold leading-8 my-4">Access the data</h2>
 
 <p class="mt-4 leading-5">
-  Unless redacted (as with eviction records), all of the source data needed to replicate our analysis is available in our GitHub repository. The repository also includes our processing scripts, automated workflow runs, and the code that creates this website. See it all at  
+  Unless redacted (as with eviction records), all of the source data needed to replicate our analysis is available in our GitHub repository. The repository also includes our processing scripts, automated workflow runs, and the code that creates this website. See it all at
   <.good_link navigate="https://github.com/jdjohn215/mke-owner-networks">
     github.com/jdjohn215/mke-owner-networks.
   </.good_link>
@@ -113,8 +113,7 @@
       class="w-full object-cover mb-4"
     />
     <p class="mt-4 leading-5">
-      John Johnson is a research fellow in the Marquette Law School’s Lubar Center for Public Policy Research and Civic Education. He studies housing, demographic, and political trends in the Milwaukee area. For more about Milwaukee housing, see
-      <.good_link navigate="http://milwaukeehousingstats.info/">
+      John Johnson is a research fellow in the Marquette Law School’s Lubar Center for Public Policy Research and Civic Education. He studies housing, demographic, and political trends in the Milwaukee area. For more about Milwaukee housing, see <.good_link navigate="http://milwaukeehousingstats.info/">
         http://milwaukeehousingstats.info
       </.good_link>.
     </p>
