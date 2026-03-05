@@ -5,7 +5,31 @@
 <p>Total Units: <%= @owner_group.number_units %></p>
 <p>Total Assessed Value: $<%= format_dollars(@owner_group.total_assessed_value) %></p>
 
-<p class="mt-2">
+<p class="mt-4">We periodically collect DNS code violations and eviction court records. We only count these records if they occurred after the current owner bought the property. During the period for which we have data, these properties received a total of:</p>
+
+<p class="mt-4">
+  Code Violations: <%= @owner_group.total_dns_violations %>
+</p>
+
+<%= if is_nil(@owner_group.eviction_filings) do %>
+  <p><%= "Eviction Filings: Redacted" %></p>
+<% else %>
+  <p>
+    <%= "Eviction Filings: #{@owner_group.eviction_filings}" %>
+  </p>
+<% end %>
+
+<%= if is_nil(@owner_group.eviction_orders) do %>
+  <p><%= "Eviction Orders: Redacted" %></p>
+<% else %>
+  <p>
+    <%= "Eviction Orders: #{@owner_group.eviction_orders}" %>
+  </p>
+<% end %>
+
+<p class="mt-4">To compare landlord networks of different sizes, we also calculate normalized rates. For each property, we multiply the period of time for which we have data by the number of housing units. These are "housing unit years." For each network, we divide the total number of violation, filings, or orders by the total housing unit years for all properties. For this network:</p>
+
+<p class="mt-4">
   Code Violations per 100 Units per Year: <%= format_float(
     @owner_group.ownership_dns_violation_unit_rate_annual
   ) %>
