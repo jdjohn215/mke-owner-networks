@@ -67,6 +67,10 @@ if config_env() == :prod do
 
   config :who_owns_what, WhoOwnsWhat.PromEx, manual_metrics_start_delay: :no_delay
 
+  config :who_owns_what,
+    admin_username: System.fetch_env!("AUTH_USERNAME"),
+    admin_password: System.fetch_env!("AUTH_PASSWORD")
+
   # ## SSL Support
   #
   # To get SSL working, you will need to add the `https` key

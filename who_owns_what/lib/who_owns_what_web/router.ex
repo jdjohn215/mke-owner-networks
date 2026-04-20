@@ -33,13 +33,6 @@ defmodule WhoOwnsWhatWeb.Router do
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
   if Application.compile_env(:who_owns_what, :dev_routes) do
-    # If you want to use the LiveDashboard in production, you should put
-    # it behind authentication and allow only admins to access it.
-    # If your application does not have an admins-only section yet,
-    # you can use Plug.BasicAuth to set up some basic authentication
-    # as long as you are also using SSL (which you should anyway).
-    import Phoenix.LiveDashboard.Router
-
     scope "/dev" do
       pipe_through :browser
 
@@ -47,17 +40,15 @@ defmodule WhoOwnsWhatWeb.Router do
       forward "/mailbox", Plug.Swoosh.MailboxPreview
     end
   else
-    if System.get_env("AUTH_USERNAME") && System.get_env("AUTH_PASSWORD") do
-      scope "/admin" do
-        pipe_through [:browser, :admins_only]
-        live_dashboard "/dashboard"
-      end
+    scope "/admin" do
+      pipe_through [:browser, :admins_only]
+      live_dashboard "/dashboard", metrics: WhoOwnsWhatWeb.Telemetry
     end
   end
 
   defp admin_basic_auth(conn, _opts) do
-    username = System.fetch_env!("AUTH_USERNAME")
-    password = System.fetch_env!("AUTH_PASSWORD")
+    username = Application.fetch_env!(:who_owns_what, :admin_username)
+    password = Application.fetch_env!(:who_owns_what, :admin_password)
     Plug.BasicAuth.basic_auth(conn, username: username, password: password)
   end
 end
