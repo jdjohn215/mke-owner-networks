@@ -62,14 +62,14 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.SearchComponent do
           {owner_group.name}
         </.good_link>
       </:col>
-      <:col :let={owner_group} label="Total Properties" class="hidden md:table-cell">
-        {owner_group.number_properties}
+      <:col :let={owner_group} label="Total Units">
+        {format_commas(owner_group.number_units)}
       </:col>
-      <:col :let={owner_group} label="Total Units" class="hidden sm:table-cell">
-        {owner_group.number_units}
+      <:col :let={owner_group} label="Total Properties">
+        {format_commas(owner_group.number_properties)}
       </:col>
-      <:col :let={owner_group} label="Total Assessed Value">
-        ${format_dollars(owner_group.total_assessed_value)}
+      <:col :let={owner_group} label="Total Assessed Value" class="hidden sm:table-cell">
+        ${format_commas(owner_group.total_assessed_value)}
       </:col>
     </.table>
     """

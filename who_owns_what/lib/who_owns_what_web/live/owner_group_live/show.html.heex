@@ -1,23 +1,23 @@
 <.header>
   {@owner_group.name}
 </.header>
-<p>Total Properties: {@owner_group.number_properties}</p>
-<p>Total Units: {@owner_group.number_units}</p>
-<p>Total Assessed Value: ${format_dollars(@owner_group.total_assessed_value)}</p>
+<p>Total Properties: {format_commas(@owner_group.number_properties)}</p>
+<p>Total Units: {format_commas(@owner_group.number_units)}</p>
+<p>Total Assessed Value: ${format_commas(@owner_group.total_assessed_value)}</p>
 
 <p class="mt-4">
   We periodically collect DNS code violations and eviction court records. We only count these records if they occurred after the current owner bought the property. During the period for which we have data, these properties received a total of:
 </p>
 
 <p class="mt-4">
-  Code Violations: {@owner_group.total_dns_violations}
+  Code Violations: {format_commas(@owner_group.total_dns_violations)}
 </p>
 
 <%= if is_nil(@owner_group.eviction_filings) do %>
   <p>{"Eviction Filings: Redacted"}</p>
 <% else %>
   <p>
-    {"Eviction Filings: #{@owner_group.eviction_filings}"}
+    {"Eviction Filings: #{format_commas(@owner_group.eviction_filings)}"}
   </p>
 <% end %>
 
@@ -25,7 +25,7 @@
   <p>{"Eviction Orders: Redacted"}</p>
 <% else %>
   <p>
-    {"Eviction Orders: #{@owner_group.eviction_orders}"}
+    {"Eviction Orders: #{format_commas(@owner_group.eviction_orders)}"}
   </p>
 <% end %>
 
@@ -84,6 +84,6 @@
   <:col :let={property} label="Owner Name">{property.owner_name_1}</:col>
   <:col :let={property} label="Number of Units">{property.number_units}</:col>
   <:col :let={property} label="Assessed Value" class="hidden md:table-cell">
-    ${format_dollars(property.c_a_total)}
+    ${format_commas(property.c_a_total)}
   </:col>
 </.table>

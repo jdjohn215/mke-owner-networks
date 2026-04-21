@@ -37,7 +37,7 @@ defmodule WhoOwnsWhat.Data do
         )
       else
         from(og in OwnerGroup,
-          order_by: [desc: :total_assessed_value],
+          order_by: [desc: :number_units],
           limit: 200
         )
       end

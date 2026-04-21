@@ -15,7 +15,7 @@
   <:item title="Owner Name">{@property.owner_name_1}</:item>
   <:item title="Owner Address">{@property.owner_address}</:item>
   <:item title="Number of Units">{@property.number_units}</:item>
-  <:item title="Assessed Value">${format_dollars(@property.c_a_total)}</:item>
+  <:item title="Assessed Value">${format_commas(@property.c_a_total)}</:item>
   <:item title="Code Violations">
     {"#{@property.ownership_dns_violations} since #{format_date(@dns_data_date)}"}
     <div>

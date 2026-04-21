@@ -85,7 +85,7 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
         {property.owner_name_1}
       </:col>
       <:col :let={property} label="Assessed Value" class="hidden md:table-cell">
-        ${format_dollars(property.c_a_total)}
+        ${format_commas(property.c_a_total)}
       </:col>
     </.table>
     """
