@@ -33,16 +33,25 @@ defmodule WhoOwnsWhat.Data do
           join: pf in subquery(fts_query),
           on: pf.owner_group_name == og.name,
           order_by: [desc: og.number_units],
-          limit: 200
+          limit: 50
         )
       else
         from(og in OwnerGroup,
           order_by: [desc: :number_units],
-          limit: 200
+          limit: 50
         )
       end
 
     Repo.all(query)
+  end
+
+  def search_properties("", "", "") do
+    from(p in Property,
+      order_by: [desc: p.c_a_total],
+      limit: 50
+    )
+    |> Repo.all()
+    |> Repo.preload(:owner_group)
   end
 
   def search_properties(owner_query, owner_group_query, address_query) do
@@ -52,7 +61,7 @@ defmodule WhoOwnsWhat.Data do
         on: p.taxkey == pf.taxkey,
         select: %{p | owner_group: %OwnerGroup{name: pf.owner_group_name}},
         order_by: [asc: :rank, desc: p.c_a_total],
-        limit: 200
+        limit: 50
       )
 
     query =

@@ -43,7 +43,10 @@ defmodule WhoOwnsWhat.PromExPlugin do
   end
 
   defp get_property_tag_values(%{property: property}) do
-    %{zip_code: property.geo_zip_code, owner_group_name: property.owner_group.name}
+    %{
+      zip_code: property.geo_zip_code,
+      owner_group_name: if(property.owner_group, do: property.owner_group.name, else: "unknown")
+    }
   end
 
   defp get_owner_group_tag_values(%{owner_group: owner_group}) do
