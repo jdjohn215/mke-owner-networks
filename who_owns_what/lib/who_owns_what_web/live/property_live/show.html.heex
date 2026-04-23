@@ -12,7 +12,13 @@
       {@property.owner_group.name}
     </.good_link>
   </:item>
-  <:item title="Owner Name">{@property.owner_name_1}</:item>
+  <:item title="Owner Name">
+    {@property.owner_name_1}
+    <%= if !is_blank?(@property.owner_name_2) do %>
+      <br />
+      {@property.owner_name_2}
+    <% end %>
+  </:item>
   <:item title="Owner Address">{@property.owner_address}</:item>
   <:item title="Number of Units">{@property.number_units}</:item>
   <:item title="Assessed Value">${format_commas(@property.c_a_total)}</:item>

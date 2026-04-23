@@ -81,7 +81,13 @@
   <:col :let={property} label="District" class="hidden md:table-cell">
     {property.geo_alder}
   </:col>
-  <:col :let={property} label="Owner Name">{property.owner_name_1}</:col>
+  <:col :let={property} label="Owner Name">
+    {property.owner_name_1}
+    <%= if !is_blank?(property.owner_name_2) do %>
+      <br />
+      {property.owner_name_2}
+    <% end %>
+  </:col>
   <:col :let={property} label="Number of Units">{property.number_units}</:col>
   <:col :let={property} label="Assessed Value" class="hidden md:table-cell">
     ${format_commas(property.c_a_total)}

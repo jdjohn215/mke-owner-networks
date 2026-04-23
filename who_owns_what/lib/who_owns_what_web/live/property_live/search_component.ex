@@ -83,6 +83,10 @@ defmodule WhoOwnsWhatWeb.PropertyLive.SearchComponent do
       </:col>
       <:col :let={property} label="Owner Name" class="hidden sm:table-cell">
         {property.owner_name_1}
+        <%= if !is_blank?(property.owner_name_2) do %>
+          <br />
+          {property.owner_name_2}
+        <% end %>
       </:col>
       <:col :let={property} label="Assessed Value" class="hidden md:table-cell">
         ${format_commas(property.c_a_total)}

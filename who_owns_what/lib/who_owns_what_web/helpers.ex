@@ -20,4 +20,20 @@ defmodule WhoOwnsWhatWeb.Helpers do
   def format_date(date) do
     Calendar.strftime(date, "%b %d, %Y")
   end
+
+  def is_blank?("NA") do
+    true
+  end
+
+  def is_blank?("") do
+    true
+  end
+
+  def is_blank?(nil) do
+    true
+  end
+
+  def is_blank?(_) do
+    false
+  end
 end
