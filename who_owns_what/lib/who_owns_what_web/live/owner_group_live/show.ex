@@ -3,6 +3,8 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.Show do
 
   alias WhoOwnsWhat.Data
 
+  @boundary_geojson "priv/data/boundary.geojson" |> File.read!()
+
   @impl true
   def mount(_params, _session, socket) do
     {:ok, socket}
@@ -23,16 +25,42 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.Show do
         property.owner_name_1 != first_property.owner_name_1
       end)
 
+    geojson = properties_to_geojson(properties)
+
     {:noreply,
      socket
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(:owner_group, owner_group)
      |> assign(:show_network_graph, has_multiple_unique_owner_names)
      |> assign(:properties, properties)
+     |> assign(:geojson, geojson)
+     |> assign(:boundary_geojson, @boundary_geojson)
      |> assign_groups(properties)}
   end
 
   defp page_title(:show), do: "Show Owner Group"
+
+  defp properties_to_geojson(properties) do
+    features =
+      properties
+      |> Enum.filter(&(&1.latitude && &1.longitude))
+      |> Enum.map(fn property ->
+        %{
+          type: "Feature",
+          geometry: %{
+            type: "Point",
+            coordinates: [property.longitude, property.latitude]
+          },
+          properties: %{
+            taxkey: property.taxkey,
+            address: Data.Property.address(property),
+            units: property.number_units
+          }
+        }
+      end)
+
+    Jason.encode!(%{type: "FeatureCollection", features: features})
+  end
 
   defp assign_groups(socket, properties) do
     groups =

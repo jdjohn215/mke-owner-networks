@@ -1,0 +1,15 @@
+{
+  "name": "assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "commonjs",
+  "dependencies": {
+    "maplibre-gl": "^5.23.0"
+  }
+}

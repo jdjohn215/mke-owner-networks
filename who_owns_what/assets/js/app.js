@@ -21,9 +21,76 @@ import "phoenix_html"
 import {Socket} from "phoenix"
 import {LiveSocket} from "phoenix_live_view"
 import topbar from "../vendor/topbar"
+import maplibregl from "maplibre-gl"
+
+let Hooks = {}
+
+Hooks.MapLibre = {
+  mounted() {
+    const geojson = JSON.parse(this.el.dataset.geojson)
+    const bounds = new maplibregl.LngLatBounds()
+    geojson.features.forEach(f => bounds.extend(f.geometry.coordinates))
+
+    const map = new maplibregl.Map({
+      container: this.el,
+      style: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+      bounds: bounds,
+      fitBoundsOptions: { padding: 40, maxZoom: 14 }
+    })
+
+    map.on("load", () => {
+      const boundary = JSON.parse(this.el.dataset.boundary)
+      map.addSource("boundary", { type: "geojson", data: boundary })
+      map.addLayer({
+        id: "boundary-line",
+        type: "line",
+        source: "boundary",
+        paint: {
+          "line-color": "#333",
+          "line-width": 2,
+          "line-opacity": 0.5
+        }
+      })
+
+      map.addSource("properties", { type: "geojson", data: geojson })
+      map.addLayer({
+        id: "properties-circle",
+        type: "circle",
+        source: "properties",
+        paint: {
+          "circle-radius": [
+            "interpolate", ["linear"], ["min", ["get", "units"], 50],
+            1, 4,
+            50, 20
+          ],
+          "circle-color": "#ee4100",
+          "circle-stroke-width": 1,
+          "circle-opacity": 0.7,
+          "circle-stroke-color": "#fff"
+        }
+      })
+
+      const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false })
+
+      map.on("mouseenter", "properties-circle", (e) => {
+        map.getCanvas().style.cursor = "pointer"
+        const props = e.features[0].properties
+        popup.setLngLat(e.features[0].geometry.coordinates)
+          .setHTML(`<strong>${props.address}</strong><br>${props.units} unit(s)`)
+          .addTo(map)
+      })
+
+      map.on("mouseleave", "properties-circle", () => {
+        map.getCanvas().style.cursor = ""
+        popup.remove()
+      })
+
+    })
+  }
+}
 
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
-let liveSocket = new LiveSocket("/live", Socket, {params: {_csrf_token: csrfToken}})
+let liveSocket = new LiveSocket("/live", Socket, {params: {_csrf_token: csrfToken}, hooks: Hooks})
 
 // Show progress bar on live navigation and form submits
 topbar.config({barColors: {0: "#29d"}, shadowColor: "rgba(0, 0, 0, .3)"})

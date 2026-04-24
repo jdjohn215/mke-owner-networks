@@ -1,3 +1,4 @@
+<link rel="stylesheet" href={~p"/assets/maplibre-gl.css"} />
 <.header>
   {@owner_group.name}
 </.header>
@@ -54,6 +55,17 @@
     {"Eviction Orders per 100 Units per Year: #{format_float(@owner_group.annual_eviction_order_rate_per_unit)}"}
   </p>
 <% end %>
+
+<div
+  id="owner-group-map"
+  phx-hook="MapLibre"
+  phx-update="ignore"
+  data-geojson={@geojson}
+  data-boundary={@boundary_geojson}
+  style="height: 400px; width: 100%;"
+  class="mt-4 rounded-lg"
+>
+</div>
 
 <%= if @show_network_graph do %>
   <details class="font-bold mt-4 cursor-pointer">
