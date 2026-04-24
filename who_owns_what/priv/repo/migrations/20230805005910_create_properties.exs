@@ -48,7 +48,7 @@ defmodule WhoOwnsWhat.Repo.Migrations.CreateProperties do
         owner_name_1,
         owner_group_name,
         full_address,
-        tokenize="trigram"
+        tokenize="unicode61"
       );
       """,
       """
