@@ -16,8 +16,8 @@ jobs:
     name: Deploy app
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - uses: actions/checkout@v5
+      - uses: superfly/flyctl-actions/setup-flyctl@ed8efb33836e8b2096c7fd3ba1c8afe303ebbff1 # 2026-04-25
       - run: cp ../data/final-output/LandlordProperties-with-OwnerNetworks.csv data/LandlordProperties-with-OwnerNetworks.csv
         working-directory: who_owns_what
       - run: cp ../data/final-output/Landlord-network-summary-statistics.csv data/Landlord-network-summary-statistics.csv
