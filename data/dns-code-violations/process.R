@@ -48,6 +48,18 @@ dns.all.2 <- dns.all |>
          record_open_date = as.Date(record_open_date),
          taxkey = str_pad(taxkey, width = 10, side = "left", pad = "0"))
 
+dns.all.export <- dns.all |>
+  mutate(across(.cols = where(is.character), str_to_upper)) |>
+  # deduplicate
+  group_by_all() |>
+  summarise() |>
+  ungroup() |>
+  filter(between(date_inspection, as.Date("2017-01-01"), as.Date("2026-02-25"))) |>
+  mutate(date_inspection = as.Date(date_inspection),
+         record_open_date = as.Date(record_open_date),
+         taxkey = str_pad(taxkey, width = 10, side = "left", pad = "0"))
+write_csv(dns.all.export, "data/dns-code-violations/all-dns-records_2017to25Feb2026.csv.gz")
+
 # create file with 1 row per order and the count of violations in a column
 dns.records <- dns.all.2 |>
   group_by(record_id, taxkey, date_inspection) |>
