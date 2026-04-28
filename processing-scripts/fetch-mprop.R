@@ -135,7 +135,9 @@ residential.landlord <- mprop %>%
   # create combined owner address field
   mutate(mprop_address_raw = paste(OWNER_MAIL_ADDR, OWNER_CITY_STATE, sep = ", "),
          mprop_address_raw = paste(mprop_address_raw, str_sub(OWNER_ZIP, 1, 5))) %>%
-  unite("mprop_name", OWNER_NAME_1, OWNER_NAME_2, OWNER_NAME_3, sep = ", ", remove = F, na.rm = T)
+  unite("mprop_name", OWNER_NAME_1, OWNER_NAME_2, OWNER_NAME_3, sep = ", ", remove = F, na.rm = T) |>
+  mutate(mprop_name = str_remove_all(mprop_name, coll("%")),
+         mprop_name = str_squish(mprop_name))
 
 ###############################################################################
 # add coordinates
