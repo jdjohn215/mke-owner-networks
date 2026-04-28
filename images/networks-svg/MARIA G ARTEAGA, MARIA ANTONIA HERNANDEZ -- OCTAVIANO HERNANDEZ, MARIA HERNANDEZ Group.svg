@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDE4MC40NnwzMzAuMTE='>
+    <rect x='29.89' y='180.46' width='228.22' height='149.65' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDE4MC40NnwzMzAuMTE=)'>
+<polyline points='247.74,187.26 246.69,187.95 245.64,188.63 244.59,189.32 243.55,190.01 242.50,190.70 241.45,191.38 240.40,192.07 239.36,192.76 238.31,193.44 237.26,194.13 236.21,194.82 235.16,195.51 234.12,196.19 233.07,196.88 232.02,197.57 230.97,198.25 229.92,198.94 228.88,199.63 227.83,200.32 226.78,201.00 225.73,201.69 224.69,202.38 223.64,203.07 222.59,203.75 221.54,204.44 220.49,205.13 219.45,205.81 218.40,206.50 217.35,207.19 216.30,207.88 215.25,208.56 214.21,209.25 213.16,209.94 212.11,210.62 211.06,211.31 210.02,212.00 208.97,212.69 207.92,213.37 206.87,214.06 205.82,214.75 204.78,215.43 203.73,216.12 202.68,216.81 201.63,217.50 200.58,218.18 199.54,218.87 198.49,219.56 197.44,220.25 196.39,220.93 195.35,221.62 194.30,222.31 193.25,222.99 192.20,223.68 191.15,224.37 190.11,225.06 189.06,225.74 188.01,226.43 186.96,227.12 185.91,227.80 184.87,228.49 183.82,229.18 182.77,229.87 181.72,230.55 180.68,231.24 179.63,231.93 178.58,232.62 177.53,233.30 176.48,233.99 175.44,234.68 174.39,235.36 173.34,236.05 172.29,236.74 171.24,237.43 170.20,238.11 169.15,238.80 168.10,239.49 167.05,240.17 166.01,240.86 164.96,241.55 163.91,242.24 162.86,242.92 161.81,243.61 160.77,244.30 159.72,244.98 158.67,245.67 157.62,246.36 156.57,247.05 155.53,247.73 154.48,248.42 153.43,249.11 152.38,249.80 151.34,250.48 150.29,251.17 149.24,251.86 148.19,252.54 147.14,253.23 146.10,253.92 145.05,254.61 144.00,255.29 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,323.31 41.31,322.62 42.36,321.94 43.41,321.25 44.45,320.56 45.50,319.87 46.55,319.19 47.60,318.50 48.64,317.81 49.69,317.13 50.74,316.44 51.79,315.75 52.84,315.07 53.88,314.38 54.93,313.69 55.98,313.00 57.03,312.32 58.08,311.63 59.12,310.94 60.17,310.26 61.22,309.57 62.27,308.88 63.31,308.19 64.36,307.51 65.41,306.82 66.46,306.13 67.51,305.45 68.55,304.76 69.60,304.07 70.65,303.39 71.70,302.70 72.75,302.01 73.79,301.32 74.84,300.64 75.89,299.95 76.94,299.26 77.98,298.58 79.03,297.89 80.08,297.20 81.13,296.52 82.18,295.83 83.22,295.14 84.27,294.45 85.32,293.77 86.37,293.08 87.42,292.39 88.46,291.71 89.51,291.02 90.56,290.33 91.61,289.64 92.66,288.96 93.70,288.27 94.75,287.58 95.80,286.90 96.85,286.21 97.89,285.52 98.94,284.84 99.99,284.15 101.04,283.46 102.09,282.77 103.13,282.09 104.18,281.40 105.23,280.71 106.28,280.03 107.33,279.34 108.37,278.65 109.42,277.96 110.47,277.28 111.52,276.59 112.56,275.90 113.61,275.22 114.66,274.53 115.71,273.84 116.76,273.16 117.80,272.47 118.85,271.78 119.90,271.09 120.95,270.41 122.00,269.72 123.04,269.03 124.09,268.35 125.14,267.66 126.19,266.97 127.23,266.29 128.28,265.60 129.33,264.91 130.38,264.22 131.43,263.54 132.47,262.85 133.52,262.16 134.57,261.48 135.62,260.79 136.67,260.10 137.71,259.41 138.76,258.73 139.81,258.04 140.86,257.35 141.90,256.67 142.95,255.98 144.00,255.29 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,185.05 249.65,188.36 245.82,188.36 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,321.10 42.18,324.41 38.35,324.41 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='144.00' cy='255.29' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='241.08' y1='191.76' x2='246.85' y2='187.86' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='46.94' y1='318.83' x2='41.15' y2='322.72' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='137.48' y1='259.78' x2='143.12' y2='255.90' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='191.65,219.26 248.16,219.26 248.07,219.26 248.42,219.25 248.76,219.18 249.08,219.06 249.39,218.88 249.66,218.66 249.89,218.40 250.07,218.11 250.21,217.79 250.29,217.45 250.32,217.10 250.32,217.10 250.32,193.92 250.32,193.92 250.29,193.57 250.21,193.23 250.07,192.91 249.89,192.62 249.66,192.36 249.39,192.14 249.08,191.97 248.76,191.84 248.42,191.77 248.16,191.76 191.65,191.76 191.91,191.77 191.57,191.76 191.22,191.80 190.89,191.90 190.57,192.05 190.29,192.25 190.04,192.49 189.83,192.76 189.67,193.07 189.56,193.40 189.50,193.74 189.49,193.92 189.49,217.10 189.50,216.93 189.50,217.28 189.56,217.62 189.67,217.95 189.83,218.26 190.04,218.54 190.29,218.78 190.57,218.97 190.89,219.12 191.22,219.22 191.57,219.26 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='219.91' y='199.28' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='53.62px' lengthAdjust='spacingAndGlyphs'>MARIA G ARTEAGA,</text>
+<text x='219.91' y='207.47' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='44.14px' lengthAdjust='spacingAndGlyphs'>MARIA ANTONIA</text>
+<text x='219.91' y='215.66' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='35.41px' lengthAdjust='spacingAndGlyphs'>HERNANDEZ</text>
+<polygon points='35.65,318.83 109.75,318.83 109.67,318.83 110.01,318.82 110.35,318.75 110.68,318.62 110.98,318.45 111.25,318.23 111.48,317.97 111.66,317.68 111.80,317.36 111.88,317.02 111.91,316.67 111.91,316.67 111.91,301.68 111.91,301.68 111.88,301.34 111.80,301.00 111.66,300.68 111.48,300.38 111.25,300.12 110.98,299.90 110.68,299.73 110.35,299.61 110.01,299.54 109.75,299.52 35.65,299.52 35.91,299.54 35.57,299.52 35.22,299.57 34.89,299.66 34.57,299.81 34.29,300.01 34.04,300.25 33.83,300.53 33.67,300.84 33.56,301.17 33.50,301.51 33.49,301.68 33.49,316.67 33.50,316.50 33.50,316.85 33.56,317.19 33.67,317.52 33.83,317.83 34.04,318.11 34.29,318.35 34.57,318.54 34.89,318.69 35.22,318.79 35.57,318.83 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='72.70' y='307.04' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='71.22px' lengthAdjust='spacingAndGlyphs'>OCTAVIANO HERNANDEZ,</text>
+<text x='72.70' y='315.23' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='54.69px' lengthAdjust='spacingAndGlyphs'>MARIA HERNANDEZ</text>
+<polygon points='90.52,279.09 154.36,279.09 154.28,279.09 154.62,279.07 154.96,279.00 155.29,278.88 155.59,278.70 155.86,278.48 156.09,278.22 156.28,277.93 156.41,277.61 156.50,277.27 156.52,276.93 156.52,276.93 156.52,261.94 156.52,261.94 156.50,261.59 156.41,261.25 156.28,260.93 156.09,260.64 155.86,260.38 155.59,260.16 155.29,259.98 154.96,259.86 154.62,259.79 154.36,259.78 90.52,259.78 90.78,259.79 90.43,259.78 90.08,259.82 89.75,259.92 89.44,260.07 89.15,260.26 88.90,260.50 88.69,260.78 88.53,261.09 88.42,261.42 88.36,261.76 88.36,261.94 88.36,276.93 88.36,276.75 88.36,277.10 88.42,277.44 88.53,277.77 88.69,278.08 88.90,278.36 89.15,278.60 89.44,278.80 89.75,278.95 90.08,279.04 90.43,279.09 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='122.44' y='267.29' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='43.27px' lengthAdjust='spacingAndGlyphs'>1544 S 10TH ST,</text>
+<text x='122.44' y='275.49' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.97px' lengthAdjust='spacingAndGlyphs'>MILWAUKEE, WI 53204</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='155.38' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,152.34 162.23,156.90 156.97,156.90 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='158.54' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='158.54' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='123.67' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 3 units, and 2 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='197.64px' lengthAdjust='spacingAndGlyphs'>MARIA G ARTEAGA, MARIA</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='177.91px' lengthAdjust='spacingAndGlyphs'>ANTONIA HERNANDEZ --</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.91px' lengthAdjust='spacingAndGlyphs'>OCTAVIANO HERNANDEZ, MARIA</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='141.02px' lengthAdjust='spacingAndGlyphs'>HERNANDEZ Group</text>
+</g>
+</g>
+</svg>

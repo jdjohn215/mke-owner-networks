@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDE4MC40NnwzMzAuMTE='>
+    <rect x='29.89' y='180.46' width='228.22' height='149.65' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDE4MC40NnwzMzAuMTE=)'>
+<polyline points='247.74,187.26 246.69,187.95 245.64,188.63 244.59,189.32 243.55,190.01 242.50,190.70 241.45,191.38 240.40,192.07 239.36,192.76 238.31,193.44 237.26,194.13 236.21,194.82 235.16,195.51 234.12,196.19 233.07,196.88 232.02,197.57 230.97,198.25 229.92,198.94 228.88,199.63 227.83,200.32 226.78,201.00 225.73,201.69 224.69,202.38 223.64,203.07 222.59,203.75 221.54,204.44 220.49,205.13 219.45,205.81 218.40,206.50 217.35,207.19 216.30,207.88 215.25,208.56 214.21,209.25 213.16,209.94 212.11,210.62 211.06,211.31 210.02,212.00 208.97,212.69 207.92,213.37 206.87,214.06 205.82,214.75 204.78,215.43 203.73,216.12 202.68,216.81 201.63,217.50 200.58,218.18 199.54,218.87 198.49,219.56 197.44,220.25 196.39,220.93 195.35,221.62 194.30,222.31 193.25,222.99 192.20,223.68 191.15,224.37 190.11,225.06 189.06,225.74 188.01,226.43 186.96,227.12 185.91,227.80 184.87,228.49 183.82,229.18 182.77,229.87 181.72,230.55 180.68,231.24 179.63,231.93 178.58,232.62 177.53,233.30 176.48,233.99 175.44,234.68 174.39,235.36 173.34,236.05 172.29,236.74 171.24,237.43 170.20,238.11 169.15,238.80 168.10,239.49 167.05,240.17 166.01,240.86 164.96,241.55 163.91,242.24 162.86,242.92 161.81,243.61 160.77,244.30 159.72,244.98 158.67,245.67 157.62,246.36 156.57,247.05 155.53,247.73 154.48,248.42 153.43,249.11 152.38,249.80 151.34,250.48 150.29,251.17 149.24,251.86 148.19,252.54 147.14,253.23 146.10,253.92 145.05,254.61 144.00,255.29 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,323.31 41.31,322.62 42.36,321.94 43.41,321.25 44.45,320.56 45.50,319.87 46.55,319.19 47.60,318.50 48.64,317.81 49.69,317.13 50.74,316.44 51.79,315.75 52.84,315.07 53.88,314.38 54.93,313.69 55.98,313.00 57.03,312.32 58.08,311.63 59.12,310.94 60.17,310.26 61.22,309.57 62.27,308.88 63.31,308.19 64.36,307.51 65.41,306.82 66.46,306.13 67.51,305.45 68.55,304.76 69.60,304.07 70.65,303.39 71.70,302.70 72.75,302.01 73.79,301.32 74.84,300.64 75.89,299.95 76.94,299.26 77.98,298.58 79.03,297.89 80.08,297.20 81.13,296.52 82.18,295.83 83.22,295.14 84.27,294.45 85.32,293.77 86.37,293.08 87.42,292.39 88.46,291.71 89.51,291.02 90.56,290.33 91.61,289.64 92.66,288.96 93.70,288.27 94.75,287.58 95.80,286.90 96.85,286.21 97.89,285.52 98.94,284.84 99.99,284.15 101.04,283.46 102.09,282.77 103.13,282.09 104.18,281.40 105.23,280.71 106.28,280.03 107.33,279.34 108.37,278.65 109.42,277.96 110.47,277.28 111.52,276.59 112.56,275.90 113.61,275.22 114.66,274.53 115.71,273.84 116.76,273.16 117.80,272.47 118.85,271.78 119.90,271.09 120.95,270.41 122.00,269.72 123.04,269.03 124.09,268.35 125.14,267.66 126.19,266.97 127.23,266.29 128.28,265.60 129.33,264.91 130.38,264.22 131.43,263.54 132.47,262.85 133.52,262.16 134.57,261.48 135.62,260.79 136.67,260.10 137.71,259.41 138.76,258.73 139.81,258.04 140.86,257.35 141.90,256.67 142.95,255.98 144.00,255.29 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,185.05 249.65,188.36 245.82,188.36 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,321.10 42.18,324.41 38.35,324.41 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='144.00' cy='255.29' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='243.19' y1='194.66' x2='247.18' y2='188.17' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='46.87' y1='318.88' x2='41.15' y2='322.71' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='137.55' y1='259.73' x2='143.12' y2='255.90' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='167.67,210.54 241.03,210.54 240.94,210.54 241.29,210.52 241.63,210.45 241.96,210.33 242.26,210.16 242.53,209.94 242.76,209.68 242.94,209.38 243.08,209.06 243.16,208.72 243.19,208.38 243.19,208.38 243.19,193.39 243.19,193.39 243.16,193.04 243.08,192.70 242.94,192.38 242.76,192.09 242.53,191.83 242.26,191.61 241.96,191.44 241.63,191.31 241.29,191.24 241.03,191.23 167.67,191.23 167.93,191.24 167.58,191.23 167.23,191.27 166.90,191.37 166.59,191.52 166.30,191.71 166.05,191.95 165.84,192.23 165.68,192.54 165.57,192.87 165.51,193.21 165.51,193.39 165.51,208.38 165.51,208.20 165.51,208.55 165.57,208.90 165.68,209.22 165.84,209.53 166.05,209.81 166.30,210.05 166.59,210.25 166.90,210.40 167.23,210.49 167.58,210.54 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='204.35' y='198.74' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='70.48px' lengthAdjust='spacingAndGlyphs'>BRIAN SAMMONS, LAURA</text>
+<text x='204.35' y='206.94' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='37.81px' lengthAdjust='spacingAndGlyphs'>A SINGLETON</text>
+<polygon points='40.85,318.88 101.47,318.88 101.38,318.87 101.73,318.86 102.07,318.79 102.39,318.67 102.70,318.49 102.96,318.27 103.19,318.01 103.38,317.72 103.52,317.40 103.60,317.06 103.63,316.72 103.63,316.72 103.63,301.72 103.63,301.72 103.60,301.38 103.52,301.04 103.38,300.72 103.19,300.43 102.96,300.17 102.70,299.95 102.39,299.77 102.07,299.65 101.73,299.58 101.47,299.56 40.85,299.56 41.11,299.58 40.77,299.57 40.42,299.61 40.09,299.70 39.77,299.85 39.49,300.05 39.24,300.29 39.03,300.57 38.87,300.88 38.76,301.21 38.70,301.55 38.69,301.72 38.69,316.72 38.70,316.54 38.70,316.89 38.76,317.23 38.87,317.56 39.03,317.87 39.24,318.15 39.49,318.39 39.77,318.59 40.09,318.73 40.42,318.83 40.77,318.87 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='71.16' y='307.08' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='56.89px' lengthAdjust='spacingAndGlyphs'>BRIAN W SAMMONS,</text>
+<text x='71.16' y='315.28' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='57.73px' lengthAdjust='spacingAndGlyphs'>LAURA A SINGLETON</text>
+<polygon points='91.00,279.04 154.02,279.04 153.94,279.04 154.28,279.02 154.62,278.95 154.95,278.83 155.25,278.66 155.52,278.44 155.75,278.18 155.94,277.88 156.07,277.56 156.16,277.23 156.18,276.88 156.18,276.88 156.18,261.89 156.18,261.89 156.16,261.54 156.07,261.20 155.94,260.88 155.75,260.59 155.52,260.33 155.25,260.11 154.95,259.94 154.62,259.81 154.28,259.74 154.02,259.73 91.00,259.73 91.26,259.74 90.92,259.73 90.57,259.77 90.24,259.87 89.92,260.02 89.64,260.21 89.39,260.46 89.18,260.73 89.02,261.04 88.91,261.37 88.85,261.71 88.84,261.89 88.84,276.88 88.85,276.71 88.85,277.05 88.91,277.40 89.02,277.73 89.18,278.03 89.39,278.31 89.64,278.55 89.92,278.75 90.24,278.90 90.57,279.00 90.92,279.04 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='122.51' y='267.24' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.14px' lengthAdjust='spacingAndGlyphs'>3530 MT ACLARE AVE,</text>
+<text x='122.51' y='275.44' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='58.88px' lengthAdjust='spacingAndGlyphs'>SAN DIEGO, CA 92111</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='155.38' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,152.34 162.23,156.90 156.97,156.90 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='158.54' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='158.54' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='123.67' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 2 units, and 2 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='187.78px' lengthAdjust='spacingAndGlyphs'>BRIAN SAMMONS, LAURA</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='183.69px' lengthAdjust='spacingAndGlyphs'>A SINGLETON -- BRIAN W</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.92px' lengthAdjust='spacingAndGlyphs'>SAMMONS, LAURA A SINGLETON</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='44.27px' lengthAdjust='spacingAndGlyphs'>Group</text>
+</g>
+</g>
+</svg>

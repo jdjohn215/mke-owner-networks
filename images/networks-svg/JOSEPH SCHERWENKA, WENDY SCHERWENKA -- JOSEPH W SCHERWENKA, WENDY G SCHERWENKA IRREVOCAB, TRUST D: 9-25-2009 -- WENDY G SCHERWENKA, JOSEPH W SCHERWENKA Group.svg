@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDIzOC43OHwzMzAuMTE='>
+    <rect x='29.89' y='238.78' width='228.22' height='91.33' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDIzOC43OHwzMzAuMTE=)'>
+<polyline points='247.74,300.56 246.50,300.45 245.26,300.34 244.03,300.24 242.79,300.13 241.55,300.02 240.32,299.91 239.08,299.80 237.84,299.69 236.60,299.58 235.37,299.48 234.13,299.37 232.89,299.26 231.66,299.15 230.42,299.04 229.18,298.93 227.95,298.82 226.71,298.72 225.47,298.61 224.23,298.50 223.00,298.39 221.76,298.28 220.52,298.17 219.29,298.06 218.05,297.96 216.81,297.85 215.57,297.74 214.34,297.63 213.10,297.52 211.86,297.41 210.63,297.30 209.39,297.20 208.15,297.09 206.91,296.98 205.68,296.87 204.44,296.76 203.20,296.65 201.97,296.55 200.73,296.44 199.49,296.33 198.26,296.22 197.02,296.11 195.78,296.00 194.54,295.89 193.31,295.79 192.07,295.68 190.83,295.57 189.60,295.46 188.36,295.35 187.12,295.24 185.88,295.13 184.65,295.03 183.41,294.92 182.17,294.81 180.94,294.70 179.70,294.59 178.46,294.48 177.22,294.37 175.99,294.27 174.75,294.16 173.51,294.05 172.28,293.94 171.04,293.83 169.80,293.72 168.57,293.61 167.33,293.51 166.09,293.40 164.85,293.29 163.62,293.18 162.38,293.07 161.14,292.96 159.91,292.86 158.67,292.75 157.43,292.64 156.19,292.53 154.96,292.42 153.72,292.31 152.48,292.20 151.25,292.10 150.01,291.99 148.77,291.88 147.54,291.77 146.30,291.66 145.06,291.55 143.82,291.44 142.59,291.34 141.35,291.23 140.11,291.12 138.88,291.01 137.64,290.90 136.40,290.79 135.16,290.68 133.93,290.58 132.69,290.47 131.45,290.36 130.22,290.25 128.98,290.14 127.74,290.03 126.50,289.93 125.27,289.82 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='87.80,242.93 88.18,243.40 88.56,243.88 88.94,244.35 89.32,244.82 89.70,245.30 90.07,245.77 90.45,246.24 90.83,246.72 91.21,247.19 91.59,247.66 91.97,248.14 92.34,248.61 92.72,249.09 93.10,249.56 93.48,250.03 93.86,250.51 94.24,250.98 94.62,251.45 94.99,251.93 95.37,252.40 95.75,252.87 96.13,253.35 96.51,253.82 96.89,254.30 97.26,254.77 97.64,255.24 98.02,255.72 98.40,256.19 98.78,256.66 99.16,257.14 99.53,257.61 99.91,258.08 100.29,258.56 100.67,259.03 101.05,259.51 101.43,259.98 101.81,260.45 102.18,260.93 102.56,261.40 102.94,261.87 103.32,262.35 103.70,262.82 104.08,263.29 104.45,263.77 104.83,264.24 105.21,264.72 105.59,265.19 105.97,265.66 106.35,266.14 106.72,266.61 107.10,267.08 107.48,267.56 107.86,268.03 108.24,268.50 108.62,268.98 109.00,269.45 109.37,269.92 109.75,270.40 110.13,270.87 110.51,271.35 110.89,271.82 111.27,272.29 111.64,272.77 112.02,273.24 112.40,273.71 112.78,274.19 113.16,274.66 113.54,275.13 113.91,275.61 114.29,276.08 114.67,276.56 115.05,277.03 115.43,277.50 115.81,277.98 116.19,278.45 116.56,278.92 116.94,279.40 117.32,279.87 117.70,280.34 118.08,280.82 118.46,281.29 118.83,281.77 119.21,282.24 119.59,282.71 119.97,283.19 120.35,283.66 120.73,284.13 121.11,284.61 121.48,285.08 121.86,285.55 122.24,286.03 122.62,286.50 123.00,286.97 123.38,287.45 123.75,287.92 124.13,288.40 124.51,288.87 124.89,289.34 125.27,289.82 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,325.96 41.12,325.60 41.98,325.23 42.84,324.87 43.70,324.50 44.55,324.14 45.41,323.77 46.27,323.40 47.13,323.04 47.99,322.67 48.85,322.31 49.71,321.94 50.57,321.58 51.42,321.21 52.28,320.85 53.14,320.48 54.00,320.12 54.86,319.75 55.72,319.39 56.58,319.02 57.43,318.66 58.29,318.29 59.15,317.93 60.01,317.56 60.87,317.20 61.73,316.83 62.59,316.47 63.45,316.10 64.30,315.74 65.16,315.37 66.02,315.01 66.88,314.64 67.74,314.28 68.60,313.91 69.46,313.55 70.31,313.18 71.17,312.82 72.03,312.45 72.89,312.09 73.75,311.72 74.61,311.36 75.47,310.99 76.32,310.63 77.18,310.26 78.04,309.90 78.90,309.53 79.76,309.17 80.62,308.80 81.48,308.44 82.34,308.07 83.19,307.71 84.05,307.34 84.91,306.98 85.77,306.61 86.63,306.25 87.49,305.88 88.35,305.52 89.20,305.15 90.06,304.79 90.92,304.42 91.78,304.06 92.64,303.69 93.50,303.32 94.36,302.96 95.22,302.59 96.07,302.23 96.93,301.86 97.79,301.50 98.65,301.13 99.51,300.77 100.37,300.40 101.23,300.04 102.08,299.67 102.94,299.31 103.80,298.94 104.66,298.58 105.52,298.21 106.38,297.85 107.24,297.48 108.09,297.12 108.95,296.75 109.81,296.39 110.67,296.02 111.53,295.66 112.39,295.29 113.25,294.93 114.11,294.56 114.96,294.20 115.82,293.83 116.68,293.47 117.54,293.10 118.40,292.74 119.26,292.37 120.12,292.01 120.97,291.64 121.83,291.28 122.69,290.91 123.55,290.55 124.41,290.18 125.27,289.82 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,298.35 249.65,301.67 245.82,301.67 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='87.80,240.72 89.72,244.03 85.89,244.03 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,323.75 42.18,327.07 38.35,327.07 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='125.27' cy='289.82' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='242.74' y1='300.56' x2='246.67' y2='300.56' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='46.15' y1='323.56' x2='41.25' y2='325.56' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='164.14,318.41 240.58,318.41 240.50,318.41 240.84,318.39 241.18,318.33 241.51,318.20 241.81,318.03 242.08,317.81 242.31,317.55 242.50,317.25 242.63,316.93 242.72,316.60 242.74,316.25 242.74,316.25 242.74,284.87 242.74,284.87 242.72,284.52 242.63,284.19 242.50,283.87 242.31,283.57 242.08,283.31 241.81,283.09 241.51,282.92 241.18,282.80 240.84,282.73 240.58,282.71 164.14,282.71 164.40,282.73 164.05,282.71 163.71,282.75 163.38,282.85 163.06,283.00 162.78,283.20 162.52,283.44 162.32,283.72 162.15,284.02 162.04,284.35 161.99,284.70 161.98,284.87 161.98,316.25 161.99,316.08 161.99,316.42 162.04,316.77 162.15,317.10 162.32,317.41 162.52,317.68 162.78,317.92 163.06,318.12 163.38,318.27 163.71,318.37 164.05,318.41 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='202.36' y='290.23' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='73.56px' lengthAdjust='spacingAndGlyphs'>JOSEPH W SCHERWENKA,</text>
+<text x='202.36' y='298.42' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='69.34px' lengthAdjust='spacingAndGlyphs'>WENDY G SCHERWENKA</text>
+<text x='202.36' y='306.62' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='62.67px' lengthAdjust='spacingAndGlyphs'>IRREVOCAB, TRUST D:</text>
+<text x='202.36' y='314.81' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='25.25px' lengthAdjust='spacingAndGlyphs'>9/25/2009</text>
+<polygon points='50.38,266.41 125.24,266.41 125.15,266.41 125.50,266.39 125.84,266.32 126.17,266.20 126.47,266.03 126.74,265.81 126.97,265.55 127.15,265.25 127.29,264.93 127.37,264.60 127.40,264.25 127.40,264.25 127.40,249.26 127.40,249.26 127.37,248.91 127.29,248.57 127.15,248.25 126.97,247.96 126.74,247.70 126.47,247.48 126.17,247.31 125.84,247.18 125.50,247.11 125.24,247.10 50.38,247.10 50.64,247.11 50.29,247.10 49.94,247.14 49.61,247.24 49.30,247.39 49.01,247.59 48.76,247.83 48.55,248.10 48.39,248.41 48.28,248.74 48.22,249.08 48.22,249.26 48.22,264.25 48.22,264.08 48.22,264.42 48.28,264.77 48.39,265.10 48.55,265.40 48.76,265.68 49.01,265.92 49.30,266.12 49.61,266.27 49.94,266.37 50.29,266.41 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='87.81' y='254.62' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='70.92px' lengthAdjust='spacingAndGlyphs'>WENDY G SCHERWENKA,</text>
+<text x='87.81' y='262.81' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='71.98px' lengthAdjust='spacingAndGlyphs'>JOSEPH W SCHERWENKA</text>
+<polygon points='35.65,323.56 105.14,323.56 105.05,323.56 105.40,323.54 105.74,323.47 106.06,323.35 106.36,323.17 106.63,322.96 106.86,322.69 107.05,322.40 107.19,322.08 107.27,321.74 107.30,321.40 107.30,321.40 107.30,306.41 107.30,306.41 107.27,306.06 107.19,305.72 107.05,305.40 106.86,305.11 106.63,304.85 106.36,304.63 106.06,304.45 105.74,304.33 105.40,304.26 105.14,304.25 35.65,304.25 35.91,304.26 35.56,304.25 35.22,304.29 34.88,304.39 34.57,304.54 34.28,304.73 34.03,304.97 33.82,305.25 33.66,305.56 33.55,305.89 33.49,306.23 33.49,306.41 33.49,321.40 33.49,321.22 33.49,321.57 33.55,321.91 33.66,322.24 33.82,322.55 34.03,322.83 34.28,323.07 34.57,323.27 34.88,323.42 35.22,323.51 35.56,323.56 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='70.39' y='311.76' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='66.61px' lengthAdjust='spacingAndGlyphs'>JOSEPH SCHERWENKA,</text>
+<text x='70.39' y='319.96' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='63.34px' lengthAdjust='spacingAndGlyphs'>WENDY SCHERWENKA</text>
+<polygon points='67.41,309.94 130.84,309.94 130.75,309.93 131.10,309.92 131.44,309.85 131.76,309.73 132.06,309.55 132.33,309.33 132.56,309.07 132.75,308.78 132.89,308.46 132.97,308.12 133.00,307.78 133.00,307.78 133.00,292.78 133.00,292.78 132.97,292.44 132.89,292.10 132.75,291.78 132.56,291.49 132.33,291.23 132.06,291.01 131.76,290.83 131.44,290.71 131.10,290.64 130.84,290.62 67.41,290.62 67.67,290.64 67.32,290.63 66.98,290.67 66.64,290.76 66.33,290.91 66.04,291.11 65.79,291.35 65.58,291.63 65.42,291.94 65.31,292.27 65.26,292.61 65.25,292.78 65.25,307.78 65.26,307.60 65.26,307.95 65.31,308.29 65.42,308.62 65.58,308.93 65.79,309.21 66.04,309.45 66.33,309.65 66.64,309.79 66.98,309.89 67.32,309.93 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='99.12' y='298.14' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='57.39px' lengthAdjust='spacingAndGlyphs'>2800 E MENLO BLVD,</text>
+<text x='99.12' y='306.34' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.55px' lengthAdjust='spacingAndGlyphs'>MILWAUKEE, WI 53211</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='213.70' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,210.66 162.23,215.22 156.97,215.22 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='216.86' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='216.86' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='181.99' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='246.64px' lengthAdjust='spacingAndGlyphs'>includes 3 parcels, 12 units, and 3 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='234.55px' lengthAdjust='spacingAndGlyphs'>JOSEPH SCHERWENKA, WENDY</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='185.31px' lengthAdjust='spacingAndGlyphs'>SCHERWENKA -- JOSEPH</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='204.20px' lengthAdjust='spacingAndGlyphs'>W SCHERWENKA, WENDY G</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='204.19px' lengthAdjust='spacingAndGlyphs'>SCHERWENKA IRREVOCAB,</text>
+<text x='29.89' y='120.57' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='213.17px' lengthAdjust='spacingAndGlyphs'>TRUST D: 9-25-2009 -- WENDY</text>
+<text x='29.89' y='140.01' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='209.14px' lengthAdjust='spacingAndGlyphs'>G SCHERWENKA, JOSEPH W</text>
+<text x='29.89' y='159.45' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='155.78px' lengthAdjust='spacingAndGlyphs'>SCHERWENKA Group</text>
+</g>
+</g>
+</svg>

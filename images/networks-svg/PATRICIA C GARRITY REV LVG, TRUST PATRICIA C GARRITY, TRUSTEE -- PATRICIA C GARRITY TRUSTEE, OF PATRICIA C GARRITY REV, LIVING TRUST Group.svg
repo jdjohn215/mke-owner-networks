@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.00' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDIxOS4zNHwzMzAuMTE='>
+    <rect x='29.89' y='219.34' width='228.22' height='110.77' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDIxOS4zNHwzMzAuMTE=)'>
+<polyline points='247.74,224.37 246.69,224.88 245.64,225.39 244.59,225.90 243.55,226.41 242.50,226.92 241.45,227.42 240.40,227.93 239.36,228.44 238.31,228.95 237.26,229.46 236.21,229.97 235.16,230.48 234.12,230.99 233.07,231.49 232.02,232.00 230.97,232.51 229.92,233.02 228.88,233.53 227.83,234.04 226.78,234.55 225.73,235.05 224.69,235.56 223.64,236.07 222.59,236.58 221.54,237.09 220.49,237.60 219.45,238.11 218.40,238.62 217.35,239.12 216.30,239.63 215.25,240.14 214.21,240.65 213.16,241.16 212.11,241.67 211.06,242.18 210.02,242.68 208.97,243.19 207.92,243.70 206.87,244.21 205.82,244.72 204.78,245.23 203.73,245.74 202.68,246.25 201.63,246.75 200.58,247.26 199.54,247.77 198.49,248.28 197.44,248.79 196.39,249.30 195.35,249.81 194.30,250.31 193.25,250.82 192.20,251.33 191.15,251.84 190.11,252.35 189.06,252.86 188.01,253.37 186.96,253.88 185.91,254.38 184.87,254.89 183.82,255.40 182.77,255.91 181.72,256.42 180.68,256.93 179.63,257.44 178.58,257.94 177.53,258.45 176.48,258.96 175.44,259.47 174.39,259.98 173.34,260.49 172.29,261.00 171.24,261.51 170.20,262.01 169.15,262.52 168.10,263.03 167.05,263.54 166.01,264.05 164.96,264.56 163.91,265.07 162.86,265.57 161.81,266.08 160.77,266.59 159.72,267.10 158.67,267.61 157.62,268.12 156.57,268.63 155.53,269.14 154.48,269.64 153.43,270.15 152.38,270.66 151.34,271.17 150.29,271.68 149.24,272.19 148.19,272.70 147.14,273.20 146.10,273.71 145.05,274.22 144.00,274.73 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,325.08 41.31,324.57 42.36,324.06 43.41,323.55 44.45,323.04 45.50,322.53 46.55,322.03 47.60,321.52 48.64,321.01 49.69,320.50 50.74,319.99 51.79,319.48 52.84,318.97 53.88,318.47 54.93,317.96 55.98,317.45 57.03,316.94 58.08,316.43 59.12,315.92 60.17,315.41 61.22,314.91 62.27,314.40 63.31,313.89 64.36,313.38 65.41,312.87 66.46,312.36 67.51,311.85 68.55,311.35 69.60,310.84 70.65,310.33 71.70,309.82 72.75,309.31 73.79,308.80 74.84,308.29 75.89,307.79 76.94,307.28 77.98,306.77 79.03,306.26 80.08,305.75 81.13,305.24 82.18,304.73 83.22,304.23 84.27,303.72 85.32,303.21 86.37,302.70 87.42,302.19 88.46,301.68 89.51,301.18 90.56,300.67 91.61,300.16 92.66,299.65 93.70,299.14 94.75,298.63 95.80,298.12 96.85,297.62 97.89,297.11 98.94,296.60 99.99,296.09 101.04,295.58 102.09,295.07 103.13,294.56 104.18,294.06 105.23,293.55 106.28,293.04 107.33,292.53 108.37,292.02 109.42,291.51 110.47,291.00 111.52,290.50 112.56,289.99 113.61,289.48 114.66,288.97 115.71,288.46 116.76,287.95 117.80,287.44 118.85,286.94 119.90,286.43 120.95,285.92 122.00,285.41 123.04,284.90 124.09,284.39 125.14,283.88 126.19,283.38 127.23,282.87 128.28,282.36 129.33,281.85 130.38,281.34 131.43,280.83 132.47,280.32 133.52,279.82 134.57,279.31 135.62,278.80 136.67,278.29 137.71,277.78 138.76,277.27 139.81,276.76 140.86,276.26 141.90,275.75 142.95,275.24 144.00,274.73 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,222.16 249.65,225.48 245.82,225.48 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,322.87 42.18,326.18 38.35,326.18 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='144.00' cy='274.73' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='51.01' y1='323.06' x2='41.31' y2='324.88' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='183.26,258.64 244.61,258.64 244.52,258.64 244.87,258.62 245.21,258.55 245.53,258.43 245.83,258.25 246.10,258.03 246.33,257.77 246.52,257.48 246.65,257.16 246.74,256.82 246.77,256.48 246.77,256.48 246.77,225.10 246.77,225.10 246.74,224.75 246.65,224.41 246.52,224.09 246.33,223.80 246.10,223.54 245.83,223.32 245.53,223.15 245.21,223.02 244.87,222.95 244.61,222.94 183.26,222.94 183.52,222.95 183.17,222.94 182.82,222.98 182.49,223.08 182.18,223.23 181.89,223.42 181.64,223.66 181.43,223.94 181.27,224.25 181.16,224.58 181.10,224.92 181.10,225.10 181.10,256.48 181.10,256.30 181.10,256.65 181.16,256.99 181.27,257.32 181.43,257.63 181.64,257.91 181.89,258.15 182.18,258.35 182.49,258.50 182.82,258.59 183.17,258.64 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='213.93' y='230.45' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='57.62px' lengthAdjust='spacingAndGlyphs'>PATRICIA C GARRITY</text>
+<text x='213.93' y='238.65' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='46.23px' lengthAdjust='spacingAndGlyphs'>REV LVG, TRUST</text>
+<text x='213.93' y='246.84' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='58.47px' lengthAdjust='spacingAndGlyphs'>PATRICIA C GARRITY,</text>
+<text x='213.93' y='255.04' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='26.55px' lengthAdjust='spacingAndGlyphs'>TRUSTEE</text>
+<polygon points='47.47,323.06 114.91,323.06 114.82,323.06 115.17,323.05 115.51,322.98 115.84,322.85 116.14,322.68 116.41,322.46 116.64,322.20 116.82,321.91 116.96,321.59 117.04,321.25 117.07,320.90 117.07,320.90 117.07,289.52 117.07,289.52 117.04,289.18 116.96,288.84 116.82,288.52 116.64,288.22 116.41,287.96 116.14,287.74 115.84,287.57 115.51,287.45 115.17,287.38 114.91,287.36 47.47,287.36 47.73,287.38 47.38,287.36 47.04,287.41 46.70,287.50 46.39,287.65 46.10,287.85 45.85,288.09 45.64,288.37 45.48,288.68 45.37,289.00 45.32,289.35 45.31,289.52 45.31,320.90 45.32,320.73 45.32,321.08 45.37,321.42 45.48,321.75 45.64,322.06 45.85,322.33 46.10,322.57 46.39,322.77 46.70,322.92 47.04,323.02 47.38,323.06 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='81.19' y='294.88' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='57.62px' lengthAdjust='spacingAndGlyphs'>PATRICIA C GARRITY</text>
+<text x='81.19' y='303.07' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='64.56px' lengthAdjust='spacingAndGlyphs'>TRUSTEE, OF PATRICIA</text>
+<text x='81.19' y='311.27' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='45.20px' lengthAdjust='spacingAndGlyphs'>C GARRITY REV,</text>
+<text x='81.19' y='319.46' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='39.06px' lengthAdjust='spacingAndGlyphs'>LIVING TRUST</text>
+<polygon points='140.78,273.32 209.70,273.32 209.61,273.32 209.96,273.30 210.30,273.23 210.62,273.11 210.92,272.94 211.19,272.72 211.42,272.46 211.61,272.16 211.74,271.84 211.83,271.51 211.86,271.16 211.86,271.16 211.86,247.97 211.86,247.97 211.83,247.63 211.74,247.29 211.61,246.97 211.42,246.68 211.19,246.42 210.92,246.20 210.62,246.02 210.30,245.90 209.96,245.83 209.70,245.81 140.78,245.81 141.04,245.83 140.70,245.82 140.35,245.86 140.02,245.95 139.70,246.10 139.42,246.30 139.17,246.54 138.96,246.82 138.80,247.13 138.69,247.46 138.63,247.80 138.62,247.97 138.62,271.16 138.63,270.99 138.63,271.33 138.69,271.68 138.80,272.01 138.96,272.31 139.17,272.59 139.42,272.83 139.70,273.03 140.02,273.18 140.35,273.28 140.70,273.32 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='175.24' y='253.33' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='55.84px' lengthAdjust='spacingAndGlyphs'>1052 N BREENS BAY</text>
+<text x='175.24' y='261.53' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='66.03px' lengthAdjust='spacingAndGlyphs'>RD, OCONOMOWOC, WI</text>
+<text x='175.24' y='269.72' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='15.78px' lengthAdjust='spacingAndGlyphs'>53066</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='194.26' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,191.22 162.23,195.78 156.97,195.78 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='197.42' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='197.42' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='162.55' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 6 units, and 2 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='228.02px' lengthAdjust='spacingAndGlyphs'>PATRICIA C GARRITY REV LVG,</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='212.41px' lengthAdjust='spacingAndGlyphs'>TRUST PATRICIA C GARRITY,</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='156.61px' lengthAdjust='spacingAndGlyphs'>TRUSTEE -- PATRICIA</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='182.89px' lengthAdjust='spacingAndGlyphs'>C GARRITY TRUSTEE, OF</text>
+<text x='29.89' y='120.57' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='193.56px' lengthAdjust='spacingAndGlyphs'>PATRICIA C GARRITY REV,</text>
+<text x='29.89' y='140.01' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='150.89px' lengthAdjust='spacingAndGlyphs'>LIVING TRUST Group</text>
+</g>
+</g>
+</svg>

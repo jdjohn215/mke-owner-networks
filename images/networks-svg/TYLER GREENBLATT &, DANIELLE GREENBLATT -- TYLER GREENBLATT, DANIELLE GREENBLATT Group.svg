@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDE4MC40NnwzMzAuMTE='>
+    <rect x='29.89' y='180.46' width='228.22' height='149.65' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDE4MC40NnwzMzAuMTE=)'>
+<polyline points='247.74,187.26 246.69,187.95 245.64,188.63 244.59,189.32 243.55,190.01 242.50,190.70 241.45,191.38 240.40,192.07 239.36,192.76 238.31,193.44 237.26,194.13 236.21,194.82 235.16,195.51 234.12,196.19 233.07,196.88 232.02,197.57 230.97,198.25 229.92,198.94 228.88,199.63 227.83,200.32 226.78,201.00 225.73,201.69 224.69,202.38 223.64,203.07 222.59,203.75 221.54,204.44 220.49,205.13 219.45,205.81 218.40,206.50 217.35,207.19 216.30,207.88 215.25,208.56 214.21,209.25 213.16,209.94 212.11,210.62 211.06,211.31 210.02,212.00 208.97,212.69 207.92,213.37 206.87,214.06 205.82,214.75 204.78,215.43 203.73,216.12 202.68,216.81 201.63,217.50 200.58,218.18 199.54,218.87 198.49,219.56 197.44,220.25 196.39,220.93 195.35,221.62 194.30,222.31 193.25,222.99 192.20,223.68 191.15,224.37 190.11,225.06 189.06,225.74 188.01,226.43 186.96,227.12 185.91,227.80 184.87,228.49 183.82,229.18 182.77,229.87 181.72,230.55 180.68,231.24 179.63,231.93 178.58,232.62 177.53,233.30 176.48,233.99 175.44,234.68 174.39,235.36 173.34,236.05 172.29,236.74 171.24,237.43 170.20,238.11 169.15,238.80 168.10,239.49 167.05,240.17 166.01,240.86 164.96,241.55 163.91,242.24 162.86,242.92 161.81,243.61 160.77,244.30 159.72,244.98 158.67,245.67 157.62,246.36 156.57,247.05 155.53,247.73 154.48,248.42 153.43,249.11 152.38,249.80 151.34,250.48 150.29,251.17 149.24,251.86 148.19,252.54 147.14,253.23 146.10,253.92 145.05,254.61 144.00,255.29 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,323.31 41.31,322.62 42.36,321.94 43.41,321.25 44.45,320.56 45.50,319.87 46.55,319.19 47.60,318.50 48.64,317.81 49.69,317.13 50.74,316.44 51.79,315.75 52.84,315.07 53.88,314.38 54.93,313.69 55.98,313.00 57.03,312.32 58.08,311.63 59.12,310.94 60.17,310.26 61.22,309.57 62.27,308.88 63.31,308.19 64.36,307.51 65.41,306.82 66.46,306.13 67.51,305.45 68.55,304.76 69.60,304.07 70.65,303.39 71.70,302.70 72.75,302.01 73.79,301.32 74.84,300.64 75.89,299.95 76.94,299.26 77.98,298.58 79.03,297.89 80.08,297.20 81.13,296.52 82.18,295.83 83.22,295.14 84.27,294.45 85.32,293.77 86.37,293.08 87.42,292.39 88.46,291.71 89.51,291.02 90.56,290.33 91.61,289.64 92.66,288.96 93.70,288.27 94.75,287.58 95.80,286.90 96.85,286.21 97.89,285.52 98.94,284.84 99.99,284.15 101.04,283.46 102.09,282.77 103.13,282.09 104.18,281.40 105.23,280.71 106.28,280.03 107.33,279.34 108.37,278.65 109.42,277.96 110.47,277.28 111.52,276.59 112.56,275.90 113.61,275.22 114.66,274.53 115.71,273.84 116.76,273.16 117.80,272.47 118.85,271.78 119.90,271.09 120.95,270.41 122.00,269.72 123.04,269.03 124.09,268.35 125.14,267.66 126.19,266.97 127.23,266.29 128.28,265.60 129.33,264.91 130.38,264.22 131.43,263.54 132.47,262.85 133.52,262.16 134.57,261.48 135.62,260.79 136.67,260.10 137.71,259.41 138.76,258.73 139.81,258.04 140.86,257.35 141.90,256.67 142.95,255.98 144.00,255.29 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,185.05 249.65,188.36 245.82,188.36 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,321.10 42.18,324.41 38.35,324.41 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='144.00' cy='255.29' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='244.23' y1='195.07' x2='247.30' y2='188.23' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='43.77' y1='315.50' x2='40.70' y2='322.34' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='137.55' y1='259.73' x2='143.12' y2='255.90' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='172.61,211.00 242.07,211.00 241.98,211.00 242.33,210.99 242.67,210.92 243.00,210.79 243.30,210.62 243.57,210.40 243.80,210.14 243.98,209.85 244.12,209.53 244.20,209.19 244.23,208.84 244.23,208.84 244.23,193.85 244.23,193.85 244.20,193.50 244.12,193.17 243.98,192.85 243.80,192.55 243.57,192.29 243.30,192.07 243.00,191.90 242.67,191.78 242.33,191.71 242.07,191.69 172.61,191.69 172.87,191.71 172.52,191.69 172.18,191.73 171.85,191.83 171.53,191.98 171.25,192.18 171.00,192.42 170.79,192.70 170.62,193.00 170.51,193.33 170.46,193.68 170.45,193.85 170.45,208.84 170.46,208.67 170.46,209.02 170.51,209.36 170.62,209.69 170.79,210.00 171.00,210.27 171.25,210.52 171.53,210.71 171.85,210.86 172.18,210.96 172.52,211.00 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='207.34' y='199.21' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='58.36px' lengthAdjust='spacingAndGlyphs'>TYLER GREENBLATT,</text>
+<text x='207.34' y='207.40' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='66.58px' lengthAdjust='spacingAndGlyphs'>DANIELLE GREENBLATT</text>
+<polygon points='45.93,318.88 115.39,318.88 115.30,318.88 115.65,318.86 115.99,318.79 116.31,318.67 116.62,318.50 116.88,318.28 117.11,318.02 117.30,317.72 117.44,317.40 117.52,317.07 117.55,316.72 117.55,316.72 117.55,301.73 117.55,301.73 117.52,301.38 117.44,301.04 117.30,300.72 117.11,300.43 116.88,300.17 116.62,299.95 116.31,299.78 115.99,299.65 115.65,299.58 115.39,299.57 45.93,299.57 46.19,299.58 45.84,299.57 45.50,299.61 45.16,299.71 44.85,299.86 44.56,300.05 44.31,300.29 44.10,300.57 43.94,300.88 43.83,301.21 43.78,301.55 43.77,301.73 43.77,316.72 43.78,316.54 43.78,316.89 43.83,317.24 43.94,317.57 44.10,317.87 44.31,318.15 44.56,318.39 44.85,318.59 45.16,318.74 45.50,318.83 45.84,318.88 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='80.66' y='307.08' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='64.25px' lengthAdjust='spacingAndGlyphs'>TYLER GREENBLATT &amp;,</text>
+<text x='80.66' y='315.28' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='66.58px' lengthAdjust='spacingAndGlyphs'>DANIELLE GREENBLATT</text>
+<polygon points='88.37,279.04 156.65,279.04 156.57,279.04 156.91,279.03 157.25,278.96 157.58,278.83 157.88,278.66 158.15,278.44 158.38,278.18 158.57,277.89 158.70,277.57 158.79,277.23 158.81,276.88 158.81,276.88 158.81,261.89 158.81,261.89 158.79,261.54 158.70,261.21 158.57,260.89 158.38,260.59 158.15,260.33 157.88,260.11 157.58,259.94 157.25,259.82 156.91,259.75 156.65,259.73 88.37,259.73 88.63,259.75 88.28,259.73 87.94,259.77 87.60,259.87 87.29,260.02 87.00,260.22 86.75,260.46 86.54,260.74 86.38,261.04 86.27,261.37 86.21,261.72 86.21,261.89 86.21,276.88 86.21,276.71 86.21,277.06 86.27,277.40 86.38,277.73 86.54,278.04 86.75,278.31 87.00,278.55 87.29,278.75 87.60,278.90 87.94,279.00 88.28,279.04 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='122.51' y='267.25' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='65.41px' lengthAdjust='spacingAndGlyphs'>3817 MANCHESTER RD,</text>
+<text x='122.51' y='275.44' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='54.02px' lengthAdjust='spacingAndGlyphs'>MADISON, WI 53719</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='155.38' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,152.34 162.23,156.90 156.97,156.90 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='158.54' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='158.54' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='123.67' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 5 units, and 2 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='172.20px' lengthAdjust='spacingAndGlyphs'>TYLER GREENBLATT &amp;,</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='192.67px' lengthAdjust='spacingAndGlyphs'>DANIELLE GREENBLATT --</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='235.34px' lengthAdjust='spacingAndGlyphs'>TYLER GREENBLATT, DANIELLE</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='149.22px' lengthAdjust='spacingAndGlyphs'>GREENBLATT Group</text>
+</g>
+</g>
+</svg>

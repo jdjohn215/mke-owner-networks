@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDIzOC43OHwzMzAuMTE='>
+    <rect x='29.89' y='238.78' width='228.22' height='91.33' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDIzOC43OHwzMzAuMTE=)'>
+<polyline points='247.74,300.56 246.50,300.45 245.26,300.34 244.03,300.24 242.79,300.13 241.55,300.02 240.32,299.91 239.08,299.80 237.84,299.69 236.60,299.58 235.37,299.48 234.13,299.37 232.89,299.26 231.66,299.15 230.42,299.04 229.18,298.93 227.95,298.82 226.71,298.72 225.47,298.61 224.23,298.50 223.00,298.39 221.76,298.28 220.52,298.17 219.29,298.06 218.05,297.96 216.81,297.85 215.57,297.74 214.34,297.63 213.10,297.52 211.86,297.41 210.63,297.30 209.39,297.20 208.15,297.09 206.91,296.98 205.68,296.87 204.44,296.76 203.20,296.65 201.97,296.55 200.73,296.44 199.49,296.33 198.26,296.22 197.02,296.11 195.78,296.00 194.54,295.89 193.31,295.79 192.07,295.68 190.83,295.57 189.60,295.46 188.36,295.35 187.12,295.24 185.88,295.13 184.65,295.03 183.41,294.92 182.17,294.81 180.94,294.70 179.70,294.59 178.46,294.48 177.22,294.37 175.99,294.27 174.75,294.16 173.51,294.05 172.28,293.94 171.04,293.83 169.80,293.72 168.57,293.61 167.33,293.51 166.09,293.40 164.85,293.29 163.62,293.18 162.38,293.07 161.14,292.96 159.91,292.86 158.67,292.75 157.43,292.64 156.19,292.53 154.96,292.42 153.72,292.31 152.48,292.20 151.25,292.10 150.01,291.99 148.77,291.88 147.54,291.77 146.30,291.66 145.06,291.55 143.82,291.44 142.59,291.34 141.35,291.23 140.11,291.12 138.88,291.01 137.64,290.90 136.40,290.79 135.16,290.68 133.93,290.58 132.69,290.47 131.45,290.36 130.22,290.25 128.98,290.14 127.74,290.03 126.50,289.93 125.27,289.82 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='87.80,242.93 88.18,243.40 88.56,243.88 88.94,244.35 89.32,244.82 89.70,245.30 90.07,245.77 90.45,246.24 90.83,246.72 91.21,247.19 91.59,247.66 91.97,248.14 92.34,248.61 92.72,249.09 93.10,249.56 93.48,250.03 93.86,250.51 94.24,250.98 94.62,251.45 94.99,251.93 95.37,252.40 95.75,252.87 96.13,253.35 96.51,253.82 96.89,254.30 97.26,254.77 97.64,255.24 98.02,255.72 98.40,256.19 98.78,256.66 99.16,257.14 99.53,257.61 99.91,258.08 100.29,258.56 100.67,259.03 101.05,259.51 101.43,259.98 101.81,260.45 102.18,260.93 102.56,261.40 102.94,261.87 103.32,262.35 103.70,262.82 104.08,263.29 104.45,263.77 104.83,264.24 105.21,264.72 105.59,265.19 105.97,265.66 106.35,266.14 106.72,266.61 107.10,267.08 107.48,267.56 107.86,268.03 108.24,268.50 108.62,268.98 109.00,269.45 109.37,269.92 109.75,270.40 110.13,270.87 110.51,271.35 110.89,271.82 111.27,272.29 111.64,272.77 112.02,273.24 112.40,273.71 112.78,274.19 113.16,274.66 113.54,275.13 113.91,275.61 114.29,276.08 114.67,276.56 115.05,277.03 115.43,277.50 115.81,277.98 116.19,278.45 116.56,278.92 116.94,279.40 117.32,279.87 117.70,280.34 118.08,280.82 118.46,281.29 118.83,281.77 119.21,282.24 119.59,282.71 119.97,283.19 120.35,283.66 120.73,284.13 121.11,284.61 121.48,285.08 121.86,285.55 122.24,286.03 122.62,286.50 123.00,286.97 123.38,287.45 123.75,287.92 124.13,288.40 124.51,288.87 124.89,289.34 125.27,289.82 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,325.96 41.12,325.60 41.98,325.23 42.84,324.87 43.70,324.50 44.55,324.14 45.41,323.77 46.27,323.40 47.13,323.04 47.99,322.67 48.85,322.31 49.71,321.94 50.57,321.58 51.42,321.21 52.28,320.85 53.14,320.48 54.00,320.12 54.86,319.75 55.72,319.39 56.58,319.02 57.43,318.66 58.29,318.29 59.15,317.93 60.01,317.56 60.87,317.20 61.73,316.83 62.59,316.47 63.45,316.10 64.30,315.74 65.16,315.37 66.02,315.01 66.88,314.64 67.74,314.28 68.60,313.91 69.46,313.55 70.31,313.18 71.17,312.82 72.03,312.45 72.89,312.09 73.75,311.72 74.61,311.36 75.47,310.99 76.32,310.63 77.18,310.26 78.04,309.90 78.90,309.53 79.76,309.17 80.62,308.80 81.48,308.44 82.34,308.07 83.19,307.71 84.05,307.34 84.91,306.98 85.77,306.61 86.63,306.25 87.49,305.88 88.35,305.52 89.20,305.15 90.06,304.79 90.92,304.42 91.78,304.06 92.64,303.69 93.50,303.32 94.36,302.96 95.22,302.59 96.07,302.23 96.93,301.86 97.79,301.50 98.65,301.13 99.51,300.77 100.37,300.40 101.23,300.04 102.08,299.67 102.94,299.31 103.80,298.94 104.66,298.58 105.52,298.21 106.38,297.85 107.24,297.48 108.09,297.12 108.95,296.75 109.81,296.39 110.67,296.02 111.53,295.66 112.39,295.29 113.25,294.93 114.11,294.56 114.96,294.20 115.82,293.83 116.68,293.47 117.54,293.10 118.40,292.74 119.26,292.37 120.12,292.01 120.97,291.64 121.83,291.28 122.69,290.91 123.55,290.55 124.41,290.18 125.27,289.82 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,298.35 249.65,301.67 245.82,301.67 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='87.80,240.72 89.72,244.03 85.89,244.03 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,323.75 42.18,327.07 38.35,327.07 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='125.27' cy='289.82' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='80.84' y1='247.07' x2='86.89' y2='243.47' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='51.46' y1='324.01' x2='41.31' y2='325.78' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='137.96' y1='283.62' x2='126.23' y2='289.35' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='180.37,326.51 240.46,326.51 240.37,326.51 240.72,326.50 241.06,326.43 241.38,326.30 241.68,326.13 241.95,325.91 242.18,325.65 242.37,325.36 242.50,325.04 242.59,324.70 242.62,324.35 242.62,324.35 242.62,292.97 242.62,292.97 242.59,292.63 242.50,292.29 242.37,291.97 242.18,291.67 241.95,291.41 241.68,291.19 241.38,291.02 241.06,290.90 240.72,290.83 240.46,290.81 180.37,290.81 180.63,290.83 180.29,290.81 179.94,290.86 179.61,290.95 179.29,291.10 179.01,291.30 178.76,291.54 178.55,291.82 178.38,292.13 178.27,292.46 178.22,292.80 178.21,292.97 178.21,324.35 178.22,324.18 178.22,324.53 178.27,324.87 178.38,325.20 178.55,325.51 178.76,325.78 179.01,326.03 179.29,326.22 179.61,326.37 179.94,326.47 180.29,326.51 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='210.41' y='298.33' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='57.20px' lengthAdjust='spacingAndGlyphs'>JOSE LUIS FUENTES</text>
+<text x='210.41' y='306.52' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='48.36px' lengthAdjust='spacingAndGlyphs'>SANCHEZ, MARIA</text>
+<text x='210.41' y='314.72' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='40.14px' lengthAdjust='spacingAndGlyphs'>VIRGINIA RIOS</text>
+<text x='210.41' y='322.91' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='27.19px' lengthAdjust='spacingAndGlyphs'>SANCHEZ</text>
+<polygon points='52.78,282.77 104.02,282.77 103.93,282.77 104.28,282.76 104.62,282.69 104.94,282.56 105.24,282.39 105.51,282.17 105.74,281.91 105.93,281.61 106.07,281.29 106.15,280.96 106.18,280.61 106.18,280.61 106.18,249.23 106.18,249.23 106.15,248.88 106.07,248.55 105.93,248.23 105.74,247.93 105.51,247.67 105.24,247.45 104.94,247.28 104.62,247.16 104.28,247.09 104.02,247.07 52.78,247.07 53.04,247.09 52.69,247.07 52.34,247.11 52.01,247.21 51.70,247.36 51.41,247.56 51.16,247.80 50.95,248.08 50.79,248.38 50.68,248.71 50.62,249.06 50.62,249.23 50.62,280.61 50.62,280.44 50.62,280.78 50.68,281.13 50.79,281.46 50.95,281.77 51.16,282.04 51.41,282.28 51.70,282.48 52.01,282.63 52.34,282.73 52.69,282.77 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='78.40' y='254.59' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='47.50px' lengthAdjust='spacingAndGlyphs'>JOSE L FUENTES</text>
+<text x='78.40' y='262.78' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='48.36px' lengthAdjust='spacingAndGlyphs'>SANCHEZ, MARIA</text>
+<text x='78.40' y='270.98' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='40.14px' lengthAdjust='spacingAndGlyphs'>VIRGINIA RIOS</text>
+<text x='78.40' y='279.17' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='27.19px' lengthAdjust='spacingAndGlyphs'>SANCHEZ</text>
+<polygon points='47.52,324.01 111.50,324.01 111.41,324.00 111.76,323.99 112.10,323.92 112.42,323.80 112.72,323.62 112.99,323.40 113.22,323.14 113.41,322.85 113.55,322.53 113.63,322.19 113.66,321.85 113.66,321.85 113.66,298.66 113.66,298.66 113.63,298.31 113.55,297.98 113.41,297.66 113.22,297.36 112.99,297.10 112.72,296.88 112.42,296.71 112.10,296.59 111.76,296.52 111.50,296.50 47.52,296.50 47.78,296.52 47.44,296.50 47.09,296.54 46.76,296.64 46.44,296.79 46.16,296.99 45.91,297.23 45.70,297.51 45.54,297.81 45.43,298.14 45.37,298.49 45.36,298.66 45.36,321.85 45.37,321.67 45.37,322.02 45.43,322.36 45.54,322.69 45.70,323.00 45.91,323.28 46.16,323.52 46.44,323.72 46.76,323.87 47.09,323.96 47.44,324.00 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='79.51' y='304.02' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='61.09px' lengthAdjust='spacingAndGlyphs'>MARIA DEL SOCORRO</text>
+<text x='79.51' y='312.21' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='52.89px' lengthAdjust='spacingAndGlyphs'>ALVARADO, JOSEM</text>
+<text x='79.51' y='320.41' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='52.03px' lengthAdjust='spacingAndGlyphs'>GONZALEZ DAVILA</text>
+<polygon points='115.54,283.62 179.39,283.62 179.30,283.62 179.65,283.61 179.99,283.54 180.31,283.42 180.61,283.24 180.88,283.02 181.11,282.76 181.30,282.47 181.43,282.15 181.52,281.81 181.55,281.46 181.55,281.46 181.55,266.47 181.55,266.47 181.52,266.13 181.43,265.79 181.30,265.47 181.11,265.17 180.88,264.91 180.61,264.69 180.31,264.52 179.99,264.40 179.65,264.33 179.39,264.31 115.54,264.31 115.80,264.33 115.45,264.31 115.11,264.36 114.77,264.45 114.46,264.60 114.17,264.80 113.92,265.04 113.71,265.32 113.55,265.63 113.44,265.96 113.38,266.30 113.38,266.47 113.38,281.46 113.38,281.29 113.38,281.64 113.44,281.98 113.55,282.31 113.71,282.62 113.92,282.90 114.17,283.14 114.46,283.33 114.77,283.48 115.11,283.58 115.45,283.62 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='147.46' y='271.83' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='43.91px' lengthAdjust='spacingAndGlyphs'>2022 S 33RD ST,</text>
+<text x='147.46' y='280.02' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.97px' lengthAdjust='spacingAndGlyphs'>MILWAUKEE, WI 53215</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='213.70' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,210.66 162.23,215.22 156.97,215.22 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='216.86' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='216.86' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='181.99' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 3 parcels, 5 units, and 3 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='205.03px' lengthAdjust='spacingAndGlyphs'>JOSE L FUENTES SANCHEZ,</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='233.75px' lengthAdjust='spacingAndGlyphs'>MARIA VIRGINIA RIOS SANCHEZ</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='164.02px' lengthAdjust='spacingAndGlyphs'>-- JOSE LUIS FUENTES</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='197.66px' lengthAdjust='spacingAndGlyphs'>SANCHEZ, MARIA VIRGINIA</text>
+<text x='29.89' y='120.57' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='211.56px' lengthAdjust='spacingAndGlyphs'>RIOS SANCHEZ -- MARIA DEL</text>
+<text x='29.89' y='140.01' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='223.89px' lengthAdjust='spacingAndGlyphs'>SOCORRO ALVARADO, JOSEM</text>
+<text x='29.89' y='159.45' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='188.59px' lengthAdjust='spacingAndGlyphs'>GONZALEZ DAVILA Group</text>
+</g>
+</g>
+</svg>

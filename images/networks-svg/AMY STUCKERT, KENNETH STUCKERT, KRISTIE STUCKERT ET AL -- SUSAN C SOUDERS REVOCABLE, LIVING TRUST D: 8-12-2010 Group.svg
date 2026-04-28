@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.00' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDE5OS45MHwzMzAuMTE='>
+    <rect x='29.89' y='199.90' width='228.22' height='130.21' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDE5OS45MHwzMzAuMTE=)'>
+<polyline points='247.74,205.82 246.69,206.41 245.64,207.01 244.59,207.61 243.55,208.21 242.50,208.81 241.45,209.40 240.40,210.00 239.36,210.60 238.31,211.20 237.26,211.80 236.21,212.39 235.16,212.99 234.12,213.59 233.07,214.19 232.02,214.79 230.97,215.38 229.92,215.98 228.88,216.58 227.83,217.18 226.78,217.77 225.73,218.37 224.69,218.97 223.64,219.57 222.59,220.17 221.54,220.76 220.49,221.36 219.45,221.96 218.40,222.56 217.35,223.16 216.30,223.75 215.25,224.35 214.21,224.95 213.16,225.55 212.11,226.15 211.06,226.74 210.02,227.34 208.97,227.94 207.92,228.54 206.87,229.14 205.82,229.73 204.78,230.33 203.73,230.93 202.68,231.53 201.63,232.13 200.58,232.72 199.54,233.32 198.49,233.92 197.44,234.52 196.39,235.11 195.35,235.71 194.30,236.31 193.25,236.91 192.20,237.51 191.15,238.10 190.11,238.70 189.06,239.30 188.01,239.90 186.96,240.50 185.91,241.09 184.87,241.69 183.82,242.29 182.77,242.89 181.72,243.49 180.68,244.08 179.63,244.68 178.58,245.28 177.53,245.88 176.48,246.48 175.44,247.07 174.39,247.67 173.34,248.27 172.29,248.87 171.24,249.47 170.20,250.06 169.15,250.66 168.10,251.26 167.05,251.86 166.01,252.45 164.96,253.05 163.91,253.65 162.86,254.25 161.81,254.85 160.77,255.44 159.72,256.04 158.67,256.64 157.62,257.24 156.57,257.84 155.53,258.43 154.48,259.03 153.43,259.63 152.38,260.23 151.34,260.83 150.29,261.42 149.24,262.02 148.19,262.62 147.14,263.22 146.10,263.82 145.05,264.41 144.00,265.01 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,324.19 41.31,323.60 42.36,323.00 43.41,322.40 44.45,321.80 45.50,321.20 46.55,320.61 47.60,320.01 48.64,319.41 49.69,318.81 50.74,318.22 51.79,317.62 52.84,317.02 53.88,316.42 54.93,315.82 55.98,315.23 57.03,314.63 58.08,314.03 59.12,313.43 60.17,312.84 61.22,312.24 62.27,311.64 63.31,311.04 64.36,310.44 65.41,309.85 66.46,309.25 67.51,308.65 68.55,308.05 69.60,307.45 70.65,306.86 71.70,306.26 72.75,305.66 73.79,305.06 74.84,304.47 75.89,303.87 76.94,303.27 77.98,302.67 79.03,302.07 80.08,301.48 81.13,300.88 82.18,300.28 83.22,299.68 84.27,299.09 85.32,298.49 86.37,297.89 87.42,297.29 88.46,296.69 89.51,296.10 90.56,295.50 91.61,294.90 92.66,294.30 93.70,293.71 94.75,293.11 95.80,292.51 96.85,291.91 97.89,291.31 98.94,290.72 99.99,290.12 101.04,289.52 102.09,288.92 103.13,288.33 104.18,287.73 105.23,287.13 106.28,286.53 107.33,285.93 108.37,285.34 109.42,284.74 110.47,284.14 111.52,283.54 112.56,282.95 113.61,282.35 114.66,281.75 115.71,281.15 116.76,280.55 117.80,279.96 118.85,279.36 119.90,278.76 120.95,278.16 122.00,277.57 123.04,276.97 124.09,276.37 125.14,275.77 126.19,275.17 127.23,274.58 128.28,273.98 129.33,273.38 130.38,272.78 131.43,272.19 132.47,271.59 133.52,270.99 134.57,270.39 135.62,269.79 136.67,269.20 137.71,268.60 138.76,268.00 139.81,267.40 140.86,266.81 141.90,266.21 142.95,265.61 144.00,265.01 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,203.61 249.65,206.92 245.82,206.92 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,321.98 42.18,325.30 38.35,325.30 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='144.00' cy='265.01' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='240.19' y1='210.25' x2='246.82' y2='206.36' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='136.58' y1='269.45' x2='143.08' y2='265.56' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='186.13,237.76 245.59,237.76 245.50,237.75 245.85,237.74 246.19,237.67 246.52,237.55 246.82,237.37 247.09,237.15 247.32,236.89 247.50,236.60 247.64,236.28 247.72,235.94 247.75,235.60 247.75,235.60 247.75,212.41 247.75,212.41 247.72,212.06 247.64,211.73 247.50,211.41 247.32,211.11 247.09,210.85 246.82,210.63 246.52,210.46 246.19,210.34 245.85,210.27 245.59,210.25 186.13,210.25 186.39,210.27 186.04,210.25 185.70,210.29 185.37,210.39 185.05,210.54 184.77,210.74 184.52,210.98 184.31,211.26 184.14,211.56 184.03,211.89 183.98,212.24 183.97,212.41 183.97,235.60 183.98,235.42 183.98,235.77 184.03,236.11 184.14,236.44 184.31,236.75 184.52,237.03 184.77,237.27 185.05,237.47 185.37,237.62 185.70,237.71 186.04,237.75 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='215.86' y='217.77' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='55.02px' lengthAdjust='spacingAndGlyphs'>SUSAN C SOUDERS</text>
+<text x='215.86' y='225.96' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='56.58px' lengthAdjust='spacingAndGlyphs'>REVOCABLE, LIVING</text>
+<text x='215.86' y='234.16' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='52.94px' lengthAdjust='spacingAndGlyphs'>TRUST D: 8/12/2010</text>
+<polygon points='42.30,322.09 108.16,322.09 108.07,322.09 108.42,322.08 108.76,322.01 109.09,321.88 109.39,321.71 109.66,321.49 109.89,321.23 110.07,320.94 110.21,320.62 110.29,320.28 110.32,319.93 110.32,319.93 110.32,288.55 110.32,288.55 110.29,288.21 110.21,287.87 110.07,287.55 109.89,287.26 109.66,287.00 109.39,286.78 109.09,286.60 108.76,286.48 108.42,286.41 108.16,286.39 42.30,286.39 42.56,286.41 42.21,286.40 41.86,286.44 41.53,286.53 41.22,286.68 40.93,286.88 40.68,287.12 40.47,287.40 40.31,287.71 40.20,288.04 40.14,288.38 40.14,288.55 40.14,319.93 40.14,319.76 40.14,320.11 40.20,320.45 40.31,320.78 40.47,321.09 40.68,321.37 40.93,321.61 41.22,321.80 41.53,321.95 41.86,322.05 42.21,322.09 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='75.23' y='293.91' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='45.30px' lengthAdjust='spacingAndGlyphs'>AMY STUCKERT,</text>
+<text x='75.23' y='302.10' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.27px' lengthAdjust='spacingAndGlyphs'>KENNETH STUCKERT,</text>
+<text x='75.23' y='310.30' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='62.98px' lengthAdjust='spacingAndGlyphs'>KRISTIE STUCKERT ET</text>
+<text x='75.23' y='318.49' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='6.95px' lengthAdjust='spacingAndGlyphs'>AL</text>
+<polygon points='88.54,288.76 150.06,288.76 149.98,288.76 150.32,288.74 150.66,288.67 150.99,288.55 151.29,288.38 151.56,288.16 151.79,287.90 151.98,287.60 152.11,287.28 152.19,286.95 152.22,286.60 152.22,286.60 152.22,271.61 152.22,271.61 152.19,271.26 152.11,270.92 151.98,270.60 151.79,270.31 151.56,270.05 151.29,269.83 150.99,269.66 150.66,269.53 150.32,269.46 150.06,269.45 88.54,269.45 88.80,269.46 88.46,269.45 88.11,269.49 87.78,269.59 87.46,269.74 87.18,269.94 86.93,270.18 86.72,270.45 86.56,270.76 86.45,271.09 86.39,271.43 86.38,271.61 86.38,286.60 86.39,286.43 86.39,286.77 86.45,287.12 86.56,287.45 86.72,287.75 86.93,288.03 87.18,288.27 87.46,288.47 87.78,288.62 88.11,288.72 88.46,288.76 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='119.30' y='276.97' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='58.64px' lengthAdjust='spacingAndGlyphs'>192 SETTLEMENT CT,</text>
+<text x='119.30' y='285.16' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='56.55px' lengthAdjust='spacingAndGlyphs'>MUSKEGO, WI 53150</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='174.82' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,171.78 162.23,176.34 156.97,176.34 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='177.98' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='177.98' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='143.11' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 3 units, and 2 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='196.80px' lengthAdjust='spacingAndGlyphs'>AMY STUCKERT, KENNETH</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='231.25px' lengthAdjust='spacingAndGlyphs'>STUCKERT, KRISTIE STUCKERT</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='204.19px' lengthAdjust='spacingAndGlyphs'>ET AL -- SUSAN C SOUDERS</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='223.06px' lengthAdjust='spacingAndGlyphs'>REVOCABLE, LIVING TRUST D:</text>
+<text x='29.89' y='120.57' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='115.61px' lengthAdjust='spacingAndGlyphs'>8-12-2010 Group</text>
+</g>
+</g>
+</svg>

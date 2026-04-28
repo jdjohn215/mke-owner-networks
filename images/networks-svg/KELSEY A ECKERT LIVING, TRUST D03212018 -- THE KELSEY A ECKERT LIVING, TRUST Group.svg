@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDE4MC40NnwzMzAuMTE='>
+    <rect x='29.89' y='180.46' width='228.22' height='149.65' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDE4MC40NnwzMzAuMTE=)'>
+<polyline points='247.74,187.26 246.69,187.95 245.64,188.63 244.59,189.32 243.55,190.01 242.50,190.70 241.45,191.38 240.40,192.07 239.36,192.76 238.31,193.44 237.26,194.13 236.21,194.82 235.16,195.51 234.12,196.19 233.07,196.88 232.02,197.57 230.97,198.25 229.92,198.94 228.88,199.63 227.83,200.32 226.78,201.00 225.73,201.69 224.69,202.38 223.64,203.07 222.59,203.75 221.54,204.44 220.49,205.13 219.45,205.81 218.40,206.50 217.35,207.19 216.30,207.88 215.25,208.56 214.21,209.25 213.16,209.94 212.11,210.62 211.06,211.31 210.02,212.00 208.97,212.69 207.92,213.37 206.87,214.06 205.82,214.75 204.78,215.43 203.73,216.12 202.68,216.81 201.63,217.50 200.58,218.18 199.54,218.87 198.49,219.56 197.44,220.25 196.39,220.93 195.35,221.62 194.30,222.31 193.25,222.99 192.20,223.68 191.15,224.37 190.11,225.06 189.06,225.74 188.01,226.43 186.96,227.12 185.91,227.80 184.87,228.49 183.82,229.18 182.77,229.87 181.72,230.55 180.68,231.24 179.63,231.93 178.58,232.62 177.53,233.30 176.48,233.99 175.44,234.68 174.39,235.36 173.34,236.05 172.29,236.74 171.24,237.43 170.20,238.11 169.15,238.80 168.10,239.49 167.05,240.17 166.01,240.86 164.96,241.55 163.91,242.24 162.86,242.92 161.81,243.61 160.77,244.30 159.72,244.98 158.67,245.67 157.62,246.36 156.57,247.05 155.53,247.73 154.48,248.42 153.43,249.11 152.38,249.80 151.34,250.48 150.29,251.17 149.24,251.86 148.19,252.54 147.14,253.23 146.10,253.92 145.05,254.61 144.00,255.29 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,323.31 41.31,322.62 42.36,321.94 43.41,321.25 44.45,320.56 45.50,319.87 46.55,319.19 47.60,318.50 48.64,317.81 49.69,317.13 50.74,316.44 51.79,315.75 52.84,315.07 53.88,314.38 54.93,313.69 55.98,313.00 57.03,312.32 58.08,311.63 59.12,310.94 60.17,310.26 61.22,309.57 62.27,308.88 63.31,308.19 64.36,307.51 65.41,306.82 66.46,306.13 67.51,305.45 68.55,304.76 69.60,304.07 70.65,303.39 71.70,302.70 72.75,302.01 73.79,301.32 74.84,300.64 75.89,299.95 76.94,299.26 77.98,298.58 79.03,297.89 80.08,297.20 81.13,296.52 82.18,295.83 83.22,295.14 84.27,294.45 85.32,293.77 86.37,293.08 87.42,292.39 88.46,291.71 89.51,291.02 90.56,290.33 91.61,289.64 92.66,288.96 93.70,288.27 94.75,287.58 95.80,286.90 96.85,286.21 97.89,285.52 98.94,284.84 99.99,284.15 101.04,283.46 102.09,282.77 103.13,282.09 104.18,281.40 105.23,280.71 106.28,280.03 107.33,279.34 108.37,278.65 109.42,277.96 110.47,277.28 111.52,276.59 112.56,275.90 113.61,275.22 114.66,274.53 115.71,273.84 116.76,273.16 117.80,272.47 118.85,271.78 119.90,271.09 120.95,270.41 122.00,269.72 123.04,269.03 124.09,268.35 125.14,267.66 126.19,266.97 127.23,266.29 128.28,265.60 129.33,264.91 130.38,264.22 131.43,263.54 132.47,262.85 133.52,262.16 134.57,261.48 135.62,260.79 136.67,260.10 137.71,259.41 138.76,258.73 139.81,258.04 140.86,257.35 141.90,256.67 142.95,255.98 144.00,255.29 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,185.05 249.65,188.36 245.82,188.36 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,321.10 42.18,324.41 38.35,324.41 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='144.00' cy='255.29' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='241.18' y1='191.69' x2='246.85' y2='187.86' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='46.89' y1='318.86' x2='41.15' y2='322.71' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='137.44' y1='259.72' x2='143.12' y2='255.89' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='192.91,219.19 247.12,219.19 247.03,219.19 247.38,219.18 247.72,219.11 248.05,218.98 248.35,218.81 248.62,218.59 248.85,218.33 249.03,218.03 249.17,217.71 249.25,217.38 249.28,217.03 249.28,217.03 249.28,193.85 249.28,193.85 249.25,193.50 249.17,193.16 249.03,192.84 248.85,192.55 248.62,192.29 248.35,192.07 248.05,191.89 247.72,191.77 247.38,191.70 247.12,191.69 192.91,191.69 193.17,191.70 192.82,191.69 192.48,191.73 192.15,191.83 191.83,191.97 191.55,192.17 191.29,192.41 191.09,192.69 190.92,193.00 190.81,193.33 190.76,193.67 190.75,193.85 190.75,217.03 190.76,216.86 190.76,217.20 190.81,217.55 190.92,217.88 191.09,218.19 191.29,218.46 191.55,218.70 191.83,218.90 192.15,219.05 192.48,219.15 192.82,219.19 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='220.02' y='199.20' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='51.33px' lengthAdjust='spacingAndGlyphs'>KELSEY A ECKERT</text>
+<text x='220.02' y='207.40' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='40.64px' lengthAdjust='spacingAndGlyphs'>LIVING, TRUST</text>
+<text x='220.02' y='215.59' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='29.36px' lengthAdjust='spacingAndGlyphs'>D03212018</text>
+<polygon points='37.40,318.86 104.57,318.86 104.48,318.86 104.83,318.85 105.17,318.78 105.49,318.65 105.79,318.48 106.06,318.26 106.29,318.00 106.48,317.70 106.61,317.38 106.70,317.05 106.73,316.70 106.73,316.70 106.73,301.71 106.73,301.71 106.70,301.36 106.61,301.03 106.48,300.71 106.29,300.41 106.06,300.15 105.79,299.93 105.49,299.76 105.17,299.64 104.83,299.57 104.57,299.55 37.40,299.55 37.67,299.57 37.32,299.55 36.97,299.59 36.64,299.69 36.32,299.84 36.04,300.04 35.79,300.28 35.58,300.56 35.42,300.86 35.31,301.19 35.25,301.54 35.24,301.71 35.24,316.70 35.25,316.53 35.25,316.87 35.31,317.22 35.42,317.55 35.58,317.86 35.79,318.13 36.04,318.37 36.32,318.57 36.64,318.72 36.97,318.82 37.32,318.86 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='70.99' y='307.07' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='64.28px' lengthAdjust='spacingAndGlyphs'>THE KELSEY A ECKERT</text>
+<text x='70.99' y='315.26' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='40.64px' lengthAdjust='spacingAndGlyphs'>LIVING, TRUST</text>
+<polygon points='84.35,287.22 148.20,287.22 148.12,287.22 148.46,287.21 148.80,287.14 149.13,287.01 149.43,286.84 149.70,286.62 149.93,286.36 150.12,286.07 150.25,285.75 150.33,285.41 150.36,285.06 150.36,285.06 150.36,261.88 150.36,261.88 150.33,261.53 150.25,261.19 150.12,260.87 149.93,260.58 149.70,260.32 149.43,260.10 149.13,259.93 148.80,259.80 148.46,259.73 148.20,259.72 84.35,259.72 84.61,259.73 84.27,259.72 83.92,259.76 83.59,259.86 83.27,260.01 82.99,260.20 82.74,260.44 82.53,260.72 82.37,261.03 82.26,261.36 82.20,261.70 82.19,261.88 82.19,285.06 82.20,284.89 82.20,285.24 82.26,285.58 82.37,285.91 82.53,286.22 82.74,286.50 82.99,286.74 83.27,286.93 83.59,287.08 83.92,287.18 84.27,287.22 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='116.28' y='267.23' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='36.11px' lengthAdjust='spacingAndGlyphs'>1839 N VEL R</text>
+<text x='116.28' y='275.43' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='38.78px' lengthAdjust='spacingAndGlyphs'>PHILLIPS AVE,</text>
+<text x='116.28' y='283.62' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.97px' lengthAdjust='spacingAndGlyphs'>MILWAUKEE, WI 53212</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='155.38' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,152.34 162.23,156.90 156.97,156.90 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='158.54' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='158.54' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='123.67' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 3 units, and 2 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='196.03px' lengthAdjust='spacingAndGlyphs'>KELSEY A ECKERT LIVING,</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='177.12px' lengthAdjust='spacingAndGlyphs'>TRUST D03212018 -- THE</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='196.03px' lengthAdjust='spacingAndGlyphs'>KELSEY A ECKERT LIVING,</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='97.56px' lengthAdjust='spacingAndGlyphs'>TRUST Group</text>
+</g>
+</g>
+</svg>

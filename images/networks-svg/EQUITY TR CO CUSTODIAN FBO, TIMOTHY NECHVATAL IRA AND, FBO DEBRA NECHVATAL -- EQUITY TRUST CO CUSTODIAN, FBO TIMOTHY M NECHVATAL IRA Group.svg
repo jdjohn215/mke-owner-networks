@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.00' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDIxOS4zNHwzMzAuMTE='>
+    <rect x='29.89' y='219.34' width='228.22' height='110.77' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDIxOS4zNHwzMzAuMTE=)'>
+<polyline points='247.74,224.37 246.69,224.88 245.64,225.39 244.59,225.90 243.55,226.41 242.50,226.92 241.45,227.42 240.40,227.93 239.36,228.44 238.31,228.95 237.26,229.46 236.21,229.97 235.16,230.48 234.12,230.99 233.07,231.49 232.02,232.00 230.97,232.51 229.92,233.02 228.88,233.53 227.83,234.04 226.78,234.55 225.73,235.05 224.69,235.56 223.64,236.07 222.59,236.58 221.54,237.09 220.49,237.60 219.45,238.11 218.40,238.62 217.35,239.12 216.30,239.63 215.25,240.14 214.21,240.65 213.16,241.16 212.11,241.67 211.06,242.18 210.02,242.68 208.97,243.19 207.92,243.70 206.87,244.21 205.82,244.72 204.78,245.23 203.73,245.74 202.68,246.25 201.63,246.75 200.58,247.26 199.54,247.77 198.49,248.28 197.44,248.79 196.39,249.30 195.35,249.81 194.30,250.31 193.25,250.82 192.20,251.33 191.15,251.84 190.11,252.35 189.06,252.86 188.01,253.37 186.96,253.88 185.91,254.38 184.87,254.89 183.82,255.40 182.77,255.91 181.72,256.42 180.68,256.93 179.63,257.44 178.58,257.94 177.53,258.45 176.48,258.96 175.44,259.47 174.39,259.98 173.34,260.49 172.29,261.00 171.24,261.51 170.20,262.01 169.15,262.52 168.10,263.03 167.05,263.54 166.01,264.05 164.96,264.56 163.91,265.07 162.86,265.57 161.81,266.08 160.77,266.59 159.72,267.10 158.67,267.61 157.62,268.12 156.57,268.63 155.53,269.14 154.48,269.64 153.43,270.15 152.38,270.66 151.34,271.17 150.29,271.68 149.24,272.19 148.19,272.70 147.14,273.20 146.10,273.71 145.05,274.22 144.00,274.73 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,325.08 41.31,324.57 42.36,324.06 43.41,323.55 44.45,323.04 45.50,322.53 46.55,322.03 47.60,321.52 48.64,321.01 49.69,320.50 50.74,319.99 51.79,319.48 52.84,318.97 53.88,318.47 54.93,317.96 55.98,317.45 57.03,316.94 58.08,316.43 59.12,315.92 60.17,315.41 61.22,314.91 62.27,314.40 63.31,313.89 64.36,313.38 65.41,312.87 66.46,312.36 67.51,311.85 68.55,311.35 69.60,310.84 70.65,310.33 71.70,309.82 72.75,309.31 73.79,308.80 74.84,308.29 75.89,307.79 76.94,307.28 77.98,306.77 79.03,306.26 80.08,305.75 81.13,305.24 82.18,304.73 83.22,304.23 84.27,303.72 85.32,303.21 86.37,302.70 87.42,302.19 88.46,301.68 89.51,301.18 90.56,300.67 91.61,300.16 92.66,299.65 93.70,299.14 94.75,298.63 95.80,298.12 96.85,297.62 97.89,297.11 98.94,296.60 99.99,296.09 101.04,295.58 102.09,295.07 103.13,294.56 104.18,294.06 105.23,293.55 106.28,293.04 107.33,292.53 108.37,292.02 109.42,291.51 110.47,291.00 111.52,290.50 112.56,289.99 113.61,289.48 114.66,288.97 115.71,288.46 116.76,287.95 117.80,287.44 118.85,286.94 119.90,286.43 120.95,285.92 122.00,285.41 123.04,284.90 124.09,284.39 125.14,283.88 126.19,283.38 127.23,282.87 128.28,282.36 129.33,281.85 130.38,281.34 131.43,280.83 132.47,280.32 133.52,279.82 134.57,279.31 135.62,278.80 136.67,278.29 137.71,277.78 138.76,277.27 139.81,276.76 140.86,276.26 141.90,275.75 142.95,275.24 144.00,274.73 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,222.16 249.65,225.48 245.82,225.48 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,322.87 42.18,326.18 38.35,326.18 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='144.00' cy='274.73' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='236.64' y1='226.76' x2='246.70' y2='224.60' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='152.61' y1='279.02' x2='144.96' y2='275.21' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='171.48,262.46 240.60,262.46 240.51,262.46 240.86,262.45 241.20,262.38 241.52,262.25 241.83,262.08 242.09,261.86 242.33,261.60 242.51,261.30 242.65,260.98 242.73,260.65 242.76,260.30 242.76,260.30 242.76,228.92 242.76,228.92 242.73,228.57 242.65,228.24 242.51,227.92 242.33,227.62 242.09,227.36 241.83,227.14 241.52,226.97 241.20,226.85 240.86,226.78 240.60,226.76 171.48,226.76 171.74,226.78 171.40,226.76 171.05,226.80 170.72,226.90 170.40,227.05 170.12,227.25 169.87,227.49 169.66,227.77 169.50,228.07 169.39,228.40 169.33,228.75 169.32,228.92 169.32,260.30 169.33,260.13 169.33,260.47 169.39,260.82 169.50,261.15 169.66,261.46 169.87,261.73 170.12,261.97 170.40,262.17 170.72,262.32 171.05,262.42 171.40,262.46 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='206.04' y='234.28' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='51.48px' lengthAdjust='spacingAndGlyphs'>EQUITY TRUST CO</text>
+<text x='206.04' y='242.47' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='48.23px' lengthAdjust='spacingAndGlyphs'>CUSTODIAN, FBO</text>
+<text x='206.04' y='250.67' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='66.23px' lengthAdjust='spacingAndGlyphs'>TIMOTHY M NECHVATAL</text>
+<text x='206.04' y='258.86' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='9.48px' lengthAdjust='spacingAndGlyphs'>IRA</text>
+<polygon points='47.49,326.48 110.29,326.48 110.21,326.48 110.55,326.47 110.89,326.40 111.22,326.27 111.52,326.10 111.79,325.88 112.02,325.62 112.21,325.33 112.34,325.01 112.42,324.67 112.45,324.32 112.45,324.32 112.45,284.75 112.45,284.75 112.42,284.40 112.34,284.07 112.21,283.75 112.02,283.45 111.79,283.19 111.52,282.97 111.22,282.80 110.89,282.67 110.55,282.60 110.29,282.59 47.49,282.59 47.75,282.60 47.40,282.59 47.06,282.63 46.73,282.73 46.41,282.88 46.12,283.08 45.87,283.32 45.67,283.59 45.50,283.90 45.39,284.23 45.34,284.58 45.33,284.75 45.33,324.32 45.34,324.15 45.34,324.50 45.39,324.84 45.50,325.17 45.67,325.48 45.87,325.76 46.12,326.00 46.41,326.19 46.73,326.34 47.06,326.44 47.40,326.48 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='78.89' y='290.11' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='40.22px' lengthAdjust='spacingAndGlyphs'>EQUITY TR CO</text>
+<text x='78.89' y='298.30' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='48.23px' lengthAdjust='spacingAndGlyphs'>CUSTODIAN FBO,</text>
+<text x='78.89' y='306.49' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='59.92px' lengthAdjust='spacingAndGlyphs'>TIMOTHY NECHVATAL</text>
+<text x='78.89' y='314.69' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='58.48px' lengthAdjust='spacingAndGlyphs'>IRA AND, FBO DEBRA</text>
+<text x='78.89' y='322.88' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='32.88px' lengthAdjust='spacingAndGlyphs'>NECHVATAL</text>
+<polygon points='144.30,306.53 218.06,306.53 217.97,306.53 218.32,306.51 218.66,306.44 218.98,306.32 219.29,306.15 219.55,305.93 219.79,305.67 219.97,305.37 220.11,305.05 220.19,304.72 220.22,304.37 220.22,304.37 220.22,281.18 220.22,281.18 220.19,280.84 220.11,280.50 219.97,280.18 219.79,279.89 219.55,279.63 219.29,279.41 218.98,279.23 218.66,279.11 218.32,279.04 218.06,279.02 144.30,279.02 144.56,279.04 144.22,279.03 143.87,279.07 143.54,279.16 143.22,279.31 142.94,279.51 142.69,279.75 142.48,280.03 142.32,280.34 142.21,280.67 142.15,281.01 142.14,281.18 142.14,304.37 142.15,304.20 142.15,304.54 142.21,304.89 142.32,305.22 142.48,305.52 142.69,305.80 142.94,306.04 143.22,306.24 143.54,306.39 143.87,306.49 144.22,306.53 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='181.18' y='286.54' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='70.88px' lengthAdjust='spacingAndGlyphs'>1260 HAWTHORNE RIDGE</text>
+<text x='181.18' y='294.74' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='58.14px' lengthAdjust='spacingAndGlyphs'>DR, BROOKFIELD, WI</text>
+<text x='181.18' y='302.93' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='15.78px' lengthAdjust='spacingAndGlyphs'>53045</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='194.26' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,191.22 162.23,195.78 156.97,195.78 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='197.42' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='197.42' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='162.55' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 6 units, and 2 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='196.83px' lengthAdjust='spacingAndGlyphs'>EQUITY TR CO CUSTODIAN</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='230.44px' lengthAdjust='spacingAndGlyphs'>FBO, TIMOTHY NECHVATAL IRA</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='236.95px' lengthAdjust='spacingAndGlyphs'>AND, FBO DEBRA NECHVATAL --</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='230.45px' lengthAdjust='spacingAndGlyphs'>EQUITY TRUST CO CUSTODIAN,</text>
+<text x='29.89' y='120.57' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='242.73px' lengthAdjust='spacingAndGlyphs'>FBO TIMOTHY M NECHVATAL IRA</text>
+<text x='29.89' y='140.01' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='44.27px' lengthAdjust='spacingAndGlyphs'>Group</text>
+</g>
+</g>
+</svg>

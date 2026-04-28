@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDE4MC40NnwzMzAuMTE='>
+    <rect x='29.89' y='180.46' width='228.22' height='149.65' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDE4MC40NnwzMzAuMTE=)'>
+<polyline points='247.74,187.26 246.69,187.95 245.64,188.63 244.59,189.32 243.55,190.01 242.50,190.70 241.45,191.38 240.40,192.07 239.36,192.76 238.31,193.44 237.26,194.13 236.21,194.82 235.16,195.51 234.12,196.19 233.07,196.88 232.02,197.57 230.97,198.25 229.92,198.94 228.88,199.63 227.83,200.32 226.78,201.00 225.73,201.69 224.69,202.38 223.64,203.07 222.59,203.75 221.54,204.44 220.49,205.13 219.45,205.81 218.40,206.50 217.35,207.19 216.30,207.88 215.25,208.56 214.21,209.25 213.16,209.94 212.11,210.62 211.06,211.31 210.02,212.00 208.97,212.69 207.92,213.37 206.87,214.06 205.82,214.75 204.78,215.43 203.73,216.12 202.68,216.81 201.63,217.50 200.58,218.18 199.54,218.87 198.49,219.56 197.44,220.25 196.39,220.93 195.35,221.62 194.30,222.31 193.25,222.99 192.20,223.68 191.15,224.37 190.11,225.06 189.06,225.74 188.01,226.43 186.96,227.12 185.91,227.80 184.87,228.49 183.82,229.18 182.77,229.87 181.72,230.55 180.68,231.24 179.63,231.93 178.58,232.62 177.53,233.30 176.48,233.99 175.44,234.68 174.39,235.36 173.34,236.05 172.29,236.74 171.24,237.43 170.20,238.11 169.15,238.80 168.10,239.49 167.05,240.17 166.01,240.86 164.96,241.55 163.91,242.24 162.86,242.92 161.81,243.61 160.77,244.30 159.72,244.98 158.67,245.67 157.62,246.36 156.57,247.05 155.53,247.73 154.48,248.42 153.43,249.11 152.38,249.80 151.34,250.48 150.29,251.17 149.24,251.86 148.19,252.54 147.14,253.23 146.10,253.92 145.05,254.61 144.00,255.29 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,323.31 41.31,322.62 42.36,321.94 43.41,321.25 44.45,320.56 45.50,319.87 46.55,319.19 47.60,318.50 48.64,317.81 49.69,317.13 50.74,316.44 51.79,315.75 52.84,315.07 53.88,314.38 54.93,313.69 55.98,313.00 57.03,312.32 58.08,311.63 59.12,310.94 60.17,310.26 61.22,309.57 62.27,308.88 63.31,308.19 64.36,307.51 65.41,306.82 66.46,306.13 67.51,305.45 68.55,304.76 69.60,304.07 70.65,303.39 71.70,302.70 72.75,302.01 73.79,301.32 74.84,300.64 75.89,299.95 76.94,299.26 77.98,298.58 79.03,297.89 80.08,297.20 81.13,296.52 82.18,295.83 83.22,295.14 84.27,294.45 85.32,293.77 86.37,293.08 87.42,292.39 88.46,291.71 89.51,291.02 90.56,290.33 91.61,289.64 92.66,288.96 93.70,288.27 94.75,287.58 95.80,286.90 96.85,286.21 97.89,285.52 98.94,284.84 99.99,284.15 101.04,283.46 102.09,282.77 103.13,282.09 104.18,281.40 105.23,280.71 106.28,280.03 107.33,279.34 108.37,278.65 109.42,277.96 110.47,277.28 111.52,276.59 112.56,275.90 113.61,275.22 114.66,274.53 115.71,273.84 116.76,273.16 117.80,272.47 118.85,271.78 119.90,271.09 120.95,270.41 122.00,269.72 123.04,269.03 124.09,268.35 125.14,267.66 126.19,266.97 127.23,266.29 128.28,265.60 129.33,264.91 130.38,264.22 131.43,263.54 132.47,262.85 133.52,262.16 134.57,261.48 135.62,260.79 136.67,260.10 137.71,259.41 138.76,258.73 139.81,258.04 140.86,257.35 141.90,256.67 142.95,255.98 144.00,255.29 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,185.05 249.65,188.36 245.82,188.36 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,321.10 42.18,324.41 38.35,324.41 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='144.00' cy='255.29' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='241.00' y1='191.79' x2='246.85' y2='187.85' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='46.95' y1='318.79' x2='41.15' y2='322.71' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='137.47' y1='259.79' x2='143.12' y2='255.90' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='181.15,211.10 252.29,211.10 252.21,211.09 252.55,211.08 252.89,211.01 253.22,210.89 253.52,210.71 253.79,210.49 254.02,210.23 254.21,209.94 254.34,209.62 254.42,209.28 254.45,208.94 254.45,208.94 254.45,193.95 254.45,193.95 254.42,193.60 254.34,193.26 254.21,192.94 254.02,192.65 253.79,192.39 253.52,192.17 253.22,191.99 252.89,191.87 252.55,191.80 252.29,191.79 181.15,191.79 181.41,191.80 181.06,191.79 180.72,191.83 180.38,191.93 180.07,192.07 179.78,192.27 179.53,192.51 179.32,192.79 179.16,193.10 179.05,193.43 178.99,193.77 178.99,193.95 178.99,208.94 178.99,208.76 178.99,209.11 179.05,209.45 179.16,209.78 179.32,210.09 179.53,210.37 179.78,210.61 180.07,210.81 180.38,210.96 180.72,211.05 181.06,211.09 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='216.72' y='199.30' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='68.27px' lengthAdjust='spacingAndGlyphs'>MONICA CUELLAR, JOSE</text>
+<text x='216.72' y='207.50' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='30.64px' lengthAdjust='spacingAndGlyphs'>GONZALEZ</text>
+<polygon points='40.15,318.79 96.11,318.79 96.02,318.79 96.37,318.77 96.71,318.70 97.04,318.58 97.34,318.41 97.61,318.19 97.84,317.93 98.02,317.63 98.16,317.31 98.24,316.98 98.27,316.63 98.27,316.63 98.27,293.44 98.27,293.44 98.24,293.10 98.16,292.76 98.02,292.44 97.84,292.15 97.61,291.89 97.34,291.67 97.04,291.49 96.71,291.37 96.37,291.30 96.11,291.28 40.15,291.28 40.41,291.30 40.06,291.29 39.72,291.33 39.38,291.42 39.07,291.57 38.78,291.77 38.53,292.01 38.33,292.29 38.16,292.60 38.05,292.93 38.00,293.27 37.99,293.44 37.99,316.63 38.00,316.46 38.00,316.80 38.05,317.15 38.16,317.48 38.33,317.78 38.53,318.06 38.78,318.30 39.07,318.50 39.38,318.65 39.72,318.75 40.06,318.79 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='68.13' y='298.80' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='50.25px' lengthAdjust='spacingAndGlyphs'>MONICA CUELLAR</text>
+<text x='68.13' y='306.99' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='42.03px' lengthAdjust='spacingAndGlyphs'>COYOTE, JOSE</text>
+<text x='68.13' y='315.19' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='53.08px' lengthAdjust='spacingAndGlyphs'>GONZALEZ RAMOS</text>
+<polygon points='89.12,279.10 155.72,279.10 155.63,279.10 155.98,279.08 156.32,279.01 156.64,278.89 156.94,278.72 157.21,278.50 157.44,278.24 157.63,277.94 157.77,277.62 157.85,277.29 157.88,276.94 157.88,276.94 157.88,261.95 157.88,261.95 157.85,261.60 157.77,261.26 157.63,260.94 157.44,260.65 157.21,260.39 156.94,260.17 156.64,260.00 156.32,259.87 155.98,259.80 155.72,259.79 89.12,259.79 89.38,259.80 89.03,259.79 88.69,259.83 88.35,259.93 88.04,260.08 87.75,260.27 87.50,260.52 87.29,260.79 87.13,261.10 87.02,261.43 86.97,261.77 86.96,261.95 86.96,276.94 86.97,276.76 86.97,277.11 87.02,277.46 87.13,277.79 87.29,278.09 87.50,278.37 87.75,278.61 88.04,278.81 88.35,278.96 88.69,279.05 89.03,279.10 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='122.42' y='267.30' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='63.72px' lengthAdjust='spacingAndGlyphs'>7819 W MEDFORD AVE,</text>
+<text x='122.42' y='275.50' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.97px' lengthAdjust='spacingAndGlyphs'>MILWAUKEE, WI 53218</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='155.38' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,152.34 162.23,156.90 156.97,156.90 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='158.54' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='158.54' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='123.67' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 2 units, and 2 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='248.50px' lengthAdjust='spacingAndGlyphs'>MONICA CUELLAR COYOTE, JOSE</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='218.11px' lengthAdjust='spacingAndGlyphs'>GONZALEZ RAMOS -- MONICA</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='203.38px' lengthAdjust='spacingAndGlyphs'>CUELLAR, JOSE GONZALEZ</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='44.27px' lengthAdjust='spacingAndGlyphs'>Group</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDIzOC43OHwzMzAuMTE='>
+    <rect x='29.89' y='238.78' width='228.22' height='91.33' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDIzOC43OHwzMzAuMTE=)'>
+<polyline points='247.74,242.93 246.69,243.35 245.64,243.77 244.59,244.19 243.55,244.61 242.50,245.03 241.45,245.45 240.40,245.86 239.36,246.28 238.31,246.70 237.26,247.12 236.21,247.54 235.16,247.96 234.12,248.38 233.07,248.80 232.02,249.22 230.97,249.64 229.92,250.06 228.88,250.48 227.83,250.90 226.78,251.32 225.73,251.74 224.69,252.16 223.64,252.57 222.59,252.99 221.54,253.41 220.49,253.83 219.45,254.25 218.40,254.67 217.35,255.09 216.30,255.51 215.25,255.93 214.21,256.35 213.16,256.77 212.11,257.19 211.06,257.61 210.02,258.03 208.97,258.45 207.92,258.87 206.87,259.29 205.82,259.70 204.78,260.12 203.73,260.54 202.68,260.96 201.63,261.38 200.58,261.80 199.54,262.22 198.49,262.64 197.44,263.06 196.39,263.48 195.35,263.90 194.30,264.32 193.25,264.74 192.20,265.16 191.15,265.58 190.11,266.00 189.06,266.42 188.01,266.83 186.96,267.25 185.91,267.67 184.87,268.09 183.82,268.51 182.77,268.93 181.72,269.35 180.68,269.77 179.63,270.19 178.58,270.61 177.53,271.03 176.48,271.45 175.44,271.87 174.39,272.29 173.34,272.71 172.29,273.13 171.24,273.55 170.20,273.96 169.15,274.38 168.10,274.80 167.05,275.22 166.01,275.64 164.96,276.06 163.91,276.48 162.86,276.90 161.81,277.32 160.77,277.74 159.72,278.16 158.67,278.58 157.62,279.00 156.57,279.42 155.53,279.84 154.48,280.26 153.43,280.67 152.38,281.09 151.34,281.51 150.29,281.93 149.24,282.35 148.19,282.77 147.14,283.19 146.10,283.61 145.05,284.03 144.00,284.45 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,325.96 41.31,325.54 42.36,325.12 43.41,324.70 44.45,324.28 45.50,323.86 46.55,323.44 47.60,323.03 48.64,322.61 49.69,322.19 50.74,321.77 51.79,321.35 52.84,320.93 53.88,320.51 54.93,320.09 55.98,319.67 57.03,319.25 58.08,318.83 59.12,318.41 60.17,317.99 61.22,317.57 62.27,317.16 63.31,316.74 64.36,316.32 65.41,315.90 66.46,315.48 67.51,315.06 68.55,314.64 69.60,314.22 70.65,313.80 71.70,313.38 72.75,312.96 73.79,312.54 74.84,312.12 75.89,311.70 76.94,311.28 77.98,310.87 79.03,310.45 80.08,310.03 81.13,309.61 82.18,309.19 83.22,308.77 84.27,308.35 85.32,307.93 86.37,307.51 87.42,307.09 88.46,306.67 89.51,306.25 90.56,305.83 91.61,305.41 92.66,305.00 93.70,304.58 94.75,304.16 95.80,303.74 96.85,303.32 97.89,302.90 98.94,302.48 99.99,302.06 101.04,301.64 102.09,301.22 103.13,300.80 104.18,300.38 105.23,299.96 106.28,299.54 107.33,299.13 108.37,298.71 109.42,298.29 110.47,297.87 111.52,297.45 112.56,297.03 113.61,296.61 114.66,296.19 115.71,295.77 116.76,295.35 117.80,294.93 118.85,294.51 119.90,294.09 120.95,293.67 122.00,293.25 123.04,292.84 124.09,292.42 125.14,292.00 126.19,291.58 127.23,291.16 128.28,290.74 129.33,290.32 130.38,289.90 131.43,289.48 132.47,289.06 133.52,288.64 134.57,288.22 135.62,287.80 136.67,287.38 137.71,286.97 138.76,286.55 139.81,286.13 140.86,285.71 141.90,285.29 142.95,284.87 144.00,284.45 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,240.72 249.65,244.03 245.82,244.03 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,323.75 42.18,327.07 38.35,327.07 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='144.00' cy='284.45' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='174.68,278.09 240.52,278.09 240.44,278.09 240.78,278.08 241.13,278.01 241.45,277.89 241.75,277.71 242.02,277.49 242.25,277.23 242.44,276.94 242.57,276.62 242.66,276.28 242.68,275.93 242.68,275.93 242.68,244.55 242.68,244.55 242.66,244.21 242.57,243.87 242.44,243.55 242.25,243.26 242.02,243.00 241.75,242.78 241.45,242.60 241.13,242.48 240.78,242.41 240.52,242.39 174.68,242.39 174.94,242.41 174.59,242.40 174.24,242.44 173.91,242.53 173.60,242.68 173.31,242.88 173.06,243.12 172.85,243.40 172.69,243.71 172.58,244.04 172.52,244.38 172.52,244.55 172.52,275.93 172.52,275.76 172.52,276.11 172.58,276.45 172.69,276.78 172.85,277.09 173.06,277.37 173.31,277.61 173.60,277.80 173.91,277.95 174.24,278.05 174.59,278.09 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='207.60' y='249.91' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.88px' lengthAdjust='spacingAndGlyphs'>KARL F &amp; MARY KLEIN</text>
+<text x='207.60' y='258.10' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='62.97px' lengthAdjust='spacingAndGlyphs'>TRUSTEES, OF CARL F</text>
+<text x='207.60' y='266.30' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='61.41px' lengthAdjust='spacingAndGlyphs'>&amp; MARY KLEIN, LIVING</text>
+<text x='207.60' y='274.49' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='50.41px' lengthAdjust='spacingAndGlyphs'>TRUST D12-4-2000</text>
+<polygon points='36.98,326.51 100.73,326.51 100.65,326.51 100.99,326.50 101.33,326.43 101.66,326.30 101.96,326.13 102.23,325.91 102.46,325.65 102.65,325.36 102.78,325.04 102.87,324.70 102.89,324.35 102.89,324.35 102.89,292.97 102.89,292.97 102.87,292.63 102.78,292.29 102.65,291.97 102.46,291.67 102.23,291.41 101.96,291.19 101.66,291.02 101.33,290.90 100.99,290.83 100.73,290.81 36.98,290.81 37.24,290.83 36.89,290.81 36.55,290.86 36.21,290.95 35.90,291.10 35.61,291.30 35.36,291.54 35.15,291.82 34.99,292.13 34.88,292.46 34.83,292.80 34.82,292.97 34.82,324.35 34.83,324.18 34.83,324.53 34.88,324.87 34.99,325.20 35.15,325.51 35.36,325.78 35.61,326.03 35.90,326.22 36.21,326.37 36.55,326.47 36.89,326.51 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='68.86' y='298.33' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.88px' lengthAdjust='spacingAndGlyphs'>KARL F &amp; MARY KLEIN</text>
+<text x='68.86' y='306.52' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='58.88px' lengthAdjust='spacingAndGlyphs'>TRUSTEES, CARL F &amp;</text>
+<text x='68.86' y='314.72' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='56.03px' lengthAdjust='spacingAndGlyphs'>MARY KLEIN LIVING,</text>
+<text x='68.86' y='322.91' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='50.41px' lengthAdjust='spacingAndGlyphs'>TRUST D12-4-2000</text>
+<polygon points='80.03,310.73 145.36,310.73 145.28,310.73 145.62,310.71 145.96,310.64 146.29,310.52 146.59,310.35 146.86,310.13 147.09,309.87 147.28,309.57 147.41,309.25 147.49,308.92 147.52,308.57 147.52,308.57 147.52,285.38 147.52,285.38 147.49,285.04 147.41,284.70 147.28,284.38 147.09,284.09 146.86,283.83 146.59,283.61 146.29,283.43 145.96,283.31 145.62,283.24 145.36,283.22 80.03,283.22 80.29,283.24 79.94,283.23 79.60,283.27 79.26,283.36 78.95,283.51 78.66,283.71 78.41,283.95 78.20,284.23 78.04,284.54 77.93,284.87 77.88,285.21 77.87,285.38 77.87,308.57 77.88,308.40 77.88,308.74 77.93,309.09 78.04,309.42 78.20,309.72 78.41,310.00 78.66,310.24 78.95,310.44 79.26,310.59 79.60,310.69 79.94,310.73 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='112.70' y='290.74' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='62.45px' lengthAdjust='spacingAndGlyphs'>21155 W EDINBOURGH</text>
+<text x='112.70' y='298.93' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='56.89px' lengthAdjust='spacingAndGlyphs'>DR, NEW BERLIN, WI</text>
+<text x='112.70' y='307.13' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='15.78px' lengthAdjust='spacingAndGlyphs'>53146</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='213.70' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,210.66 162.23,215.22 156.97,215.22 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='216.86' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='216.86' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='181.99' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 4 units, and 2 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='164.83px' lengthAdjust='spacingAndGlyphs'>KARL F &amp; MARY KLEIN</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='203.38px' lengthAdjust='spacingAndGlyphs'>TRUSTEES, CARL F &amp; MARY</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='155.02px' lengthAdjust='spacingAndGlyphs'>KLEIN LIVING, TRUST</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='212.36px' lengthAdjust='spacingAndGlyphs'>D12-4-2000 -- KARL F &amp; MARY</text>
+<text x='29.89' y='120.57' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='214.05px' lengthAdjust='spacingAndGlyphs'>KLEIN TRUSTEES, OF CARL F</text>
+<text x='29.89' y='140.01' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='217.34px' lengthAdjust='spacingAndGlyphs'>&amp; MARY KLEIN, LIVING TRUST</text>
+<text x='29.89' y='159.45' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='126.27px' lengthAdjust='spacingAndGlyphs'>D12-4-2000 Group</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.00' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDIxOS4zNHwzMzAuMTE='>
+    <rect x='29.89' y='219.34' width='228.22' height='110.77' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDIxOS4zNHwzMzAuMTE=)'>
+<polyline points='247.74,294.27 246.50,294.14 245.26,294.01 244.03,293.88 242.79,293.74 241.55,293.61 240.32,293.48 239.08,293.35 237.84,293.22 236.60,293.09 235.37,292.95 234.13,292.82 232.89,292.69 231.66,292.56 230.42,292.43 229.18,292.30 227.95,292.16 226.71,292.03 225.47,291.90 224.23,291.77 223.00,291.64 221.76,291.51 220.52,291.38 219.29,291.24 218.05,291.11 216.81,290.98 215.57,290.85 214.34,290.72 213.10,290.59 211.86,290.45 210.63,290.32 209.39,290.19 208.15,290.06 206.91,289.93 205.68,289.80 204.44,289.66 203.20,289.53 201.97,289.40 200.73,289.27 199.49,289.14 198.26,289.01 197.02,288.87 195.78,288.74 194.54,288.61 193.31,288.48 192.07,288.35 190.83,288.22 189.60,288.08 188.36,287.95 187.12,287.82 185.88,287.69 184.65,287.56 183.41,287.43 182.17,287.29 180.94,287.16 179.70,287.03 178.46,286.90 177.22,286.77 175.99,286.64 174.75,286.50 173.51,286.37 172.28,286.24 171.04,286.11 169.80,285.98 168.57,285.85 167.33,285.72 166.09,285.58 164.85,285.45 163.62,285.32 162.38,285.19 161.14,285.06 159.91,284.93 158.67,284.79 157.43,284.66 156.19,284.53 154.96,284.40 153.72,284.27 152.48,284.14 151.25,284.00 150.01,283.87 148.77,283.74 147.54,283.61 146.30,283.48 145.06,283.35 143.82,283.21 142.59,283.08 141.35,282.95 140.11,282.82 138.88,282.69 137.64,282.56 136.40,282.42 135.16,282.29 133.93,282.16 132.69,282.03 131.45,281.90 130.22,281.77 128.98,281.63 127.74,281.50 126.50,281.37 125.27,281.24 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='87.80,224.37 88.18,224.95 88.56,225.52 88.94,226.10 89.32,226.67 89.70,227.24 90.07,227.82 90.45,228.39 90.83,228.97 91.21,229.54 91.59,230.12 91.97,230.69 92.34,231.27 92.72,231.84 93.10,232.41 93.48,232.99 93.86,233.56 94.24,234.14 94.62,234.71 94.99,235.29 95.37,235.86 95.75,236.44 96.13,237.01 96.51,237.58 96.89,238.16 97.26,238.73 97.64,239.31 98.02,239.88 98.40,240.46 98.78,241.03 99.16,241.60 99.53,242.18 99.91,242.75 100.29,243.33 100.67,243.90 101.05,244.48 101.43,245.05 101.81,245.63 102.18,246.20 102.56,246.77 102.94,247.35 103.32,247.92 103.70,248.50 104.08,249.07 104.45,249.65 104.83,250.22 105.21,250.80 105.59,251.37 105.97,251.94 106.35,252.52 106.72,253.09 107.10,253.67 107.48,254.24 107.86,254.82 108.24,255.39 108.62,255.97 109.00,256.54 109.37,257.11 109.75,257.69 110.13,258.26 110.51,258.84 110.89,259.41 111.27,259.99 111.64,260.56 112.02,261.14 112.40,261.71 112.78,262.28 113.16,262.86 113.54,263.43 113.91,264.01 114.29,264.58 114.67,265.16 115.05,265.73 115.43,266.31 115.81,266.88 116.19,267.45 116.56,268.03 116.94,268.60 117.32,269.18 117.70,269.75 118.08,270.33 118.46,270.90 118.83,271.47 119.21,272.05 119.59,272.62 119.97,273.20 120.35,273.77 120.73,274.35 121.11,274.92 121.48,275.50 121.86,276.07 122.24,276.64 122.62,277.22 123.00,277.79 123.38,278.37 123.75,278.94 124.13,279.52 124.51,280.09 124.89,280.67 125.27,281.24 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,325.08 41.12,324.63 41.98,324.19 42.84,323.75 43.70,323.31 44.55,322.86 45.41,322.42 46.27,321.98 47.13,321.53 47.99,321.09 48.85,320.65 49.71,320.21 50.57,319.76 51.42,319.32 52.28,318.88 53.14,318.43 54.00,317.99 54.86,317.55 55.72,317.11 56.58,316.66 57.43,316.22 58.29,315.78 59.15,315.34 60.01,314.89 60.87,314.45 61.73,314.01 62.59,313.56 63.45,313.12 64.30,312.68 65.16,312.24 66.02,311.79 66.88,311.35 67.74,310.91 68.60,310.46 69.46,310.02 70.31,309.58 71.17,309.14 72.03,308.69 72.89,308.25 73.75,307.81 74.61,307.36 75.47,306.92 76.32,306.48 77.18,306.04 78.04,305.59 78.90,305.15 79.76,304.71 80.62,304.27 81.48,303.82 82.34,303.38 83.19,302.94 84.05,302.49 84.91,302.05 85.77,301.61 86.63,301.17 87.49,300.72 88.35,300.28 89.20,299.84 90.06,299.39 90.92,298.95 91.78,298.51 92.64,298.07 93.50,297.62 94.36,297.18 95.22,296.74 96.07,296.30 96.93,295.85 97.79,295.41 98.65,294.97 99.51,294.52 100.37,294.08 101.23,293.64 102.08,293.20 102.94,292.75 103.80,292.31 104.66,291.87 105.52,291.42 106.38,290.98 107.24,290.54 108.09,290.10 108.95,289.65 109.81,289.21 110.67,288.77 111.53,288.32 112.39,287.88 113.25,287.44 114.11,287.00 114.96,286.55 115.82,286.11 116.68,285.67 117.54,285.23 118.40,284.78 119.26,284.34 120.12,283.90 120.97,283.45 121.83,283.01 122.69,282.57 123.55,282.13 124.41,281.68 125.27,281.24 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,292.06 249.65,295.38 245.82,295.38 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='87.80,222.16 89.72,225.48 85.89,225.48 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,322.87 42.18,326.18 38.35,326.18 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='125.27' cy='281.24' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='45.34' y1='318.42' x2='40.91' y2='324.23' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='133.70' y1='276.96' x2='126.22' y2='280.76' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='187.45,307.29 240.58,307.29 240.49,307.28 240.84,307.27 241.18,307.20 241.51,307.08 241.81,306.90 242.08,306.68 242.31,306.42 242.49,306.13 242.63,305.81 242.71,305.47 242.74,305.13 242.74,305.13 242.74,290.13 242.74,290.13 242.71,289.79 242.63,289.45 242.49,289.13 242.31,288.84 242.08,288.58 241.81,288.36 241.51,288.18 241.18,288.06 240.84,287.99 240.58,287.97 187.45,287.97 187.71,287.99 187.36,287.98 187.02,288.02 186.69,288.12 186.37,288.26 186.08,288.46 185.83,288.70 185.63,288.98 185.46,289.29 185.35,289.62 185.30,289.96 185.29,290.13 185.29,305.13 185.30,304.95 185.30,305.30 185.35,305.64 185.46,305.97 185.63,306.28 185.83,306.56 186.08,306.80 186.37,307.00 186.69,307.15 187.02,307.24 187.36,307.28 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='214.02' y='295.49' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='45.61px' lengthAdjust='spacingAndGlyphs'>THE HERBERT C</text>
+<text x='214.02' y='303.69' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='50.25px' lengthAdjust='spacingAndGlyphs'>LANGFORD SR AN</text>
+<polygon points='53.47,247.99 122.18,247.99 122.09,247.99 122.44,247.98 122.78,247.91 123.11,247.78 123.41,247.61 123.68,247.39 123.91,247.13 124.09,246.84 124.23,246.52 124.31,246.18 124.34,245.83 124.34,245.83 124.34,230.84 124.34,230.84 124.31,230.50 124.23,230.16 124.09,229.84 123.91,229.54 123.68,229.28 123.41,229.06 123.11,228.89 122.78,228.77 122.44,228.70 122.18,228.68 53.47,228.68 53.73,228.70 53.38,228.68 53.04,228.73 52.71,228.82 52.39,228.97 52.11,229.17 51.85,229.41 51.65,229.69 51.48,230.00 51.37,230.33 51.32,230.67 51.31,230.84 51.31,245.83 51.32,245.66 51.32,246.01 51.37,246.35 51.48,246.68 51.65,246.99 51.85,247.27 52.11,247.51 52.39,247.70 52.71,247.85 53.04,247.95 53.38,247.99 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='87.83' y='236.20' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='65.83px' lengthAdjust='spacingAndGlyphs'>HERBERT C LANGFORD</text>
+<text x='87.83' y='244.39' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='30.67px' lengthAdjust='spacingAndGlyphs'>SR AND DE</text>
+<polygon points='47.50,321.84 119.91,321.84 119.82,321.84 120.17,321.83 120.51,321.76 120.83,321.63 121.13,321.46 121.40,321.24 121.63,320.98 121.82,320.69 121.96,320.37 122.04,320.03 122.07,319.68 122.07,319.68 122.07,288.30 122.07,288.30 122.04,287.96 121.96,287.62 121.82,287.30 121.63,287.00 121.40,286.74 121.13,286.52 120.83,286.35 120.51,286.23 120.17,286.16 119.91,286.14 47.50,286.14 47.76,286.16 47.41,286.14 47.06,286.19 46.73,286.28 46.42,286.43 46.13,286.63 45.88,286.87 45.67,287.15 45.51,287.46 45.40,287.78 45.34,288.13 45.34,288.30 45.34,319.68 45.34,319.51 45.34,319.86 45.40,320.20 45.51,320.53 45.67,320.84 45.88,321.11 46.13,321.35 46.42,321.55 46.73,321.70 47.06,321.80 47.41,321.84 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='83.70' y='293.66' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='65.83px' lengthAdjust='spacingAndGlyphs'>HERBERT C LANGFORD</text>
+<text x='83.70' y='301.85' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='36.05px' lengthAdjust='spacingAndGlyphs'>SR, DEBRA D</text>
+<text x='83.70' y='310.05' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='69.53px' lengthAdjust='spacingAndGlyphs'>LANGFORD, REVOCABLE</text>
+<text x='83.70' y='318.24' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='42.52px' lengthAdjust='spacingAndGlyphs'>TRUST OF 2019</text>
+<polygon points='120.48,276.96 187.49,276.96 187.40,276.96 187.75,276.94 188.09,276.87 188.41,276.75 188.71,276.58 188.98,276.36 189.21,276.10 189.40,275.80 189.54,275.48 189.62,275.14 189.65,274.80 189.65,274.80 189.65,259.81 189.65,259.81 189.62,259.46 189.54,259.12 189.40,258.80 189.21,258.51 188.98,258.25 188.71,258.03 188.41,257.86 188.09,257.73 187.75,257.66 187.49,257.65 120.48,257.65 120.74,257.66 120.39,257.65 120.05,257.69 119.72,257.79 119.40,257.94 119.12,258.13 118.86,258.37 118.66,258.65 118.49,258.96 118.38,259.29 118.33,259.63 118.32,259.81 118.32,274.80 118.33,274.62 118.33,274.97 118.38,275.32 118.49,275.64 118.66,275.95 118.86,276.23 119.12,276.47 119.40,276.67 119.72,276.82 120.05,276.91 120.39,276.96 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='153.98' y='265.16' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='64.12px' lengthAdjust='spacingAndGlyphs'>5155 W RADCLIFFE DR,</text>
+<text x='153.98' y='273.36' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.97px' lengthAdjust='spacingAndGlyphs'>MILWAUKEE, WI 53223</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='194.26' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,191.22 162.23,195.78 156.97,195.78 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='197.42' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='197.42' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='162.55' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 3 parcels, 6 units, and 3 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='234.52px' lengthAdjust='spacingAndGlyphs'>HERBERT C LANGFORD SR AND</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='212.36px' lengthAdjust='spacingAndGlyphs'>DE -- HERBERT C LANGFORD</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='187.80px' lengthAdjust='spacingAndGlyphs'>SR, DEBRA D LANGFORD,</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='221.41px' lengthAdjust='spacingAndGlyphs'>REVOCABLE TRUST OF 2019 --</text>
+<text x='29.89' y='120.57' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='232.06px' lengthAdjust='spacingAndGlyphs'>THE HERBERT C LANGFORD SR</text>
+<text x='29.89' y='140.01' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='69.69px' lengthAdjust='spacingAndGlyphs'>AN Group</text>
+</g>
+</g>
+</svg>

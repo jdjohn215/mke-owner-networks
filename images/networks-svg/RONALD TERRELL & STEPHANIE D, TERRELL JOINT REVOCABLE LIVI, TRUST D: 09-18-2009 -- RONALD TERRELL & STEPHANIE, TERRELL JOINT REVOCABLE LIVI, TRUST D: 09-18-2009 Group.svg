@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDIzOC43OHwzMzAuMTE='>
+    <rect x='29.89' y='238.78' width='228.22' height='91.33' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDIzOC43OHwzMzAuMTE=)'>
+<polyline points='247.74,242.93 246.69,243.35 245.64,243.77 244.59,244.19 243.55,244.61 242.50,245.03 241.45,245.45 240.40,245.86 239.36,246.28 238.31,246.70 237.26,247.12 236.21,247.54 235.16,247.96 234.12,248.38 233.07,248.80 232.02,249.22 230.97,249.64 229.92,250.06 228.88,250.48 227.83,250.90 226.78,251.32 225.73,251.74 224.69,252.16 223.64,252.57 222.59,252.99 221.54,253.41 220.49,253.83 219.45,254.25 218.40,254.67 217.35,255.09 216.30,255.51 215.25,255.93 214.21,256.35 213.16,256.77 212.11,257.19 211.06,257.61 210.02,258.03 208.97,258.45 207.92,258.87 206.87,259.29 205.82,259.70 204.78,260.12 203.73,260.54 202.68,260.96 201.63,261.38 200.58,261.80 199.54,262.22 198.49,262.64 197.44,263.06 196.39,263.48 195.35,263.90 194.30,264.32 193.25,264.74 192.20,265.16 191.15,265.58 190.11,266.00 189.06,266.42 188.01,266.83 186.96,267.25 185.91,267.67 184.87,268.09 183.82,268.51 182.77,268.93 181.72,269.35 180.68,269.77 179.63,270.19 178.58,270.61 177.53,271.03 176.48,271.45 175.44,271.87 174.39,272.29 173.34,272.71 172.29,273.13 171.24,273.55 170.20,273.96 169.15,274.38 168.10,274.80 167.05,275.22 166.01,275.64 164.96,276.06 163.91,276.48 162.86,276.90 161.81,277.32 160.77,277.74 159.72,278.16 158.67,278.58 157.62,279.00 156.57,279.42 155.53,279.84 154.48,280.26 153.43,280.67 152.38,281.09 151.34,281.51 150.29,281.93 149.24,282.35 148.19,282.77 147.14,283.19 146.10,283.61 145.05,284.03 144.00,284.45 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,325.96 41.31,325.54 42.36,325.12 43.41,324.70 44.45,324.28 45.50,323.86 46.55,323.44 47.60,323.03 48.64,322.61 49.69,322.19 50.74,321.77 51.79,321.35 52.84,320.93 53.88,320.51 54.93,320.09 55.98,319.67 57.03,319.25 58.08,318.83 59.12,318.41 60.17,317.99 61.22,317.57 62.27,317.16 63.31,316.74 64.36,316.32 65.41,315.90 66.46,315.48 67.51,315.06 68.55,314.64 69.60,314.22 70.65,313.80 71.70,313.38 72.75,312.96 73.79,312.54 74.84,312.12 75.89,311.70 76.94,311.28 77.98,310.87 79.03,310.45 80.08,310.03 81.13,309.61 82.18,309.19 83.22,308.77 84.27,308.35 85.32,307.93 86.37,307.51 87.42,307.09 88.46,306.67 89.51,306.25 90.56,305.83 91.61,305.41 92.66,305.00 93.70,304.58 94.75,304.16 95.80,303.74 96.85,303.32 97.89,302.90 98.94,302.48 99.99,302.06 101.04,301.64 102.09,301.22 103.13,300.80 104.18,300.38 105.23,299.96 106.28,299.54 107.33,299.13 108.37,298.71 109.42,298.29 110.47,297.87 111.52,297.45 112.56,297.03 113.61,296.61 114.66,296.19 115.71,295.77 116.76,295.35 117.80,294.93 118.85,294.51 119.90,294.09 120.95,293.67 122.00,293.25 123.04,292.84 124.09,292.42 125.14,292.00 126.19,291.58 127.23,291.16 128.28,290.74 129.33,290.32 130.38,289.90 131.43,289.48 132.47,289.06 133.52,288.64 134.57,288.22 135.62,287.80 136.67,287.38 137.71,286.97 138.76,286.55 139.81,286.13 140.86,285.71 141.90,285.29 142.95,284.87 144.00,284.45 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,240.72 249.65,244.03 245.82,244.03 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,323.75 42.18,327.07 38.35,327.07 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='144.00' cy='284.45' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='236.91' y1='244.64' x2='246.68' y2='243.10' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='136.97' y1='287.34' x2='143.01' y2='284.85' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='171.08,288.54 240.54,288.54 240.45,288.54 240.80,288.52 241.14,288.45 241.47,288.33 241.77,288.16 242.04,287.94 242.27,287.68 242.45,287.38 242.59,287.06 242.67,286.73 242.70,286.38 242.70,286.38 242.70,246.80 242.70,246.80 242.67,246.46 242.59,246.12 242.45,245.80 242.27,245.51 242.04,245.25 241.77,245.03 241.47,244.85 241.14,244.73 240.80,244.66 240.54,244.64 171.08,244.64 171.34,244.66 170.99,244.65 170.65,244.69 170.32,244.78 170.00,244.93 169.72,245.13 169.46,245.37 169.26,245.65 169.09,245.96 168.98,246.29 168.93,246.63 168.92,246.80 168.92,286.38 168.93,286.21 168.93,286.55 168.98,286.90 169.09,287.23 169.26,287.53 169.46,287.81 169.72,288.05 170.00,288.25 170.32,288.40 170.65,288.50 170.99,288.54 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='205.81' y='252.16' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='55.92px' lengthAdjust='spacingAndGlyphs'>RONALD TERRELL &amp;</text>
+<text x='205.81' y='260.36' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='66.58px' lengthAdjust='spacingAndGlyphs'>STEPHANIE D, TERRELL</text>
+<text x='205.81' y='268.55' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='52.67px' lengthAdjust='spacingAndGlyphs'>JOINT REVOCABLE</text>
+<text x='205.81' y='276.74' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='39.27px' lengthAdjust='spacingAndGlyphs'>LIVI, TRUST D:</text>
+<text x='205.81' y='284.94' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='29.03px' lengthAdjust='spacingAndGlyphs'>09-18-2009</text>
+<polygon points='35.65,326.51 99.42,326.51 99.33,326.51 99.68,326.50 100.02,326.43 100.34,326.30 100.65,326.13 100.91,325.91 101.15,325.65 101.33,325.36 101.47,325.04 101.55,324.70 101.58,324.35 101.58,324.35 101.58,284.78 101.58,284.78 101.55,284.43 101.47,284.09 101.33,283.77 101.15,283.48 100.91,283.22 100.65,283.00 100.34,282.83 100.02,282.70 99.68,282.63 99.42,282.62 35.65,282.62 35.91,282.63 35.56,282.62 35.22,282.66 34.88,282.76 34.57,282.91 34.28,283.10 34.03,283.35 33.82,283.62 33.66,283.93 33.55,284.26 33.49,284.60 33.49,284.78 33.49,324.35 33.49,324.18 33.49,324.53 33.55,324.87 33.66,325.20 33.82,325.51 34.03,325.78 34.28,326.03 34.57,326.22 34.88,326.37 35.22,326.47 35.56,326.51 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='67.53' y='290.13' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='55.92px' lengthAdjust='spacingAndGlyphs'>RONALD TERRELL &amp;</text>
+<text x='67.53' y='298.33' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.89px' lengthAdjust='spacingAndGlyphs'>STEPHANIE, TERRELL</text>
+<text x='67.53' y='306.52' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='52.67px' lengthAdjust='spacingAndGlyphs'>JOINT REVOCABLE</text>
+<text x='67.53' y='314.72' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='39.27px' lengthAdjust='spacingAndGlyphs'>LIVI, TRUST D:</text>
+<text x='67.53' y='322.91' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='29.03px' lengthAdjust='spacingAndGlyphs'>09-18-2009</text>
+<polygon points='80.40,306.65 144.91,306.65 144.82,306.65 145.17,306.63 145.51,306.56 145.83,306.44 146.13,306.27 146.40,306.05 146.63,305.79 146.82,305.49 146.96,305.17 147.04,304.84 147.07,304.49 147.07,304.49 147.07,289.50 147.07,289.50 147.04,289.15 146.96,288.81 146.82,288.49 146.63,288.20 146.40,287.94 146.13,287.72 145.83,287.55 145.51,287.42 145.17,287.35 144.91,287.34 80.40,287.34 80.66,287.35 80.31,287.34 79.97,287.38 79.64,287.48 79.32,287.63 79.04,287.83 78.78,288.07 78.58,288.34 78.41,288.65 78.30,288.98 78.25,289.32 78.24,289.50 78.24,304.49 78.25,304.32 78.25,304.66 78.30,305.01 78.41,305.34 78.58,305.64 78.78,305.92 79.04,306.16 79.32,306.36 79.64,306.51 79.97,306.61 80.31,306.65 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='112.65' y='294.86' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='61.62px' lengthAdjust='spacingAndGlyphs'>7905 W KATHRYN AVE,</text>
+<text x='112.65' y='303.05' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.97px' lengthAdjust='spacingAndGlyphs'>MILWAUKEE, WI 53218</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='213.70' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,210.66 162.23,215.22 156.97,215.22 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='216.86' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='216.86' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='181.99' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 2 units, and 2 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='238.62px' lengthAdjust='spacingAndGlyphs'>RONALD TERRELL &amp; STEPHANIE</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='231.27px' lengthAdjust='spacingAndGlyphs'>D, TERRELL JOINT REVOCABLE</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='183.70px' lengthAdjust='spacingAndGlyphs'>LIVI, TRUST D: 09-18-2009</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='163.97px' lengthAdjust='spacingAndGlyphs'>-- RONALD TERRELL &amp;</text>
+<text x='29.89' y='120.57' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='208.31px' lengthAdjust='spacingAndGlyphs'>STEPHANIE, TERRELL JOINT</text>
+<text x='29.89' y='140.01' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='200.92px' lengthAdjust='spacingAndGlyphs'>REVOCABLE LIVI, TRUST D:</text>
+<text x='29.89' y='159.45' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='123.81px' lengthAdjust='spacingAndGlyphs'>09-18-2009 Group</text>
+</g>
+</g>
+</svg>

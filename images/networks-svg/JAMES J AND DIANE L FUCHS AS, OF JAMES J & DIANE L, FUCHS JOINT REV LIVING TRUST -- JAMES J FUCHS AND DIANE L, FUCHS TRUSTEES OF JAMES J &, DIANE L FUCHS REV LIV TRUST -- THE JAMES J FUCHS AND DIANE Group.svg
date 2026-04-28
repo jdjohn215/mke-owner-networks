@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.00' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDI1OC4yMnwzMzAuMTE='>
+    <rect x='29.89' y='258.22' width='228.22' height='71.89' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDI1OC4yMnwzMzAuMTE=)'>
+<polyline points='247.74,306.85 246.50,306.77 245.26,306.68 244.03,306.59 242.79,306.51 241.55,306.42 240.32,306.34 239.08,306.25 237.84,306.17 236.60,306.08 235.37,306.00 234.13,305.91 232.89,305.83 231.66,305.74 230.42,305.65 229.18,305.57 227.95,305.48 226.71,305.40 225.47,305.31 224.23,305.23 223.00,305.14 221.76,305.06 220.52,304.97 219.29,304.89 218.05,304.80 216.81,304.71 215.57,304.63 214.34,304.54 213.10,304.46 211.86,304.37 210.63,304.29 209.39,304.20 208.15,304.12 206.91,304.03 205.68,303.95 204.44,303.86 203.20,303.78 201.97,303.69 200.73,303.60 199.49,303.52 198.26,303.43 197.02,303.35 195.78,303.26 194.54,303.18 193.31,303.09 192.07,303.01 190.83,302.92 189.60,302.84 188.36,302.75 187.12,302.66 185.88,302.58 184.65,302.49 183.41,302.41 182.17,302.32 180.94,302.24 179.70,302.15 178.46,302.07 177.22,301.98 175.99,301.90 174.75,301.81 173.51,301.72 172.28,301.64 171.04,301.55 169.80,301.47 168.57,301.38 167.33,301.30 166.09,301.21 164.85,301.13 163.62,301.04 162.38,300.96 161.14,300.87 159.91,300.79 158.67,300.70 157.43,300.61 156.19,300.53 154.96,300.44 153.72,300.36 152.48,300.27 151.25,300.19 150.01,300.10 148.77,300.02 147.54,299.93 146.30,299.85 145.06,299.76 143.82,299.67 142.59,299.59 141.35,299.50 140.11,299.42 138.88,299.33 137.64,299.25 136.40,299.16 135.16,299.08 133.93,298.99 132.69,298.91 131.45,298.82 130.22,298.73 128.98,298.65 127.74,298.56 126.50,298.48 125.27,298.39 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='87.80,261.49 88.18,261.86 88.56,262.23 88.94,262.60 89.32,262.98 89.70,263.35 90.07,263.72 90.45,264.09 90.83,264.47 91.21,264.84 91.59,265.21 91.97,265.59 92.34,265.96 92.72,266.33 93.10,266.70 93.48,267.08 93.86,267.45 94.24,267.82 94.62,268.20 94.99,268.57 95.37,268.94 95.75,269.31 96.13,269.69 96.51,270.06 96.89,270.43 97.26,270.81 97.64,271.18 98.02,271.55 98.40,271.92 98.78,272.30 99.16,272.67 99.53,273.04 99.91,273.41 100.29,273.79 100.67,274.16 101.05,274.53 101.43,274.91 101.81,275.28 102.18,275.65 102.56,276.02 102.94,276.40 103.32,276.77 103.70,277.14 104.08,277.52 104.45,277.89 104.83,278.26 105.21,278.63 105.59,279.01 105.97,279.38 106.35,279.75 106.72,280.13 107.10,280.50 107.48,280.87 107.86,281.24 108.24,281.62 108.62,281.99 109.00,282.36 109.37,282.74 109.75,283.11 110.13,283.48 110.51,283.85 110.89,284.23 111.27,284.60 111.64,284.97 112.02,285.34 112.40,285.72 112.78,286.09 113.16,286.46 113.54,286.84 113.91,287.21 114.29,287.58 114.67,287.95 115.05,288.33 115.43,288.70 115.81,289.07 116.19,289.45 116.56,289.82 116.94,290.19 117.32,290.56 117.70,290.94 118.08,291.31 118.46,291.68 118.83,292.06 119.21,292.43 119.59,292.80 119.97,293.17 120.35,293.55 120.73,293.92 121.11,294.29 121.48,294.67 121.86,295.04 122.24,295.41 122.62,295.78 123.00,296.16 123.38,296.53 123.75,296.90 124.13,297.27 124.51,297.65 124.89,298.02 125.27,298.39 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,326.84 41.12,326.56 41.98,326.27 42.84,325.98 43.70,325.69 44.55,325.41 45.41,325.12 46.27,324.83 47.13,324.55 47.99,324.26 48.85,323.97 49.71,323.68 50.57,323.40 51.42,323.11 52.28,322.82 53.14,322.53 54.00,322.25 54.86,321.96 55.72,321.67 56.58,321.38 57.43,321.10 58.29,320.81 59.15,320.52 60.01,320.23 60.87,319.95 61.73,319.66 62.59,319.37 63.45,319.08 64.30,318.80 65.16,318.51 66.02,318.22 66.88,317.94 67.74,317.65 68.60,317.36 69.46,317.07 70.31,316.79 71.17,316.50 72.03,316.21 72.89,315.92 73.75,315.64 74.61,315.35 75.47,315.06 76.32,314.77 77.18,314.49 78.04,314.20 78.90,313.91 79.76,313.62 80.62,313.34 81.48,313.05 82.34,312.76 83.19,312.47 84.05,312.19 84.91,311.90 85.77,311.61 86.63,311.33 87.49,311.04 88.35,310.75 89.20,310.46 90.06,310.18 90.92,309.89 91.78,309.60 92.64,309.31 93.50,309.03 94.36,308.74 95.22,308.45 96.07,308.16 96.93,307.88 97.79,307.59 98.65,307.30 99.51,307.01 100.37,306.73 101.23,306.44 102.08,306.15 102.94,305.87 103.80,305.58 104.66,305.29 105.52,305.00 106.38,304.72 107.24,304.43 108.09,304.14 108.95,303.85 109.81,303.57 110.67,303.28 111.53,302.99 112.39,302.70 113.25,302.42 114.11,302.13 114.96,301.84 115.82,301.55 116.68,301.27 117.54,300.98 118.40,300.69 119.26,300.40 120.12,300.12 120.97,299.83 121.83,299.54 122.69,299.26 123.55,298.97 124.41,298.68 125.27,298.39 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,304.64 249.65,307.96 245.82,307.96 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='87.80,259.27 89.72,262.59 85.89,262.59 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,324.63 42.18,327.95 38.35,327.95 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='125.27' cy='298.39' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='79.73' y1='265.56' x2='86.85' y2='261.97' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='140.79' y1='292.41' x2='126.26' y2='298.01' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='172.80,326.51 240.46,326.51 240.37,326.51 240.72,326.50 241.06,326.43 241.38,326.30 241.68,326.13 241.95,325.91 242.18,325.65 242.37,325.36 242.51,325.04 242.59,324.70 242.62,324.35 242.62,324.35 242.62,284.78 242.62,284.78 242.59,284.43 242.51,284.09 242.37,283.77 242.18,283.48 241.95,283.22 241.68,283.00 241.38,282.83 241.06,282.70 240.72,282.63 240.46,282.62 172.80,282.62 173.06,282.63 172.71,282.62 172.36,282.66 172.03,282.76 171.72,282.91 171.43,283.10 171.18,283.35 170.97,283.62 170.81,283.93 170.70,284.26 170.64,284.60 170.64,284.78 170.64,324.35 170.64,324.18 170.64,324.53 170.70,324.87 170.81,325.20 170.97,325.51 171.18,325.78 171.43,326.03 171.72,326.22 172.03,326.37 172.36,326.47 172.71,326.51 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='206.63' y='290.13' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='57.84px' lengthAdjust='spacingAndGlyphs'>JAMES J FUCHS AND</text>
+<text x='206.63' y='298.33' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='44.88px' lengthAdjust='spacingAndGlyphs'>DIANE L, FUCHS</text>
+<text x='206.63' y='306.52' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='64.78px' lengthAdjust='spacingAndGlyphs'>TRUSTEES OF JAMES J</text>
+<text x='206.63' y='314.72' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='63.31px' lengthAdjust='spacingAndGlyphs'>&amp;, DIANE L FUCHS REV</text>
+<text x='206.63' y='322.91' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='28.95px' lengthAdjust='spacingAndGlyphs'>LIV TRUST</text>
+<polygon points='47.27,284.87 107.67,284.87 107.58,284.87 107.93,284.86 108.27,284.79 108.59,284.67 108.89,284.49 109.16,284.27 109.39,284.01 109.58,283.72 109.72,283.40 109.80,283.06 109.83,282.71 109.83,282.71 109.83,267.72 109.83,267.72 109.80,267.38 109.72,267.04 109.58,266.72 109.39,266.43 109.16,266.17 108.89,265.95 108.59,265.77 108.27,265.65 107.93,265.58 107.67,265.56 47.27,265.56 47.53,265.58 47.18,265.57 46.84,265.61 46.51,265.70 46.19,265.85 45.90,266.05 45.65,266.29 45.45,266.57 45.28,266.88 45.17,267.21 45.12,267.55 45.11,267.72 45.11,282.71 45.12,282.54 45.12,282.89 45.17,283.23 45.28,283.56 45.45,283.87 45.65,284.15 45.90,284.39 46.19,284.59 46.51,284.73 46.84,284.83 47.18,284.87 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='77.47' y='273.08' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='57.52px' lengthAdjust='spacingAndGlyphs'>THE JAMES J FUCHS</text>
+<text x='77.47' y='281.27' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='30.98px' lengthAdjust='spacingAndGlyphs'>AND DIANE</text>
+<polygon points='42.30,326.51 105.55,326.51 105.47,326.51 105.81,326.50 106.15,326.43 106.48,326.30 106.78,326.13 107.05,325.91 107.28,325.65 107.47,325.36 107.60,325.04 107.69,324.70 107.71,324.35 107.71,324.35 107.71,284.78 107.71,284.78 107.69,284.43 107.60,284.09 107.47,283.77 107.28,283.48 107.05,283.22 106.78,283.00 106.48,282.83 106.15,282.70 105.81,282.63 105.55,282.62 42.30,282.62 42.56,282.63 42.21,282.62 41.87,282.66 41.53,282.76 41.22,282.91 40.93,283.10 40.68,283.35 40.47,283.62 40.31,283.93 40.20,284.26 40.15,284.60 40.14,284.78 40.14,324.35 40.15,324.18 40.15,324.53 40.20,324.87 40.31,325.20 40.47,325.51 40.68,325.78 40.93,326.03 41.22,326.22 41.53,326.37 41.87,326.47 42.21,326.51 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='73.93' y='290.13' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.38px' lengthAdjust='spacingAndGlyphs'>JAMES J AND DIANE L</text>
+<text x='73.93' y='298.33' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.05px' lengthAdjust='spacingAndGlyphs'>FUCHS AS, OF JAMES</text>
+<text x='73.93' y='306.52' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='54.67px' lengthAdjust='spacingAndGlyphs'>J &amp; DIANE L, FUCHS</text>
+<text x='73.93' y='314.72' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='49.81px' lengthAdjust='spacingAndGlyphs'>JOINT REV LIVING</text>
+<text x='73.93' y='322.91' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='18.95px' lengthAdjust='spacingAndGlyphs'>TRUST</text>
+<polygon points='119.19,292.41 185.25,292.41 185.17,292.41 185.51,292.40 185.85,292.33 186.18,292.20 186.48,292.03 186.75,291.81 186.98,291.55 187.17,291.26 187.30,290.94 187.39,290.60 187.41,290.25 187.41,290.25 187.41,275.26 187.41,275.26 187.39,274.91 187.30,274.58 187.17,274.26 186.98,273.96 186.75,273.70 186.48,273.48 186.18,273.31 185.85,273.19 185.51,273.12 185.25,273.10 119.19,273.10 119.45,273.12 119.10,273.10 118.75,273.14 118.42,273.24 118.11,273.39 117.82,273.59 117.57,273.83 117.36,274.11 117.20,274.41 117.09,274.74 117.03,275.09 117.03,275.26 117.03,290.25 117.03,290.08 117.03,290.43 117.09,290.77 117.20,291.10 117.36,291.41 117.57,291.68 117.82,291.93 118.11,292.12 118.42,292.27 118.75,292.37 119.10,292.41 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='152.22' y='280.62' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='51.08px' lengthAdjust='spacingAndGlyphs'>W6400 RICKEY LN,</text>
+<text x='152.22' y='288.81' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='63.19px' lengthAdjust='spacingAndGlyphs'>GREENVILLE, WI 54942</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='233.14' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,230.10 162.23,234.66 156.97,234.66 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='236.30' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='236.30' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='201.43' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 3 parcels, 6 units, and 3 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='217.33px' lengthAdjust='spacingAndGlyphs'>JAMES J AND DIANE L FUCHS</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='181.28px' lengthAdjust='spacingAndGlyphs'>AS, OF JAMES J &amp; DIANE</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='203.42px' lengthAdjust='spacingAndGlyphs'>L, FUCHS JOINT REV LIVING</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='221.39px' lengthAdjust='spacingAndGlyphs'>TRUST -- JAMES J FUCHS AND</text>
+<text x='29.89' y='120.57' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='225.53px' lengthAdjust='spacingAndGlyphs'>DIANE L, FUCHS TRUSTEES OF</text>
+<text x='29.89' y='140.01' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='200.12px' lengthAdjust='spacingAndGlyphs'>JAMES J &amp;, DIANE L FUCHS</text>
+<text x='29.89' y='159.45' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='213.22px' lengthAdjust='spacingAndGlyphs'>REV LIV TRUST -- THE JAMES</text>
+<text x='29.89' y='178.89' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='197.62px' lengthAdjust='spacingAndGlyphs'>J FUCHS AND DIANE Group</text>
+</g>
+</g>
+</svg>

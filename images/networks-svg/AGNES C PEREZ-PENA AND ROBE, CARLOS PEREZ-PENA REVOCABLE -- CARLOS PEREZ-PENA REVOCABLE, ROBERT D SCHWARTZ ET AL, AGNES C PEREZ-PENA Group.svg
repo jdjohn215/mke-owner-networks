@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.00' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDIxOS4zNHwzMzAuMTE='>
+    <rect x='29.89' y='219.34' width='228.22' height='110.77' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDIxOS4zNHwzMzAuMTE=)'>
+<polyline points='247.74,224.37 246.69,224.88 245.64,225.39 244.59,225.90 243.55,226.41 242.50,226.92 241.45,227.42 240.40,227.93 239.36,228.44 238.31,228.95 237.26,229.46 236.21,229.97 235.16,230.48 234.12,230.99 233.07,231.49 232.02,232.00 230.97,232.51 229.92,233.02 228.88,233.53 227.83,234.04 226.78,234.55 225.73,235.05 224.69,235.56 223.64,236.07 222.59,236.58 221.54,237.09 220.49,237.60 219.45,238.11 218.40,238.62 217.35,239.12 216.30,239.63 215.25,240.14 214.21,240.65 213.16,241.16 212.11,241.67 211.06,242.18 210.02,242.68 208.97,243.19 207.92,243.70 206.87,244.21 205.82,244.72 204.78,245.23 203.73,245.74 202.68,246.25 201.63,246.75 200.58,247.26 199.54,247.77 198.49,248.28 197.44,248.79 196.39,249.30 195.35,249.81 194.30,250.31 193.25,250.82 192.20,251.33 191.15,251.84 190.11,252.35 189.06,252.86 188.01,253.37 186.96,253.88 185.91,254.38 184.87,254.89 183.82,255.40 182.77,255.91 181.72,256.42 180.68,256.93 179.63,257.44 178.58,257.94 177.53,258.45 176.48,258.96 175.44,259.47 174.39,259.98 173.34,260.49 172.29,261.00 171.24,261.51 170.20,262.01 169.15,262.52 168.10,263.03 167.05,263.54 166.01,264.05 164.96,264.56 163.91,265.07 162.86,265.57 161.81,266.08 160.77,266.59 159.72,267.10 158.67,267.61 157.62,268.12 156.57,268.63 155.53,269.14 154.48,269.64 153.43,270.15 152.38,270.66 151.34,271.17 150.29,271.68 149.24,272.19 148.19,272.70 147.14,273.20 146.10,273.71 145.05,274.22 144.00,274.73 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,325.08 41.31,324.57 42.36,324.06 43.41,323.55 44.45,323.04 45.50,322.53 46.55,322.03 47.60,321.52 48.64,321.01 49.69,320.50 50.74,319.99 51.79,319.48 52.84,318.97 53.88,318.47 54.93,317.96 55.98,317.45 57.03,316.94 58.08,316.43 59.12,315.92 60.17,315.41 61.22,314.91 62.27,314.40 63.31,313.89 64.36,313.38 65.41,312.87 66.46,312.36 67.51,311.85 68.55,311.35 69.60,310.84 70.65,310.33 71.70,309.82 72.75,309.31 73.79,308.80 74.84,308.29 75.89,307.79 76.94,307.28 77.98,306.77 79.03,306.26 80.08,305.75 81.13,305.24 82.18,304.73 83.22,304.23 84.27,303.72 85.32,303.21 86.37,302.70 87.42,302.19 88.46,301.68 89.51,301.18 90.56,300.67 91.61,300.16 92.66,299.65 93.70,299.14 94.75,298.63 95.80,298.12 96.85,297.62 97.89,297.11 98.94,296.60 99.99,296.09 101.04,295.58 102.09,295.07 103.13,294.56 104.18,294.06 105.23,293.55 106.28,293.04 107.33,292.53 108.37,292.02 109.42,291.51 110.47,291.00 111.52,290.50 112.56,289.99 113.61,289.48 114.66,288.97 115.71,288.46 116.76,287.95 117.80,287.44 118.85,286.94 119.90,286.43 120.95,285.92 122.00,285.41 123.04,284.90 124.09,284.39 125.14,283.88 126.19,283.38 127.23,282.87 128.28,282.36 129.33,281.85 130.38,281.34 131.43,280.83 132.47,280.32 133.52,279.82 134.57,279.31 135.62,278.80 136.67,278.29 137.71,277.78 138.76,277.27 139.81,276.76 140.86,276.26 141.90,275.75 142.95,275.24 144.00,274.73 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,222.16 249.65,225.48 245.82,225.48 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,322.87 42.18,326.18 38.35,326.18 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='144.00' cy='274.73' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='237.31' y1='226.13' x2='246.69' y2='224.55' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='174.12,261.83 240.55,261.83 240.46,261.83 240.81,261.82 241.15,261.75 241.48,261.62 241.78,261.45 242.05,261.23 242.28,260.97 242.46,260.67 242.60,260.36 242.68,260.02 242.71,259.67 242.71,259.67 242.71,228.29 242.71,228.29 242.68,227.94 242.60,227.61 242.46,227.29 242.28,226.99 242.05,226.73 241.78,226.51 241.48,226.34 241.15,226.22 240.81,226.15 240.55,226.13 174.12,226.13 174.39,226.15 174.04,226.13 173.69,226.17 173.36,226.27 173.04,226.42 172.76,226.62 172.51,226.86 172.30,227.14 172.14,227.44 172.03,227.77 171.97,228.12 171.96,228.29 171.96,259.67 171.97,259.50 171.97,259.84 172.03,260.19 172.14,260.52 172.30,260.83 172.51,261.10 172.76,261.34 173.04,261.54 173.36,261.69 173.69,261.79 174.04,261.83 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='207.34' y='233.65' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='61.33px' lengthAdjust='spacingAndGlyphs'>CARLOS PEREZ-PENA</text>
+<text x='207.34' y='241.84' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='61.53px' lengthAdjust='spacingAndGlyphs'>REVOCABLE, ROBERT</text>
+<text x='207.34' y='250.04' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='56.12px' lengthAdjust='spacingAndGlyphs'>D SCHWARTZ ET AL,</text>
+<text x='207.34' y='258.23' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='63.55px' lengthAdjust='spacingAndGlyphs'>AGNES C PEREZ-PENA</text>
+<polygon points='35.65,322.80 110.93,322.80 110.85,322.80 111.19,322.79 111.54,322.72 111.86,322.59 112.16,322.42 112.43,322.20 112.66,321.94 112.85,321.65 112.98,321.33 113.07,320.99 113.09,320.64 113.09,320.64 113.09,297.46 113.09,297.46 113.07,297.11 112.98,296.77 112.85,296.45 112.66,296.16 112.43,295.90 112.16,295.68 111.86,295.51 111.54,295.38 111.19,295.31 110.93,295.30 35.65,295.30 35.91,295.31 35.56,295.30 35.22,295.34 34.88,295.44 34.57,295.59 34.28,295.78 34.03,296.02 33.82,296.30 33.66,296.61 33.55,296.94 33.49,297.28 33.49,297.46 33.49,320.64 33.49,320.47 33.49,320.82 33.55,321.16 33.66,321.49 33.82,321.80 34.03,322.08 34.28,322.32 34.57,322.51 34.88,322.66 35.22,322.76 35.56,322.80 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='73.29' y='302.81' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='63.55px' lengthAdjust='spacingAndGlyphs'>AGNES C PEREZ-PENA</text>
+<text x='73.29' y='311.01' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='56.27px' lengthAdjust='spacingAndGlyphs'>AND ROBE, CARLOS</text>
+<text x='73.29' y='319.20' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='72.41px' lengthAdjust='spacingAndGlyphs'>PEREZ-PENA REVOCABLE</text>
+<polygon points='79.87,303.78 145.11,303.78 145.03,303.78 145.37,303.76 145.71,303.69 146.04,303.57 146.34,303.39 146.61,303.17 146.84,302.91 147.03,302.62 147.16,302.30 147.25,301.96 147.27,301.62 147.27,301.62 147.27,278.43 147.27,278.43 147.25,278.08 147.16,277.75 147.03,277.43 146.84,277.13 146.61,276.87 146.34,276.65 146.04,276.48 145.71,276.36 145.37,276.29 145.11,276.27 79.87,276.27 80.13,276.29 79.79,276.27 79.44,276.31 79.11,276.41 78.79,276.56 78.51,276.76 78.26,277.00 78.05,277.28 77.89,277.58 77.78,277.91 77.72,278.26 77.71,278.43 77.71,301.62 77.72,301.44 77.72,301.79 77.78,302.13 77.89,302.46 78.05,302.77 78.26,303.05 78.51,303.29 78.79,303.49 79.11,303.64 79.44,303.73 79.79,303.78 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='112.49' y='283.79' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='62.36px' lengthAdjust='spacingAndGlyphs'>11982 W GRANGE AVE,</text>
+<text x='112.49' y='291.98' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='58.80px' lengthAdjust='spacingAndGlyphs'>HALES CORNERS, WI</text>
+<text x='112.49' y='300.18' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='15.78px' lengthAdjust='spacingAndGlyphs'>53130</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='194.26' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,191.22 162.23,195.78 156.97,195.78 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='197.42' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='197.42' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='162.55' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 3 units, and 2 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='202.55px' lengthAdjust='spacingAndGlyphs'>AGNES C PEREZ-PENA AND</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='212.39px' lengthAdjust='spacingAndGlyphs'>ROBE, CARLOS PEREZ-PENA</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='173.00px' lengthAdjust='spacingAndGlyphs'>REVOCABLE -- CARLOS</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='195.98px' lengthAdjust='spacingAndGlyphs'>PEREZ-PENA REVOCABLE,</text>
+<text x='29.89' y='120.57' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='216.48px' lengthAdjust='spacingAndGlyphs'>ROBERT D SCHWARTZ ET AL,</text>
+<text x='29.89' y='140.01' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='214.84px' lengthAdjust='spacingAndGlyphs'>AGNES C PEREZ-PENA Group</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.00' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDIxOS4zNHwzMzAuMTE='>
+    <rect x='29.89' y='219.34' width='228.22' height='110.77' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDIxOS4zNHwzMzAuMTE=)'>
+<polyline points='247.74,294.27 246.50,294.14 245.26,294.01 244.03,293.88 242.79,293.74 241.55,293.61 240.32,293.48 239.08,293.35 237.84,293.22 236.60,293.09 235.37,292.95 234.13,292.82 232.89,292.69 231.66,292.56 230.42,292.43 229.18,292.30 227.95,292.16 226.71,292.03 225.47,291.90 224.23,291.77 223.00,291.64 221.76,291.51 220.52,291.38 219.29,291.24 218.05,291.11 216.81,290.98 215.57,290.85 214.34,290.72 213.10,290.59 211.86,290.45 210.63,290.32 209.39,290.19 208.15,290.06 206.91,289.93 205.68,289.80 204.44,289.66 203.20,289.53 201.97,289.40 200.73,289.27 199.49,289.14 198.26,289.01 197.02,288.87 195.78,288.74 194.54,288.61 193.31,288.48 192.07,288.35 190.83,288.22 189.60,288.08 188.36,287.95 187.12,287.82 185.88,287.69 184.65,287.56 183.41,287.43 182.17,287.29 180.94,287.16 179.70,287.03 178.46,286.90 177.22,286.77 175.99,286.64 174.75,286.50 173.51,286.37 172.28,286.24 171.04,286.11 169.80,285.98 168.57,285.85 167.33,285.72 166.09,285.58 164.85,285.45 163.62,285.32 162.38,285.19 161.14,285.06 159.91,284.93 158.67,284.79 157.43,284.66 156.19,284.53 154.96,284.40 153.72,284.27 152.48,284.14 151.25,284.00 150.01,283.87 148.77,283.74 147.54,283.61 146.30,283.48 145.06,283.35 143.82,283.21 142.59,283.08 141.35,282.95 140.11,282.82 138.88,282.69 137.64,282.56 136.40,282.42 135.16,282.29 133.93,282.16 132.69,282.03 131.45,281.90 130.22,281.77 128.98,281.63 127.74,281.50 126.50,281.37 125.27,281.24 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='87.80,224.37 88.18,224.95 88.56,225.52 88.94,226.10 89.32,226.67 89.70,227.24 90.07,227.82 90.45,228.39 90.83,228.97 91.21,229.54 91.59,230.12 91.97,230.69 92.34,231.27 92.72,231.84 93.10,232.41 93.48,232.99 93.86,233.56 94.24,234.14 94.62,234.71 94.99,235.29 95.37,235.86 95.75,236.44 96.13,237.01 96.51,237.58 96.89,238.16 97.26,238.73 97.64,239.31 98.02,239.88 98.40,240.46 98.78,241.03 99.16,241.60 99.53,242.18 99.91,242.75 100.29,243.33 100.67,243.90 101.05,244.48 101.43,245.05 101.81,245.63 102.18,246.20 102.56,246.77 102.94,247.35 103.32,247.92 103.70,248.50 104.08,249.07 104.45,249.65 104.83,250.22 105.21,250.80 105.59,251.37 105.97,251.94 106.35,252.52 106.72,253.09 107.10,253.67 107.48,254.24 107.86,254.82 108.24,255.39 108.62,255.97 109.00,256.54 109.37,257.11 109.75,257.69 110.13,258.26 110.51,258.84 110.89,259.41 111.27,259.99 111.64,260.56 112.02,261.14 112.40,261.71 112.78,262.28 113.16,262.86 113.54,263.43 113.91,264.01 114.29,264.58 114.67,265.16 115.05,265.73 115.43,266.31 115.81,266.88 116.19,267.45 116.56,268.03 116.94,268.60 117.32,269.18 117.70,269.75 118.08,270.33 118.46,270.90 118.83,271.47 119.21,272.05 119.59,272.62 119.97,273.20 120.35,273.77 120.73,274.35 121.11,274.92 121.48,275.50 121.86,276.07 122.24,276.64 122.62,277.22 123.00,277.79 123.38,278.37 123.75,278.94 124.13,279.52 124.51,280.09 124.89,280.67 125.27,281.24 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,325.08 41.12,324.63 41.98,324.19 42.84,323.75 43.70,323.31 44.55,322.86 45.41,322.42 46.27,321.98 47.13,321.53 47.99,321.09 48.85,320.65 49.71,320.21 50.57,319.76 51.42,319.32 52.28,318.88 53.14,318.43 54.00,317.99 54.86,317.55 55.72,317.11 56.58,316.66 57.43,316.22 58.29,315.78 59.15,315.34 60.01,314.89 60.87,314.45 61.73,314.01 62.59,313.56 63.45,313.12 64.30,312.68 65.16,312.24 66.02,311.79 66.88,311.35 67.74,310.91 68.60,310.46 69.46,310.02 70.31,309.58 71.17,309.14 72.03,308.69 72.89,308.25 73.75,307.81 74.61,307.36 75.47,306.92 76.32,306.48 77.18,306.04 78.04,305.59 78.90,305.15 79.76,304.71 80.62,304.27 81.48,303.82 82.34,303.38 83.19,302.94 84.05,302.49 84.91,302.05 85.77,301.61 86.63,301.17 87.49,300.72 88.35,300.28 89.20,299.84 90.06,299.39 90.92,298.95 91.78,298.51 92.64,298.07 93.50,297.62 94.36,297.18 95.22,296.74 96.07,296.30 96.93,295.85 97.79,295.41 98.65,294.97 99.51,294.52 100.37,294.08 101.23,293.64 102.08,293.20 102.94,292.75 103.80,292.31 104.66,291.87 105.52,291.42 106.38,290.98 107.24,290.54 108.09,290.10 108.95,289.65 109.81,289.21 110.67,288.77 111.53,288.32 112.39,287.88 113.25,287.44 114.11,287.00 114.96,286.55 115.82,286.11 116.68,285.67 117.54,285.23 118.40,284.78 119.26,284.34 120.12,283.90 120.97,283.45 121.83,283.01 122.69,282.57 123.55,282.13 124.41,281.68 125.27,281.24 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,292.06 249.65,295.38 245.82,295.38 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='87.80,222.16 89.72,225.48 85.89,225.48 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,322.87 42.18,326.18 38.35,326.18 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='125.27' cy='281.24' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='242.63' y1='294.27' x2='246.67' y2='294.27' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='118.20' y1='284.79' x2='124.31' y2='281.72' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='180.19,308.02 240.47,308.02 240.39,308.02 240.73,308.01 241.08,307.94 241.40,307.82 241.70,307.64 241.97,307.42 242.20,307.16 242.39,306.87 242.52,306.55 242.61,306.21 242.63,305.86 242.63,305.86 242.63,282.68 242.63,282.68 242.61,282.33 242.52,281.99 242.39,281.67 242.20,281.38 241.97,281.12 241.70,280.90 241.40,280.73 241.08,280.60 240.73,280.53 240.47,280.52 180.19,280.52 180.45,280.53 180.10,280.52 179.76,280.56 179.42,280.66 179.11,280.81 178.82,281.00 178.57,281.25 178.36,281.52 178.20,281.83 178.09,282.16 178.04,282.50 178.03,282.68 178.03,305.86 178.04,305.69 178.04,306.04 178.09,306.38 178.20,306.71 178.36,307.02 178.57,307.30 178.82,307.54 179.11,307.73 179.42,307.88 179.76,307.98 180.10,308.02 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='210.33' y='288.03' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='57.41px' lengthAdjust='spacingAndGlyphs'>SPECIALIZED TRUST</text>
+<text x='210.33' y='296.23' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='56.88px' lengthAdjust='spacingAndGlyphs'>CO, FBO SYED IMAM</text>
+<text x='210.33' y='304.42' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='44.64px' lengthAdjust='spacingAndGlyphs'>TRADITIONAL IR</text>
+<polygon points='55.35,248.02 120.29,248.02 120.20,248.01 120.55,248.00 120.89,247.93 121.22,247.81 121.52,247.63 121.79,247.41 122.02,247.15 122.20,246.86 122.34,246.54 122.42,246.20 122.45,245.86 122.45,245.86 122.45,230.86 122.45,230.86 122.42,230.52 122.34,230.18 122.20,229.86 122.02,229.57 121.79,229.31 121.52,229.09 121.22,228.91 120.89,228.79 120.55,228.72 120.29,228.70 55.35,228.70 55.61,228.72 55.26,228.71 54.92,228.75 54.58,228.84 54.27,228.99 53.98,229.19 53.73,229.43 53.52,229.71 53.36,230.02 53.25,230.35 53.19,230.69 53.19,230.86 53.19,245.86 53.19,245.68 53.19,246.03 53.25,246.37 53.36,246.70 53.52,247.01 53.73,247.29 53.98,247.53 54.27,247.73 54.58,247.87 54.92,247.97 55.26,248.01 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='87.82' y='236.22' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='62.06px' lengthAdjust='spacingAndGlyphs'>SYED IMAM, AYESHA T</text>
+<text x='87.82' y='244.42' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='15.81px' lengthAdjust='spacingAndGlyphs'>KHAN</text>
+<polygon points='35.93,325.53 99.40,325.53 99.32,325.52 99.66,325.51 100.00,325.44 100.33,325.32 100.63,325.14 100.90,324.92 101.13,324.66 101.32,324.37 101.45,324.05 101.53,323.71 101.56,323.37 101.56,323.37 101.56,300.18 101.56,300.18 101.53,299.83 101.45,299.50 101.32,299.18 101.13,298.88 100.90,298.62 100.63,298.40 100.33,298.23 100.00,298.11 99.66,298.04 99.40,298.02 35.93,298.02 36.19,298.04 35.84,298.02 35.50,298.06 35.16,298.16 34.85,298.31 34.56,298.51 34.31,298.75 34.10,299.03 33.94,299.33 33.83,299.66 33.78,300.01 33.77,300.18 33.77,323.37 33.78,323.19 33.78,323.54 33.83,323.88 33.94,324.21 34.10,324.52 34.31,324.80 34.56,325.04 34.85,325.24 35.16,325.39 35.50,325.48 35.84,325.52 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='67.67' y='305.54' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='48.05px' lengthAdjust='spacingAndGlyphs'>SPECIALIZED IRA</text>
+<text x='67.67' y='313.73' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.59px' lengthAdjust='spacingAndGlyphs'>SERVICES FBO, SYED</text>
+<text x='67.67' y='321.93' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='25.91px' lengthAdjust='spacingAndGlyphs'>IMAM IRA</text>
+<polygon points='66.38,304.11 129.73,304.11 129.64,304.10 129.99,304.09 130.33,304.02 130.66,303.90 130.96,303.72 131.23,303.50 131.46,303.24 131.64,302.95 131.78,302.63 131.86,302.29 131.89,301.95 131.89,301.95 131.89,286.95 131.89,286.95 131.86,286.61 131.78,286.27 131.64,285.95 131.46,285.66 131.23,285.40 130.96,285.18 130.66,285.00 130.33,284.88 129.99,284.81 129.73,284.79 66.38,284.79 66.64,284.81 66.30,284.80 65.95,284.84 65.62,284.94 65.30,285.08 65.02,285.28 64.77,285.52 64.56,285.80 64.40,286.11 64.29,286.44 64.23,286.78 64.22,286.95 64.22,301.95 64.23,301.77 64.23,302.12 64.29,302.46 64.40,302.79 64.56,303.10 64.77,303.38 65.02,303.62 65.30,303.82 65.62,303.97 65.95,304.06 66.30,304.10 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='98.06' y='292.31' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='52.64px' lengthAdjust='spacingAndGlyphs'>1587 PETAL PT NW,</text>
+<text x='98.06' y='300.51' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.47px' lengthAdjust='spacingAndGlyphs'>KENNESAW, GA 30152</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='194.26' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,191.22 162.23,195.78 156.97,195.78 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='197.42' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='197.42' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='162.55' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 3 parcels, 8 units, and 3 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='205.88px' lengthAdjust='spacingAndGlyphs'>SPECIALIZED IRA SERVICES</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='166.48px' lengthAdjust='spacingAndGlyphs'>FBO, SYED IMAM IRA --</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='216.52px' lengthAdjust='spacingAndGlyphs'>SPECIALIZED TRUST CO, FBO</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='206.67px' lengthAdjust='spacingAndGlyphs'>SYED IMAM TRADITIONAL IR</text>
+<text x='29.89' y='120.57' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='227.16px' lengthAdjust='spacingAndGlyphs'>-- SYED IMAM, AYESHA T KHAN</text>
+<text x='29.89' y='140.01' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='44.27px' lengthAdjust='spacingAndGlyphs'>Group</text>
+</g>
+</g>
+</svg>

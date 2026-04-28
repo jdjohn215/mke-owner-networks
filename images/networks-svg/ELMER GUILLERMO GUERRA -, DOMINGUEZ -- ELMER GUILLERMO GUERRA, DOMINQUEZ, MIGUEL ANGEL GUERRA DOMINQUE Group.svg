@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.00' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDE5OS45MHwzMzAuMTE='>
+    <rect x='29.89' y='199.90' width='228.22' height='130.21' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDE5OS45MHwzMzAuMTE=)'>
+<polyline points='247.74,205.82 246.69,206.41 245.64,207.01 244.59,207.61 243.55,208.21 242.50,208.81 241.45,209.40 240.40,210.00 239.36,210.60 238.31,211.20 237.26,211.80 236.21,212.39 235.16,212.99 234.12,213.59 233.07,214.19 232.02,214.79 230.97,215.38 229.92,215.98 228.88,216.58 227.83,217.18 226.78,217.77 225.73,218.37 224.69,218.97 223.64,219.57 222.59,220.17 221.54,220.76 220.49,221.36 219.45,221.96 218.40,222.56 217.35,223.16 216.30,223.75 215.25,224.35 214.21,224.95 213.16,225.55 212.11,226.15 211.06,226.74 210.02,227.34 208.97,227.94 207.92,228.54 206.87,229.14 205.82,229.73 204.78,230.33 203.73,230.93 202.68,231.53 201.63,232.13 200.58,232.72 199.54,233.32 198.49,233.92 197.44,234.52 196.39,235.11 195.35,235.71 194.30,236.31 193.25,236.91 192.20,237.51 191.15,238.10 190.11,238.70 189.06,239.30 188.01,239.90 186.96,240.50 185.91,241.09 184.87,241.69 183.82,242.29 182.77,242.89 181.72,243.49 180.68,244.08 179.63,244.68 178.58,245.28 177.53,245.88 176.48,246.48 175.44,247.07 174.39,247.67 173.34,248.27 172.29,248.87 171.24,249.47 170.20,250.06 169.15,250.66 168.10,251.26 167.05,251.86 166.01,252.45 164.96,253.05 163.91,253.65 162.86,254.25 161.81,254.85 160.77,255.44 159.72,256.04 158.67,256.64 157.62,257.24 156.57,257.84 155.53,258.43 154.48,259.03 153.43,259.63 152.38,260.23 151.34,260.83 150.29,261.42 149.24,262.02 148.19,262.62 147.14,263.22 146.10,263.82 145.05,264.41 144.00,265.01 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,324.19 41.31,323.60 42.36,323.00 43.41,322.40 44.45,321.80 45.50,321.20 46.55,320.61 47.60,320.01 48.64,319.41 49.69,318.81 50.74,318.22 51.79,317.62 52.84,317.02 53.88,316.42 54.93,315.82 55.98,315.23 57.03,314.63 58.08,314.03 59.12,313.43 60.17,312.84 61.22,312.24 62.27,311.64 63.31,311.04 64.36,310.44 65.41,309.85 66.46,309.25 67.51,308.65 68.55,308.05 69.60,307.45 70.65,306.86 71.70,306.26 72.75,305.66 73.79,305.06 74.84,304.47 75.89,303.87 76.94,303.27 77.98,302.67 79.03,302.07 80.08,301.48 81.13,300.88 82.18,300.28 83.22,299.68 84.27,299.09 85.32,298.49 86.37,297.89 87.42,297.29 88.46,296.69 89.51,296.10 90.56,295.50 91.61,294.90 92.66,294.30 93.70,293.71 94.75,293.11 95.80,292.51 96.85,291.91 97.89,291.31 98.94,290.72 99.99,290.12 101.04,289.52 102.09,288.92 103.13,288.33 104.18,287.73 105.23,287.13 106.28,286.53 107.33,285.93 108.37,285.34 109.42,284.74 110.47,284.14 111.52,283.54 112.56,282.95 113.61,282.35 114.66,281.75 115.71,281.15 116.76,280.55 117.80,279.96 118.85,279.36 119.90,278.76 120.95,278.16 122.00,277.57 123.04,276.97 124.09,276.37 125.14,275.77 126.19,275.17 127.23,274.58 128.28,273.98 129.33,273.38 130.38,272.78 131.43,272.19 132.47,271.59 133.52,270.99 134.57,270.39 135.62,269.79 136.67,269.20 137.71,268.60 138.76,268.00 139.81,267.40 140.86,266.81 141.90,266.21 142.95,265.61 144.00,265.01 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,203.61 249.65,206.92 245.82,206.92 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,321.98 42.18,325.30 38.35,325.30 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='144.00' cy='265.01' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='240.28' y1='210.22' x2='246.82' y2='206.36' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='136.59' y1='269.44' x2='143.08' y2='265.56' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='184.05,229.53 252.34,229.53 252.25,229.53 252.60,229.51 252.94,229.44 253.26,229.32 253.56,229.14 253.83,228.93 254.06,228.66 254.25,228.37 254.39,228.05 254.47,227.71 254.50,227.37 254.50,227.37 254.50,212.38 254.50,212.38 254.47,212.03 254.39,211.69 254.25,211.37 254.06,211.08 253.83,210.82 253.56,210.60 253.26,210.42 252.94,210.30 252.60,210.23 252.34,210.22 184.05,210.22 184.31,210.23 183.96,210.22 183.62,210.26 183.29,210.36 182.97,210.51 182.69,210.70 182.43,210.94 182.23,211.22 182.06,211.53 181.95,211.86 181.90,212.20 181.89,212.38 181.89,227.37 181.90,227.19 181.90,227.54 181.95,227.88 182.06,228.21 182.23,228.52 182.43,228.80 182.69,229.04 182.97,229.24 183.29,229.39 183.62,229.48 183.96,229.53 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='218.19' y='217.73' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='54.66px' lengthAdjust='spacingAndGlyphs'>ELMER GUILLERMO</text>
+<text x='218.19' y='225.93' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='65.41px' lengthAdjust='spacingAndGlyphs'>GUERRA -, DOMINGUEZ</text>
+<polygon points='39.91,322.07 110.62,322.07 110.53,322.07 110.88,322.06 111.22,321.99 111.55,321.86 111.85,321.69 112.12,321.47 112.35,321.21 112.53,320.92 112.67,320.60 112.75,320.26 112.78,319.91 112.78,319.91 112.78,288.53 112.78,288.53 112.75,288.19 112.67,287.85 112.53,287.53 112.35,287.24 112.12,286.98 111.85,286.76 111.55,286.58 111.22,286.46 110.88,286.39 110.62,286.37 39.91,286.37 40.17,286.39 39.82,286.38 39.48,286.42 39.15,286.51 38.83,286.66 38.55,286.86 38.30,287.10 38.09,287.38 37.92,287.69 37.81,288.02 37.76,288.36 37.75,288.53 37.75,319.91 37.76,319.74 37.76,320.09 37.81,320.43 37.92,320.76 38.09,321.07 38.30,321.35 38.55,321.59 38.83,321.78 39.15,321.93 39.48,322.03 39.82,322.07 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='75.27' y='293.89' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='54.66px' lengthAdjust='spacingAndGlyphs'>ELMER GUILLERMO</text>
+<text x='75.27' y='302.08' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='63.83px' lengthAdjust='spacingAndGlyphs'>GUERRA, DOMINQUEZ,</text>
+<text x='75.27' y='310.28' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='67.83px' lengthAdjust='spacingAndGlyphs'>MIGUEL ANGEL GUERRA</text>
+<text x='75.27' y='318.47' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='31.28px' lengthAdjust='spacingAndGlyphs'>DOMINQUE</text>
+<polygon points='87.38,288.76 151.23,288.76 151.14,288.75 151.49,288.74 151.83,288.67 152.15,288.55 152.45,288.37 152.72,288.15 152.95,287.89 153.14,287.60 153.28,287.28 153.36,286.94 153.39,286.60 153.39,286.60 153.39,271.60 153.39,271.60 153.36,271.26 153.28,270.92 153.14,270.60 152.95,270.31 152.72,270.05 152.45,269.83 152.15,269.65 151.83,269.53 151.49,269.46 151.23,269.44 87.38,269.44 87.64,269.46 87.29,269.45 86.95,269.49 86.61,269.58 86.30,269.73 86.01,269.93 85.76,270.17 85.55,270.45 85.39,270.76 85.28,271.09 85.22,271.43 85.22,271.60 85.22,286.60 85.22,286.42 85.22,286.77 85.28,287.11 85.39,287.44 85.55,287.75 85.76,288.03 86.01,288.27 86.30,288.47 86.61,288.62 86.95,288.71 87.29,288.75 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='119.30' y='276.96' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='43.27px' lengthAdjust='spacingAndGlyphs'>2230 S 19TH ST,</text>
+<text x='119.30' y='285.16' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.97px' lengthAdjust='spacingAndGlyphs'>MILWAUKEE, WI 53215</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='174.82' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,171.78 162.23,176.34 156.97,176.34 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='177.98' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='177.98' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='143.11' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 3 units, and 2 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='212.39px' lengthAdjust='spacingAndGlyphs'>ELMER GUILLERMO GUERRA</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='173.02px' lengthAdjust='spacingAndGlyphs'>-, DOMINGUEZ -- ELMER</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='160.73px' lengthAdjust='spacingAndGlyphs'>GUILLERMO GUERRA,</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='211.59px' lengthAdjust='spacingAndGlyphs'>DOMINQUEZ, MIGUEL ANGEL</text>
+<text x='29.89' y='120.57' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='197.62px' lengthAdjust='spacingAndGlyphs'>GUERRA DOMINQUE Group</text>
+</g>
+</g>
+</svg>
