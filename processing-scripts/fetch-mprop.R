@@ -116,10 +116,27 @@ residential.landlord <- mprop %>%
          OWNER_NAME_1 = str_replace(OWNER_NAME_1, " - ", "-"),
          OWNER_NAME_1 = str_squish(OWNER_NAME_1),
          OWNER_NAME_1 = str_replace(OWNER_NAME_1, "\\bLL$", "LLC")) %>%
+  # clean owner name field, just use OWNER_NAME_1 for now
+  mutate(OWNER_NAME_2 = str_remove_all(OWNER_NAME_2, ","),
+         OWNER_NAME_2 = str_remove_all(OWNER_NAME_2, coll(".")),
+         OWNER_NAME_2 = str_remove_all(OWNER_NAME_2, "#"),
+         OWNER_NAME_2 = str_replace(OWNER_NAME_2, " - ", "-"),
+         OWNER_NAME_2 = str_squish(OWNER_NAME_2),
+         OWNER_NAME_2 = str_replace(OWNER_NAME_2, "\\bLL$", "LLC"),
+         OWNER_NAME_2 = if_else(str_detect(OWNER_NAME_2, "C/O|C\\\\O|ATTN|CARE OF"), NA, OWNER_NAME_2)) %>%
+  # clean owner name field, just use OWNER_NAME_1 for now
+  mutate(OWNER_NAME_3 = str_remove_all(OWNER_NAME_3, ","),
+         OWNER_NAME_3 = str_remove_all(OWNER_NAME_3, coll(".")),
+         OWNER_NAME_3 = str_remove_all(OWNER_NAME_3, "#"),
+         OWNER_NAME_3 = str_replace(OWNER_NAME_3, " - ", "-"),
+         OWNER_NAME_3 = str_squish(OWNER_NAME_3),
+         OWNER_NAME_3 = str_replace(OWNER_NAME_3, "\\bLL$", "LLC"),
+         OWNER_NAME_3 = if_else(str_detect(OWNER_NAME_3, "C/O|C\\\\O|ATTN|CARE OF"), NA, OWNER_NAME_3)) %>%
   # create combined owner address field
   mutate(mprop_address_raw = paste(OWNER_MAIL_ADDR, OWNER_CITY_STATE, sep = ", "),
          mprop_address_raw = paste(mprop_address_raw, str_sub(OWNER_ZIP, 1, 5))) %>%
-  rename(mprop_name = OWNER_NAME_1)
+  rename(mprop_name = OWNER_NAME_1) |>
+  unite("mprop_name2", mprop_name, OWNER_NAME_2, OWNER_NAME_3, sep = ", ", remove = F, na.rm = T)
 
 ###############################################################################
 # add coordinates
