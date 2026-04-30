@@ -1,12 +1,12 @@
 name,value
 total_parcels,"47,108"
 total_units,"144,682"
-total_networks,"19,731"
+total_networks,"19,734"
 networks_single_parcel,"14,022"
 pct_networks_single_parcel,71%
-networks_multiple_parcels,"5,709"
+networks_multiple_parcels,"5,712"
 pct_networks_multiple_parcels,29%
-networks_multiple_names,"3,778"
+networks_multiple_names,"3,781"
 pct_networks_multiple_names,19%
 parcels_single_parcel_owner,"14,022"
 pct_parcels_single_parcel_owner,30%
