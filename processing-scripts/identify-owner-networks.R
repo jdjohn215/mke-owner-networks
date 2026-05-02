@@ -36,7 +36,7 @@ mprop.with.wdfi.matches <- mprop %>%
          wdfi_address = if_else(is.na(wdfi_address), wdfi_address,
                                 paste(wdfi_address, "wdfi", sep = "_"))) |>
   # add suffix that makes common non-identifying names distinct
-  mutate(mprop_name = if_else(mprop_name %in% repeated.names.not.used.to.match$mprop_name,
+  mutate(mprop_name = if_else(mprop_name %in% repeated.names.not.used.to.match$name,
                               true = paste(mprop_name, row_number(), sep = "!!"),
                               false = mprop_name))
 
