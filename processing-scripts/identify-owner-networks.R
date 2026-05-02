@@ -284,7 +284,7 @@ mprop.with.evictions.redacted <- mprop.with.evictions.redacted |>
 
 ################################################################################
 # save output
-write_csv(mprop.with.evictions.redacted, "data/final-output/LandlordProperties-with-OwnerNetworks.csv")
+write_csv(mprop.with.evictions.redacted, "data/final-output/LandlordProperties-with-OwnerNetworks.csv", na = "")
 write_csv(network.summary.stats.redacted, "data/final-output/Landlord-network-summary-statistics.csv")
 
 ###############################################################################
