@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.00' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDIxOS4zNHwzMzAuMTE='>
+    <rect x='29.89' y='219.34' width='228.22' height='110.77' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDIxOS4zNHwzMzAuMTE=)'>
+<polyline points='247.74,294.27 246.50,294.14 245.26,294.01 244.03,293.88 242.79,293.74 241.55,293.61 240.32,293.48 239.08,293.35 237.84,293.22 236.60,293.09 235.37,292.95 234.13,292.82 232.89,292.69 231.66,292.56 230.42,292.43 229.18,292.30 227.95,292.16 226.71,292.03 225.47,291.90 224.23,291.77 223.00,291.64 221.76,291.51 220.52,291.38 219.29,291.24 218.05,291.11 216.81,290.98 215.57,290.85 214.34,290.72 213.10,290.59 211.86,290.45 210.63,290.32 209.39,290.19 208.15,290.06 206.91,289.93 205.68,289.80 204.44,289.66 203.20,289.53 201.97,289.40 200.73,289.27 199.49,289.14 198.26,289.01 197.02,288.87 195.78,288.74 194.54,288.61 193.31,288.48 192.07,288.35 190.83,288.22 189.60,288.08 188.36,287.95 187.12,287.82 185.88,287.69 184.65,287.56 183.41,287.43 182.17,287.29 180.94,287.16 179.70,287.03 178.46,286.90 177.22,286.77 175.99,286.64 174.75,286.50 173.51,286.37 172.28,286.24 171.04,286.11 169.80,285.98 168.57,285.85 167.33,285.72 166.09,285.58 164.85,285.45 163.62,285.32 162.38,285.19 161.14,285.06 159.91,284.93 158.67,284.79 157.43,284.66 156.19,284.53 154.96,284.40 153.72,284.27 152.48,284.14 151.25,284.00 150.01,283.87 148.77,283.74 147.54,283.61 146.30,283.48 145.06,283.35 143.82,283.21 142.59,283.08 141.35,282.95 140.11,282.82 138.88,282.69 137.64,282.56 136.40,282.42 135.16,282.29 133.93,282.16 132.69,282.03 131.45,281.90 130.22,281.77 128.98,281.63 127.74,281.50 126.50,281.37 125.27,281.24 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='87.80,224.37 88.18,224.95 88.56,225.52 88.94,226.10 89.32,226.67 89.70,227.24 90.07,227.82 90.45,228.39 90.83,228.97 91.21,229.54 91.59,230.12 91.97,230.69 92.34,231.27 92.72,231.84 93.10,232.41 93.48,232.99 93.86,233.56 94.24,234.14 94.62,234.71 94.99,235.29 95.37,235.86 95.75,236.44 96.13,237.01 96.51,237.58 96.89,238.16 97.26,238.73 97.64,239.31 98.02,239.88 98.40,240.46 98.78,241.03 99.16,241.60 99.53,242.18 99.91,242.75 100.29,243.33 100.67,243.90 101.05,244.48 101.43,245.05 101.81,245.63 102.18,246.20 102.56,246.77 102.94,247.35 103.32,247.92 103.70,248.50 104.08,249.07 104.45,249.65 104.83,250.22 105.21,250.80 105.59,251.37 105.97,251.94 106.35,252.52 106.72,253.09 107.10,253.67 107.48,254.24 107.86,254.82 108.24,255.39 108.62,255.97 109.00,256.54 109.37,257.11 109.75,257.69 110.13,258.26 110.51,258.84 110.89,259.41 111.27,259.99 111.64,260.56 112.02,261.14 112.40,261.71 112.78,262.28 113.16,262.86 113.54,263.43 113.91,264.01 114.29,264.58 114.67,265.16 115.05,265.73 115.43,266.31 115.81,266.88 116.19,267.45 116.56,268.03 116.94,268.60 117.32,269.18 117.70,269.75 118.08,270.33 118.46,270.90 118.83,271.47 119.21,272.05 119.59,272.62 119.97,273.20 120.35,273.77 120.73,274.35 121.11,274.92 121.48,275.50 121.86,276.07 122.24,276.64 122.62,277.22 123.00,277.79 123.38,278.37 123.75,278.94 124.13,279.52 124.51,280.09 124.89,280.67 125.27,281.24 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,325.08 41.12,324.63 41.98,324.19 42.84,323.75 43.70,323.31 44.55,322.86 45.41,322.42 46.27,321.98 47.13,321.53 47.99,321.09 48.85,320.65 49.71,320.21 50.57,319.76 51.42,319.32 52.28,318.88 53.14,318.43 54.00,317.99 54.86,317.55 55.72,317.11 56.58,316.66 57.43,316.22 58.29,315.78 59.15,315.34 60.01,314.89 60.87,314.45 61.73,314.01 62.59,313.56 63.45,313.12 64.30,312.68 65.16,312.24 66.02,311.79 66.88,311.35 67.74,310.91 68.60,310.46 69.46,310.02 70.31,309.58 71.17,309.14 72.03,308.69 72.89,308.25 73.75,307.81 74.61,307.36 75.47,306.92 76.32,306.48 77.18,306.04 78.04,305.59 78.90,305.15 79.76,304.71 80.62,304.27 81.48,303.82 82.34,303.38 83.19,302.94 84.05,302.49 84.91,302.05 85.77,301.61 86.63,301.17 87.49,300.72 88.35,300.28 89.20,299.84 90.06,299.39 90.92,298.95 91.78,298.51 92.64,298.07 93.50,297.62 94.36,297.18 95.22,296.74 96.07,296.30 96.93,295.85 97.79,295.41 98.65,294.97 99.51,294.52 100.37,294.08 101.23,293.64 102.08,293.20 102.94,292.75 103.80,292.31 104.66,291.87 105.52,291.42 106.38,290.98 107.24,290.54 108.09,290.10 108.95,289.65 109.81,289.21 110.67,288.77 111.53,288.32 112.39,287.88 113.25,287.44 114.11,287.00 114.96,286.55 115.82,286.11 116.68,285.67 117.54,285.23 118.40,284.78 119.26,284.34 120.12,283.90 120.97,283.45 121.83,283.01 122.69,282.57 123.55,282.13 124.41,281.68 125.27,281.24 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,292.06 249.65,295.38 245.82,295.38 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='87.80,222.16 89.72,225.48 85.89,225.48 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,322.87 42.18,326.18 38.35,326.18 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='125.27' cy='281.24' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='80.71' y1='228.64' x2='86.89' y2='224.92' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='43.36' y1='317.35' x2='40.66' y2='324.09' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='127.07' y1='273.62' x2='125.51' y2='280.20' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='181.98,303.29 240.52,303.29 240.43,303.29 240.78,303.28 241.12,303.21 241.45,303.08 241.75,302.91 242.02,302.69 242.25,302.43 242.43,302.14 242.57,301.82 242.65,301.48 242.68,301.13 242.68,301.13 242.68,294.34 242.68,294.34 242.65,293.99 242.57,293.65 242.43,293.33 242.25,293.04 242.02,292.78 241.75,292.56 241.45,292.38 241.12,292.26 240.78,292.19 240.52,292.18 181.98,292.18 182.24,292.19 181.90,292.18 181.55,292.22 181.22,292.32 180.90,292.47 180.62,292.66 180.37,292.90 180.16,293.18 180.00,293.49 179.89,293.82 179.83,294.16 179.82,294.34 179.82,301.13 179.83,300.96 179.83,301.31 179.89,301.65 180.00,301.98 180.16,302.29 180.37,302.57 180.62,302.81 180.90,303.00 181.22,303.15 181.55,303.25 181.90,303.29 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='211.25' y='299.69' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='55.66px' lengthAdjust='spacingAndGlyphs'>VELINA ALEXANDER</text>
+<polygon points='42.90,264.34 108.69,264.34 108.60,264.34 108.95,264.32 109.29,264.25 109.62,264.13 109.92,263.96 110.19,263.74 110.42,263.48 110.60,263.18 110.74,262.86 110.82,262.53 110.85,262.18 110.85,262.18 110.85,230.80 110.85,230.80 110.82,230.45 110.74,230.12 110.60,229.80 110.42,229.50 110.19,229.24 109.92,229.02 109.62,228.85 109.29,228.73 108.95,228.66 108.69,228.64 42.90,228.64 43.16,228.66 42.82,228.64 42.47,228.68 42.14,228.78 41.82,228.93 41.54,229.13 41.29,229.37 41.08,229.65 40.92,229.95 40.81,230.28 40.75,230.63 40.74,230.80 40.74,262.18 40.75,262.01 40.75,262.35 40.81,262.70 40.92,263.03 41.08,263.33 41.29,263.61 41.54,263.85 41.82,264.05 42.14,264.20 42.47,264.30 42.82,264.34 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='75.80' y='236.16' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='62.91px' lengthAdjust='spacingAndGlyphs'>MARY EVELYN HARRIS</text>
+<text x='75.80' y='244.35' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='50.25px' lengthAdjust='spacingAndGlyphs'>LIFE EST, CURLEY</text>
+<text x='75.80' y='252.55' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='56.78px' lengthAdjust='spacingAndGlyphs'>HARRIS JR, ROBERT</text>
+<text x='75.80' y='260.74' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='21.50px' lengthAdjust='spacingAndGlyphs'>HARRIS</text>
+<polygon points='45.52,320.80 109.29,320.80 109.20,320.80 109.55,320.78 109.89,320.71 110.22,320.59 110.52,320.42 110.79,320.20 111.02,319.94 111.20,319.64 111.34,319.32 111.42,318.99 111.45,318.64 111.45,318.64 111.45,295.45 111.45,295.45 111.42,295.11 111.34,294.77 111.20,294.45 111.02,294.16 110.79,293.90 110.52,293.68 110.22,293.50 109.89,293.38 109.55,293.31 109.29,293.29 45.52,293.29 45.78,293.31 45.43,293.30 45.09,293.34 44.75,293.43 44.44,293.58 44.15,293.78 43.90,294.02 43.69,294.30 43.53,294.61 43.42,294.94 43.37,295.28 43.36,295.45 43.36,318.64 43.37,318.47 43.37,318.81 43.42,319.16 43.53,319.49 43.69,319.79 43.90,320.07 44.15,320.31 44.44,320.51 44.75,320.66 45.09,320.76 45.43,320.80 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='77.41' y='300.81' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.38px' lengthAdjust='spacingAndGlyphs'>STEVEN &amp; CHRISTINA</text>
+<text x='77.41' y='309.01' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='26.55px' lengthAdjust='spacingAndGlyphs'>LELINSKI,</text>
+<text x='77.41' y='317.20' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.89px' lengthAdjust='spacingAndGlyphs'>IRREVOCABLE TRUST</text>
+<polygon points='129.23,276.95 195.63,276.95 195.54,276.95 195.89,276.94 196.23,276.87 196.55,276.75 196.86,276.57 197.13,276.35 197.36,276.09 197.54,275.80 197.68,275.48 197.76,275.14 197.79,274.79 197.79,274.79 197.79,251.61 197.79,251.61 197.76,251.26 197.68,250.92 197.54,250.60 197.36,250.31 197.13,250.05 196.86,249.83 196.55,249.66 196.23,249.53 195.89,249.46 195.63,249.45 129.23,249.45 129.49,249.46 129.15,249.45 128.80,249.49 128.47,249.59 128.15,249.74 127.87,249.94 127.62,250.18 127.41,250.45 127.25,250.76 127.14,251.09 127.08,251.43 127.07,251.61 127.07,274.79 127.08,274.62 127.08,274.97 127.14,275.31 127.25,275.64 127.41,275.95 127.62,276.23 127.87,276.47 128.15,276.66 128.47,276.81 128.80,276.91 129.15,276.95 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='162.43' y='256.96' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='54.12px' lengthAdjust='spacingAndGlyphs'>2211 10TH AVE, STE</text>
+<text x='162.43' y='265.16' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='63.52px' lengthAdjust='spacingAndGlyphs'>B, SOUTH MILWAUKEE,</text>
+<text x='162.43' y='273.35' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='24.31px' lengthAdjust='spacingAndGlyphs'>WI 53172</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='194.26' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,191.22 162.23,195.78 156.97,195.78 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='197.42' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='197.42' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='162.55' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 3 parcels, 4 units, and 3 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='203.39px' lengthAdjust='spacingAndGlyphs'>MARY EVELYN HARRIS LIFE</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='185.36px' lengthAdjust='spacingAndGlyphs'>EST, CURLEY HARRIS JR,</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='200.08px' lengthAdjust='spacingAndGlyphs'>ROBERT HARRIS -- STEVEN</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='170.59px' lengthAdjust='spacingAndGlyphs'>&amp; CHRISTINA LELINSKI,</text>
+<text x='29.89' y='120.57' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='232.88px' lengthAdjust='spacingAndGlyphs'>IRREVOCABLE TRUST -- VELINA</text>
+<text x='29.89' y='140.01' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='140.20px' lengthAdjust='spacingAndGlyphs'>ALEXANDER Group</text>
+</g>
+</g>
+</svg>
