@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.00' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDIxOS4zNHwzMzAuMTE='>
+    <rect x='29.89' y='219.34' width='228.22' height='110.77' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDIxOS4zNHwzMzAuMTE=)'>
+<polyline points='247.74,224.37 246.69,224.88 245.64,225.39 244.59,225.90 243.55,226.41 242.50,226.92 241.45,227.42 240.40,227.93 239.36,228.44 238.31,228.95 237.26,229.46 236.21,229.97 235.16,230.48 234.12,230.99 233.07,231.49 232.02,232.00 230.97,232.51 229.92,233.02 228.88,233.53 227.83,234.04 226.78,234.55 225.73,235.05 224.69,235.56 223.64,236.07 222.59,236.58 221.54,237.09 220.49,237.60 219.45,238.11 218.40,238.62 217.35,239.12 216.30,239.63 215.25,240.14 214.21,240.65 213.16,241.16 212.11,241.67 211.06,242.18 210.02,242.68 208.97,243.19 207.92,243.70 206.87,244.21 205.82,244.72 204.78,245.23 203.73,245.74 202.68,246.25 201.63,246.75 200.58,247.26 199.54,247.77 198.49,248.28 197.44,248.79 196.39,249.30 195.35,249.81 194.30,250.31 193.25,250.82 192.20,251.33 191.15,251.84 190.11,252.35 189.06,252.86 188.01,253.37 186.96,253.88 185.91,254.38 184.87,254.89 183.82,255.40 182.77,255.91 181.72,256.42 180.68,256.93 179.63,257.44 178.58,257.94 177.53,258.45 176.48,258.96 175.44,259.47 174.39,259.98 173.34,260.49 172.29,261.00 171.24,261.51 170.20,262.01 169.15,262.52 168.10,263.03 167.05,263.54 166.01,264.05 164.96,264.56 163.91,265.07 162.86,265.57 161.81,266.08 160.77,266.59 159.72,267.10 158.67,267.61 157.62,268.12 156.57,268.63 155.53,269.14 154.48,269.64 153.43,270.15 152.38,270.66 151.34,271.17 150.29,271.68 149.24,272.19 148.19,272.70 147.14,273.20 146.10,273.71 145.05,274.22 144.00,274.73 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,325.08 41.31,324.57 42.36,324.06 43.41,323.55 44.45,323.04 45.50,322.53 46.55,322.03 47.60,321.52 48.64,321.01 49.69,320.50 50.74,319.99 51.79,319.48 52.84,318.97 53.88,318.47 54.93,317.96 55.98,317.45 57.03,316.94 58.08,316.43 59.12,315.92 60.17,315.41 61.22,314.91 62.27,314.40 63.31,313.89 64.36,313.38 65.41,312.87 66.46,312.36 67.51,311.85 68.55,311.35 69.60,310.84 70.65,310.33 71.70,309.82 72.75,309.31 73.79,308.80 74.84,308.29 75.89,307.79 76.94,307.28 77.98,306.77 79.03,306.26 80.08,305.75 81.13,305.24 82.18,304.73 83.22,304.23 84.27,303.72 85.32,303.21 86.37,302.70 87.42,302.19 88.46,301.68 89.51,301.18 90.56,300.67 91.61,300.16 92.66,299.65 93.70,299.14 94.75,298.63 95.80,298.12 96.85,297.62 97.89,297.11 98.94,296.60 99.99,296.09 101.04,295.58 102.09,295.07 103.13,294.56 104.18,294.06 105.23,293.55 106.28,293.04 107.33,292.53 108.37,292.02 109.42,291.51 110.47,291.00 111.52,290.50 112.56,289.99 113.61,289.48 114.66,288.97 115.71,288.46 116.76,287.95 117.80,287.44 118.85,286.94 119.90,286.43 120.95,285.92 122.00,285.41 123.04,284.90 124.09,284.39 125.14,283.88 126.19,283.38 127.23,282.87 128.28,282.36 129.33,281.85 130.38,281.34 131.43,280.83 132.47,280.32 133.52,279.82 134.57,279.31 135.62,278.80 136.67,278.29 137.71,277.78 138.76,277.27 139.81,276.76 140.86,276.26 141.90,275.75 142.95,275.24 144.00,274.73 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,222.16 249.65,225.48 245.82,225.48 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,322.87 42.18,326.18 38.35,326.18 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='144.00' cy='274.73' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='242.66' y1='230.21' x2='247.04' y2='225.18' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='48.76' y1='320.77' x2='41.21' y2='324.59' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='135.57' y1='279.01' x2='143.05' y2='275.21' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='170.33,262.77 240.50,262.77 240.42,262.76 240.76,262.75 241.10,262.68 241.43,262.56 241.73,262.38 242.00,262.16 242.23,261.90 242.42,261.61 242.55,261.29 242.64,260.95 242.66,260.61 242.66,260.61 242.66,229.23 242.66,229.23 242.64,228.88 242.55,228.54 242.42,228.22 242.23,227.93 242.00,227.67 241.73,227.45 241.43,227.27 241.10,227.15 240.76,227.08 240.50,227.07 170.33,227.07 170.59,227.08 170.24,227.07 169.89,227.11 169.56,227.21 169.25,227.35 168.96,227.55 168.71,227.79 168.50,228.07 168.34,228.38 168.23,228.71 168.17,229.05 168.17,229.23 168.17,260.61 168.17,260.43 168.17,260.78 168.23,261.12 168.34,261.45 168.50,261.76 168.71,262.04 168.96,262.28 169.25,262.48 169.56,262.62 169.89,262.72 170.24,262.76 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='205.41' y='234.58' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='66.95px' lengthAdjust='spacingAndGlyphs'>FORTUNATO GONZALEZ</text>
+<text x='205.41' y='242.78' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='54.38px' lengthAdjust='spacingAndGlyphs'>R, MARIA DE JESUS</text>
+<text x='205.41' y='250.97' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='67.30px' lengthAdjust='spacingAndGlyphs'>GONZALEZ, FRANCISCO</text>
+<text x='205.41' y='259.17' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='30.64px' lengthAdjust='spacingAndGlyphs'>GONZALEZ</text>
+<polygon points='35.66,320.77 104.26,320.77 104.17,320.77 104.52,320.76 104.86,320.69 105.19,320.56 105.49,320.39 105.76,320.17 105.99,319.91 106.17,319.62 106.31,319.30 106.39,318.96 106.42,318.61 106.42,318.61 106.42,311.82 106.42,311.82 106.39,311.47 106.31,311.13 106.17,310.81 105.99,310.52 105.76,310.26 105.49,310.04 105.19,309.86 104.86,309.74 104.52,309.67 104.26,309.66 35.66,309.66 35.92,309.67 35.57,309.66 35.23,309.70 34.90,309.80 34.58,309.95 34.30,310.14 34.05,310.38 33.84,310.66 33.67,310.97 33.56,311.30 33.51,311.64 33.50,311.82 33.50,318.61 33.51,318.44 33.51,318.79 33.56,319.13 33.67,319.46 33.84,319.77 34.05,320.05 34.30,320.29 34.58,320.48 34.90,320.63 35.23,320.73 35.57,320.77 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='69.96' y='317.17' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='65.72px' lengthAdjust='spacingAndGlyphs'>FRANCISCO GONZALEZ</text>
+<polygon points='83.36,298.32 147.21,298.32 147.12,298.32 147.47,298.31 147.81,298.24 148.13,298.12 148.44,297.94 148.70,297.72 148.94,297.46 149.12,297.17 149.26,296.85 149.34,296.51 149.37,296.16 149.37,296.16 149.37,281.17 149.37,281.17 149.34,280.83 149.26,280.49 149.12,280.17 148.94,279.88 148.70,279.62 148.44,279.40 148.13,279.22 147.81,279.10 147.47,279.03 147.21,279.01 83.36,279.01 83.62,279.03 83.27,279.01 82.93,279.06 82.59,279.15 82.28,279.30 81.99,279.50 81.74,279.74 81.53,280.02 81.37,280.33 81.26,280.66 81.21,281.00 81.20,281.17 81.20,296.16 81.21,295.99 81.21,296.34 81.26,296.68 81.37,297.01 81.53,297.32 81.74,297.60 81.99,297.84 82.28,298.03 82.59,298.18 82.93,298.28 83.27,298.32 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='115.28' y='286.53' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='43.27px' lengthAdjust='spacingAndGlyphs'>1304 S 35TH ST,</text>
+<text x='115.28' y='294.72' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='60.97px' lengthAdjust='spacingAndGlyphs'>MILWAUKEE, WI 53215</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='194.26' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,191.22 162.23,195.78 156.97,195.78 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='197.42' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='197.42' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='162.55' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 3 units, and 2 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='196.80px' lengthAdjust='spacingAndGlyphs'>FORTUNATO GONZALEZ R,</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='214.88px' lengthAdjust='spacingAndGlyphs'>MARIA DE JESUS GONZALEZ,</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='186.94px' lengthAdjust='spacingAndGlyphs'>FRANCISCO GONZALEZ --</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='223.86px' lengthAdjust='spacingAndGlyphs'>FRANCISCO GONZALEZ -- 1304</text>
+<text x='29.89' y='120.57' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='198.50px' lengthAdjust='spacingAndGlyphs'>S 35TH ST, MILWAUKEE, WI</text>
+<text x='29.89' y='140.01' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='89.39px' lengthAdjust='spacingAndGlyphs'>53215 Group</text>
+</g>
+</g>
+</svg>
