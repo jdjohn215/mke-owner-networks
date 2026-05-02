@@ -119,7 +119,11 @@ defmodule WhoOwnsWhat.Data.Property do
         nil
       end
 
-    "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type}, #{zip_code}"
+    if property.house_number_suffix do
+      "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type} #{property.house_number_suffix}, #{zip_code}"
+    else
+      "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type}, #{zip_code}"
+    end
   end
 
   def alternative_addresses(property = %__MODULE__{}) do

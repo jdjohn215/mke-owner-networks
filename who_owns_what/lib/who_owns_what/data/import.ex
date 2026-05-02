@@ -226,6 +226,7 @@ defmodule WhoOwnsWhat.Data.Import do
     @overall_summary_data
   end
 
+  defp convert_string_maybe_na_to_float(""), do: nil
   defp convert_string_maybe_na_to_float("NA"), do: nil
   defp convert_string_maybe_na_to_float("0"), do: 0.0
 
@@ -234,6 +235,7 @@ defmodule WhoOwnsWhat.Data.Import do
     float
   end
 
+  defp convert_string_maybe_na_to_integer(""), do: nil
   defp convert_string_maybe_na_to_integer("NA"), do: nil
   defp convert_string_maybe_na_to_integer("0"), do: 0
 
@@ -241,6 +243,7 @@ defmodule WhoOwnsWhat.Data.Import do
     String.to_integer(string_number)
   end
 
+  defp convert_string_maybe_na_to_date(""), do: nil
   defp convert_string_maybe_na_to_date("NA"), do: nil
 
   defp convert_string_maybe_na_to_date(string_date) do
