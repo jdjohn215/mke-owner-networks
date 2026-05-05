@@ -56,7 +56,7 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.SearchComponent do
       No Results
     </div>
 
-    <.table id="owner_groups" row_id={&"#{&1.id}"} rows={@owner_groups}>
+    <.keyed_table id="owner_groups" row_id={&"#{&1.id}"} rows={@owner_groups}>
       <:col :let={owner_group} label="Owner Group">
         <.good_link navigate={~p"/owner_groups/#{owner_group.name}"}>
           {owner_group.name}
@@ -71,7 +71,7 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.SearchComponent do
       <:col :let={owner_group} label="Total Assessed Value" class="hidden sm:table-cell">
         ${format_commas(owner_group.total_assessed_value)}
       </:col>
-    </.table>
+    </.keyed_table>
     """
   end
 
