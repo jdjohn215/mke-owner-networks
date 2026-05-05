@@ -29,6 +29,7 @@ defmodule WhoOwnsWhatWeb.Router do
     live "/owner_groups", OwnerGroupLive.Index, :index
     live "/owner_groups/:id", OwnerGroupLive.Show, :show
     get "/owner_groups/:id/csv", PageController, :owner_groups_csv
+    get "/owner_groups/:id/geojson", PageController, :owner_group_geojson
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development

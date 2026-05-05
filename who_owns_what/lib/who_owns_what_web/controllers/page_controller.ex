@@ -86,4 +86,32 @@ defmodule WhoOwnsWhatWeb.PageController do
     |> put_root_layout(false)
     |> send_resp(200, csv_data)
   end
+
+  def owner_group_geojson(conn, %{"id" => id}) do
+    properties = Data.list_properties_by_owner_group_name(id)
+
+    features =
+      properties
+      |> Enum.filter(&(&1.latitude && &1.longitude))
+      |> Enum.map(fn property ->
+        %{
+          type: "Feature",
+          geometry: %{
+            type: "Point",
+            coordinates: [property.longitude, property.latitude]
+          },
+          properties: %{
+            taxkey: property.taxkey,
+            address: Data.Property.address(property),
+            units: property.number_units
+          }
+        }
+      end)
+
+    body = Jason.encode!(%{type: "FeatureCollection", features: features})
+
+    conn
+    |> put_resp_content_type("application/geo+json")
+    |> send_resp(200, body)
+  end
 end

@@ -60,8 +60,8 @@
   id="owner-group-map"
   phx-hook="MapLibre"
   phx-update="ignore"
-  data-geojson={@geojson}
-  data-boundary={@boundary_geojson}
+  data-geojson-url={~p"/owner_groups/#{@owner_group.name}/geojson"}
+  data-boundary-url={~p"/boundary.geojson"}
   style="height: 400px; width: 100%;"
   class="mt-4 rounded-lg"
 >
