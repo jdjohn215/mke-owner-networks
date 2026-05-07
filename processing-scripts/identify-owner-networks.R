@@ -280,7 +280,9 @@ mprop.with.evictions.redacted <- mprop.with.evictions.redacted |>
                                       paste(paste(HOUSE_NR_LO, SDIR, STREET, STTYPE),
                                             paste(HOUSE_NR_HI, SDIR, STREET, STTYPE),
                                             sep = "|"),
-                                      complete_addresses))
+                                      complete_addresses),
+         unit_number = UNIT_NBR
+  )
 
 ################################################################################
 # save output
