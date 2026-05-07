@@ -114,6 +114,11 @@ defmodule WhoOwnsWhat.Data.Property do
   end
 
   def address(property = %__MODULE__{}) do
+    street =
+      [property.street, property.street_type]
+      |> Enum.join(" ")
+      |> String.trim()
+
     zip_code =
       if property.geo_zip_code do
         String.slice(property.geo_zip_code, 0, 5)
@@ -123,22 +128,22 @@ defmodule WhoOwnsWhat.Data.Property do
 
     case {property.house_number_suffix, property.unit_number} do
       {"", ""} ->
-        "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type}, #{zip_code}"
+        "#{property.house_number_low} #{property.street_direction} #{street}, #{zip_code}"
 
       {suffix, ""} when byte_size(suffix) > 0 ->
-        "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type} #{property.house_number_suffix}, #{zip_code}"
+        "#{property.house_number_low} #{property.street_direction} #{street} #{property.house_number_suffix}, #{zip_code}"
 
       {"", unit_number} when byte_size(unit_number) > 0 ->
-        "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type}, UNIT #{property.unit_number}, #{zip_code}"
+        "#{property.house_number_low} #{property.street_direction} #{street}, UNIT #{property.unit_number}, #{zip_code}"
 
       # suffix and unit number are identical
       {unit_number, unit_number} when byte_size(unit_number) > 0 ->
-        "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type}, UNIT #{property.unit_number}, #{zip_code}"
+        "#{property.house_number_low} #{property.street_direction} #{street}, UNIT #{property.unit_number}, #{zip_code}"
 
       # suffix and unit number are both present but different
       # unsure this ever happens
       {suffix, unit_number} ->
-        "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type}, #{suffix} UNIT #{unit_number}, #{zip_code}"
+        "#{property.house_number_low} #{property.street_direction} #{street}, #{suffix} UNIT #{unit_number}, #{zip_code}"
     end
   end
 
