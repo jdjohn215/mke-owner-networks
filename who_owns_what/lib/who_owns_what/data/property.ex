@@ -12,6 +12,7 @@ defmodule WhoOwnsWhat.Data.Property do
     field :house_number_high, :integer
     field :house_number_low, :integer
     field :house_number_suffix, :string
+    field :unit_number, :string
     field :land_use_gp, :string
     field :number_units, :integer
     field :owner_address, :string
@@ -62,6 +63,7 @@ defmodule WhoOwnsWhat.Data.Property do
       :street_direction,
       :street,
       :street_type,
+      :unit_number,
       :c_a_class,
       :land_use_gp,
       :c_a_total,
@@ -119,10 +121,24 @@ defmodule WhoOwnsWhat.Data.Property do
         nil
       end
 
-    if property.house_number_suffix do
-      "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type} #{property.house_number_suffix}, #{zip_code}"
-    else
-      "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type}, #{zip_code}"
+    case {property.house_number_suffix, property.unit_number} do
+      {"", ""} ->
+        "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type}, #{zip_code}"
+
+      {suffix, ""} when byte_size(suffix) > 0 ->
+        "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type} #{property.house_number_suffix}, #{zip_code}"
+
+      {"", unit_number} when byte_size(unit_number) > 0 ->
+        "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type}, UNIT #{property.unit_number}, #{zip_code}"
+
+      # suffix and unit number are identical
+      {unit_number, unit_number} when byte_size(unit_number) > 0 ->
+        "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type}, UNIT #{property.unit_number}, #{zip_code}"
+
+      # suffix and unit number are both present but different
+      # unsure this ever happens
+      {suffix, unit_number} ->
+        "#{property.house_number_low} #{property.street_direction} #{property.street} #{property.street_type}, #{suffix} UNIT #{unit_number}, #{zip_code}"
     end
   end
 

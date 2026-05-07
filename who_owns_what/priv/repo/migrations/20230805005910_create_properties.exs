@@ -10,6 +10,7 @@ defmodule WhoOwnsWhat.Repo.Migrations.CreateProperties do
       add :street_direction, :string
       add :street, :string
       add :street_type, :string
+      add :unit_number, :string
       add :c_a_class, :string
       add :land_use_gp, :string
       add :c_a_total, :integer

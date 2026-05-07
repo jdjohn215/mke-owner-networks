@@ -63,6 +63,7 @@ defmodule WhoOwnsWhat.Data.Import do
           house_number_low: String.to_integer(Map.fetch!(map, "HOUSE_NR_LO")),
           house_number_high: String.to_integer(Map.fetch!(map, "HOUSE_NR_HI")),
           house_number_suffix: Map.fetch!(map, "HOUSE_NR_SFX"),
+          unit_number: Map.fetch!(map, "UNIT_NBR"),
           street_direction: Map.fetch!(map, "SDIR"),
           street: Map.fetch!(map, "STREET"),
           street_type: Map.fetch!(map, "STTYPE"),
@@ -144,7 +145,7 @@ defmodule WhoOwnsWhat.Data.Import do
       """
       INSERT INTO properties_fts (rowid, taxkey, owner_name_1, full_address, owner_group_name)
       SELECT p.id, p.taxkey, owner_name_1,
-        replace(complete_addresses, '|', ' ') || ' ' || geo_zip_code,
+        replace(complete_addresses, '|', ' ') || CASE WHEN coalesce(unit_number, '') = '' THEN '' ELSE ' ' || 'UNIT ' || unit_number END || ' ' || geo_zip_code,
       ogp.owner_group_name
       FROM properties p
       JOIN owner_groups_properties ogp on ogp.taxkey = p.taxkey
