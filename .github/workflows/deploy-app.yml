@@ -15,8 +15,11 @@ jobs:
   deploy:
     name: Deploy app
     runs-on: ubuntu-latest
+    permissions: {}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@900f2210b1d28bbbd0bd22d17926b9e224e8f231 # 2026-05-21
+        with:
+          persist-credentials: false
       - uses: superfly/flyctl-actions/setup-flyctl@ed8efb33836e8b2096c7fd3ba1c8afe303ebbff1 # 2026-04-25
       - run: cp ../data/final-output/LandlordProperties-with-OwnerNetworks.csv data/LandlordProperties-with-OwnerNetworks.csv
         working-directory: who_owns_what
