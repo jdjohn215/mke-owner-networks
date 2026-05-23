@@ -37,11 +37,11 @@ defmodule WhoOwnsWhatWeb.PropertyLive.Show do
 
     {:noreply,
      socket
-     |> assign(:page_title, page_title(socket.assigns.live_action))
+     |> assign(:page_title, page_title(socket.assigns.live_action, property))
      |> assign(:property, property)
      |> assign(:dns_data_date, dns_data_date)
      |> assign(:eviction_data_date, eviction_data_date)}
   end
 
-  defp page_title(:show), do: "Show Property"
+  defp page_title(:show, property), do: Data.Property.address(property)
 end

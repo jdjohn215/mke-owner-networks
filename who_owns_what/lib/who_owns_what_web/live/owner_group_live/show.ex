@@ -25,14 +25,14 @@ defmodule WhoOwnsWhatWeb.OwnerGroupLive.Show do
 
     {:noreply,
      socket
-     |> assign(:page_title, page_title(socket.assigns.live_action))
+     |> assign(:page_title, page_title(socket.assigns.live_action, owner_group))
      |> assign(:owner_group, owner_group)
      |> assign(:show_network_graph, has_multiple_unique_owner_names)
      |> assign(:properties, properties)
      |> assign_groups(properties)}
   end
 
-  defp page_title(:show), do: "Show Owner Group"
+  defp page_title(:show, owner_group), do: owner_group.name
 
   defp assign_groups(socket, properties) do
     groups =
