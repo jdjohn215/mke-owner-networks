@@ -1,6 +1,6 @@
 name,value
-total_parcels,"47,233"
-total_units,"144,873"
+total_parcels,"47,230"
+total_units,"144,868"
 total_networks,"19,855"
 networks_single_parcel,"14,168"
 pct_networks_single_parcel,71%
@@ -10,14 +10,14 @@ networks_multiple_names,"3,789"
 pct_networks_multiple_names,19%
 parcels_single_parcel_owner,"14,168"
 pct_parcels_single_parcel_owner,30%
-parcels_multiple_parcel_owner,"33,065"
-parcels_multiple_name_owner,"27,013"
+parcels_multiple_parcel_owner,"33,062"
+parcels_multiple_name_owner,"27,010"
 pct_parcels_multiple_name_owner,57%
 total_mprop_names,"28,718"
 total_mprop_addresses,"21,775"
 mprop_updated,2026-06-18
 wdfi_updated,2026-02-13
-workflow_updated,2026-06-24
+workflow_updated,2026-06-25
 evict_start,2016-01-01
 evict_end,2024-12-27
 dns_start,2017-01-01
