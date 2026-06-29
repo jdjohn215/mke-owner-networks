@@ -241,7 +241,11 @@ defmodule WhoOwnsWhat.Data.Import do
   defp convert_string_maybe_na_to_integer("0"), do: 0
 
   defp convert_string_maybe_na_to_integer(string_number) do
-    String.to_integer(string_number)
+    case Integer.parse(string_number) do
+      {integer, _remaining} ->
+        integer
+      :error -> :error
+    end
   end
 
   defp convert_string_maybe_na_to_date(""), do: nil
