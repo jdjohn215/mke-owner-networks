@@ -5,21 +5,24 @@ on:
   schedule:
     - cron:  '0 1 * * 1-5' # Mon-Fri, 1AM UTC / 7PM CST
 
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+permissions: {}
+
 env:
   GEOCODIO_API_KEY: ${{ secrets.GEOCODIO_API_KEY_SECRET }}
-  GITHUB_TOKEN: ${{ secrets.PAT }}
-  GITHUB_PAT: ${{ secrets.PAT }}
 
 jobs:
   update-networks:
+    name: Update parcel data and networks
     runs-on: ubuntu-latest
     # it should take <10 minutes, but reinstalling the cache can take longer
     timeout-minutes: 60
 
     permissions:
-      # Give the default GITHUB_TOKEN write permission to commit and push the
-      # added or changed files to the repository.
-      contents: write
+      contents: write # required to commit and push the added or changed files to the repository
 
     steps:
       - name: Check out repository
@@ -61,6 +64,8 @@ jobs:
       - name: standardize WDFI address
         run: Rscript -e 'source("processing-scripts/wdfi-standardize-addresses.R")'
       - name: igraph owner networks
+        env:
+          GITHUB_PAT: ${{ secrets.PAT }}
         run: Rscript -e 'source("processing-scripts/identify-owner-networks.R")'
       - name: update new graph SVGs
         run: Rscript -e 'source("processing-scripts/update-network-graph-svgs.R")'
@@ -77,10 +82,21 @@ jobs:
           git diff --diff-filter=d -z --name-only ./images/networks-svg | xargs -0 -n 1 npx svgo --config svgo.config.js
 
       - name: Commit results
-        # Commit all changed files back to the repository
-        uses: stefanzweifel/git-auto-commit-action@04702edda442b2e678b25b537cec683a1493fcb9 # v7.1.0
-        with:
-          commit_message: Data updates
+        env:
+          PUSH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add .
+          if git diff --cached --quiet; then
+            echo "Working tree clean. Nothing to commit."
+          else
+            git commit -m "Data updates"
+            git push "https://x-access-token:${PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME}"
+          fi
 
       - name: push networked mprop
         env:

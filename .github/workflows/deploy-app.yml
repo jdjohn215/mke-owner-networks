@@ -11,11 +11,18 @@ on:
   schedule:
     - cron:  '15 1 * * 1-5' # Mon-Fri, 1:15AM UTC / 7PM CST
 
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+permissions: {}
+
 jobs:
   zizmor:
+    name: Run zizmor
     runs-on: ubuntu-latest
-    permissions:
-      security-events: write
+    timeout-minutes: 5
+    permissions: {}
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -24,24 +31,26 @@ jobs:
 
       - name: Run zizmor 🌈
         uses: zizmorcore/zizmor-action@3dc1ecc9bcb9e94e9b2c709687979e1298497054 # v0.6.2
+        with:
+          advanced-security: false
   deploy:
     name: Deploy app
     needs: zizmor
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions: {}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - uses: superfly/flyctl-actions/setup-flyctl@ed8efb33836e8b2096c7fd3ba1c8afe303ebbff1 # main (2026-04-25)
-      - run: cp ../data/final-output/LandlordProperties-with-OwnerNetworks.csv data/LandlordProperties-with-OwnerNetworks.csv
+      - uses: superfly/flyctl-actions/setup-flyctl@ed8efb33836e8b2096c7fd3ba1c8afe303ebbff1 # 1.6
+      - name: Copy in latest data and network images
         working-directory: who_owns_what
-      - run: cp ../data/final-output/Landlord-network-summary-statistics.csv data/Landlord-network-summary-statistics.csv
-        working-directory: who_owns_what
-      - run: cp ../data/final-output/overall-summary-stats.csv data/overall-summary-stats.csv
-        working-directory: who_owns_what
-      - run: cp -r ../images/networks-svg/. priv/static/images/networks
-        working-directory: who_owns_what
+        run: |
+          cp ../data/final-output/LandlordProperties-with-OwnerNetworks.csv data/LandlordProperties-with-OwnerNetworks.csv
+          cp ../data/final-output/Landlord-network-summary-statistics.csv data/Landlord-network-summary-statistics.csv
+          cp ../data/final-output/overall-summary-stats.csv data/overall-summary-stats.csv
+          cp -r ../images/networks-svg/. priv/static/images/networks
       - run: flyctl deploy --remote-only
         working-directory: who_owns_what
         env:
