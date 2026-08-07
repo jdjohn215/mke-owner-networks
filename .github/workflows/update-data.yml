@@ -83,13 +83,33 @@ jobs:
           commit_message: Data updates
 
       - name: push networked mprop
-        uses: cpina/github-action-push-to-another-repository@55306faa4ed53b815ae49e564af8cfb359d32ae2 # main (2026-08-07)
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          source-directory: 'data/final-output'
-          destination-github-username: 'jdjohn215'
-          destination-repository-name: 'mkepropertynetworks-summary'
-          target-directory: "data"
-          user-email: jdjohn215@gmail.com
-          target-branch: main
+        run: |
+          set -euo pipefail
+
+          DEST_USER="jdjohn215"
+          DEST_REPO="mkepropertynetworks-summary"
+          TARGET_BRANCH="main"
+          TARGET_DIR="data"
+          SOURCE_DIR="data/final-output"
+
+          CLONE_DIR=$(mktemp -d)
+          git config --global user.email "jdjohn215@gmail.com"
+          git config --global user.name "$DEST_USER"
+
+          git clone --single-branch --depth 1 --branch "$TARGET_BRANCH" \
+            "https://${DEST_USER}:${API_TOKEN_GITHUB}@github.com/${DEST_USER}/${DEST_REPO}.git" "$CLONE_DIR"
+
+          rm -rf "${CLONE_DIR:?}/${TARGET_DIR}"
+          mkdir -p "$CLONE_DIR/$TARGET_DIR"
+          cp -ra "$SOURCE_DIR"/. "$CLONE_DIR/$TARGET_DIR"
+
+          cd "$CLONE_DIR"
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes to push"
+          else
+            git commit -m "Data updates from ${GITHUB_REPOSITORY}@${GITHUB_SHA}"
+            git push origin "$TARGET_BRANCH"
+          fi
