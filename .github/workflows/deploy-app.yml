@@ -17,10 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions: {}
     steps:
-      - uses: actions/checkout@900f2210b1d28bbbd0bd22d17926b9e224e8f231 # 2026-05-21
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - uses: superfly/flyctl-actions/setup-flyctl@ed8efb33836e8b2096c7fd3ba1c8afe303ebbff1 # 2026-04-25
+      - uses: superfly/flyctl-actions/setup-flyctl@ed8efb33836e8b2096c7fd3ba1c8afe303ebbff1 # main (2026-04-25)
       - run: cp ../data/final-output/LandlordProperties-with-OwnerNetworks.csv data/LandlordProperties-with-OwnerNetworks.csv
         working-directory: who_owns_what
       - run: cp ../data/final-output/Landlord-network-summary-statistics.csv data/Landlord-network-summary-statistics.csv
