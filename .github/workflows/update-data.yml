@@ -65,10 +65,14 @@ jobs:
       - name: update overall summary stats
         run: Rscript -e 'source("processing-scripts/update-overall-summary-stats.R")'
       - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: 'npm'
+      - name: Install npm dependencies
+        run: npm ci
       - name: Optimize SVGs
         run: |
-          npm install -g svgo
-          git diff --diff-filter=d -z --name-only ./images/networks-svg | xargs -0 -n 1 svgo --config svgo.config.js
+          git diff --diff-filter=d -z --name-only ./images/networks-svg | xargs -0 -n 1 npx svgo --config svgo.config.js
 
       - name: Commit results
         # Commit all changed files back to the repository

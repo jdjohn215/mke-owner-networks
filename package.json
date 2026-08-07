@@ -1,0 +1,6 @@
+{
+  "name": "mke-owner-networks",
+  "dependencies": {
+    "svgo": "^4.0.2"
+  }
+}
