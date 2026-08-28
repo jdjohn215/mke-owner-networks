@@ -103,6 +103,21 @@ mprop.with.networks <- mprop.with.wdfi.matches %>%
   # remove common name flag
   mutate(mprop_name = word(mprop_name, 1, sep = "!!"))
 
+# igraph's component_number is less stable since it is based on traversal
+#   order which leads to a lot of churn in the output. To improve this, we
+#   replace the component number with the lowest TAXKEY in the group.
+stable.component.numbers <- mprop.with.networks |>
+  group_by(component_number) |>
+  summarise(stable_component_number = min(TAXKEY), .groups = "drop")
+
+# verify the stable ID does not merge two networks
+n_distinct(stable.component.numbers$stable_component_number) == nrow(stable.component.numbers)
+
+mprop.with.networks <- mprop.with.networks |>
+  inner_join(stable.component.numbers, by = "component_number") |>
+  mutate(component_number = stable_component_number) |>
+  select(-stable_component_number)
+
 # add descriptive names to each network
 #   if one unique name in group, then MPROP_NAME
 #   if 2-3 unique names in group, the list of names delimited by -- and ending with "Group"
