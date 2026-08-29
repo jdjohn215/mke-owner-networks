@@ -32,13 +32,12 @@ defmodule WhoOwnsWhatWeb.Router do
     get "/owner_groups/:id/geojson", PageController, :owner_group_geojson
   end
 
-  # Enable LiveDashboard and Swoosh mailbox preview in development
+  # Enable LiveDashboard in development
   if Application.compile_env(:who_owns_what, :dev_routes) do
     scope "/dev" do
       pipe_through :browser
 
       live_dashboard "/dashboard", metrics: WhoOwnsWhatWeb.Telemetry
-      forward "/mailbox", Plug.Swoosh.MailboxPreview
     end
   else
     scope "/admin" do

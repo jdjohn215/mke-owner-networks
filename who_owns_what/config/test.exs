@@ -17,12 +17,6 @@ config :who_owns_what, WhoOwnsWhatWeb.Endpoint,
   secret_key_base: "4z6uIu+VlI4WHjqwZPjBbbmX2ZV8VK53hmu9n8SPITiJy8hRcBIRZS6VVzQ1nVDn",
   server: false
 
-# In test we don't send emails.
-config :who_owns_what, WhoOwnsWhat.Mailer, adapter: Swoosh.Adapters.Test
-
-# Disable swoosh api client as it is only required for production adapters.
-config :swoosh, :api_client, false
-
 # Print only warnings and errors during test
 config :logger, level: :warning
 
