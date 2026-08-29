@@ -6,7 +6,7 @@ library(tidyverse)
 updated.network <- read_csv("data/final-output/LandlordProperties-with-OwnerNetworks.csv")
 
 # network information from the 2nd-to-last update
-old.networks <- read_csv("data/network-components.csv.gz")
+old.networks <- read_csv("data/network-components.csv")
 
 # changes in networks (new networks or changed networks)
 new.changes <- anti_join(updated.network, old.networks)
@@ -81,7 +81,7 @@ map(networks.to.update, plot_save_network_graph, .progress = TRUE)
 networks.updated <- updated.network %>% 
   select(TAXKEY, mprop_name, mprop_address, wdfi_address, final_group)
 
-write_csv(networks.updated, "data/network-components.csv.gz")
+write_csv(networks.updated, "data/network-components.csv")
 
 
 ################################################################################
