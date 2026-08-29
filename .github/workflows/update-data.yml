@@ -39,6 +39,7 @@ jobs:
       - name: Install packages
         uses: r-lib/actions/setup-r-dependencies@a51a8012b0aab7c32ef9d19bf54da93f3254335e # v2.12.0
         with:
+          install-quarto: 'false'
           packages: |
             any::tidyverse
             any::igraph
@@ -48,7 +49,6 @@ jobs:
             any::tidygeocoder
             any::svglite
             any::here
-            any::rlist
             any::jsonlite
             any::httr
             any::lubridate

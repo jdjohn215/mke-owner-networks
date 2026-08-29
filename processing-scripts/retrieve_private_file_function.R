@@ -6,7 +6,6 @@
 # Dependencies
 require(tidyverse)
 require(httr) 
-require(rlist)
 require(jsonlite)
 
 # Your GitHub username or team account name
@@ -42,7 +41,7 @@ fetchGHdata <- function(repo, path) {
       )
     )
   
-  entry <- req_meta %>% list.filter(name == file)
+  entry <- req_meta %>% keep(~ .x$name == file)
   sha <- entry[1][[1]]$sha
   
   # Grab contents, using sha as a reference
