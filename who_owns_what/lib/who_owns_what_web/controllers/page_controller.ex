@@ -108,7 +108,7 @@ defmodule WhoOwnsWhatWeb.PageController do
         }
       end)
 
-    body = Jason.encode!(%{type: "FeatureCollection", features: features})
+    body = JSON.encode!(%{type: "FeatureCollection", features: features})
 
     conn
     |> put_resp_content_type("application/geo+json")
