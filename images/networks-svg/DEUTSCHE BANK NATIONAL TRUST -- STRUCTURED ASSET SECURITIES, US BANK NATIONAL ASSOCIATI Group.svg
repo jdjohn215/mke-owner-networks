@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='288.00pt' height='360.00pt' viewBox='0 0 288.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='288.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='288.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjkuODl8MjU4LjExfDE4MC40NnwzMzAuMTE='>
+    <rect x='29.89' y='180.46' width='228.22' height='149.65' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjkuODl8MjU4LjExfDE4MC40NnwzMzAuMTE=)'>
+<polyline points='247.74,187.26 246.69,187.95 245.64,188.63 244.59,189.32 243.55,190.01 242.50,190.70 241.45,191.38 240.40,192.07 239.36,192.76 238.31,193.44 237.26,194.13 236.21,194.82 235.16,195.51 234.12,196.19 233.07,196.88 232.02,197.57 230.97,198.25 229.92,198.94 228.88,199.63 227.83,200.32 226.78,201.00 225.73,201.69 224.69,202.38 223.64,203.07 222.59,203.75 221.54,204.44 220.49,205.13 219.45,205.81 218.40,206.50 217.35,207.19 216.30,207.88 215.25,208.56 214.21,209.25 213.16,209.94 212.11,210.62 211.06,211.31 210.02,212.00 208.97,212.69 207.92,213.37 206.87,214.06 205.82,214.75 204.78,215.43 203.73,216.12 202.68,216.81 201.63,217.50 200.58,218.18 199.54,218.87 198.49,219.56 197.44,220.25 196.39,220.93 195.35,221.62 194.30,222.31 193.25,222.99 192.20,223.68 191.15,224.37 190.11,225.06 189.06,225.74 188.01,226.43 186.96,227.12 185.91,227.80 184.87,228.49 183.82,229.18 182.77,229.87 181.72,230.55 180.68,231.24 179.63,231.93 178.58,232.62 177.53,233.30 176.48,233.99 175.44,234.68 174.39,235.36 173.34,236.05 172.29,236.74 171.24,237.43 170.20,238.11 169.15,238.80 168.10,239.49 167.05,240.17 166.01,240.86 164.96,241.55 163.91,242.24 162.86,242.92 161.81,243.61 160.77,244.30 159.72,244.98 158.67,245.67 157.62,246.36 156.57,247.05 155.53,247.73 154.48,248.42 153.43,249.11 152.38,249.80 151.34,250.48 150.29,251.17 149.24,251.86 148.19,252.54 147.14,253.23 146.10,253.92 145.05,254.61 144.00,255.29 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polyline points='40.26,323.31 41.31,322.62 42.36,321.94 43.41,321.25 44.45,320.56 45.50,319.87 46.55,319.19 47.60,318.50 48.64,317.81 49.69,317.13 50.74,316.44 51.79,315.75 52.84,315.07 53.88,314.38 54.93,313.69 55.98,313.00 57.03,312.32 58.08,311.63 59.12,310.94 60.17,310.26 61.22,309.57 62.27,308.88 63.31,308.19 64.36,307.51 65.41,306.82 66.46,306.13 67.51,305.45 68.55,304.76 69.60,304.07 70.65,303.39 71.70,302.70 72.75,302.01 73.79,301.32 74.84,300.64 75.89,299.95 76.94,299.26 77.98,298.58 79.03,297.89 80.08,297.20 81.13,296.52 82.18,295.83 83.22,295.14 84.27,294.45 85.32,293.77 86.37,293.08 87.42,292.39 88.46,291.71 89.51,291.02 90.56,290.33 91.61,289.64 92.66,288.96 93.70,288.27 94.75,287.58 95.80,286.90 96.85,286.21 97.89,285.52 98.94,284.84 99.99,284.15 101.04,283.46 102.09,282.77 103.13,282.09 104.18,281.40 105.23,280.71 106.28,280.03 107.33,279.34 108.37,278.65 109.42,277.96 110.47,277.28 111.52,276.59 112.56,275.90 113.61,275.22 114.66,274.53 115.71,273.84 116.76,273.16 117.80,272.47 118.85,271.78 119.90,271.09 120.95,270.41 122.00,269.72 123.04,269.03 124.09,268.35 125.14,267.66 126.19,266.97 127.23,266.29 128.28,265.60 129.33,264.91 130.38,264.22 131.43,263.54 132.47,262.85 133.52,262.16 134.57,261.48 135.62,260.79 136.67,260.10 137.71,259.41 138.76,258.73 139.81,258.04 140.86,257.35 141.90,256.67 142.95,255.98 144.00,255.29 ' style='stroke-width: 1.07; stroke: #000000; stroke-opacity: 0.10; stroke-linecap: butt;' />
+<polygon points='247.74,185.05 249.65,188.36 245.82,188.36 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<polygon points='40.26,321.10 42.18,324.41 38.35,324.41 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<circle cx='144.00' cy='255.29' r='6.76' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<line x1='241.11' y1='191.74' x2='246.85' y2='187.86' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='46.77' y1='318.83' x2='41.14' y2='322.70' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<line x1='137.40' y1='259.75' x2='143.12' y2='255.89' style='stroke-width: 0.53; stroke: #BFBFBF;' />
+<polygon points='187.18,219.24 252.34,219.24 252.25,219.24 252.60,219.23 252.94,219.16 253.26,219.03 253.56,218.86 253.83,218.64 254.06,218.38 254.25,218.09 254.39,217.77 254.47,217.43 254.50,217.08 254.50,217.08 254.50,193.90 254.50,193.90 254.47,193.55 254.39,193.21 254.25,192.89 254.06,192.60 253.83,192.34 253.56,192.12 253.26,191.95 252.94,191.82 252.60,191.75 252.34,191.74 187.18,191.74 187.44,191.75 187.09,191.74 186.74,191.78 186.41,191.88 186.10,192.03 185.81,192.22 185.56,192.46 185.35,192.74 185.19,193.05 185.08,193.38 185.02,193.72 185.02,193.90 185.02,217.08 185.02,216.91 185.02,217.26 185.08,217.60 185.19,217.93 185.35,218.24 185.56,218.51 185.81,218.76 186.10,218.95 186.41,219.10 186.74,219.20 187.09,219.24 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='219.76' y='199.25' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='59.11px' lengthAdjust='spacingAndGlyphs'>STRUCTURED ASSET</text>
+<text x='219.76' y='207.45' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='62.28px' lengthAdjust='spacingAndGlyphs'>SECURITIES, US BANK</text>
+<text x='219.76' y='215.64' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='58.98px' lengthAdjust='spacingAndGlyphs'>NATIONAL ASSOCIATI</text>
+<polygon points='36.18,318.83 87.44,318.83 87.35,318.83 87.70,318.82 88.04,318.75 88.36,318.63 88.66,318.45 88.93,318.23 89.16,317.97 89.35,317.68 89.49,317.36 89.57,317.02 89.60,316.67 89.60,316.67 89.60,301.68 89.60,301.68 89.57,301.34 89.49,301.00 89.35,300.68 89.16,300.39 88.93,300.13 88.66,299.91 88.36,299.73 88.04,299.61 87.70,299.54 87.44,299.52 36.18,299.52 36.44,299.54 36.10,299.53 35.75,299.57 35.42,299.66 35.10,299.81 34.82,300.01 34.57,300.25 34.36,300.53 34.19,300.84 34.08,301.17 34.03,301.51 34.02,301.68 34.02,316.67 34.03,316.50 34.03,316.85 34.08,317.19 34.19,317.52 34.36,317.83 34.57,318.11 34.82,318.35 35.10,318.55 35.42,318.69 35.75,318.79 36.10,318.83 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='61.81' y='307.04' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='48.38px' lengthAdjust='spacingAndGlyphs'>DEUTSCHE BANK</text>
+<text x='61.81' y='315.23' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='48.22px' lengthAdjust='spacingAndGlyphs'>NATIONAL TRUST</text>
+<polygon points='85.30,287.25 147.17,287.25 147.08,287.25 147.43,287.24 147.77,287.17 148.09,287.05 148.39,286.87 148.66,286.65 148.89,286.39 149.08,286.10 149.21,285.78 149.30,285.44 149.33,285.09 149.33,285.09 149.33,261.91 149.33,261.91 149.30,261.56 149.21,261.22 149.08,260.91 148.89,260.61 148.66,260.35 148.39,260.13 148.09,259.96 147.77,259.83 147.43,259.76 147.17,259.75 85.30,259.75 85.56,259.76 85.21,259.75 84.87,259.79 84.54,259.89 84.22,260.04 83.94,260.24 83.68,260.48 83.48,260.75 83.31,261.06 83.20,261.39 83.15,261.74 83.14,261.91 83.14,285.09 83.15,284.92 83.15,285.27 83.20,285.61 83.31,285.94 83.48,286.25 83.68,286.53 83.94,286.77 84.22,286.97 84.54,287.11 84.87,287.21 85.21,287.25 ' style='stroke-width: 0.53; fill: #FFFFFF; fill-opacity: 0.50;' />
+<text x='116.23' y='267.27' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='53.92px' lengthAdjust='spacingAndGlyphs'>55 BEATTIE PL, STE</text>
+<text x='116.23' y='275.46' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='58.98px' lengthAdjust='spacingAndGlyphs'>110, GREENVILLE, SC</text>
+<text x='116.23' y='283.65' text-anchor='middle' style='font-size: 5.69px; font-family: "Liberation Sans";' textLength='15.78px' lengthAdjust='spacingAndGlyphs'>29601</text>
+</g>
+<g clip-path='url(#cpMC4wMHwyODguMDB8MC4wMHwzNjAuMDA=)'>
+<circle cx='83.20' cy='155.38' r='1.95' style='stroke-width: 0.71; stroke: none; fill: #F8766D;' />
+<polygon points='159.60,152.34 162.23,156.90 156.97,156.90 ' style='stroke-width: 0.71; stroke: none; fill: #00BFC4;' />
+<text x='97.32' y='158.54' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='48.16px' lengthAdjust='spacingAndGlyphs'>mprop address</text>
+<text x='173.72' y='158.54' style='font-size: 8.80px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='39.72px' lengthAdjust='spacingAndGlyphs'>owner name</text>
+<text x='29.89' y='123.67' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='241.17px' lengthAdjust='spacingAndGlyphs'>includes 2 parcels, 2 units, and 2 distinct owner names.</text>
+<text x='29.89' y='42.81' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='208.27px' lengthAdjust='spacingAndGlyphs'>DEUTSCHE BANK NATIONAL</text>
+<text x='29.89' y='62.25' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='168.88px' lengthAdjust='spacingAndGlyphs'>TRUST -- STRUCTURED</text>
+<text x='29.89' y='81.69' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='217.34px' lengthAdjust='spacingAndGlyphs'>ASSET SECURITIES, US BANK</text>
+<text x='29.89' y='101.13' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans Narrow";' textLength='209.11px' lengthAdjust='spacingAndGlyphs'>NATIONAL ASSOCIATI Group</text>
+</g>
+</g>
+</svg>
