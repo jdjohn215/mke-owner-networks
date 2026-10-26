@@ -32,6 +32,11 @@ config :esbuild,
       ~w(js/app.js --bundle --target=es2020 --outdir=../priv/static/assets --external:/fonts/* --external:/images/*),
     cd: Path.expand("../assets", __DIR__),
     env: %{"NODE_PATH" => Path.expand("../deps", __DIR__)}
+  ],
+  maplibre_worker: [
+    args:
+      ~w(node_modules/maplibre-gl/dist/maplibre-gl-worker.mjs --outfile=../priv/static/assets/maplibre-gl-worker.mjs),
+    cd: Path.expand("../assets", __DIR__)
   ]
 
 # Configure tailwind (the version is required)
@@ -47,7 +52,7 @@ config :tailwind,
   ],
   maplibre: [
     args: ~w(
-      --input=vendor/maplibre-gl.css
+      --input=node_modules/maplibre-gl/dist/maplibre-gl.css
       --output=../priv/static/assets/maplibre-gl.css
     ),
     cd: Path.expand("../assets", __DIR__)

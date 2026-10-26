@@ -10,6 +10,6 @@
   "author": "",
   "type": "commonjs",
   "dependencies": {
-    "maplibre-gl": "^5.23.0"
+    "maplibre-gl": "^6.0.0"
   }
 }

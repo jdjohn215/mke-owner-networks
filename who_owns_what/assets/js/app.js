@@ -21,7 +21,9 @@ import "phoenix_html"
 import {Socket} from "phoenix"
 import {LiveSocket} from "phoenix_live_view"
 import topbar from "../vendor/topbar"
-import maplibregl from "maplibre-gl"
+import {LngLatBounds, Map, Popup, setWorkerUrl} from 'maplibre-gl';
+
+setWorkerUrl("/assets/maplibre-gl-worker.mjs")
 
 let Hooks = {}
 
@@ -34,10 +36,10 @@ Hooks.MapLibre = {
       fetch(geojsonUrl).then(r => r.json()),
       fetch(boundaryUrl).then(r => r.json())
     ]).then(([geojson, boundary]) => {
-      const bounds = new maplibregl.LngLatBounds()
+      const bounds = new LngLatBounds()
       geojson.features.forEach(f => bounds.extend(f.geometry.coordinates))
 
-      const map = new maplibregl.Map({
+      const map = new Map({
         container: this.el,
         style: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
         bounds: bounds,
@@ -75,7 +77,7 @@ Hooks.MapLibre = {
           }
         })
 
-        const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false })
+        const popup = new Popup({ closeButton: false, closeOnClick: false })
 
         map.on("mouseenter", "properties-circle", (e) => {
           map.getCanvas().style.cursor = "pointer"

@@ -68,11 +68,17 @@ defmodule WhoOwnsWhat.MixProject do
       "ecto.reset": ["ecto.drop", "ecto.setup"],
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
       "assets.setup": ["tailwind.install --if-missing", "esbuild.install --if-missing"],
-      "assets.build": ["tailwind default", "tailwind maplibre", "esbuild default"],
+      "assets.build": [
+        "tailwind default",
+        "tailwind maplibre",
+        "esbuild default",
+        "esbuild maplibre_worker"
+      ],
       "assets.deploy": [
         "tailwind default --minify",
         "tailwind maplibre --minify",
         "esbuild default --minify",
+        "esbuild maplibre_worker --minify",
         "phx.digest"
       ]
     ]
