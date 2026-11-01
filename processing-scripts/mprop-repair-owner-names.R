@@ -9,7 +9,7 @@ library(tidyverse)
 mprop <- read_csv("data/mprop/ResidentialProperties_NotOwnerOccupied_StandardizedAddresses.csv")
 
 # owner names from mprop
-mprop.names <- mprop %>% group_by(mprop_name) %>% summarise()
+mprop.names <- mprop %>% group_by(mprop_name, OWNER_NAME_1) %>% summarise(.groups = "drop")
 
 ################################################################################
 # the original WDFI file
@@ -25,17 +25,22 @@ wdfi.names <- wdfi.current %>%
 # mprop names not appearing in WDFI
 not.in.wdfi <- mprop.names %>% filter(! mprop_name %in% wdfi.names$corp_name_clean)
 
-# find WDFI name match in 1 of two ways:
+# find WDFI name match in 1 of three ways:
 #   - try appending "LLC" to the end of the owner name string
 #   - try matching the mprop name to the WDFI name after removing *all* punctuation and spaces from both
+#   - try matching mprop OWNER_NAME_1 to the WDFI name after removing all punctuation and spaces from both
 name.repairs <- not.in.wdfi %>%
   mutate(add_llc = paste(mprop_name, "LLC"),
-         remove_punc = str_remove_all(mprop_name, "[[:punct:] ]+")) %>%
+         remove_punc = str_remove_all(mprop_name, "[[:punct:] ]+"),
+         owner1_punc = str_remove_all(OWNER_NAME_1, "[[:punct:] ]+")) %>%
   left_join(wdfi.names, by = c("add_llc" = "corp_name_clean")) %>%
   left_join(wdfi.names, by = c("remove_punc" = "corp_name_no_punc")) %>%
-  mutate(entity_id = if_else(is.na(entity_id.x), entity_id.y, entity_id.x)) %>%
+  left_join(wdfi.names %>% select(entity_id_owner1 = entity_id, corp_name_no_punc),
+            by = c("owner1_punc" = "corp_name_no_punc")) %>%
+  mutate(entity_id = coalesce(entity_id.x, entity_id.y, entity_id_owner1)) %>%
   select(mprop_name, entity_id) %>%
-  inner_join(wdfi.names %>% select(entity_id, corp_name_clean)) %>%
+  distinct() %>%
+  inner_join(wdfi.names %>% select(entity_id, corp_name_clean), by = "entity_id") %>%
   filter(!is.na(entity_id)) %>%
   # remove any multiple matches, if necessary (shouldn't be)
   group_by(mprop_name) %>%
@@ -45,7 +50,7 @@ name.repairs
 
 ################################################################################
 mprop.repaired <- mprop %>%
-  left_join(name.repairs) %>%
+  left_join(name.repairs, by = "mprop_name") %>%
   mutate(mprop_name = if_else(!is.na(corp_name_clean), corp_name_clean, mprop_name)) %>%
   select(-c(corp_name_clean, entity_id))
 
