@@ -6,12 +6,12 @@ networks_single_parcel,"14,015"
 pct_networks_single_parcel,71%
 networks_multiple_parcels,"5,666"
 pct_networks_multiple_parcels,29%
-networks_multiple_names,"3,765"
+networks_multiple_names,"3,764"
 pct_networks_multiple_names,19%
 parcels_single_parcel_owner,"14,015"
 pct_parcels_single_parcel_owner,30%
 parcels_multiple_parcel_owner,"32,959"
-parcels_multiple_name_owner,"26,802"
+parcels_multiple_name_owner,"26,800"
 pct_parcels_multiple_name_owner,57%
 total_mprop_names,"28,413"
 total_mprop_addresses,"21,609"
