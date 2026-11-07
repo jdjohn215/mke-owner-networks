@@ -65,12 +65,12 @@ addresses.in.both <- mprop.with.wdfi.matches %>%
 components <- mprop.with.wdfi.matches %>%
   mutate(mprop_address = if_else(str_remove(mprop_address, "_mprop") %in% useless.addresses$address |
                                    mprop_name %in% useless.names$name |
-                                   (mprop_name %in% edges.to.break$mprop_name & edges.to.break$address_drop == "mprop"),
+                                   mprop_name %in% edges.to.break$mprop_name[edges.to.break$address_drop == "mprop"],
                                  true = paste(mprop_address, row_number(), sep = "-"),
                                  false = mprop_address),
          wdfi_address = if_else(str_remove(wdfi_address, "_wdfi") %in% useless.addresses$address |
                                   mprop_name %in% useless.names$name |
-                                  (mprop_name %in% edges.to.break$mprop_name & edges.to.break$address_drop == "wdfi"),
+                                  mprop_name %in% edges.to.break$mprop_name[edges.to.break$address_drop == "wdfi"],
                                 true = paste(wdfi_address, row_number(), sep = "-"),
                                 false = wdfi_address)) %>%
   select(mprop_name, mprop_address, wdfi_address) %>%
