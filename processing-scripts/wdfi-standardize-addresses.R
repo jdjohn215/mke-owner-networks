@@ -2,6 +2,7 @@ rm(list = ls())
 
 library(tidyverse)
 library(tidygeocoder)
+source("processing-scripts/normalize-po-box.R")
 
 wdfi <- read_csv("data/wdfi/wdfi-current-in-mprop.csv")
 wdfi.addresses <- wdfi %>%
@@ -78,11 +79,9 @@ table(standardized.addresses.updated$standardized)
 # final formatting
 standardized.addresses.updated <- standardized.addresses.updated %>%
   mutate(wdfi_address = str_to_upper(wdfi_address),
-         wdfi_address = str_replace_all(wdfi_address, "P[.]O[.]|P[.] O[.]|P[.]0[.]", "PO"),
-         wdfi_address = str_replace_all(wdfi_address, "P[.]O ", "PO "),
-         wdfi_address = str_replace_all(wdfi_address, "P O BOX", "PO BOX")) %>%
+         wdfi_address = normalize_po_box(wdfi_address)) %>%
   # ensure that zip code is only 5-digits
-  mutate(wdfi_address = str_replace(wdfi_address, "(\\d{5})-\\d{4}$", "\\1"))
+  mutate(wdfi_address = str_replace(wdfi_address, "(\\d{5})-?\\d{4}$", "\\1"))
 
 ################################################################################
 # add standardized addresses to wdfi

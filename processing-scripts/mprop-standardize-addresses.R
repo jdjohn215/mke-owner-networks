@@ -2,6 +2,7 @@ rm(list = ls())
 
 library(tidyverse)
 library(tidygeocoder)
+source("processing-scripts/normalize-po-box.R")
 
 mprop <- read_csv("data/mprop/ResidentialProperties_NotOwnerOccupied.csv")
 
@@ -62,12 +63,19 @@ if(nrow(new.addresses) > 0){
   # add new standardized addresses
   standardized.addresses.updated <- bind_rows(standardized.addresses, 
                                               new.addresses.standardized %>%
-                                                select(mprop_address, mprop_address_raw, standardized)) %>%
-    mutate(mprop_address = str_replace_all(mprop_address, "P O BOX", "PO BOX"))
+                                                select(mprop_address, mprop_address_raw, standardized))
 } else {
-  standardized.addresses.updated <- standardized.addresses %>%
-    mutate(mprop_address = str_replace_all(mprop_address, "P O BOX", "PO BOX"))
+  standardized.addresses.updated <- standardized.addresses
 }
+
+################################################################################
+# final formatting (the same as wdfi-standardize-addresses.R, so an address is
+#   written the same way in both caches)
+standardized.addresses.updated <- standardized.addresses.updated %>%
+  mutate(mprop_address = str_to_upper(mprop_address),
+         mprop_address = normalize_po_box(mprop_address)) %>%
+  # ensure that zip code is only 5-digits
+  mutate(mprop_address = str_replace(mprop_address, "(\\d{5})-?\\d{4}$", "\\1"))
 
 
 table(standardized.addresses.updated$standardized)
