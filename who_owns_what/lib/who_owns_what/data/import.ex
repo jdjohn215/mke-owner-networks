@@ -244,7 +244,9 @@ defmodule WhoOwnsWhat.Data.Import do
     case Integer.parse(string_number) do
       {integer, _remaining} ->
         integer
-      :error -> :error
+
+      :error ->
+        :error
     end
   end
 
