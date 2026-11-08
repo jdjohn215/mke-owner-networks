@@ -79,7 +79,8 @@ jobs:
         run: npm ci
       - name: Optimize SVGs
         run: |
-          git diff --diff-filter=d -z --name-only ./images/networks-svg | xargs -0 -n 1 npx svgo --config svgo.config.js
+          git add -N ./images/networks-svg
+          git diff --diff-filter=d -z --name-only ./images/networks-svg | xargs -0 -r -n 1 npx svgo --config svgo.config.js
 
       - name: Commit results
         env:
