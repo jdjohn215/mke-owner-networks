@@ -7,7 +7,8 @@ source("processing-scripts/normalize-po-box.R")
 wdfi <- read_csv("data/wdfi/wdfi-current-in-mprop.csv")
 wdfi.addresses <- wdfi %>%
   select(entity_id, principal_office_raw, agent_raw) %>%
-  pivot_longer(cols = -entity_id, values_to = "wdfi_address_raw")
+  pivot_longer(cols = -entity_id, values_to = "wdfi_address_raw") %>%
+  mutate(wdfi_address_raw = str_squish(str_to_upper(wdfi_address_raw)))
 
 # addresses previously standardized by geocodio
 #   or standardization attempted and failed
