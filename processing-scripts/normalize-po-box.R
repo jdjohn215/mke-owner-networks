@@ -15,3 +15,10 @@ normalize_po_box <- function(x) {
     # USPS drops leading zeros from box numbers ("PO BOX 04313" -> "PO BOX 4313")
     str_replace_all("\\bPO BOX\\s+0+(?=\\d)", "PO BOX ")
 }
+
+# Milwaukee's MLK Drive in its USPS name; geocodio returns several aliases
+#   ("N MLK DR", "MARTIN LUTHER KING JR DR", ...)
+normalize_mlk <- function(x) {
+  str_replace(x, "^(\\S+) (?:N )?(?:DR )?(?:MARTIN LUTHER KING|MLK)(?: JR)? DR\\b(?=.*, MILWAUKEE, WI 532)",
+              "\\1 N DR MARTIN LUTHER KING JR DR")
+}

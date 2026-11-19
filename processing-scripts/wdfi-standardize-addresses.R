@@ -80,7 +80,8 @@ table(standardized.addresses.updated$standardized)
 # final formatting
 standardized.addresses.updated <- standardized.addresses.updated %>%
   mutate(wdfi_address = str_to_upper(wdfi_address),
-         wdfi_address = normalize_po_box(wdfi_address)) %>%
+         wdfi_address = normalize_po_box(wdfi_address),
+         wdfi_address = normalize_mlk(wdfi_address)) %>%
   # ensure that zip code is only 5-digits
   mutate(wdfi_address = str_replace(wdfi_address, "(\\d{5})-?\\d{4}$", "\\1"))
 

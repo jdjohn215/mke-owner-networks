@@ -73,7 +73,8 @@ if(nrow(new.addresses) > 0){
 #   written the same way in both caches)
 standardized.addresses.updated <- standardized.addresses.updated %>%
   mutate(mprop_address = str_to_upper(mprop_address),
-         mprop_address = normalize_po_box(mprop_address)) %>%
+         mprop_address = normalize_po_box(mprop_address),
+         mprop_address = normalize_mlk(mprop_address)) %>%
   # ensure that zip code is only 5-digits
   mutate(mprop_address = str_replace(mprop_address, "(\\d{5})-?\\d{4}$", "\\1"))
 
